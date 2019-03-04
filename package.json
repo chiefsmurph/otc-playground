@@ -1,0 +1,17 @@
+{
+  "name": "otc-playground",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:chiefsmurph/otc-playground",
+  "author": "chiefsmurph <chiefsmurph@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.2",
+    "console.table": "^0.10.0",
+    "promise-map-limit": "^1.0.0",
+    "puppeteer": "^1.12.2",
+    "request": "^2.88.0",
+    "request-promise": "^4.2.4",
+    "underscore": "^1.9.1"
+  }
+}
