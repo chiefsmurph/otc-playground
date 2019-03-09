@@ -1,5 +1,4 @@
-
-const n = number => parseFloat(number.replace(/,/g, ''));
+const number = require('../helpers/number');
 const { mapObject } = require('underscore');
 const mapLimit = require('promise-map-limit');
 const request = require('request-promise');
@@ -67,7 +66,7 @@ module.exports = async (browser, ticker) => {
 
         price,
         percentChange,
-        dollarVolume: price * volume,
-        turnover: price * n(float)
+        dollarVolume: Math.round(price * volume),
+        turnover: Math.round(price * n(float))
     };;
 };

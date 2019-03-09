@@ -5,11 +5,18 @@ const cTable = require('console.table');
 const mapLimit = require('promise-map-limit');
 const { pick } = require('underscore');
 
-const tickers = `HDVY
-DLYT
-RBNW
-SAGD
-CXCQ`.split('\n');
+const input = `NSPX
+
+crsm
+ZMRK
+
+`;
+
+
+var regex = /\w{3,5}/gi;
+
+var tickers = input.match(regex).map(t => t.toUpperCase());
+console.log({ tickers });
 
 
 (async () => {
@@ -26,6 +33,9 @@ CXCQ`.split('\n');
         pick(record, ['ticker', 'price', 'percentChange', 'dollarVolume', 'float', 'turnover'])
     );
     
-    console.table(allMetrics)
+    console.table(allMetrics);
+
+
+    await browser.close();
 
 })();
