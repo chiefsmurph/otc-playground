@@ -4,7 +4,7 @@ const getHistoricals = require('../actions/get-historicals');
 
 (async () => {
   
-  const browser = await puppeteer.launch({ headless: true });
+  const browser = await puppeteer.launch({ headless: false });
 
   const historicals = await getHistoricals(browser, 'LEAS');
   console.log({ historicals})

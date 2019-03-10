@@ -4,6 +4,7 @@ const getMetrics = require('../actions/get-metrics');
 const cTable = require('console.table');
 const mapLimit = require('promise-map-limit');
 const { pick } = require('underscore');
+const getTickers = require('../helpers/get-tickers');
 
 const input = `NSPX
 
@@ -13,9 +14,7 @@ ZMRK
 `;
 
 
-var regex = /\w{3,5}/gi;
-
-var tickers = input.match(regex).map(t => t.toUpperCase());
+const tickers = getTickers(input);
 console.log({ tickers });
 
 

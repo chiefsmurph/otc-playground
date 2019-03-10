@@ -20,7 +20,7 @@ module.exports = async (browser, ticker) => {
   const page = await browser.newPage();
   await page.setRequestInterception(true);
   page.on('request', request => {
-    if (request.resourceType() === 'image')
+    if (request.resourceType() === 'image' || !request.url().includes('nasdaq'))
       request.abort();
     else
       request.continue();
@@ -61,10 +61,12 @@ module.exports = async (browser, ticker) => {
     if (!prevDay) return obj;
     return {
       ...obj,
-      trend: getTrend(obj.close, prevDay.close)
+      trend: getTrend(prevDay.close, obj.close)
     };
   });
 
+
+  console.log(`got historicals for ${ticker}`);
   await page.close();
   return withTrend;
 
