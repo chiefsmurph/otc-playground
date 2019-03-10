@@ -1,0 +1,23 @@
+{
+  "myGainers": {
+    "allTickers": [
+      "MJLB",
+      "ZMRK",
+      "ABCE",
+      "KNOS",
+      "VIBI"
+    ],
+    "trendToHigh": 33.687839107000784,
+    "trendToLow": -28.106597992825538,
+    "avgTrendBetween": 2.790620557087621
+  },
+  "myDecliners": {
+    "allTickers": [
+      "SNPW",
+      "VSTR"
+    ],
+    "trendToHigh": 10.526315789473681,
+    "trendToLow": -33.15789473684211,
+    "avgTrendBetween": -11.315789473684214
+  }
+}

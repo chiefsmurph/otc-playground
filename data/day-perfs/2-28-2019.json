@@ -1,0 +1,31 @@
+{
+  "kicko": {
+    "allTickers": [
+      "KRFG",
+      "HDVY"
+    ],
+    "trendToHigh": 194.6872213020767,
+    "trendToLow": -21.37639614388244,
+    "avgTrendBetween": 86.65541257909712
+  },
+  "kickoYellow": {
+    "allTickers": [
+      "DRNG",
+      "ASKH"
+    ],
+    "trendToHigh": 18.58050519138385,
+    "trendToLow": -32.56624825662483,
+    "avgTrendBetween": -6.992871532620491
+  },
+  "kickoBad": {
+    "allTickers": [
+      "EFFI",
+      "SPSO",
+      "SIRC",
+      "OTTV"
+    ],
+    "trendToHigh": 19.30075933814718,
+    "trendToLow": -8.849209945919814,
+    "avgTrendBetween": 5.2257746961136835
+  }
+}

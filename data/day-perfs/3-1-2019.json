@@ -1,0 +1,48 @@
+{
+  "kicko": {
+    "allTickers": [
+      "IRNC",
+      "DLYT",
+      "CXCQ"
+    ],
+    "trendToHigh": 18.09523809523809,
+    "trendToLow": -58.904314076727864,
+    "avgTrendBetween": -20.404537990744885
+  },
+  "kickoYellow": {
+    "allTickers": [
+      "HDVY",
+      "RBNW",
+      "SAGD",
+      "ASTI",
+      "SNMN",
+      "SWRM"
+    ],
+    "trendToHigh": 21.960361122866416,
+    "trendToLow": -35.21103621304636,
+    "avgTrendBetween": -6.625337545089974
+  },
+  "kickoBad": {
+    "allTickers": [
+      "VGTL",
+      "KNOS",
+      "MEDH",
+      "GPLB",
+      "GHHC",
+      "INBI",
+      "CAVR",
+      "GMGI",
+      "KYNC",
+      "PROP",
+      "MXSG",
+      "DEVM",
+      "TRLFF",
+      "EDXC",
+      "MDTR",
+      "AVOZ"
+    ],
+    "trendToHigh": 22.116458376974336,
+    "trendToLow": -36.816488948600814,
+    "avgTrendBetween": -7.350015285813238
+  }
+}

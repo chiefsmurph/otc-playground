@@ -3,12 +3,14 @@ const mapLimit = require('promise-map-limit');
 const { mapObject, chain } = require('underscore');
 
 const getHistoricals = require('../actions/get-historicals');
+
+const jsonMgr = require('../helpers/json-mgr');
 const getTickers = require('../helpers/get-tickers');
 const getTrend = require('../helpers/get-trend');
 const { avgArray } = require('../helpers/array-math');
 
 const dateStr = process.argv[2];
-const data = require(`../data/${dateStr}`);
+const data = require(`../data/watch-lists/${dateStr}`);
 
 const dataTicks = mapObject(data, getTickers);
 
@@ -129,7 +131,7 @@ const IGNORE_TRIPS = true;
 
 
 
-
+  await jsonMgr.save(`./data/day-perfs/${dateStr}.json`, listPerf);
 
 
 })();
