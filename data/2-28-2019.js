@@ -5,11 +5,14 @@ module.exports = {
   `,
   kickoYellow: `
     DRNG
-    ASKH`,
-  kickoBad: `GNCP
+    ASKH
+  `,
+  kickoBad: `
+    GNCP
     EFFI
     SPSO
     SIRC
     OTTV
-    COTE`
+    COTE
+  `
 };
