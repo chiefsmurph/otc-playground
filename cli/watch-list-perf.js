@@ -14,11 +14,11 @@ const jsonMgr = require('../helpers/json-mgr');
 
     const watchListPerf = await jsonMgr.get(`./data/day-perfs/${date}`);
     Object.keys(watchListPerf).forEach(watchList => {
-
-      perfsByWL[watchList] = [
+      perfsByWL[watchList] = [  
         ...perfsByWL[watchList] || [],
         {
           date: date.split('.')[0],
+          numPicks: watchListPerf[watchList].allTickers.length,
           ...watchListPerf[watchList]
         }
       ];
@@ -26,15 +26,20 @@ const jsonMgr = require('../helpers/json-mgr');
     });
 
   }
-  console.log(perfsByWL)
+
+  console.log('perfsByWL');
+  console.log('-----------------------');
+  console.log(perfsByWL);
+
   // aggregate stats for WL
   const firstList = perfsByWL[Object.keys(perfsByWL)[0]];
   const firstPerf = firstList[0];
   const perfKeys = Object.keys(firstPerf).filter(key => 
-    !['date', 'allTickers'].includes(key)
+    !['date', 'allTickers', 'numPicks'].includes(key)
   );
-  console.log({ firstList, perfKeys })
+  console.log('\n', { perfKeys })
   const wlStats = mapObject(perfsByWL, dayPerfs => {
+    const totalPicks = dayPerfs.reduce((acc, perf) => acc + perf.numPicks, 0);
     return perfKeys.reduce((acc, perfKey) => {
       const allPerfValues = dayPerfs.map(perf => perf[perfKey]);
       return {
@@ -44,17 +49,19 @@ const jsonMgr = require('../helpers/json-mgr');
           values: allPerfValues,
         }
       };
-    }, {});
+    }, { totalPicks });
   });
 
 
-
+  console.log('\n\nwlStats');
+  console.log('-----------------------');
   console.log(
     wlStats
   );
 
   // display sorted by perfKeys from wlStats
-
+  console.log()
+  console.log()
   perfKeys.forEach(perfKey => {
 
     console.log(`sorted by ${perfKey}`);
@@ -64,7 +71,8 @@ const jsonMgr = require('../helpers/json-mgr');
       .map(watchList => {
         return {
           watchList,
-          ...wlStats[watchList][perfKey]
+          ...wlStats[watchList][perfKey],
+          totalPicks: wlStats[watchList].totalPicks
         };
       })
       .sort((a, b) => b.avg - a.avg);

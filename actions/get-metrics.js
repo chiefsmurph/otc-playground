@@ -62,11 +62,11 @@ module.exports = async (browser, ticker) => {
                 ...acc,
                 [text.split(' ')[0]]: val
             }), {}),
-        }, n),
+        }, number),
 
         price,
         percentChange,
         dollarVolume: Math.round(price * volume),
-        turnover: Math.round(price * n(float))
+        turnover: Math.round(price * number(float))
     };;
 };

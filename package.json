@@ -5,6 +5,9 @@
   "repository": "git@github.com:chiefsmurph/otc-playground",
   "author": "chiefsmurph <chiefsmurph@gmail.com>",
   "license": "MIT",
+  "scripts": {
+    "watch-list-perf": "node cli/watch-list-perf"
+  },
   "dependencies": {
     "cheerio": "^1.0.0-rc.2",
     "console.table": "^0.10.0",

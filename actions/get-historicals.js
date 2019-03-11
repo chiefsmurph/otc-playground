@@ -8,7 +8,6 @@ const HEADERS = [
   'high',
   'low',
   'close',
-  'adj_close',
   'volume'
 ];
 
@@ -37,37 +36,51 @@ module.exports = async (browser, ticker) => {
       );
   });
   
+  // console.log({ data })
 
-  const objs = data
+  const hists = data
     .map(arr => 
       HEADERS.reduce((acc, header, ind) => ({
         ...acc,
         [header]: arr[ind]
       }), {})
     )
-    .map(obj => {
-      Object.keys(obj).forEach(key => {
+    .map(hist => {
+      Object.keys(hist).forEach(key => {
         if (key === 'date') {
-          obj[key] = new Date(obj[key]);
+          hist[key] = new Date(hist[key]);
         } else {
-          obj[key] = number(obj[key]);
+          hist[key] = number(hist[key]);
         }
       });
-      return obj;
+      return hist;
     });
 
-  const withTrend = objs.map((obj, index) => {
-    const prevDay = objs[index + 1];
-    if (!prevDay) return obj;
+  const withTrend = hists.map((hist, index) => {
+    const prevDay = hists[index + 1];
+    if (!prevDay) return hist;
     return {
-      ...obj,
-      trend: getTrend(prevDay.close, obj.close)
+      ...hist,
+      trend: getTrend(prevDay.close, hist.close)
     };
   });
 
+  const allVols = withTrend.map(hist => hist.volume).filter(Boolean);
+  const maxVol = Math.max(...allVols);
+  const minVol = Math.min(...allVols);
+  // console.log({ maxVol, minVol });
+  const spread = maxVol - minVol;
+  const withVolumePerc = withTrend.map(hist => {
+    const { volume } = hist;
+    const volMinusMin = volume - minVol;
+    return {
+      ...hist,
+      volumeRatio: volMinusMin / spread * 100
+    };
+  });
 
   console.log(`got historicals for ${ticker}`);
   await page.close();
-  return withTrend;
+  return withVolumePerc;
 
 };
