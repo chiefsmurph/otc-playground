@@ -1,4 +1,8 @@
 module.exports = {
+  myCreme: `
+    ETFM
+    GXXM
+  `,
   myPicks: `
     JPEX
     TRTC
@@ -9,12 +13,14 @@ module.exports = {
     UBID
     OTTV
     DVLP
-    ILUS
-    XALL
     GOVX
     DMAN
     NSPX
     CRSM
     ZMRK
+  `,
+  myAccumulators: `
+    ILUS
+    XALL
   `
 }

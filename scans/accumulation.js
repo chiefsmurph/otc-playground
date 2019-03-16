@@ -8,7 +8,7 @@ const cTable = require('console.table');
 const { pick } = require('underscore');
 const mapLimit = require('promise-map-limit');
 
-const getHistoricals = require('../actions/get-historicals');
+const getHistoricals = require('../scraping-actions/get-historicals');
 const getTrend = require('../helpers/get-trend');
 
 

@@ -1,6 +1,6 @@
 
 const puppeteer = require('puppeteer');
-const getMetrics = require('../actions/get-metrics');
+const getMetrics = require('../scraping-actions/get-metrics');
 const cTable = require('console.table');
 const mapLimit = require('promise-map-limit');
 const { pick } = require('underscore');

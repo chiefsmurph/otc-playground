@@ -4,7 +4,7 @@ const cTable = require('console.table');
 const { pick } = require('underscore');
 const mapLimit = require('promise-map-limit');
 
-const getMetrics = require('../actions/get-metrics');
+const getMetrics = require('../scraping-actions/get-metrics');
 
 
 
@@ -18,7 +18,7 @@ const COUNT = 55;
 (async () => {
 
 
-    const browser = await puppeteer.launch({ headless: false });
+    const browser = await puppeteer.launch({ headless: true });
 
     const response = JSON.parse(await request(`https://backend.otcmarkets.com/otcapi/market-data/advancers/current?tierGroup=ALL&page=1&pageSize=1000&priceMin=${MIN_PRICE}`));
     

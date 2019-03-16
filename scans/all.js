@@ -4,7 +4,7 @@ const cTable = require('console.table');
 const { pick } = require('underscore');
 const mapLimit = require('promise-map-limit');
 
-const getMetrics = require('../actions/get-metrics');
+const getMetrics = require('../scraping-actions/get-metrics');
 
 
 

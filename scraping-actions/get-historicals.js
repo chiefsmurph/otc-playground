@@ -58,10 +58,14 @@ module.exports = async (browser, ticker) => {
 
   const withTrend = hists.map((hist, index) => {
     const prevDay = hists[index + 1];
-    if (!prevDay) return hist;
-    return {
+    const withTSO = {
       ...hist,
-      trend: getTrend(prevDay.close, hist.close)
+      tso: getTrend(hist.open, hist.close)
+    };
+    if (!prevDay) return withTSO;
+    return {
+      ...withTSO,
+      tsc: getTrend(prevDay.close, hist.close)
     };
   });
 

@@ -1,0 +1,44 @@
+{
+  "numDays": 4,
+  "closedOut": true,
+  "listPerf": {
+    "myCreme": {
+      "allTickers": [
+        "ETFM",
+        "GXXM"
+      ],
+      "trendToHigh": 12,
+      "trendToLow": -45,
+      "avgTrendBetween": -16.5
+    },
+    "myPicks": {
+      "allTickers": [
+        "JPEX",
+        "TRTC",
+        "OCLN",
+        "TRDX",
+        "QSIM",
+        "UBID",
+        "OTTV",
+        "DVLP",
+        "GOVX",
+        "DMAN",
+        "NSPX",
+        "CRSM",
+        "ZMRK"
+      ],
+      "trendToHigh": 19.99,
+      "trendToLow": -24.56,
+      "avgTrendBetween": -2.29
+    },
+    "myAccumulators": {
+      "allTickers": [
+        "ILUS",
+        "XALL"
+      ],
+      "trendToHigh": 6.41,
+      "trendToLow": -28.23,
+      "avgTrendBetween": -10.91
+    }
+  }
+}

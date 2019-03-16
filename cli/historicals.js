@@ -1,5 +1,5 @@
 const puppeteer = require('puppeteer');
-const getHistoricals = require('../actions/get-historicals');
+const getHistoricals = require('../scraping-actions/get-historicals');
 
 
 (async () => {

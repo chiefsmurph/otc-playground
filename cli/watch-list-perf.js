@@ -12,7 +12,7 @@ const jsonMgr = require('../helpers/json-mgr');
   const watchListPerfs = await fs.readdir('./data/day-perfs');
   for (let date of watchListPerfs) {
 
-    const watchListPerf = await jsonMgr.get(`./data/day-perfs/${date}`);
+    const { listPerf: watchListPerf } = await jsonMgr.get(`./data/day-perfs/${date}`);
     Object.keys(watchListPerf).forEach(watchList => {
       perfsByWL[watchList] = [  
         ...perfsByWL[watchList] || [],

@@ -12,11 +12,11 @@ const getHistoricals = require('../scraping-actions/get-historicals');
 const getTrend = require('../helpers/get-trend');
 
 
-const MIN_PRICE = 0.0004;
-const MAX_PRICE = 0.0099;
+const MIN_PRICE = 0.0009;
+const MAX_PRICE = 0.03;
 const MIN_DOLLAR_VOLUME = 2000;
 const MIN_TRADE_COUNT = 6;
-const COUNT = 300;
+const COUNT = 305;
 
 
 
@@ -58,37 +58,35 @@ const COUNT = 300;
         } catch (e) {
             console.log(e)
         }
-        const recentHistorical = historicals[0];
         try {
           return {
             ...record,
-            ...recentHistorical,
-            bodyTrend: getTrend(
-              recentHistorical.open,
-              recentHistorical.close
-            ),
-            wickSize: getTrend(recentHistorical.close, recentHistorical.high) + getTrend(recentHistorical.low, recentHistorical.open)
+            historicals
           };
         } catch (e) {
-          console.log(e);
-          console.log({ ticker, recentHistorical });
+          console.log(e, record.symbol);
           return record;
         }
     });
 
+    const withDayStreak = withHistoricals.map(record => ({
+      ...pick(record, 'symbol'),
+      dayStreak: record.historicals.findIndex(hist => hist.tso <= 0 && hist.tsc <= 0)
+    }));
+
 
     console.table(
-      withHistoricals
+      withDayStreak
           // .filter(record => record.bodyTrend > 0)
-          .sort((a, b) => b.volumeRatio - a.volumeRatio)
+          .sort((a, b) => b.dayStreak - a.dayStreak)
     )
 
 
-    console.table(
-      withHistoricals
-          .filter(record => record.bodyTrend > 0)
-          .sort((a, b) => b.volumeRatio - a.volumeRatio)
-    )
+    // console.table(
+    //   withHistoricals
+    //       .filter(record => record.bodyTrend > 0)
+    //       .sort((a, b) => b.volumeRatio - a.volumeRatio)
+    // )
 
     console.log('-----------');
 
