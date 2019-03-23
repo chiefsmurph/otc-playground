@@ -1,0 +1,53 @@
+const DAYS_BACK = 3;
+
+module.exports = async (browser, ticker) => {
+
+  let page, boardUrl, allText;
+
+  // get board url
+  page = await browser.newPage();
+  try {
+    await page.setUserAgent('Mozilla/5.0 (Linux; Android 8.0.0; Nexus 5 Build/LMY48B; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/43.0.2357.65 Mobile Safari/537.36');
+    await page.goto(`https://investorshub.advfn.com/boards/getboards.aspx?searchstr=${ticker}`, { waitUntil: 'domcontentloaded' });
+    
+    const rateLimited = await page.evaluate(() => {
+      return document.body.textContent.includes('Rate limited.');
+    });
+
+    if (rateLimited) {
+      console.log('rate limited');
+      await page.waitFor(1000 * 15);
+    }
+
+    boardUrl = await page.evaluate((text) => {
+      const firstBoard = document.querySelector('table table td:nth-child(2) a');
+      return firstBoard.href;
+    });
+
+    await page.goto(boardUrl, { waitUntil: 'domcontentloaded' });
+    allText = await page.evaluate(daysBack => {
+      const trs = Array.from(
+        Array.from(
+          document.querySelectorAll('table > tbody > tr > td > div > table tbody')
+        )[2].querySelectorAll('tr')
+      ).slice(1).slice(0, -1);
+      const msIn90Days = 1000*60*60*24*daysBack;
+      const onlyWithin90Days = trs.filter(tr => {
+        const dateText = tr.querySelector('td:nth-child(4)').textContent;
+        const msDiff = Date.now() - new Date(dateText).getTime();
+        return msDiff < msIn90Days;
+      });
+      return onlyWithin90Days.reduce((acc, tr) => acc + tr.textContent, '');
+    }, DAYS_BACK);
+  } finally {
+    await page.waitFor(1000 * 2);
+    await page.close();
+  }
+
+  return {
+    // allText,
+    containsMerger: allText.toLowerCase().includes('merger'),
+    containsCustodianship: allText.toLowerCase().includes('custodianship'),
+    containsReinstatement: allText.toLowerCase().includes('reinstatement')
+  };
+};

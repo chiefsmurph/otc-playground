@@ -1,6 +1,6 @@
 {
-  "numDays": 3,
-  "closedOut": false,
+  "numDays": 4,
+  "closedOut": true,
   "listPerf": {
     "kicko": {
       "allTickers": [
@@ -17,9 +17,9 @@
         "IRNC",
         "GMGI"
       ],
-      "trendToHigh": 23.21,
-      "trendToLow": -12.59,
-      "avgTrendBetween": 5.31
+      "trendToHigh": 25.13,
+      "trendToLow": -13.09,
+      "avgTrendBetween": 6.02
     }
   }
 }

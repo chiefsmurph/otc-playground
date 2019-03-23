@@ -6,6 +6,7 @@
   "author": "chiefsmurph <chiefsmurph@gmail.com>",
   "license": "MIT",
   "scripts": {
+    "daily": "node cli/daily-run",
     "watch-list-perf": "node cli/watch-list-perf"
   },
   "dependencies": {
