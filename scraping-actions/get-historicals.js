@@ -12,7 +12,7 @@ const HEADERS = [
 ];
 
 
-module.exports = async (browser, ticker) => {
+module.exports = async (ticker) => {
 
   //https://finance.yahoo.com/quote/LEAS/history?p=LEAS
   // https://www.nasdaq.com/symbol/leas/historical

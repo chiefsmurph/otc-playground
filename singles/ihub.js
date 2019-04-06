@@ -4,9 +4,9 @@ const iHub = require('../scraping-actions/ihub');
 const ticker = process.argv[2] || 'LEAS';
 (async () => {
   
-  const browser = await puppeteer.launch({ headless: true });
+  await require('../helpers/init-browser')();
 
-  const iHubData = await iHub(browser, ticker);
+  const iHubData = await iHub(ticker);
   console.log({ iHubData})
 
   await browser.close();

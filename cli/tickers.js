@@ -20,12 +20,12 @@ console.log({ tickers });
 
 (async () => {
 
-    const browser = await puppeteer.launch({ headless: true });
+    await require('../helpers/init-browser')();
 
 
     let allMetrics = await mapLimit(tickers, 3, async ticker => ({
         ticker,
-        ...await getMetrics(browser, ticker)
+        ...await getMetrics(ticker)
     }));
 
     allMetrics = allMetrics.map(record => 

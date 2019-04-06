@@ -33,9 +33,9 @@ module.exports = async dateStr => {
     
 
   // get all historical data
-  const browser = await puppeteer.launch({ headless: true });
+  await require('../helpers/init-browser')();
   for (let ticker of uniqTicks) {
-    historicalCache[ticker] = await getHistoricals(browser, ticker);
+    historicalCache[ticker] = await getHistoricals(ticker);
   }
   await browser.close();
 

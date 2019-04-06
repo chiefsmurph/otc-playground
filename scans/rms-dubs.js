@@ -23,7 +23,7 @@ const COUNT = 300;
 (async () => {
 
 
-    const browser = await puppeteer.launch({ headless: true });
+    await require('../helpers/init-browser')();
 
     const response = JSON.parse(await request(`https://backend.otcmarkets.com/otcapi/market-data/active/current?tierGroup=ALL&page=1&pageSize=25000&sortOn=volume&priceMin=${MIN_PRICE}`));
     
@@ -52,7 +52,7 @@ const COUNT = 300;
       const { symbol: ticker } = record;
       let iHubData;
       try {
-        iHubData = await iHub(browser, ticker);
+        iHubData = await iHub(ticker);
         const hit = iHubData.containsMerger;
         console.log(`${++i}/${sliced.length}${hit ? ` - containsMerger ${ticker}` : ''}`);
       } catch (e) {

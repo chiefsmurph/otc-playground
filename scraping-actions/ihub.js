@@ -1,30 +1,44 @@
 const DAYS_BACK = 3;
 
-module.exports = async (browser, ticker) => {
-
-  let page, boardUrl, allText;
-
-  // get board url
-  page = await browser.newPage();
+const getBoardUrl = async ticker => {
+  
+  console.log('getting board url for ', ticker);
+  
   try {
-    await page.setUserAgent('Mozilla/5.0 (Linux; Android 8.0.0; Nexus 5 Build/LMY48B; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/43.0.2357.65 Mobile Safari/537.36');
+    const page = await browser.newPage();
+    // await page.setUserAgent('Mozilla/5.0 (Linux; Android 8.0.0; Nexus 5 Build/LMY48B; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/43.0.2357.65 Mobile Safari/537.36');
     await page.goto(`https://investorshub.advfn.com/boards/getboards.aspx?searchstr=${ticker}`, { waitUntil: 'domcontentloaded' });
-    
+    await page.waitFor(3000);
     const rateLimited = await page.evaluate(() => {
       return document.body.textContent.includes('Rate limited.');
     });
-
+  
     if (rateLimited) {
       console.log('rate limited');
       await page.waitFor(1000 * 15);
     }
-
-    boardUrl = await page.evaluate((text) => {
+  
+    const boardUrl = await page.evaluate(() => {
       const firstBoard = document.querySelector('table table td:nth-child(2) a');
       return firstBoard.href;
     });
+    
+    return boardUrl;
+  } finally {
+    console.log('page closing')
+    await page.close();
+  }
+  
+};
 
+module.exports = async (ticker, boardUrl) => {
+
+  let page, allText;
+  try {
+    boardUrl = boardUrl || await getBoardUrl(ticker);
+    page = await browser.newPage();
     await page.goto(boardUrl, { waitUntil: 'domcontentloaded' });
+    await page.waitFor(3000);
     allText = await page.evaluate(daysBack => {
       const trs = Array.from(
         Array.from(
@@ -39,6 +53,8 @@ module.exports = async (browser, ticker) => {
       });
       return onlyWithin90Days.reduce((acc, tr) => acc + tr.textContent, '');
     }, DAYS_BACK);
+  } catch (e) {
+    console.error(e, 'error', ticker);
   } finally {
     await page.waitFor(1000 * 2);
     await page.close();

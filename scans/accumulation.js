@@ -23,8 +23,7 @@ const COUNT = 300;
 
 (async () => {
 
-
-    const browser = await puppeteer.launch({ headless: true });
+    await require('../helpers/init-browser')();
 
     const response = JSON.parse(await request(`https://backend.otcmarkets.com/otcapi/market-data/active/current?tierGroup=ALL&page=1&pageSize=25000&sortOn=volume&priceMin=${MIN_PRICE}`));
     
@@ -53,7 +52,7 @@ const COUNT = 300;
     const withHistoricals = await mapLimit(sliced, 14, async record => {
         let historicals;
         try {
-            historicals = await getHistoricals(browser, record.symbol);
+            historicals = await getHistoricals(record.symbol);
             console.log(`${++i}/${sliced.length}`);
         } catch (e) {
             console.log(e)

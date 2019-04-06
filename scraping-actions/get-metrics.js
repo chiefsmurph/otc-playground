@@ -3,7 +3,7 @@ const { mapObject } = require('underscore');
 const mapLimit = require('promise-map-limit');
 const request = require('request-promise');
 
-module.exports = async (browser, ticker) => {
+module.exports = async (ticker) => {
     const page = await browser.newPage();
     await page.goto(`https://www.otcmarkets.com/stock/${ticker}/security`, { waitUntil: 'networkidle2' });
 
