@@ -20,7 +20,7 @@ const scrapeStocks = async url => {
         boardUrl: tr.querySelector('td:nth-child(2) a').href
       }));
     }, url.includes('breakout') ? 6 : 5);
-    return data;
+    return data.filter(stock => Boolean(stock.symbol) && Boolean(stock.boardUrl));
   } catch (e) {
     console.error(e);
   } finally {

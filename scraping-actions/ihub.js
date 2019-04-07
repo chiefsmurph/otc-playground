@@ -53,17 +53,15 @@ module.exports = async (ticker, boardUrl) => {
       });
       return onlyWithin90Days.reduce((acc, tr) => acc + tr.textContent, '');
     }, DAYS_BACK);
-  } catch (e) {
-    console.error(e, 'error', ticker);
+    return {
+      // allText,
+      containsMerger: allText.toLowerCase().includes('merger'),
+      containsCustodianship: allText.toLowerCase().includes('custodianship'),
+      containsReinstatement: allText.toLowerCase().includes('reinstatement')
+    };
   } finally {
     await page.waitFor(1000 * 2);
     await page.close();
   }
-
-  return {
-    // allText,
-    containsMerger: allText.toLowerCase().includes('merger'),
-    containsCustodianship: allText.toLowerCase().includes('custodianship'),
-    containsReinstatement: allText.toLowerCase().includes('reinstatement')
-  };
+  
 };
