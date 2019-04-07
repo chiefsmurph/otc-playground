@@ -7,6 +7,7 @@ module.exports = async (
   priceMin = 0.001,    // dubs
   priceMax = 0.0099
 ) => {
+  console.log('getting OTCM-SCANNER collection...');
   console.log({
     priceMin,
     priceMax

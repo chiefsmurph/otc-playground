@@ -2,10 +2,10 @@ const DAYS_BACK = 3;
 
 const getBoardUrl = async ticker => {
   
-  console.log('getting board url for ', ticker);
-  
+  // console.log('getting board url for ', ticker);
+  let page;
   try {
-    const page = await browser.newPage();
+    page = await browser.newPage();
     // await page.setUserAgent('Mozilla/5.0 (Linux; Android 8.0.0; Nexus 5 Build/LMY48B; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/43.0.2357.65 Mobile Safari/537.36');
     await page.goto(`https://investorshub.advfn.com/boards/getboards.aspx?searchstr=${ticker}`, { waitUntil: 'domcontentloaded' });
     await page.waitFor(3000);
@@ -25,7 +25,7 @@ const getBoardUrl = async ticker => {
     
     return boardUrl;
   } finally {
-    console.log('page closing')
+    // console.log('page closing')
     await page.close();
   }
   
@@ -57,11 +57,16 @@ module.exports = async (ticker, boardUrl) => {
       // allText,
       containsMerger: allText.toLowerCase().includes('merger'),
       containsCustodianship: allText.toLowerCase().includes('custodianship'),
-      containsReinstatement: allText.toLowerCase().includes('reinstatement')
-    };
+      containsReinstatement: allText.toLowerCase().includes('reinstatement'),
+      containsBigWeek: allText.toLowerCase().includes('big week')
+    }
+  } catch (e) {
+    throw 'unable to find iHub board';
   } finally {
-    await page.waitFor(1000 * 2);
-    await page.close();
+    if (page) {
+      await page.waitFor(1000 * 2);
+      await page.close();
+    }
   }
   
 };

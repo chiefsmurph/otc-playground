@@ -7,23 +7,20 @@ const { pick, omit } = require('underscore');
 const mapLimit = require('promise-map-limit');
 
 const iHub = require('../scraping-actions/ihub');
-const otcmScanner = require('../collections/otcm-scanner');
-const iHubHot = require('../collections/ihub-hot');
 
 const MIN_PRICE = 0.0008;
 const MAX_PRICE = 0.0019;
-const MIN_DOLLAR_VOLUME = 2000;
-const MIN_TRADE_COUNT = 4;
 const COUNT = 700;
 
-
+const collectionStr = process.argv[2] || 'all';
+const collectionFn = require(`../collections/${collectionStr}`);
 
 
 (async () => {
 
     await require('../helpers/init-browser')();
     
-    const records = await iHubHot(MIN_PRICE, MAX_PRICE);
+    const records = await collectionFn(MIN_PRICE, MAX_PRICE);
     const sliced = records.slice(0, COUNT);
     console.log('total records', records.length);
     console.log('of interest', sliced.length);
@@ -38,9 +35,9 @@ const COUNT = 700;
         const hits = Object.keys(iHubData).filter(key => iHubData[key]);
         hit = hits.length;
         const hitStr = hit ? hits.join('/') : '';
-        console.log([`${++i}/${sliced.length}`, hitStr, symbol].filter(Boolean).join(' - '));
+        console.log([`${++i}/${sliced.length}`, symbol, hitStr].filter(Boolean).join(' - '));
       } catch (e) {
-        console.log(e, symbol)
+        console.log([`${++i}/${sliced.length}`, symbol, e].filter(Boolean).join(' - '));
       }
       await new Promise(res => setTimeout(res, 500));
       return {

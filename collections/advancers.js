@@ -10,8 +10,8 @@ module.exports = async (
   priceMin = MIN_PRICE,    // dubs
   priceMax = MAX_PRICE
 ) => {
-  console.log('getting ACTIVE collection...');
-  const response = JSON.parse(await request(`https://backend.otcmarkets.com/otcapi/market-data/active/current?tierGroup=ALL&page=1&pageSize=25000&sortOn=volume&priceMin=${priceMin}`));
+  console.log('getting ADVANCERS collection...');
+  const response = JSON.parse(await request(`https://backend.otcmarkets.com/otcapi/market-data/advancers/current?tierGroup=ALL&page=1&pageSize=25000&sortOn=volume&priceMin=${priceMin}`));
   console.table(response.records);
 
 

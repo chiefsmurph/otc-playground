@@ -30,6 +30,8 @@ const scrapeStocks = async url => {
 
 
 module.exports = async () => {
+  console.log('getting IHUB-HOT collection...');
+
   const scrapedStocks = {};
   for (let board of Object.keys(iHubUrls)) {
     const url = iHubUrls[board];
