@@ -1,5 +1,5 @@
 {
-  "numDays": 4,
+  "numDays": 8,
   "closedOut": true,
   "listPerf": {
     "kicko": {
@@ -9,8 +9,8 @@
         "CXCQ"
       ],
       "trendToHigh": 18.1,
-      "trendToLow": -58.9,
-      "avgTrendBetween": -20.4
+      "trendToLow": -63.89,
+      "avgTrendBetween": -22.9
     },
     "kickoYellow": {
       "allTickers": [
@@ -21,9 +21,9 @@
         "SNMN",
         "SWRM"
       ],
-      "trendToHigh": 21.96,
-      "trendToLow": -35.21,
-      "avgTrendBetween": -6.63
+      "trendToHigh": 26.72,
+      "trendToLow": -37.95,
+      "avgTrendBetween": -5.61
     },
     "kickoBad": {
       "allTickers": [
@@ -44,9 +44,9 @@
         "MDTR",
         "AVOZ"
       ],
-      "trendToHigh": 22.12,
-      "trendToLow": -36.82,
-      "avgTrendBetween": -7.35
+      "trendToHigh": 39.83,
+      "trendToLow": -37.33,
+      "avgTrendBetween": 1.25
     }
   }
 }

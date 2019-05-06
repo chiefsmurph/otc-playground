@@ -14,9 +14,9 @@ let tickerPerf = {};
 let listPerf = {};
 
 
-const MAX_DAYS = 4;
 const IGNORE_TRIPS = true;
 
+const { daysToAnalyze } = require('../settings');
 
 module.exports = async dateStr => {
 
@@ -29,28 +29,38 @@ module.exports = async dateStr => {
     .flatten()
     .uniq()
     .value();
-
     
 
   // get all historical data
   await require('../helpers/init-browser')();
-  for (let ticker of uniqTicks) {
-    historicalCache[ticker] = await getHistoricals(ticker);
-  }
+  await mapLimit(uniqTicks, 3, async ticker => {
+    const hists = await getHistoricals(ticker);
+    if (hists && hists.length) {
+      historicalCache[ticker] = hists;
+    } else {
+      console.log('unable to get historicals for ', ticker);
+    }
+  });
   await browser.close();
 
 
   let numDays;
   // calc ticker performance
   const dateAsDate = new Date(dateStr);
-  tickerPerf = mapObject(historicalCache, historicals => {
+  tickerPerf = mapObject(historicalCache, (historicals, key) => {
 
     // construct array of only historicals following dateStr
     const foundIndex = historicals.findIndex(hist => hist.date.getTime() === dateAsDate.getTime());
     let followingDays = historicals.slice(0, foundIndex).reverse();
-    followingDays = followingDays.slice(0, MAX_DAYS);
+    followingDays = followingDays.slice(0, daysToAnalyze);
     numDays = numDays || followingDays.length;
 
+    console.log({
+      key,
+      historicals,
+      foundIndex,
+      followingDays
+    })
     // important prices
     const buyPrice = followingDays[0].open;
     const max = Math.max(...followingDays.map(hist => hist.high));
@@ -85,6 +95,7 @@ module.exports = async dateStr => {
   listPerf = mapObject(dataTicks, tickers => {
 
     return tickers
+      .filter(ticker => Object.keys(historicalCache).includes(ticker))
       .filter(ticker => !IGNORE_TRIPS || tickerPerf[ticker].prices.buyPrice >= .001)
       .map(ticker => ({
         ticker,
@@ -129,7 +140,7 @@ module.exports = async dateStr => {
 
   await jsonMgr.save(`./data/day-perfs/${dateStr}.json`, {
     numDays,
-    closedOut: numDays === MAX_DAYS,
+    closedOut: numDays === daysToAnalyze,
     listPerf
   });
 

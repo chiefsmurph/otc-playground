@@ -21,7 +21,7 @@ const collectionFn = require(`../collections/${collectionStr}`);
     await require('../helpers/init-browser')();
     
     const records = await collectionFn(MIN_PRICE, MAX_PRICE);
-    const sliced = records.slice(0, COUNT);
+    const sliced = records.slice(0, COUNT).slice(145).slice(0, 50);
     console.log('total records', records.length);
     console.log('of interest', sliced.length);
     console.log(sliced.map(t => t.symbol));

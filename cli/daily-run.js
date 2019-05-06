@@ -3,6 +3,7 @@ const jsonMgr = require('../helpers/json-mgr');
 const dayPerfAction = require('../app-actions/day-perf');
 
 const noExt = file => file.split('.')[0];
+const { daysToAnalyze } = require('../settings');
 
 (async () => {
 
@@ -10,7 +11,7 @@ const noExt = file => file.split('.')[0];
   const dayPerfs = await fs.readdir('./data/day-perfs');
   const closedOutDayPerfs = dayPerfs.filter(file => {
     const json = require(`../data/day-perfs/${file}`);
-    return json.closedOut;
+    return json.numDays === daysToAnalyze;
   }).map(noExt);
   
   const wlNeedAnalyzing = watchLists.filter(wl => {

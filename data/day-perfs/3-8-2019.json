@@ -1,5 +1,5 @@
 {
-  "numDays": 4,
+  "numDays": 8,
   "closedOut": true,
   "listPerf": {
     "myCreme": {
@@ -8,8 +8,8 @@
         "GXXM"
       ],
       "trendToHigh": 12,
-      "trendToLow": -45,
-      "avgTrendBetween": -16.5
+      "trendToLow": -65.25,
+      "avgTrendBetween": -26.63
     },
     "myPicks": {
       "allTickers": [
@@ -21,15 +21,14 @@
         "UBID",
         "OTTV",
         "DVLP",
-        "GOVX",
         "DMAN",
         "NSPX",
         "CRSM",
         "ZMRK"
       ],
-      "trendToHigh": 19.99,
-      "trendToLow": -24.56,
-      "avgTrendBetween": -2.29
+      "trendToHigh": 29.96,
+      "trendToLow": -31.75,
+      "avgTrendBetween": -0.9
     },
     "myAccumulators": {
       "allTickers": [
@@ -37,8 +36,8 @@
         "XALL"
       ],
       "trendToHigh": 6.41,
-      "trendToLow": -28.23,
-      "avgTrendBetween": -10.91
+      "trendToLow": -37.2,
+      "avgTrendBetween": -15.39
     }
   }
 }
