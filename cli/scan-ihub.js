@@ -1,10 +1,10 @@
-const dailyRun = require('../app-actions/daily-run');
+const scanIhub = require('../app-actions/scan-ihub');
 (async () => {
   
   // init
   await require('../helpers/init-browser')();
 
-  await dailyRun();
+  await scanIhub();
 
   // un-init
   await browser.close();

@@ -10,7 +10,7 @@ module.exports = async () => {
   // scan ihub
 
   const todayDate = getDatestr();
-  const hits = await ihubScan(7);
+  const hits = await ihubScan(300);
   // add to data/watch-lists
   console.log(hits);
 
