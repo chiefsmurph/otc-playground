@@ -27,7 +27,7 @@ const collectionFn = require(`../collections/${collectionStr}`);
     console.log(sliced.map(t => t.symbol));
 
     let i = 0;
-    const withHits = await mapLimit(sliced, 5, async record => {
+    const withHits = await mapLimit(sliced, 1, async record => {
       const { symbol, boardUrl } = record;
       let iHubData, hit;
       try {

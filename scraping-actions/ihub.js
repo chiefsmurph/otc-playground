@@ -61,6 +61,7 @@ module.exports = async (ticker, boardUrl) => {
       containsBigWeek: allText.toLowerCase().includes('big week')
     }
   } catch (e) {
+    console.log(e);
     let bodyHTML = await page.evaluate(() => document.body.innerText);
     console.log(ticker, 'nope');
     console.log(bodyHTML);
