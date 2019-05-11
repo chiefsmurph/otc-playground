@@ -11,6 +11,10 @@ const { daysToAnalyze } = require('../settings');
   const dayPerfs = await fs.readdir('./data/day-perfs');
   const closedOutDayPerfs = dayPerfs.filter(file => {
     const json = require(`../data/day-perfs/${file}`);
+    console.log({
+      file,
+      json
+    });
     return json.numDays === daysToAnalyze;
   }).map(noExt);
   

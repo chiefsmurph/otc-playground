@@ -10,7 +10,7 @@ const iHub = require('../scraping-actions/ihub');
 
 const MIN_PRICE = 0.0008;
 const MAX_PRICE = 0.0019;
-const COUNT = 700;
+const COUNT = 300;
 
 const collectionStr = process.argv[2] || 'all';
 const collectionFn = require(`../collections/${collectionStr}`);
@@ -21,7 +21,7 @@ const collectionFn = require(`../collections/${collectionStr}`);
     await require('../helpers/init-browser')();
     
     const records = await collectionFn(MIN_PRICE, MAX_PRICE);
-    const sliced = records.slice(0, COUNT).slice(145).slice(0, 50);
+    const sliced = records.slice(0, COUNT);
     console.log('total records', records.length);
     console.log('of interest', sliced.length);
     console.log(sliced.map(t => t.symbol));
