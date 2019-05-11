@@ -16,12 +16,10 @@ const collectionStr = process.argv[2] || 'all';
 const collectionFn = require(`../collections/${collectionStr}`);
 
 
-(async () => {
+module.exports = async (count = COUNT) => {
 
-    await require('../helpers/init-browser')();
-    
     const records = await collectionFn(MIN_PRICE, MAX_PRICE);
-    const sliced = records.slice(0, COUNT);
+    const sliced = records.slice(0, count);
     console.log('total records', records.length);
     console.log('of interest', sliced.length);
     console.log(sliced.map(t => t.symbol));
@@ -54,5 +52,8 @@ const collectionFn = require(`../collections/${collectionStr}`);
       );
 
     console.table(onlyHits);
-    await browser.close();
-})();
+
+
+    return onlyHits;
+
+};

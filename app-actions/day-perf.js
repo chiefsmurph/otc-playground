@@ -16,7 +16,7 @@ let listPerf = {};
 
 const IGNORE_TRIPS = true;
 
-const { daysToAnalyze } = require('../settings');
+const { daysToAnalyze } = require('../config');
 
 module.exports = async dateStr => {
 
@@ -47,13 +47,20 @@ module.exports = async dateStr => {
   let numDays;
   // calc ticker performance
   const dateAsDate = new Date(dateStr);
+  let foundFutureHistoricals = false;
   tickerPerf = mapObject(historicalCache, (historicals, key) => {
 
     // construct array of only historicals following dateStr
-    const foundIndex = historicals.findIndex(hist => hist.date.getTime() === dateAsDate.getTime());
+    const foundIndex = historicals.findIndex(hist => hist.date.getTime() <= dateAsDate.getTime());
     let followingDays = historicals.slice(0, foundIndex).reverse();
     followingDays = followingDays.slice(0, daysToAnalyze);
     numDays = numDays || followingDays.length;
+
+    foundFutureHistoricals = foundFutureHistoricals || !!followingDays.length;
+    if (!followingDays.length) {
+      console.log('unable to find future hists for ', key);
+      return null;
+    }
 
     console.log({
       key,
@@ -84,12 +91,16 @@ module.exports = async dateStr => {
     };
 
   });
+
+  if (!foundFutureHistoricals) {
+    return console.log('Unable to find future historicals for any of these tickers.');
+  }
   
 
 
-  console.log(
-    JSON.stringify(tickerPerf, null, 2)
-  );
+  // console.log(
+  //   JSON.stringify(tickerPerf, null, 2)
+  // );
 
   // aggregate list performance
   listPerf = mapObject(dataTicks, tickers => {
@@ -110,7 +121,9 @@ module.exports = async dateStr => {
   );
 
 
-
+  console.log(
+    JSON.stringify(listPerf, null, 2)
+  );
 
   listPerf = mapObject(listPerf, tickerPerfs => {
 
@@ -132,9 +145,9 @@ module.exports = async dateStr => {
 
   });
 
-  console.log(
-    JSON.stringify(listPerf, null, 2)
-  );
+  // console.log(
+  //   JSON.stringify(listPerf, null, 2)
+  // );
 
 
 

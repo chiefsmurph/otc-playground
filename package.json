@@ -6,12 +6,16 @@
   "author": "chiefsmurph <chiefsmurph@gmail.com>",
   "license": "MIT",
   "scripts": {
+    "start": "pm2 start index.js --name otc-playground --node-args='--max-old-space-size=8000 --trace-warnings'",
     "daily": "node cli/daily-run",
     "watch-list-perf": "node cli/watch-list-perf"
   },
   "dependencies": {
     "cheerio": "^1.0.0-rc.2",
     "console.table": "^0.10.0",
+    "cron": "^1.7.1",
+    "gmail-send": "^1.2.14",
+    "js-combinatorics": "^0.5.4",
     "mz": "^2.7.0",
     "promise-map-limit": "^1.0.0",
     "puppeteer": "^1.12.2",
