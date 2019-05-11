@@ -26,7 +26,7 @@ const getBoardUrl = async ticker => {
     return boardUrl;
   } finally {
     // console.log('page closing')
-    await page.close();
+    page && await page.close();
   }
   
 };

@@ -32,7 +32,6 @@ module.exports = async dateStr => {
     
 
   // get all historical data
-  await require('../helpers/init-browser')();
   await mapLimit(uniqTicks, 3, async ticker => {
     const hists = await getHistoricals(ticker);
     if (hists && hists.length) {
@@ -41,7 +40,6 @@ module.exports = async dateStr => {
       console.log('unable to get historicals for ', ticker);
     }
   });
-  await browser.close();
 
 
   let numDays;

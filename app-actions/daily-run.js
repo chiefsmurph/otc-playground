@@ -28,5 +28,9 @@ module.exports = async () => {
     await dayPerfAction(date);
   }
 
+  console.log(
+    'done'
+  )
+
 
 };
