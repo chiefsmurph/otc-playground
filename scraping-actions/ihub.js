@@ -61,6 +61,9 @@ module.exports = async (ticker, boardUrl) => {
       containsBigWeek: allText.toLowerCase().includes('big week')
     }
   } catch (e) {
+    let bodyHTML = await page.evaluate(() => document.body.innerHTML);
+    console.log(ticker, 'nope');
+    console.log(bodyHTML);
     throw 'unable to find iHub board';
   } finally {
     if (page) {
