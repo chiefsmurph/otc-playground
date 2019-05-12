@@ -10,9 +10,10 @@ module.exports = (subject, body, to = credentials.username) => new Promise((reso
   subject = `otc-playground: ${subject}`;
   console.log(`sending email...to ${to}...`);
   console.log('subject', subject, 'body', body);
+  const monospace = str => `<div style="font-family: monospace">${str}</div>`;
   send({
       subject,
-      text: body,
+      html: monospace(body),
       to
   }, (err, res) => err ? reject(err) : resolve(res));
 });

@@ -1,6 +1,6 @@
 const fs = require('mz/fs');
 const jsonMgr = require('../helpers/json-mgr');
-const dayPerfAction = require('./day-perf');
+const analyzeDay = require('./analyze-day');
 
 const noExt = file => file.split('.')[0];
 const { daysToAnalyze } = require('../config');
@@ -25,8 +25,12 @@ module.exports = async () => {
   console.log('wlNeedAnalyzing', wlNeedAnalyzing);
   for (let date of wlNeedAnalyzing) {
     console.log(`ANALYZING WATCHLIST FOR DATE: ${date}`);
-    await dayPerfAction(date);
+    await analyzeDay(date);
   }
+
+  console.log(
+    'done'
+  )
 
 
 };

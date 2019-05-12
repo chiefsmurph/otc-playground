@@ -21,9 +21,7 @@ const COUNT = 300;
 
 
 
-(async () => {
-
-    await require('../helpers/init-browser')();
+module.exports = async () => {
 
     const response = JSON.parse(await request(`https://backend.otcmarkets.com/otcapi/market-data/active/current?tierGroup=ALL&page=1&pageSize=25000&sortOn=volume&priceMin=${MIN_PRICE}`));
     
@@ -107,15 +105,11 @@ const COUNT = 300;
     console.table(
       goodVol
           .sort((a, b) => b.accumulationScore - a.accumulationScore)
-    )
-    // console.log(
-    //     JSON.stringify(
-    //       withAccumulationScore,
-    //         null,
-    //         2
-    //     )
-    // )
+    );
 
+    return goodVol.map(record => record.symbol).map(symbol => ({
+      symbol,
+      accumulation: true
+    }));
 
-    await browser.close();
-})();
+};

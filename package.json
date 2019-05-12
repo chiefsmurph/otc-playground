@@ -7,7 +7,7 @@
   "license": "MIT",
   "scripts": {
     "start": "pm2 start index.js --name otc-playground --node-args='--max-old-space-size=8000 --trace-warnings'",
-    "daily": "node cli/daily-run",
+    "daily": "node run daily",
     "watch-list-perf": "node cli/watch-list-perf"
   },
   "dependencies": {
