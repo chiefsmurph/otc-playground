@@ -14,6 +14,11 @@ const COUNT = 300;
 
 module.exports = async (count = COUNT, collectionStr = 'all') => {
 
+    console.log({
+      count,
+      collectionStr
+    });
+
     const collectionFn = require(`../collections/${collectionStr}`);
     const records = await collectionFn(MIN_PRICE, MAX_PRICE);
     const sliced = records.slice(0, count);

@@ -1,6 +1,6 @@
 const gmailSend = require('gmail-send');
 const { gmail: credentials } = require('../config');
-
+console.log({ credentials })
 const send = gmailSend({
   user: credentials.username,
   pass: credentials.password

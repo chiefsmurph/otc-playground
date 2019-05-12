@@ -21,50 +21,27 @@ const COUNT = 300;
 
 
 
-module.exports = async () => {
-
-    const response = JSON.parse(await request(`https://backend.otcmarkets.com/otcapi/market-data/active/current?tierGroup=ALL&page=1&pageSize=25000&sortOn=volume&priceMin=${MIN_PRICE}`));
+module.exports = async (count = COUNT, collectionStr = 'all') => {
+    console.log({
+      count,
+      collectionStr
+    });
     
-    console.table(response.records);
-
-    // response.records.forEach(({ symbol, pctChange, tradeCount, dollarVolume }) => {
-    //     console.log(pctChange, symbol, tradeCount, dollarVolume);
-    // });
-
-    const { records } = response;
-    console.log('record count', records.length);
-    const filtered = records
-      .filter(r => r.pctChange < 20)
-      .filter(r => r.price < MAX_PRICE)
-      .filter(r => r.dollarVolume >= MIN_DOLLAR_VOLUME)
-      .filter(r => r.tradeCount >= MIN_TRADE_COUNT)
-      .map(record =>
-          pick(record, ['symbol', 'pctChange', 'price'])
-      );
-
-
-    const sliced = filtered.slice(0, COUNT);
+    const collectionFn = require(`../collections/${collectionStr}`);
+    const records = await collectionFn(MIN_PRICE, MAX_PRICE);
+    const sliced = records.slice(0, count);
     console.log('total of interest:', sliced.length);
 
     let i = 0;
     const withHistoricals = await mapLimit(sliced, 14, async record => {
         let historicals;
         try {
-            historicals = await getHistoricals(record.symbol);
-            console.log(`${++i}/${sliced.length}`);
-        } catch (e) {
-            console.log(e)
-        }
-        const recentHistorical = historicals[0];
-        try {
+          historicals = await getHistoricals(record.symbol);
+          console.log(`${++i}/${sliced.length}`);
+          const recentHistorical = historicals[0];
           return {
             ...record,
-            ...recentHistorical,
-            bodyTrend: getTrend(
-              recentHistorical.open,
-              recentHistorical.close
-            ),
-            wickSize: getTrend(recentHistorical.close, recentHistorical.high) + getTrend(recentHistorical.low, recentHistorical.open)
+            recentHistorical,
           };
         } catch (e) {
           console.log(e);
@@ -73,11 +50,34 @@ module.exports = async () => {
         }
     });
 
+    let withMetrics = withHistoricals
+      .filter(record => record.recentHistorical && record.recentHistorical.open);
 
+    console.log({
+      withHistoricals,
+      withMetricsCounts: withMetrics.length
+    })
+    withMetrics = withMetrics
+      .map(record => {
+        const { recentHistorical } = record;
+        return {
+          ...record,
+          bodyTrend: getTrend(
+            recentHistorical.open,
+            recentHistorical.close
+          ),
+          wickSize: (
+            getTrend(recentHistorical.close, recentHistorical.high) 
+            + getTrend(recentHistorical.low, recentHistorical.open)
+          )
+        };
+      });
 
-    const withVolumeToChangeRatio = withHistoricals.map(record => ({
+    console.log('here')
+
+    const withVolumeToChangeRatio = withMetrics.map(record => ({
       ...record,
-      volumeToChangeRatio: record.volumeRatio / record.bodyTrend
+      volumeToChangeRatio: record.recentHistorical.volumeRatio / record.bodyTrend
     }));
 
     const withAccumulationScore = withVolumeToChangeRatio.map(record => ({
@@ -100,16 +100,31 @@ module.exports = async () => {
 
 
     const smallWicks = withAccumulationScore.filter(record => record.wickSize < 25);
-    const goodVol = smallWicks.filter(record => record.volumeRatio > 35);
+    const goodVol = smallWicks.filter(record => record.recentHistorical.volumeRatio > 35);
 
     console.table(
       goodVol
           .sort((a, b) => b.accumulationScore - a.accumulationScore)
     );
 
-    return goodVol.map(record => record.symbol).map(symbol => ({
-      symbol,
-      accumulation: true
-    }));
+    const accBreakdowns = {
+      inifinity: score => score === Number.POSITIVE_INFINITY,
+      gt300: score => score > 300,
+      lt25: score => score < 25
+    };
+
+
+
+    return goodVol
+      .map(record => ({
+        symbol: record.symbol,
+        ...Object.keys(accBreakdowns).filter(key => {
+          const fn = accBreakdowns[key];
+          return fn(record.accumulationScore);
+        }).reduce((acc, key) => ({
+          ...acc,
+          [`acc-${key}`]: true
+        }), {})
+      }));
 
 };

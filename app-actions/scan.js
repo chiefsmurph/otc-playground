@@ -16,19 +16,19 @@ const combineKeys = keys => {
 
 
 const scans = {
-  ihub: () => ihubScan(300),
-  accumulation: () => require('../scans/accumulation')()
+  ihub: ihubScan,
+  accumulation: require('../scans/accumulation')
 };
 
-module.exports = async (scanName = 'ihub', permuteKeys = true, skipSave = false) => {
+module.exports = async (scanName = 'ihub', permuteKeys = true, skipSave = false, ...rest) => {
 
   // scan ihub
-  console.log('running scan...');
+  console.log('running scan...', rest);
   console.log({ scanName, permuteKeys });
 
   const todayDate = getDatestr();
   const scanFn = scans[scanName];
-  const hits = await scanFn();
+  const hits = await scanFn(...rest);
   // add to data/watch-lists
   console.log(hits);
 
