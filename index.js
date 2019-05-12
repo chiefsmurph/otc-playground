@@ -1,6 +1,6 @@
 const regCronIncAfterSixThirty = require('./helpers/reg-cron-after-630');
-const dailyRun = require('./app-actions/daily-run');
-const scanIhub = require('./app-actions/scan-ihub');
+const analyzeWatchlists = require('./app-actions/analyze-watchlists');
+const scan = require('./app-actions/scan');
 
 (async () => {
 
@@ -10,20 +10,25 @@ const scanIhub = require('./app-actions/scan-ihub');
 
   // yarn daily
   regCronIncAfterSixThirty({
-    name: 'yarn daily',
-    run: [500],
-    fn: dailyRun
+    name: 'analyze watchlists',
+    run: [400],
+    fn: analyzeWatchlists
   });
-
-  setTimeout(scanIhub, 5000)
-
 
   // ihub scan
   regCronIncAfterSixThirty({
     name: 'ihub scan',
-    run: [400],
-    fn: scanIhub
+    run: [500],
+    fn: () => scan('ihub')
   });
+
+  // ihub scan
+  regCronIncAfterSixThirty({
+    name: 'accumulation scan',
+    run: [750],
+    fn: () => scan('accumulation')
+  });
+
 
   console.log('otc-playground initialized!');
   console.log(regCronIncAfterSixThirty.toString());

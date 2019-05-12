@@ -6,13 +6,14 @@ const jsonMgr = require('../helpers/json-mgr');
 
 const cTable = require('console.table');
 
-(async () => {
+module.exports = async (numDays = Number.POSITIVE_INFINITY) => {
 
   // aggregate all day-perfs by watch-list
   const perfsByWL = {};
 
   const watchListPerfs = await fs.readdir('./data/day-perfs');
-  for (let date of watchListPerfs) {
+  console.log({ watchListPerfs });
+  for (let date of watchListPerfs.slice(0 - numDays)) {
 
     const { listPerf: watchListPerf } = await jsonMgr.get(`./data/day-perfs/${date}`);
     Object.keys(watchListPerf).forEach(watchList => {
@@ -82,4 +83,4 @@ const cTable = require('console.table');
 
   });
 
-})();
+};

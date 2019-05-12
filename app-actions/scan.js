@@ -14,12 +14,21 @@ const combineKeys = keys => {
   return sorted.join('-');
 };
 
-module.exports = async () => {
+
+const scans = {
+  ihub: () => ihubScan(300),
+  accumulation: () => require('../scans/accumulation')()
+};
+
+module.exports = async (scanName = 'ihub', permuteKeys = true, skipSave = false) => {
 
   // scan ihub
+  console.log('running scan...');
+  console.log({ scanName, permuteKeys });
 
   const todayDate = getDatestr();
-  const hits = await ihubScan(300);
+  const scanFn = scans[scanName];
+  const hits = await scanFn();
   // add to data/watch-lists
   console.log(hits);
 
@@ -27,7 +36,9 @@ module.exports = async () => {
   hits.forEach(hit => {
     const { symbol } = hit;
     const containsKeys = Object.keys(hit).filter(key => key !== 'symbol');
-    const hitSets = Combinatorics.power(containsKeys).filter(arr => arr.length);
+    const hitSets = permuteKeys 
+      ? Combinatorics.power(containsKeys).filter(arr => arr.length) 
+      : containsKeys;
     hitSets.forEach(hitSet => {
       const combinedHitSet = combineKeys(hitSet);
       groupedByContains[combinedHitSet] = [
@@ -37,11 +48,11 @@ module.exports = async () => {
     });
   });
 
-  await jsonMgr.save(`./data/watch-lists/${todayDate}.json`, groupedByContains);
+  !skipSave && await jsonMgr.save(`./data/watch-lists/${todayDate}.json`, groupedByContains);
   
   console.log(JSON.stringify(groupedByContains));
 
   // send email
-  await sendEmail(`IHUB SCAN for ${todayDate}`, cTable.getTable(hits));
+  await sendEmail(`${scanName.toUpperCase()} SCAN for ${todayDate}`, cTable.getTable(hits));
 
 };
