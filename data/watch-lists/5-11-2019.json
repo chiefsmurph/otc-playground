@@ -1,11 +1,29 @@
 {
   "containsMerger": [
-    "XHUA"
+    "XHUA",
+    "LEAS",
+    "GRDO",
+    "SPRV",
+    "DAVC",
+    "VYST",
+    "GXXM",
+    "VSHC",
+    "RGBP",
+    "DMHI",
+    "ADNY"
   ],
   "containsReinstatement": [
-    "XHUA"
+    "XHUA",
+    "SHOM"
   ],
   "containsMerger-containsReinstatement": [
     "XHUA"
+  ],
+  "containsBigWeek": [
+    "GXXM",
+    "SOLI"
+  ],
+  "containsMerger-containsBigWeek": [
+    "GXXM"
   ]
 }
