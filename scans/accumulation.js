@@ -109,7 +109,7 @@ module.exports = async (count = COUNT, collectionStr = 'all') => {
 
     const accBreakdowns = {
       inifinity: score => score === Number.POSITIVE_INFINITY,
-      gt300: score => score > 300,
+      gt300: score => score > 300 && score !== Number.POSITIVE_INFINITY,
       lt25: score => score < 25
     };
 
