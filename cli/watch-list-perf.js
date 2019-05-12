@@ -4,6 +4,8 @@ const { mapObject } = require('underscore');
 const { avgArray } = require('../helpers/array-math');
 const jsonMgr = require('../helpers/json-mgr');
 
+const cTable = require('console.table');
+
 (async () => {
 
   // aggregate all day-perfs by watch-list
