@@ -14,12 +14,6 @@ const combineKeys = keys => {
   return sorted.join('-');
 };
 
-
-const scans = {
-  ihub: ihubScan,
-  accumulation: require('../scans/accumulation')
-};
-
 module.exports = async (scanName = 'ihub', permuteKeys = true, skipSave = false, ...rest) => {
 
   // scan ihub
@@ -27,7 +21,8 @@ module.exports = async (scanName = 'ihub', permuteKeys = true, skipSave = false,
   console.log({ scanName, permuteKeys });
 
   const todayDate = getDatestr();
-  const scanFn = scans[scanName];
+
+  const scanFn = require(`../scans/${scanName}`);
   const hits = await scanFn(...rest);
   // add to data/watch-lists
   console.log(hits);

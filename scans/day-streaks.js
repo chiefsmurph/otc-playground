@@ -18,53 +18,32 @@ const MIN_DOLLAR_VOLUME = 2000;
 const MIN_TRADE_COUNT = 6;
 const COUNT = 305;
 
-
-
-
-(async () => {
-
-
-    await require('../helpers/init-browser')();
-
-    const response = JSON.parse(await request(`https://backend.otcmarkets.com/otcapi/market-data/active/current?tierGroup=ALL&page=1&pageSize=25000&sortOn=volume`));
+module.exports = async (count = COUNT, collectionStr = 'all') => {
+    console.log({
+      count,
+      collectionStr
+    });
     
-    console.table(response.records);
-
-    // response.records.forEach(({ symbol, pctChange, tradeCount, dollarVolume }) => {
-    //     console.log(pctChange, symbol, tradeCount, dollarVolume);
-    // });
-
-    const { records } = response;
-    console.log('record count', records.length);
-    const filtered = records
-      .filter(r => r.pctChange < 20)
-      .filter(r => r.price > MIN_PRICE && r.price < MAX_PRICE)
-      .filter(r => r.dollarVolume >= MIN_DOLLAR_VOLUME)
-      .filter(r => r.tradeCount >= MIN_TRADE_COUNT)
-      .map(record =>
-          pick(record, ['symbol', 'pctChange', 'price'])
-      );
-
-
-    const sliced = filtered.slice(0, COUNT);
+    const collectionFn = require(`../collections/${collectionStr}`);
+    const records = await collectionFn(MIN_PRICE, MAX_PRICE);
+    const sliced = records.slice(0, count);
     console.log('total of interest:', sliced.length);
 
     let i = 0;
     const withHistoricals = await mapLimit(sliced, 14, async record => {
         let historicals;
         try {
-            historicals = await getHistoricals(record.symbol);
-            console.log(`${++i}/${sliced.length}`);
-        } catch (e) {
-            console.log(e)
-        }
-        try {
+          historicals = await getHistoricals(record.symbol);
+          console.log(`${++i}/${sliced.length}`);
+          const recentHistorical = historicals[0];
           return {
             ...record,
-            historicals
+            historicals,
+            recentHistorical,
           };
         } catch (e) {
-          console.log(e, record.symbol);
+          console.log(e);
+          console.log({ ticker, recentHistorical });
           return record;
         }
     });
@@ -73,6 +52,8 @@ const COUNT = 305;
       ...pick(record, 'symbol'),
       dayStreak: record.historicals.findIndex(hist => hist.tso <= 0 && hist.tsc <= 0)
     }));
+
+    console.log(withHistoricals)
 
 
     console.table(
@@ -90,6 +71,4 @@ const COUNT = 305;
 
     console.log('-----------');
 
-
-    await browser.close();
-})();
+};
