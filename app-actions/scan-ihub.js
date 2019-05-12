@@ -5,6 +5,15 @@ const getDatestr = require('../helpers/get-datestr');
 const Combinatorics = require('js-combinatorics');
 const jsonMgr = require('../helpers/json-mgr');
 
+const { lookups } = require('../scraping-actions/ihub');
+const lookupKeys = lookups.map(lookup => lookup.key);
+const combineKeys = keys => {
+  const sorted = keys.sort((a, b) =>
+    lookupKeys.indexOf(a) - lookupKeys.indexOf(b)
+  );
+  return sorted.join('-');
+};
+
 module.exports = async () => {
 
   // scan ihub
@@ -20,7 +29,7 @@ module.exports = async () => {
     const containsKeys = Object.keys(hit).filter(key => key !== 'symbol');
     const hitSets = Combinatorics.power(containsKeys).filter(arr => arr.length);
     hitSets.forEach(hitSet => {
-      const combinedHitSet = hitSet.join('-');
+      const combinedHitSet = combineKeys(hitSet);
       groupedByContains[combinedHitSet] = [
         ...(groupedByContains[combinedHitSet] || []),
         symbol

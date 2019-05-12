@@ -1,5 +1,19 @@
 const DAYS_BACK = 3;
 
+const lookupQueries = [
+  'merger',
+  'custodianship',
+  'reinstatement',
+  'big week'
+];
+
+const capitalized = str => str.charAt(0).toUpperCase() + str.slice(1);
+
+const lookups = lookupQueries.map(query => ({
+  query,
+  key: `contains${query.split(' ').map(capitalized).join('')}`
+}))
+
 const getBoardUrl = async ticker => {
   
   // console.log('getting board url for ', ticker);
@@ -31,7 +45,8 @@ const getBoardUrl = async ticker => {
   
 };
 
-module.exports = async (ticker, boardUrl) => {
+
+const scrapeIhub = async (ticker, boardUrl) => {
 
   let page, allText;
   try {
@@ -67,15 +82,18 @@ module.exports = async (ticker, boardUrl) => {
       await page.waitFor(1000 * 2);
       await page.close();
 
-      return {
-        // allText,
-        containsMerger: allText.toLowerCase().includes('merger'),
-        containsCustodianship: allText.toLowerCase().includes('custodianship'),
-        containsReinstatement: allText.toLowerCase().includes('reinstatement'),
-        containsBigWeek: allText.toLowerCase().includes('big week')
-      }
+      return lookups.reduce((acc, { key, query }) => ({
+        accc,
+        [key]: allText.toLowerCase().includes(query.toLowerCase()),
+      }), {});
     
     }
   }
   
+};
+
+module.exports = {
+  lookupQueries,
+  scrapeIhub,
+  lookups
 };
