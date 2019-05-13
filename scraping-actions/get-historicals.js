@@ -14,7 +14,7 @@ const HEADERS = [
 
 
 module.exports = cacheThis(async (ticker) => {
-  console.log(ticker)
+  
   //https://finance.yahoo.com/quote/LEAS/history?p=LEAS
   // https://www.nasdaq.com/symbol/leas/historical
   const page = await browser.newPage();
@@ -25,7 +25,8 @@ module.exports = cacheThis(async (ticker) => {
     else
       request.continue();
   });
-  await page.goto(`https://www.nasdaq.com/symbol/${ticker}/historical`, { waitUntil: 'domcontentloaded' });
+  const url = `https://www.nasdaq.com/symbol/${ticker}/historical`;
+  await page.goto(url, { waitUntil: 'domcontentloaded' });
   
   const data = await page.evaluate((text) => {
     const tableSel = '#historicalContainer table';
@@ -37,8 +38,8 @@ module.exports = cacheThis(async (ticker) => {
       );
   });
 
-  if (data || data.length) {
-    console.log('OH NO - NO HISTORICAL DATA', ticker)
+  if (!data || !data.length) {
+    console.log('OH NO - NO HISTORICAL DATA', ticker, url);
   }
   // console.log({ data })
 
