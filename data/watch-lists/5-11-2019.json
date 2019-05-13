@@ -1,5 +1,5 @@
 {
-  "containsMerger": [
+  "accumulation-containsMerger": [
     "XHUA",
     "LEAS",
     "GRDO",
@@ -12,18 +12,18 @@
     "DMHI",
     "ADNY"
   ],
-  "containsReinstatement": [
+  "accumulation-containsReinstatement": [
     "XHUA",
     "SHOM"
   ],
-  "containsMerger-containsReinstatement": [
+  "accumulation-containsMerger-containsReinstatement": [
     "XHUA"
   ],
-  "containsBigWeek": [
+  "accumulation-containsBigWeek": [
     "GXXM",
     "SOLI"
   ],
-  "containsMerger-containsBigWeek": [
+  "accumulation-containsMerger-containsBigWeek": [
     "GXXM"
   ]
 }
