@@ -29,6 +29,7 @@
   const fnToRun = getFile(toRun);
   await fnToRun(...args);
 
+  console.log('done running');
   // un-init
   await browser.close();
 })();

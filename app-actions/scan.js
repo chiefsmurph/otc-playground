@@ -54,31 +54,36 @@ module.exports = async (
   const scanFn = require(`../scans/${scanName}`);
   const hits = await scanFn(sliced, ...rest);
   // add to data/watch-lists
-  console.log(hits);
+  console.log({hits});
 
-  const groupedByHit = {};
-  hits.forEach(hit => {
-    const { symbol } = hit;
-    const hitKeys = Object.keys(hit).filter(key => key !== 'symbol');
-    const hitSets = permuteKeys 
-      ? Combinatorics.power(hitKeys).filter(arr => arr.length) 
-      : hitKeys;
-    
-    hitSets.forEach(hitSet => {
-      const prefixed = hitSet.map(key => `${scanName}-${key}`);
-      const combinedHitSet = combineKeys(prefixed);
-      groupedByHit[combinedHitSet] = [
-        ...(groupedByHit[combinedHitSet] || []),
-        symbol
-      ];
+  if (hits && hits.length) {
+
+    const groupedByHit = {};
+    hits.forEach(hit => {
+      const { symbol } = hit;
+      const hitKeys = Object.keys(hit).filter(key => key !== 'symbol');
+      const hitSets = permuteKeys 
+        ? Combinatorics.power(hitKeys).filter(arr => arr.length) 
+        : hitKeys;
+      
+      hitSets.forEach(hitSet => {
+        const prefixed = hitSet.map(key => `${scanName}-${key}`);
+        const combinedHitSet = combineKeys(prefixed);
+        groupedByHit[combinedHitSet] = [
+          ...(groupedByHit[combinedHitSet] || []),
+          symbol
+        ];
+      });
     });
-  });
-
-  !skipSave && await jsonMgr.save(`./data/watch-lists/${todayDate}.json`, groupedByHit);
   
-  console.log(JSON.stringify(groupedByHit));
-
-  // send email
-  await sendEmail(`${scanName.toUpperCase()} SCAN for ${todayDate}`, cTable.getTable(hits));
-
+    !skipSave && await jsonMgr.save(`./data/watch-lists/${todayDate}.json`, groupedByHit);
+    
+    console.log(JSON.stringify(groupedByHit));
+  
+    // send email
+    await sendEmail(`${scanName.toUpperCase()} SCAN for ${todayDate}`, cTable.getTable(hits));
+  
+  }
+  
+  console.log('done scanning');
 };
