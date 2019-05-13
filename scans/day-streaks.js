@@ -62,13 +62,11 @@ module.exports = async (count = COUNT, collectionStr = 'all') => {
           .sort((a, b) => b.dayStreak - a.dayStreak)
     )
 
-
-    // console.table(
-    //   withHistoricals
-    //       .filter(record => record.bodyTrend > 0)
-    //       .sort((a, b) => b.volumeRatio - a.volumeRatio)
-    // )
-
-    console.log('-----------');
+    return withDayStreak
+      .filter(record => record.dayStreak >= 4)
+      .map(record => ({
+        symbol: record.symbol,
+        [`${record.dayStreak}days`]: true
+      }));
 
 };
