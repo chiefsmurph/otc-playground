@@ -3,7 +3,7 @@ module.exports = (input, requireDollar) => {
   input = Array.isArray(input) ? input.join(' ') : input;
   const regex = new RegExp(`${requireDollar ? '\\$' : ''}([A-Z]{3,5})`, 'g');
   const matches = input.match(regex);
-  const tickers = matches ? matches.map(match => match.slice(1)) : [];
+  const tickers = requireDollar && matches && matches.length ? matches.map(match => match.slice(1)) : matches;
   // .map(t => t.toUpperCase());
-  return tickers;
+  return tickers || [];
 };
