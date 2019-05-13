@@ -17,7 +17,7 @@ const initBrowser = async () => {
   // const oldProxyUrl = getProxy();
   // const newProxyUrl = await proxyChain.anonymizeProxy(oldProxyUrl);
 
-  console.log({ oldProxyUrl, newProxyUrl })
+  // console.log({ oldProxyUrl, newProxyUrl })
   global.browser = await puppeteer.launch({ 
     headless: false, 
     args: [
