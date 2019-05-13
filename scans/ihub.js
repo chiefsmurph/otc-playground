@@ -3,14 +3,10 @@
 
 
 const cTable = require('console.table');
-const { pick, omit } = require('underscore');
+const { omit } = require('underscore');
 const mapLimit = require('promise-map-limit');
 
 const { scrapeIhub } = require('../scraping-actions/ihub');
-
-const MIN_PRICE = 0.0008;
-const MAX_PRICE = 0.0019;
-const COUNT = 300;
 
 module.exports = async records => {
 

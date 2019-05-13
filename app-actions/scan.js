@@ -55,7 +55,7 @@ module.exports = async (
   const groupedByContains = {};
   hits.forEach(hit => {
     const { symbol } = hit;
-    const containsKeys = Object.keys(hit).filter(key => key !== 'symbol');
+    const containsKeys = Object.keys(hit).filter(key => key !== 'symbol').map(key => `${scanName}-${key}`);
     const hitSets = permuteKeys 
       ? Combinatorics.power(containsKeys).filter(arr => arr.length) 
       : containsKeys;

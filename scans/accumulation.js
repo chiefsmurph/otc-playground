@@ -1,16 +1,7 @@
 // lots of volume little price actions (green)
-
-
-
-const puppeteer = require('puppeteer');
-const request = require('request-promise');
 const cTable = require('console.table');
-const { pick } = require('underscore');
-
 const addHistoricals = require('../helpers/add-historicals');
-
 const getTrend = require('../helpers/get-trend');
-
 
 module.exports = async records => {
 
