@@ -38,7 +38,7 @@ module.exports = cacheThis(async (ticker) => {
   });
 
   if (data || data.length) {
-    console.log('OH NO - NO HISTORICAL DATA')
+    console.log('OH NO - NO HISTORICAL DATA', ticker)
   }
   // console.log({ data })
 
@@ -87,7 +87,7 @@ module.exports = cacheThis(async (ticker) => {
     };
   });
 
-  console.log(`got historicals for ${ticker}`, withVolumePerc);
+  console.log(`got historicals for ${ticker}`);
   await page.waitFor(1500);
   await page.close();
   return withVolumePerc;
