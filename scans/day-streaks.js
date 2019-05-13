@@ -22,13 +22,13 @@ module.exports = async records => {
           .sort((a, b) => b.dayStreak - a.dayStreak)
     );
 
-    const dayStreaksOfInterest = [
-      ...new Set(withDayStreak.map(record => record.dayStreak))
-    ].filter(dayStreak => dayStreak > 0)
-    .filter(dayStreak => {
-      const count = withDayStreak.filter(record => record.dayStreak === dayStreak);
-      return count <= 3;
-    });
+    const uniqDayStreaks = [...new Set(withDayStreak.map(record => record.dayStreak))]
+    const dayStreaksOfInterest = uniqDayStreaks
+      .filter(dayStreak => dayStreak > 0)
+      .filter(dayStreak => {
+        const count = withDayStreak.filter(record => record.dayStreak === dayStreak);
+        return count <= 3;
+      });
 
     return withDayStreak
       .filter(record => dayStreaksOfInterest.includes(record.dayStreak))
