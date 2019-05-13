@@ -26,7 +26,7 @@ module.exports = async records => {
     const dayStreaksOfInterest = uniqDayStreaks
       .filter(dayStreak => dayStreak > 0)
       .filter(dayStreak => {
-        const count = withDayStreak.filter(record => record.dayStreak === dayStreak);
+        const count = withDayStreak.filter(record => record.dayStreak === dayStreak).length;
         return count <= 3;
       });
 
