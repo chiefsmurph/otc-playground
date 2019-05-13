@@ -1,6 +1,7 @@
 
 const number = require('../helpers/number');
-const getTrend = require('../helpers/get-trend')
+const getTrend = require('../helpers/get-trend');
+const cacheThis = require('../helpers/cache-this');
 
 const HEADERS = [
   'date',
@@ -12,7 +13,7 @@ const HEADERS = [
 ];
 
 
-module.exports = async (ticker) => {
+module.exports = cacheThis(async (ticker) => {
 
   //https://finance.yahoo.com/quote/LEAS/history?p=LEAS
   // https://www.nasdaq.com/symbol/leas/historical
@@ -87,4 +88,4 @@ module.exports = async (ticker) => {
   await page.close();
   return withVolumePerc;
 
-};
+}, 60);

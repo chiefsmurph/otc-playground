@@ -1,3 +1,5 @@
+const cacheThis = require('../helpers/cache-this');
+
 const DAYS_BACK = 3;
 
 const lookupQueries = [
@@ -94,6 +96,6 @@ const scrapeIhub = async (ticker, boardUrl) => {
 
 module.exports = {
   lookupQueries,
-  scrapeIhub,
+  scrapeIhub: cacheThis(scrapeIhub, 60),
   lookups
 };
