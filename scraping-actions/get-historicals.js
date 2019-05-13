@@ -36,8 +36,11 @@ module.exports = cacheThis(async (ticker) => {
         tdArrays.map(td => td.textContent.trim())
       );
   });
-  
-  console.log({ data })
+
+  if (data || data.length) {
+    console.log('OH NO - NO HISTORICAL DATA')
+  }
+  // console.log({ data })
 
   const hists = data
     .map(arr => 

@@ -15,19 +15,30 @@ const scan = require('./app-actions/scan');
     fn: analyzeWatchlists
   });
 
+  // day-streaks scan
+  regCronIncAfterSixThirty({
+    name: 'day-streaks scan',
+    run: [450],
+    fn: () => scan('day-streaks')
+  });
+    
   // ihub scan
   regCronIncAfterSixThirty({
-    name: 'ihub scan',
+    name: 'accumulation scan',
     run: [500],
-    fn: () => scan('ihub')
+    fn: () => scan('accumulation')
   });
 
   // ihub scan
   regCronIncAfterSixThirty({
-    name: 'accumulation scan',
-    run: [750],
-    fn: () => scan('accumulation')
+    name: 'ihub scan',
+    run: [600],
+    fn: () => scan('ihub')
   });
+
+  
+
+  
 
 
   console.log('otc-playground initialized!');
