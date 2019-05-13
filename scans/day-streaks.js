@@ -20,10 +20,18 @@ module.exports = async records => {
       withDayStreak
           // .filter(record => record.bodyTrend > 0)
           .sort((a, b) => b.dayStreak - a.dayStreak)
-    )
+    );
+
+    const dayStreaksOfInterest = [
+      ...Set(withDayStreak.map(record => record.dayStreak))
+    ].filter(dayStreak => dayStreak > 0)
+    .filter(dayStreak => {
+      const count = withDayStreak.filter(record => record.dayStreak === dayStreak);
+      return count <= 3;
+    });
 
     return withDayStreak
-      .filter(record => record.dayStreak >= 6)
+      .filter(record => dayStreaksOfInterest.includes(record.dayStreak))
       .map(record => ({
         symbol: record.symbol,
         [`${record.dayStreak}days`]: true
