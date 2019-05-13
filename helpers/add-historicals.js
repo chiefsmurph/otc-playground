@@ -16,7 +16,7 @@ module.exports = async records => {
         };
       } catch (e) {
         console.log(e);
-        console.log({ ticker, recentHistorical });
+        console.log({ ticker: record.symbol, recentHistorical });
         return record;
       }
   });
