@@ -2,10 +2,10 @@ const scan = require('./scan');
 
 module.exports = async () => {
   const scansToRun = {
+    'twitter': [undefined, null],  // not based on collection
     'day-streaks': true,
     'accumulation': true,
     'ihub': true,
-    'twitter': [undefined, null]  // not based on collection
   };
   console.log({ scansToRun });
   for (let scanName of Object.keys(scansToRun)) {
