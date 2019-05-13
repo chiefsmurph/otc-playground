@@ -12,7 +12,7 @@ module.exports = async (
 ) => {
   console.log('getting ACTIVE collection...');
   const response = JSON.parse(await request(`https://backend.otcmarkets.com/otcapi/market-data/active/current?tierGroup=ALL&page=1&pageSize=25000&sortOn=volume&priceMin=${priceMin}`));
-  console.table(response.records);
+  // console.table(response.records);
 
 
   const { records } = response;

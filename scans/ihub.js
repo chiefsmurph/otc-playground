@@ -12,23 +12,15 @@ const MIN_PRICE = 0.0008;
 const MAX_PRICE = 0.0019;
 const COUNT = 300;
 
-module.exports = async (count = COUNT, collectionStr = 'all') => {
+module.exports = async records => {
 
-    console.log({
-      count,
-      collectionStr
-    });
-
-    const collectionFn = require(`../collections/${collectionStr}`);
-    const records = await collectionFn(MIN_PRICE, MAX_PRICE);
-    const sliced = records.slice(0, count);
+    
     console.log('total records', records.length);
-    console.log('of interest', sliced.length);
-    const tickers = sliced.map(t => t.symbol);
+    const tickers = records.map(t => t.symbol);
     console.log(tickers);
 
     let i = 0;
-    const withHits = await mapLimit(sliced, 1, async record => {
+    const withHits = await mapLimit(records, 1, async record => {
       const { symbol, boardUrl } = record;
       let iHubData, hit;
       try {
@@ -36,9 +28,9 @@ module.exports = async (count = COUNT, collectionStr = 'all') => {
         const hits = Object.keys(iHubData).filter(key => iHubData[key]);
         hit = hits.length;
         const hitStr = hit ? hits.join('/') : '';
-        console.log([`${++i}/${sliced.length}`, symbol, hitStr].filter(Boolean).join(' - '));
+        console.log([`${++i}/${records.length}`, symbol, hitStr].filter(Boolean).join(' - '));
       } catch (e) {
-        console.log([`${++i}/${sliced.length}`, symbol, e].filter(Boolean).join(' - '));
+        console.log([`${++i}/${records.length}`, symbol, e].filter(Boolean).join(' - '));
       }
       await new Promise(res => setTimeout(res, 500));
       return {
@@ -57,9 +49,6 @@ module.exports = async (count = COUNT, collectionStr = 'all') => {
     console.table(onlyHits);
 
 
-    return {
-      tickers,
-
-    };
+    return onlyHits;
 
 };

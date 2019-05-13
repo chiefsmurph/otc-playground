@@ -83,7 +83,7 @@ const scrapeIhub = async (ticker, boardUrl) => {
       await page.close();
 
       return lookups.reduce((acc, { key, query }) => ({
-        accc,
+        ...acc,
         [key]: allText.toLowerCase().includes(query.toLowerCase()),
       }), {});
     
