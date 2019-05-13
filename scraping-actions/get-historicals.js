@@ -91,4 +91,4 @@ module.exports = cacheThis(async (ticker) => {
   await page.close();
   return withVolumePerc;
 
-}, 60);
+}, 200);

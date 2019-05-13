@@ -1,6 +1,6 @@
 const regCronIncAfterSixThirty = require('./helpers/reg-cron-after-630');
 const analyzeWatchlists = require('./app-actions/analyze-watchlists');
-const scan = require('./app-actions/scan');
+const runAllScans = require('./app-actions/run-all-scans');
 
 (async () => {
 
@@ -19,23 +19,9 @@ const scan = require('./app-actions/scan');
 
   // day-streaks scan
   regCronIncAfterSixThirty({
-    name: 'day-streaks scan',
+    name: 'scan time!',
     run: [450],
-    fn: () => scan('day-streaks')
-  });
-    
-  // accumulation scan
-  regCronIncAfterSixThirty({
-    name: 'accumulation scan',
-    run: [500],
-    fn: () => scan('accumulation')
-  });
-
-  // ihub scan
-  regCronIncAfterSixThirty({
-    name: 'ihub scan',
-    run: [600],
-    fn: () => scan('ihub')
+    fn: runAllScans
   });
 
 
