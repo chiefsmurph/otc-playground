@@ -23,7 +23,7 @@ module.exports = async records => {
     );
 
     const dayStreaksOfInterest = [
-      ...Set(withDayStreak.map(record => record.dayStreak))
+      ...new Set(withDayStreak.map(record => record.dayStreak))
     ].filter(dayStreak => dayStreak > 0)
     .filter(dayStreak => {
       const count = withDayStreak.filter(record => record.dayStreak === dayStreak);
