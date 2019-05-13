@@ -7,7 +7,9 @@ const { daysToAnalyze } = require('../config');
 
 module.exports = async () => {
 
-  const watchLists = (await fs.readdir('./data/watch-lists')).map(noExt);
+  const watchLists = (await fs.readdir('./data/watch-lists'))
+    .map(noExt)
+    .sort((a, b) => new Date(a) - new Date(b));
   const dayPerfs = await fs.readdir('./data/day-perfs');
   const closedOutDayPerfs = dayPerfs.filter(file => {
     const json = require(`../data/day-perfs/${file}`);
