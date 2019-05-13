@@ -8,10 +8,12 @@ module.exports = async records => {
   console.log('total records:', records.length);
 
   const withHistoricals = await addHistoricals(records);
-  const withRecentHist = withHistoricals.map(record => ({
-    ...record,
-    recentHistorical: record.historicals[0]
-  }));
+  const withRecentHist = withHistoricals
+    .filter(record => record.historicals && record.historicals.length)
+    .map(record => ({
+      ...record,
+      recentHistorical: record.historicals[0]
+    }));
 
   let withMetrics = withRecentHist
     .filter(record => record.recentHistorical && record.recentHistorical.open);
