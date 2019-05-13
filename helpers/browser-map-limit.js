@@ -10,7 +10,7 @@ Object.defineProperty(Array.prototype, 'chunk', {
   }
 });
 
-module.exports = async (collection, limit, asyncFn, browserRefresh = 15) => {
+module.exports = async (collection = [], limit, asyncFn, browserRefresh = 15) => {
   const chunked = collection.chunk(browserRefresh);
   let response = [];
   for (let chunk of chunked) {
