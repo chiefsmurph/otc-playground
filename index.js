@@ -15,6 +15,8 @@ const scan = require('./app-actions/scan');
     fn: analyzeWatchlists
   });
 
+  // scans
+
   // day-streaks scan
   regCronIncAfterSixThirty({
     name: 'day-streaks scan',
@@ -22,7 +24,7 @@ const scan = require('./app-actions/scan');
     fn: () => scan('day-streaks')
   });
     
-  // ihub scan
+  // accumulation scan
   regCronIncAfterSixThirty({
     name: 'accumulation scan',
     run: [500],
@@ -35,10 +37,6 @@ const scan = require('./app-actions/scan');
     run: [600],
     fn: () => scan('ihub')
   });
-
-  
-
-  
 
 
   console.log('otc-playground initialized!');
