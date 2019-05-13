@@ -53,7 +53,7 @@ module.exports = async (
   const scanFn = require(`../scans/${scanName}`);
   const hits = await scanFn(sliced, ...rest);
   // add to data/watch-lists
-  console.log({hits});
+  console.table({hits});
 
   if (hits && hits.length) {
 

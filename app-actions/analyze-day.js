@@ -24,7 +24,7 @@ module.exports = async dateStr => {
   // load watch list data and get uniq ticks
   const data = require(`../data/watch-lists/${dateStr}`);
   const dataTicks = mapObject(data, val => getTickers(val));
-  console.log({dataTicks})
+  // console.log({ dataTicks})
   const uniqTicks = chain(dataTicks)
     .values()
     .flatten()
@@ -62,12 +62,12 @@ module.exports = async dateStr => {
       return null;
     }
 
-    console.log({
-      key,
-      historicals,
-      foundIndex,
-      followingDays
-    })
+    // console.log({
+    //   key,
+    //   historicals,
+    //   foundIndex,
+    //   followingDays
+    // })
     // important prices
     const buyPrice = followingDays[0].open;
     const max = Math.max(...followingDays.map(hist => hist.high));

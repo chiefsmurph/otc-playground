@@ -6,6 +6,6 @@ module.exports = (input, requireDollar) => {
   // console.log({ input, matches, requireDollar })
   const tickers = requireDollar && matches && matches.length 
     ? matches.map(match => match.slice(1))
-    : [];
+    : matches || [];
   return tickers.map(t => t.toUpperCase());
 };
