@@ -12,7 +12,7 @@ module.exports = async username => {
   });
   const withTickers = data.map(tweet => ({
     ...tweet,
-    tickers: getTickers(tweet.text)
+    tickers: getTickers(tweet.text, true)
   }));
   const filtered = withTickers.filter(tweet => tweet.timestamp.includes('h') || tweet.timestamp.includes('m'));
   const onlyTickers = [
