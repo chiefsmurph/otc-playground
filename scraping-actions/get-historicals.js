@@ -14,7 +14,7 @@ const HEADERS = [
 
 
 module.exports = cacheThis(async (ticker) => {
-
+  console.log(ticker)
   //https://finance.yahoo.com/quote/LEAS/history?p=LEAS
   // https://www.nasdaq.com/symbol/leas/historical
   const page = await browser.newPage();
@@ -37,7 +37,7 @@ module.exports = cacheThis(async (ticker) => {
       );
   });
   
-  // console.log({ data })
+  console.log({ data })
 
   const hists = data
     .map(arr => 
@@ -84,7 +84,7 @@ module.exports = cacheThis(async (ticker) => {
     };
   });
 
-  console.log(`got historicals for ${ticker}`);
+  console.log(`got historicals for ${ticker}`, withVolumePerc);
   await page.close();
   return withVolumePerc;
 
