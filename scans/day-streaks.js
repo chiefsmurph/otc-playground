@@ -21,24 +21,7 @@ const COUNT = 305;
 module.exports = async records => {
     console.log('total of interest:', records.length);
 
-    let i = 0;
-    const withHistoricals = await mapLimit(records, 14, async record => {
-        let historicals;
-        try {
-          historicals = await getHistoricals(record.symbol);
-          console.log(`${++i}/${records.length}`);
-          const recentHistorical = historicals[0];
-          return {
-            ...record,
-            historicals,
-            recentHistorical,
-          };
-        } catch (e) {
-          console.log(e);
-          console.log({ ticker, recentHistorical });
-          return record;
-        }
-    });
+    const withHistoricals = await addHistoricals(records);
 
     const withDayStreak = withHistoricals.map(record => ({
       ...pick(record, 'symbol'),
@@ -55,7 +38,7 @@ module.exports = async records => {
     )
 
     return withDayStreak
-      .filter(record => record.dayStreak >= 4)
+      .filter(record => record.dayStreak >= 6)
       .map(record => ({
         symbol: record.symbol,
         [`${record.dayStreak}days`]: true
