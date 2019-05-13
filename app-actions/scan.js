@@ -43,8 +43,9 @@ module.exports = async (
     console.log('getting collection', collectionStr)
     const collectionFn = require(`../collections/${collectionStr}`);
     const records = await collectionFn(minPrice, maxPrice);
+    const sliced = records.slice(0, count);
     console.log({ totalCount: records.length, sliced: sliced.length });
-    return records.slice(0, count);
+    return sliced;
   })();
 
   // scan ihub
