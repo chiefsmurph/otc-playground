@@ -9,14 +9,13 @@ module.exports = async records => {
       try {
         historicals = await getHistoricals(record.symbol);
         console.log(`${++i}/${records.length}`);
-        const recentHistorical = historicals[0];
         return {
           ...record,
-          recentHistorical,
+          historicals,
         };
       } catch (e) {
         console.log(e);
-        console.log({ ticker: record.symbol, recentHistorical });
+        console.log({ ticker: record.symbol, historicals });
         return record;
       }
   });
