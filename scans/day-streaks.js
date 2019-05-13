@@ -18,23 +18,15 @@ const MIN_DOLLAR_VOLUME = 2000;
 const MIN_TRADE_COUNT = 6;
 const COUNT = 305;
 
-module.exports = async (count = COUNT, collectionStr = 'all') => {
-    console.log({
-      count,
-      collectionStr
-    });
-    
-    const collectionFn = require(`../collections/${collectionStr}`);
-    const records = await collectionFn(MIN_PRICE, MAX_PRICE);
-    const sliced = records.slice(0, count);
-    console.log('total of interest:', sliced.length);
+module.exports = async records => {
+    console.log('total of interest:', records.length);
 
     let i = 0;
-    const withHistoricals = await mapLimit(sliced, 14, async record => {
+    const withHistoricals = await mapLimit(records, 14, async record => {
         let historicals;
         try {
           historicals = await getHistoricals(record.symbol);
-          console.log(`${++i}/${sliced.length}`);
+          console.log(`${++i}/${records.length}`);
           const recentHistorical = historicals[0];
           return {
             ...record,
