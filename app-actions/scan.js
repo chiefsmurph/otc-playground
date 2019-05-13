@@ -52,26 +52,26 @@ module.exports = async (
   // add to data/watch-lists
   console.log(hits);
 
-  const groupedByContains = {};
+  const groupedByHit = {};
   hits.forEach(hit => {
     const { symbol } = hit;
-    const containsKeys = Object.keys(hit).filter(key => key !== 'symbol');
+    const hitKeys = Object.keys(hit).filter(key => key !== 'symbol');
     const hitSets = permuteKeys 
-      ? Combinatorics.power(containsKeys).filter(arr => arr.length) 
-      : containsKeys;
+      ? Combinatorics.power(hitKeys).filter(arr => arr.length) 
+      : hitKeys;
     const prefixed = hitSets.map(key => `${scanName}-${key}`);
     prefixed.forEach(hitSet => {
       const combinedHitSet = combineKeys(hitSet);
-      groupedByContains[combinedHitSet] = [
-        ...(groupedByContains[combinedHitSet] || []),
+      groupedByHit[combinedHitSet] = [
+        ...(groupedByHit[combinedHitSet] || []),
         symbol
       ];
     });
   });
 
-  !skipSave && await jsonMgr.save(`./data/watch-lists/${todayDate}.json`, groupedByContains);
+  !skipSave && await jsonMgr.save(`./data/watch-lists/${todayDate}.json`, groupedByHit);
   
-  console.log(JSON.stringify(groupedByContains));
+  console.log(JSON.stringify(groupedByHit));
 
   // send email
   await sendEmail(`${scanName.toUpperCase()} SCAN for ${todayDate}`, cTable.getTable(hits));
