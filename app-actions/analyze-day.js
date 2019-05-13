@@ -23,7 +23,8 @@ module.exports = async dateStr => {
 
   // load watch list data and get uniq ticks
   const data = require(`../data/watch-lists/${dateStr}`);
-  const dataTicks = mapObject(data, getTickers);
+  const dataTicks = mapObject(data, val => getTickers(val));
+  console.log({dataTicks})
   const uniqTicks = chain(dataTicks)
     .values()
     .flatten()
