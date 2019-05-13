@@ -46,6 +46,7 @@ module.exports = async dateStr => {
   // calc ticker performance
   const dateAsDate = new Date(dateStr);
   let foundFutureHistoricals = false;
+  
   tickerPerf = mapObject(historicalCache, (historicals, key) => {
 
     // construct array of only historicals following dateStr
@@ -123,6 +124,14 @@ module.exports = async dateStr => {
     JSON.stringify(listPerf, null, 2)
   );
 
+  Object.keys(listPerf).forEach(key => {
+    const val = listPerf[key];
+    if (!val || !val.length) {
+      console.log('deleting ', key);
+      delete listPerf[key];
+    }
+  });
+  
   listPerf = mapObject(listPerf, tickerPerfs => {
 
     const allPerfs = Object.keys(tickerPerfs[0]).slice(1);
