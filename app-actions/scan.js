@@ -34,18 +34,21 @@ module.exports = async (
 
   // fetch collection of stocks
   console.log({
+    scanName,
     count,
-    collectionStr
+    collectionStr,
+    permuteKeys
   });
 
-  const collectionFn = require(`../collections/${collectionStr}`);
-  const records = await collectionFn(minPrice, maxPrice);
-  const sliced = records.slice(0, count);
+  const sliced = collectionStr === 'none' || collectionStr === null ? [] : await (async () => {
+    const collectionFn = require(`../collections/${collectionStr}`);
+    const records = await collectionFn(minPrice, maxPrice);
+    console.log({ totalCount: records.length, sliced: sliced.length });
+    return records.slice(0, count);
+  });
 
   // scan ihub
   console.log('running scan...', rest);
-  console.log({ scanName, permuteKeys, totalCount: records.length, sliced: sliced.length });
-
   const todayDate = getDatestr();
 
   const scanFn = require(`../scans/${scanName}`);

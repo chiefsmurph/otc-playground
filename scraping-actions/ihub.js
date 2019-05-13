@@ -1,5 +1,4 @@
 const cacheThis = require('../helpers/cache-this');
-
 const DAYS_BACK = 3;
 
 const lookupQueries = [
@@ -26,7 +25,11 @@ const getBoardUrl = async ticker => {
     await page.goto(`https://investorshub.advfn.com/boards/getboards.aspx?searchstr=${ticker}`, { waitUntil: 'domcontentloaded' });
     await page.waitFor(3000);
     const rateLimited = await page.evaluate(() => {
-      return document.body.textContent.includes('Rate limited.');
+      const tweets = Array.from(document.querySelectorAll('.tweet:not(.user-pinned)'));
+      return tweets.map(node => ({
+        timestamp: node.querySelector('.js-short-timestamp').textContent,
+        text: node.querySelector('.tweet-text').textContent
+      }));
     });
   
     if (rateLimited) {
@@ -60,7 +63,7 @@ const scrapeIhub = async (ticker, boardUrl) => {
     console.log(e);
     let bodyHTML = await page.evaluate(() => document.body.innerText);
     console.log(ticker, 'nope');
-    console.log(bodyHTML);
+    // console.log(bodyHTML);
     throw 'unable to find iHub board';
   } finally {
     if (page) {
