@@ -88,6 +88,7 @@ module.exports = cacheThis(async (ticker) => {
   });
 
   console.log(`got historicals for ${ticker}`, withVolumePerc);
+  await page.waitFor(1500);
   await page.close();
   return withVolumePerc;
 

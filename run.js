@@ -13,15 +13,15 @@
   });
   console.log({ args })
   const toRun = args.shift();
-  
   // init
   await require('./helpers/init-browser')();
-  const folders = ['app-actions', 'cli', 'singles'];
+  const folders = ['app-actions', 'cli', 'singles', 'scraping-actions'];
   const getFile = file => {
     for (let folder of folders) {
       try {
-        const found = require(`./${folder}/${file}`);
-        console.log(`found in ${folder}`);
+        const path = `./${folder}/${file}`;
+        const found = require(path);
+        console.log(`found at ${path}`);
         return found;
       } catch (e) {}
     }

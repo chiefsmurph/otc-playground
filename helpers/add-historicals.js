@@ -1,10 +1,10 @@
-const mapLimit = require('promise-map-limit');
 const getHistoricals = require('../scraping-actions/get-historicals');
+const browserMapLimit = require('../helpers/browser-map-limit');
 
 module.exports = async records => {
 
   let i = 0;
-  return mapLimit(records, 14, async record => {
+  return browserMapLimit(records, 14, async record => {
       let historicals;
       try {
         historicals = await getHistoricals(record.symbol);

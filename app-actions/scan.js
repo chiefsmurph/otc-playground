@@ -14,6 +14,7 @@ const MAX_PRICE = 0.013;
 const { lookups } = require('../scraping-actions/ihub');
 const lookupKeys = lookups.map(lookup => lookup.key);
 const combineKeys = keys => {
+  console.log({ keys })
   const sorted = keys.sort((a, b) =>
     lookupKeys.indexOf(a) - lookupKeys.indexOf(b)
   );
@@ -59,9 +60,10 @@ module.exports = async (
     const hitSets = permuteKeys 
       ? Combinatorics.power(hitKeys).filter(arr => arr.length) 
       : hitKeys;
-    const prefixed = hitSets.map(key => `${scanName}-${key}`);
-    prefixed.forEach(hitSet => {
-      const combinedHitSet = combineKeys(hitSet);
+    
+    hitSets.forEach(hitSet => {
+      const prefixed = hitSet.map(key => `${scanName}-${key}`);
+      const combinedHitSet = combineKeys(prefixed);
       groupedByHit[combinedHitSet] = [
         ...(groupedByHit[combinedHitSet] || []),
         symbol

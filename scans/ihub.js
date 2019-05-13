@@ -4,7 +4,7 @@
 
 const cTable = require('console.table');
 const { omit } = require('underscore');
-const mapLimit = require('promise-map-limit');
+const browserMapLimit = require('../helpers/browser-map-limit');
 
 const { scrapeIhub } = require('../scraping-actions/ihub');
 
@@ -16,7 +16,7 @@ module.exports = async records => {
     console.log(tickers);
 
     let i = 0;
-    const withHits = await mapLimit(records, 1, async record => {
+    const withHits = await browserMapLimit(records, 6, async record => {
       const { symbol, boardUrl } = record;
       let iHubData, hit;
       try {

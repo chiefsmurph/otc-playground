@@ -1,5 +1,4 @@
 const puppeteer = require('puppeteer');
-const mapLimit = require('promise-map-limit');
 const { mapObject, chain } = require('underscore');
 
 const getHistoricals = require('../scraping-actions/get-historicals');
@@ -8,6 +7,7 @@ const jsonMgr = require('../helpers/json-mgr');
 const getTickers = require('../helpers/get-tickers');
 const getTrend = require('../helpers/get-trend');
 const { avgArray } = require('../helpers/array-math');
+const browserMapLimit = require('../helpers/browser-map-limit');
 
 let historicalCache = {};
 let tickerPerf = {};
@@ -32,7 +32,7 @@ module.exports = async dateStr => {
     
 
   // get all historical data
-  await mapLimit(uniqTicks, 3, async ticker => {
+  await browserMapLimit(uniqTicks, 3, async ticker => {
     const hists = await getHistoricals(ticker);
     if (hists && hists.length) {
       historicalCache[ticker] = hists;
