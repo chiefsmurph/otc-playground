@@ -8,7 +8,7 @@ module.exports = async records => {
       let historicals;
       try {
         historicals = await getHistoricals(record.symbol);
-        console.log(`${++i}/${sliced.length}`);
+        console.log(`${++i}/${records.length}`);
         const recentHistorical = historicals[0];
         return {
           ...record,
