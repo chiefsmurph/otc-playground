@@ -88,8 +88,9 @@ module.exports = async records => {
         return fn(record.accumulationScore);
       }).reduce((acc, key) => ({
         ...acc,
-        [`acc-${key}`]: true
+        [key]: true
       }), {})
-    }));
+    }))
+    .filter(hit => Object.keys(hit) > 1);
 
 };
