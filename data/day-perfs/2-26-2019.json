@@ -1,5 +1,5 @@
 {
-  "numDays": 10,
+  "numDays": 8,
   "closedOut": true,
   "listPerf": {
     "kicko": {
@@ -8,18 +8,18 @@
         "STHC",
         "PGUS"
       ],
-      "trendToHigh": 71.93,
+      "trendToHigh": 0,
       "trendToLow": -70.57,
-      "avgTrendBetween": 0.68
+      "avgTrendBetween": -35.28
     },
     "kickoYellow": {
       "allTickers": [
         "SPDL",
         "LFAP"
       ],
-      "trendToHigh": 200.75,
+      "trendToHigh": 98.69,
       "trendToLow": -29.43,
-      "avgTrendBetween": 85.66
+      "avgTrendBetween": 34.63
     }
   }
 }
