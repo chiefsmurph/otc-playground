@@ -1,5 +1,4 @@
 const cTable = require('console.table');
-const ihubScan = require('../scans/ihub');
 const sendEmail = require('../helpers/send-email');
 const getDatestr = require('../helpers/get-datestr');
 const Combinatorics = require('js-combinatorics');

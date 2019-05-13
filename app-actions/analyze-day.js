@@ -136,7 +136,7 @@ module.exports = async dateStr => {
   listPerf = mapObject(listPerf, tickerPerfs => {
 
     const allPerfs = Object.keys(tickerPerfs[0]).slice(1);
-    console.log({ allPerfs, tickerPerfs });
+    // console.log({ allPerfs, tickerPerfs });
     const allTickers = tickerPerfs.map(t => t.ticker);
     const avgs = allPerfs.reduce((acc, perfKey) => {
 
