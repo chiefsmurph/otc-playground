@@ -14,16 +14,16 @@ const initBrowser = async () => {
     console.log('closing current browser');
     await browser.close();
   }
-  // const oldProxyUrl = getProxy();
-  // const newProxyUrl = await proxyChain.anonymizeProxy(oldProxyUrl);
+  const oldProxyUrl = getProxy();
+  const newProxyUrl = await proxyChain.anonymizeProxy(oldProxyUrl);
 
-  // console.log({ oldProxyUrl, newProxyUrl })
+  console.log({ oldProxyUrl, newProxyUrl })
   global.browser = await puppeteer.launch({ 
     headless: true, 
     args: [
       '--no-sandbox', 
       '--disable-setuid-sandbox', 
-      // `--proxy-server=${newProxyUrl}`
+      `--proxy-server=${newProxyUrl}`
     ],
     // args: ['--disable-dev-shm-usage']
   });
