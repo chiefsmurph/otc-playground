@@ -1,3 +1,5 @@
+// const test= require('./singles/test-update-wl.js');
+// console.log(test);
 (async () => {
 
   const args = process.argv.slice(2).map(val => {
@@ -20,6 +22,7 @@
     for (let folder of folders) {
       try {
         const path = `./${folder}/${file}`;
+        console.log('checking', path)
         const found = require(path);
         console.log(`found at ${path}`);
         return found;
