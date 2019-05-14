@@ -11,7 +11,7 @@ const runAllScans = require('./app-actions/run-all-scans');
   // yarn daily
   regCronIncAfterSixThirty({
     name: 'analyze watchlists',
-    run: [400],
+    run: [500],
     fn: analyzeWatchlists
   });
 
@@ -20,7 +20,7 @@ const runAllScans = require('./app-actions/run-all-scans');
   // day-streaks scan
   regCronIncAfterSixThirty({
     name: 'scan time!',
-    run: [450],
+    run: [600],
     fn: runAllScans
   });
 
