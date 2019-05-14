@@ -1,7 +1,7 @@
 const updateWl = require('../helpers/update-wl');
 
 module.exports = async () => {
-  await updateWl('5-13-2019', {
+  await updateWl('5-14-2019', {
     "ihub-containsMerger": [
       "XHUA",
       "LEAS",
