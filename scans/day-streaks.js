@@ -10,7 +10,7 @@ module.exports = async records => {
   console.log({ withHistoricals })
     const withDayStreak = withHistoricals.map(record => ({
       ...pick(record, 'symbol'),
-      dayStreak: record.historicals.findIndex(hist => hist.tso <= 0 && hist.tsc <= 0)
+      dayStreak: record.historicals.findIndex(hist => hist.tsc <= 0)
     }));
 
     console.log(withHistoricals)
