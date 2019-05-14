@@ -30,7 +30,13 @@
     }
   };
   const fnToRun = getFile(toRun);
-  await fnToRun(...args);
+  const response = await fnToRun(...args);
+  if (response) {
+    console.log('------------------');
+    console.log('| RESPONSE');
+    console.log('------------------');
+    console.log(JSON.stringify(response, null, 2));
+  }
 
   console.log('done running');
   // un-init

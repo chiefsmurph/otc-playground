@@ -2,6 +2,8 @@ const usersOfInterest = [
   'magicmiketrader',
   'SniperTradesOTC',
   'i_like_bb_stock',
+  'buddyball16',
+  'stockguru2020'
 ];
 const twitterUser = require('../scraping-actions/twitter-user');
 const browserMapLimit = require('../helpers/browser-map-limit');

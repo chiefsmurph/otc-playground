@@ -17,7 +17,9 @@ module.exports = async username => {
   const filtered = withTickers.filter(tweet => tweet.timestamp.includes('h') || tweet.timestamp.includes('m'));
   const onlyTickers = [
     ...new Set(
-      filtered.reduce((acc, tweet) => [...acc, ...tweet.tickers], [])
+      filtered
+        .filter(tweet => tweet.tickers.length <= 3)
+        .reduce((acc, tweet) => [...acc, ...tweet.tickers], [])
     )
   ];
 
