@@ -19,7 +19,7 @@ const initBrowser = async () => {
 
   console.log({ oldProxyUrl, newProxyUrl })
   global.browser = await puppeteer.launch({ 
-    headless: true, 
+    headless: false, 
     args: [
       '--no-sandbox', 
       '--disable-setuid-sandbox', 

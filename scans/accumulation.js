@@ -91,6 +91,6 @@ module.exports = async records => {
         [key]: true
       }), {})
     }))
-    .filter(hit => Object.keys(hit) > 1);
+    .filter(hit => Object.keys(hit).length > 1);
 
 };
