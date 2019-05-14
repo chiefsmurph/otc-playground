@@ -7,7 +7,7 @@ module.exports = async records => {
     console.log('total of interest:', records.length);
 
     const withHistoricals = await addHistoricals(records);
-  console.log({ withHistoricals })
+    console.log({ withHistoricals })
     const withDayStreak = withHistoricals.map(record => ({
       ...pick(record, 'symbol'),
       dayStreak: record.historicals.findIndex(hist => hist.tsc <= 0)
