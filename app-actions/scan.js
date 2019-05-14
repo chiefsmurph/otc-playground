@@ -2,7 +2,7 @@ const cTable = require('console.table');
 const sendEmail = require('../helpers/send-email');
 const getDatestr = require('../helpers/get-datestr');
 const Combinatorics = require('js-combinatorics');
-const jsonMgr = require('../helpers/json-mgr');
+const updateWl = require('../helpers/update-wl');
 
 // defaults
 const COUNT = 300;
@@ -77,8 +77,8 @@ module.exports = async (
       });
     });
   
-    !skipSave && await jsonMgr.save(`./data/watch-lists/${todayDate}.json`, groupedByHit);
-    
+    !skipSave && await updateWl(todayDate, groupedByHit);
+
     console.log(JSON.stringify(groupedByHit));
   
     // send email
