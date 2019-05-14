@@ -75,7 +75,9 @@ module.exports = async records => {
   const accBreakdowns = {
     infinity: score => score === Number.POSITIVE_INFINITY,
     gt300: score => score > 300 && score !== Number.POSITIVE_INFINITY,
-    lt25: score => score < 25
+    lt25: score => score < 25 & score > 0,
+    zero: score => score === 0,
+    negative: score => score < 0
   };
 
 
