@@ -2,8 +2,9 @@
 const cTable = require('console.table');
 const { pick } = require('underscore');
 const addHistoricals = require('../helpers/add-historicals');
+const withCollection = require('../helpers/with-collection');
 
-module.exports = async records => {
+module.exports = withCollection(async records => {
     console.log('total of interest:', records.length);
 
     const withHistoricals = await addHistoricals(records);
@@ -37,4 +38,4 @@ module.exports = async records => {
         [`${record.dayStreak}days`]: true
       }));
 
-};
+});

@@ -1,10 +1,11 @@
 {
-  "numDays": 1,
+  "numDays": 2,
   "closedOut": false,
   "listPerf": {
     "ihub-containsMerger": {
       "allTickers": [
         "XHUA",
+        "LEAS",
         "GRDO",
         "DAVC",
         "VYST",
@@ -13,25 +14,25 @@
         "DMHI",
         "ADNY"
       ],
-      "trendToHigh": 8.3,
-      "trendToLow": -18.83,
-      "avgTrendBetween": -5.26
+      "trendToHigh": 12.22,
+      "trendToLow": -21.96,
+      "avgTrendBetween": -4.87
     },
     "ihub-containsReinstatement": {
       "allTickers": [
         "XHUA"
       ],
-      "trendToHigh": 16.67,
+      "trendToHigh": 26.67,
       "trendToLow": -10,
-      "avgTrendBetween": 3.33
+      "avgTrendBetween": 8.33
     },
     "ihub-containsMerger-containsReinstatement": {
       "allTickers": [
         "XHUA"
       ],
-      "trendToHigh": 16.67,
+      "trendToHigh": 26.67,
       "trendToLow": -10,
-      "avgTrendBetween": 3.33
+      "avgTrendBetween": 8.33
     },
     "ihub-containsBigWeek": {
       "allTickers": [

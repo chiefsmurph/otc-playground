@@ -7,9 +7,9 @@ const { omit } = require('underscore');
 const browserMapLimit = require('../helpers/browser-map-limit');
 
 const { scrapeIhub } = require('../scraping-actions/ihub');
+const withCollection = require('../helpers/with-collection');
 
-module.exports = async records => {
-
+module.exports = withCollection(async records => {
     
     console.log('total records', records.length);
     const tickers = records.map(t => t.symbol);
@@ -47,4 +47,4 @@ module.exports = async records => {
 
     return onlyHits;
 
-};
+});

@@ -1,7 +1,7 @@
 const puppeteer = require('puppeteer');
 const { mapObject, chain } = require('underscore');
 
-const getHistoricals = require('../scraping-actions/get-historicals');
+const addHistoricals = require('../helpers/add-historicals');
 
 const jsonMgr = require('../helpers/json-mgr');
 const getTickers = require('../helpers/get-tickers');
@@ -33,14 +33,27 @@ module.exports = async dateStr => {
     
 
   // get all historical data
-  await browserMapLimit(uniqTicks, 3, async ticker => {
-    const hists = await getHistoricals(ticker);
-    if (hists && hists.length) {
-      historicalCache[ticker] = hists;
+  const withHistoricals = await addHistoricals(uniqTicks.map(ticker => ({ symbol: ticker })));
+  withHistoricals.forEach(record => {
+    const { historicals, symbol } = record;
+    if (historicals && historicals.length) {
+      historicalCache[symbol] = historicals;
+      // console.log({
+      //   symbol,
+      //   historicals
+      // })
     } else {
-      console.log('unable to get historicals for ', ticker);
+      console.log('unable to get historicals for ', symbol);
     }
   });
+  // await browserMapLimit(uniqTicks, 1, async ticker => {
+  //   const hists = await getHistoricals(ticker);
+  //   if (hists && hists.length) {
+  //     historicalCache[ticker] = hists;
+  //   } else {
+  //     console.log('unable to get historicals for ', ticker);
+  //   }
+  // });
 
 
   let numDays;

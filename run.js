@@ -26,7 +26,9 @@
         const found = require(path);
         console.log(`found at ${path}`);
         return found;
-      } catch (e) {}
+      } catch (e) {
+        console.log(e)
+      }
     }
   };
   const fnToRun = getFile(toRun);

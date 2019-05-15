@@ -4,10 +4,7 @@ const getDatestr = require('../helpers/get-datestr');
 const Combinatorics = require('js-combinatorics');
 const updateWl = require('../helpers/update-wl');
 
-// defaults
-const COUNT = 300;
-const MIN_PRICE = 0.0004;
-const MAX_PRICE = 0.013;
+
 
 // helpers
 const { lookups } = require('../scraping-actions/ihub');
@@ -22,10 +19,7 @@ const combineKeys = keys => {
 
 module.exports = async (
   scanName = 'ihub', 
-  count = COUNT,
-  collectionStr = 'all',
-  minPrice = MIN_PRICE,
-  maxPrice = MAX_PRICE,
+  count,
   permuteKeys = true, 
   skipSave = false, 
   ...rest
@@ -34,26 +28,15 @@ module.exports = async (
   // fetch collection of stocks
   console.log({
     scanName,
-    count,
-    collectionStr,
     permuteKeys
   });
-
-  const sliced = collectionStr === 'none' || collectionStr === null ? [] : await (async () => {
-    console.log('getting collection', collectionStr)
-    const collectionFn = require(`../collections/${collectionStr}`);
-    const records = await collectionFn(minPrice, maxPrice);
-    const sliced = records.slice(0, count);
-    console.log({ totalCount: records.length, sliced: sliced.length });
-    return sliced;
-  })();
-
+  
   // scan ihub
-  console.log('running scan...', sliced.length, rest);
+  console.log('running scan...', rest);
   const todayDate = getDatestr();
 
   const scanFn = require(`../scans/${scanName}`);
-  const hits = await scanFn(sliced, ...rest);
+  const hits = await scanFn(count, ...rest);
   // add to data/watch-lists
   console.table({hits});
 

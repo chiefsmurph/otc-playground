@@ -2,8 +2,9 @@
 const cTable = require('console.table');
 const addHistoricals = require('../helpers/add-historicals');
 const getTrend = require('../helpers/get-trend');
+const withCollection = require('../helpers/with-collection');
 
-module.exports = async records => {
+module.exports = withCollection(async records => {
 
   console.log('total records:', records.length);
 
@@ -95,4 +96,4 @@ module.exports = async records => {
     }))
     .filter(hit => Object.keys(hit).length > 1);
 
-};
+});
