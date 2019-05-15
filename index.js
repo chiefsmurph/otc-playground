@@ -1,5 +1,5 @@
 const regCronIncAfterSixThirty = require('./helpers/reg-cron-after-630');
-const analyzeWatchlists = require('./app-actions/analyze-watchlists');
+const daily = require('./app-actions/daily');
 const runAllScans = require('./app-actions/run-all-scans');
 
 (async () => {
@@ -10,14 +10,12 @@ const runAllScans = require('./app-actions/run-all-scans');
 
   // yarn daily
   regCronIncAfterSixThirty({
-    name: 'analyze watchlists',
+    name: 'daily',
     run: [500],
-    fn: analyzeWatchlists
+    fn: daily
   });
-
-  // scans
-
-  // day-streaks scan
+  
+  // all scans
   regCronIncAfterSixThirty({
     name: 'scan time!',
     run: [600],
