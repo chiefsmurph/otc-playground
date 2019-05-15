@@ -45,5 +45,22 @@
   "accumulation-negative": [
     "NTRR",
     "QPAG"
+  ],
+  "ihub-containsCustodianship": [
+    "FHAI",
+    "XHUA"
+  ],
+  "ihub-containsMerger": [
+    "SSOF",
+    "RBII",
+    "XHUA",
+    "ISBG",
+    "LEAS",
+    "ADXS",
+    "GXXM",
+    "IGEX"
+  ],
+  "ihub-containsMerger-ihub-containsCustodianship": [
+    "XHUA"
   ]
 }
