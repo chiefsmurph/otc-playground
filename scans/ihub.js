@@ -28,7 +28,7 @@ module.exports = withCollection(async records => {
       } catch (e) {
         console.log([`${++i}/${records.length}`, symbol, e].filter(Boolean).join(' - '));
       }
-      await new Promise(res => setTimeout(res, 3000));
+      await new Promise(res => setTimeout(res, 1000));
       return {
         symbol,
         hit,
