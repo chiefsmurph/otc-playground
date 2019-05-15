@@ -120,6 +120,7 @@ module.exports = async dateStr => {
 
     return tickers
       .filter(ticker => Object.keys(historicalCache).includes(ticker))
+      .filter(ticker => tickerPerf[ticker] && tickerPerf[ticker].prices)
       .filter(ticker => !IGNORE_TRIPS || tickerPerf[ticker].prices.buyPrice >= .001)
       .map(ticker => ({
         ticker,
