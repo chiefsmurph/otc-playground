@@ -5,17 +5,21 @@ const { avgArray } = require('../helpers/array-math');
 const jsonMgr = require('../helpers/json-mgr');
 
 const cTable = require('console.table');
+const noExt = file => file.split('.')[0];
 
 module.exports = async (numDays = Number.POSITIVE_INFINITY) => {
 
   // aggregate all day-perfs by watch-list
   const perfsByWL = {};
 
-  const watchListPerfs = await fs.readdir('./data/day-perfs');
-  console.log({ watchListPerfs });
-  for (let date of watchListPerfs.slice(0 - numDays)) {
+  const watchLists = (await fs.readdir('./data/day-perfs'))
+    .map(noExt)
+    .sort((a, b) => new Date(a) - new Date(b))
+    .slice(0 - numDays);
+  console.log(watchLists);
+  for (let date of watchLists) {
 
-    const { listPerf: watchListPerf } = await jsonMgr.get(`./data/day-perfs/${date}`);
+    const { listPerf: watchListPerf } = await jsonMgr.get(`./data/day-perfs/${date}.json`);
     Object.keys(watchListPerf).forEach(watchList => {
       perfsByWL[watchList] = [  
         ...perfsByWL[watchList] || [],
