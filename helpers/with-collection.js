@@ -1,5 +1,5 @@
 // defaults
-const COUNT = 300;
+const COUNT = 40;
 const MIN_PRICE = 0.0004;
 const MAX_PRICE = 0.013;
 
