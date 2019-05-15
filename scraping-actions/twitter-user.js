@@ -15,15 +15,16 @@ module.exports = async username => {
     tickers: getTickers(tweet.text, true)
   }));
   const filtered = withTickers.filter(tweet => tweet.timestamp.includes('h') || tweet.timestamp.includes('m'));
-  const onlyTickers = [
+  const onlyTickers = filtered
+    .filter(tweet => tweet.tickers.length <= 3)
+    .reduce((acc, tweet) => [...acc, ...tweet.tickers], []);
+  const uniqTickers = [
     ...new Set(
-      filtered
-        .filter(tweet => tweet.tickers.length <= 3)
-        .reduce((acc, tweet) => [...acc, ...tweet.tickers], [])
+      onlyTickers.filter(ticker => onlyTickers.filter(t => t === ticker).length > 1)
     )
   ];
 
-  return onlyTickers.map(symbol => ({ 
+  return uniqTickers.map(symbol => ({ 
     symbol,
     [username]: true
   }));

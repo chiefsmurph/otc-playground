@@ -69,10 +69,13 @@ module.exports = async (numDays = Number.POSITIVE_INFINITY) => {
   // display sorted by perfKeys from wlStats
   console.log()
   console.log()
+
+  const lines = [];
+  output = str => lines.push(str);
   perfKeys.forEach(perfKey => {
 
-    console.log(`sorted by ${perfKey}`);
-    console.log('-----------------------');
+    output(`sorted by ${perfKey}`);
+    output('-----------------------');
 
     const data = Object.keys(wlStats)
       .map(watchList => {
@@ -83,8 +86,11 @@ module.exports = async (numDays = Number.POSITIVE_INFINITY) => {
         };
       })
       .sort((a, b) => b.avg - a.avg);
-    console.table(data)
+      
+    output(cTable.getTable(data))
 
   });
+
+  return lines.join("\r\n");
 
 };
