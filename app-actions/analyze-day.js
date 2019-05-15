@@ -67,6 +67,7 @@ module.exports = async dateStr => {
     const foundIndex = historicals.findIndex(hist => hist.date.getTime() <= dateAsDate.getTime());
     let followingDays = historicals.slice(0, foundIndex).reverse();
     followingDays = followingDays.slice(0, daysToAnalyze);
+    console.log({ numDays, followingDays });
     numDays = numDays || followingDays.length;
 
     foundFutureHistoricals = foundFutureHistoricals || !!followingDays.length;
@@ -120,6 +121,7 @@ module.exports = async dateStr => {
 
     return tickers
       .filter(ticker => Object.keys(historicalCache).includes(ticker))
+      .filter(ticker => tickerPerf[ticker] && tickerPerf[ticker].prices)
       .filter(ticker => !IGNORE_TRIPS || tickerPerf[ticker].prices.buyPrice >= .001)
       .map(ticker => ({
         ticker,
