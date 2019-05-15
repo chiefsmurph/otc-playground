@@ -1,10 +1,10 @@
 const getHistoricals = require('../scraping-actions/get-historicals');
-const browserMapLimit = require('../helpers/browser-map-limit');
+const mapLimit = require('promise-map-limit');
 
 module.exports = async records => {
 
   let i = 0;
-  return browserMapLimit(records, 1, async record => {
+  return mapLimit(records, 3, async record => {
 
       await new Promise(resolve => setTimeout(resolve, Math.random() * 5000));
       let historicals;
