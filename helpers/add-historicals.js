@@ -4,7 +4,7 @@ const mapLimit = require('promise-map-limit');
 module.exports = async records => {
 
   let i = 0;
-  return mapLimit(records, 3, async record => {
+  const results = await mapLimit(records, 3, async record => {
 
       await new Promise(resolve => setTimeout(resolve, Math.random() * 5000));
       let historicals;
@@ -21,5 +21,7 @@ module.exports = async records => {
         return record;
       }
   });
+  
+  return results.filter(result => result && result.historicals && result.historicals.length);
 
 };
