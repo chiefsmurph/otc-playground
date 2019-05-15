@@ -9,9 +9,9 @@ const { tiingo: { token }} = require('../config');
 module.exports = cacheThis(async (ticker) => {
 
   const requestOptions = {
-    'url': `https://api.tiingo.com/tiingo/daily/${ticker}/prices?startDate=2018-1-1&token=${token}`,
+    url: `https://api.tiingo.com/tiingo/daily/${ticker}/prices?startDate=2018-1-1&token=91b3bdf8bb8904ee156a2a544cffaaa6dcceca70${token}`,
     // https://api.tiingo.com/api/test?token=91b3bdf8bb8904ee156a2a544cffaaa6dcceca70',
-    'headers': {
+    headers: {
       'Content-Type': 'application/json'
     }
   };

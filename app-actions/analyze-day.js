@@ -67,6 +67,7 @@ module.exports = async dateStr => {
     const foundIndex = historicals.findIndex(hist => hist.date.getTime() <= dateAsDate.getTime());
     let followingDays = historicals.slice(0, foundIndex).reverse();
     followingDays = followingDays.slice(0, daysToAnalyze);
+    console.log({ numDays, followingDays });
     numDays = numDays || followingDays.length;
 
     foundFutureHistoricals = foundFutureHistoricals || !!followingDays.length;
