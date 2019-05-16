@@ -4,6 +4,58 @@ const getDatestr = require('../helpers/get-datestr');
 const Combinatorics = require('js-combinatorics');
 const updateWl = require('../helpers/update-wl');
 
+const analyzeScanResponse = (scanName, response, permuteKeys) => {
+  console.log('analyzeing')
+  let emailRecords = [...response];
+  if (typeof emailRecords[0] === 'string') {
+    // array of strings
+    emailRecords = emailRecords.map(symbol => ({
+      symbol,
+      [scanName]: true
+    }))
+  } else {
+    // array of objects { symbol: 'string', accumulation-blah: true }
+    emailRecords = [
+      ...new Set(emailRecords.map(hit => hit.symbol))
+    ].map(symbol => {
+      const filtered = emailRecords.filter(hit => hit.symbol === symbol);
+      console.log({
+        symbol,
+         filtered
+      })
+      return filtered.reduce((acc, hit) => ({
+        ...acc,
+        ...hit
+      }), {});
+    }).sort((a, b) => Object.keys(b).length - Object.keys(a).length);
+  }
+  
+  const groupedByHit = {};
+  emailRecords.forEach(hit => {
+    const { symbol } = hit;
+    const hitKeys = Object.keys(hit).filter(key => key !== 'symbol');
+    const hitSets = permuteKeys 
+      ? Combinatorics.power(hitKeys).filter(arr => arr.length) 
+      : hitKeys;
+    
+    hitSets.forEach(hitSet => {
+      const prefixed = `${scanName}-${hitSet.join('-')}`;
+      groupedByHit[prefixed] = [
+        ...(groupedByHit[prefixed] || []),
+        symbol
+      ];
+    });
+  });
+
+  return {
+    emailRecords,
+    groupedByHit
+  };
+
+};
+
+
+
 module.exports = async (
   scanName = 'ihub', 
   count,
@@ -23,47 +75,23 @@ module.exports = async (
   const todayDate = getDatestr();
 
   const scanFn = require(`../scans/${scanName}`);
-  const hits = await scanFn(count, ...rest);
+  const response = await scanFn(count, ...rest);
   // add to data/watch-lists
+  console.log({response, responsel: response.length})
+  if (response && response.length) {
 
-  if (hits && hits.length) {
-
-    const groupedByHit = {};
-
-    const combinedBySymbol = [
-      ...new Set(hits.map(hit => hit.symbol))
-    ].map(symbol => {
-      const filtered = hits.filter(hit => hit.symbol === symbol);
-      console.log(symbol, filtered);
-      return filtered.reduce((acc, hit) => ({
-        ...acc,
-        ...hit
-      }), {});
-    }).sort((a, b) => Object.keys(b).length - Object.keys(a).length);
-    
-    combinedBySymbol.forEach(hit => {
-      const { symbol } = hit;
-      const hitKeys = Object.keys(hit).filter(key => key !== 'symbol');
-      const hitSets = permuteKeys 
-        ? Combinatorics.power(hitKeys).filter(arr => arr.length) 
-        : hitKeys;
-      
-      hitSets.forEach(hitSet => {
-        console.log({ hitSet });
-        const prefixed = `${scanName}-${hitSet.join('-')}`;
-        groupedByHit[prefixed] = [
-          ...(groupedByHit[prefixed] || []),
-          symbol
-        ];
-      });
-    });
-  
+    const {
+      emailRecords,
+      groupedByHit
+    } = analyzeScanResponse(scanName, response, permuteKeys);
     !skipSave && await updateWl(todayDate, groupedByHit);
-
-    console.log(JSON.stringify(groupedByHit));
+    console.log(JSON.stringify({
+      emailRecords,
+      groupedByHit
+    }. null, 2));
   
     // send email
-    await sendEmail(`${scanName.toUpperCase()} SCAN for ${todayDate}`, cTable.getTable(combinedBySymbol));
+    await sendEmail(`${scanName.toUpperCase()} SCAN for ${todayDate}`, cTable.getTable(emailRecords));
   
   }
   

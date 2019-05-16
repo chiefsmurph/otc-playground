@@ -3,22 +3,21 @@ const cTable = require('console.table');
 
 const addHistoricals = require('../helpers/add-historicals');
 const getTrend = require('../helpers/get-trend');
+const withCollection = require('../helpers/with-collection');
 
 
-module.exports = async records => {
+module.exports = withCollection(async records => {
 
 
     console.log('total records:', records.length);
 
     const withHistoricals = await addHistoricals(records);
     const withRecentHist = withHistoricals
-      .filter(record => record.historicals && record.historicals.length)
       .map(record => ({
         ...record,
         recentHistorical: record.historicals[0]
       }));
       
-    console.log({ withHistoricals })
     const withBodyAndWick = withRecentHist.map(({ recentHistorical, ...record }) => {
       return {
         ...record,
@@ -30,23 +29,17 @@ module.exports = async records => {
         wickSize: getTrend(recentHistorical.close, recentHistorical.high) + getTrend(recentHistorical.low, recentHistorical.open)
       };
     });
+    
+    const greenVol = withBodyAndWick
+      .filter(record => record.bodyTrend > 0)
+      .sort((a, b) => b.volumeRatio - a.volumeRatio);
 
 
     console.table(
-      withBodyAndWick
-          // .filter(record => record.bodyTrend > 0)
-          .sort((a, b) => b.volumeRatio - a.volumeRatio)
-    )
-
-
-    console.table(
-      withBodyAndWick
-          .filter(record => record.bodyTrend > 0)
-          .sort((a, b) => b.volumeRatio - a.volumeRatio)
+      greenVol
     )
 
     console.log('-----------');
 
-
-    await browser.close();
-};
+    return withBodyAndWick.map(record => record.symbol);
+});

@@ -10,7 +10,6 @@ module.exports = withCollection(async records => {
 
   const withHistoricals = await addHistoricals(records);
   const withRecentHist = withHistoricals
-    .filter(record => record.historicals && record.historicals.length)
     .map(record => ({
       ...record,
       recentHistorical: record.historicals[0]
