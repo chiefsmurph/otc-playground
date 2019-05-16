@@ -4,5 +4,29 @@
     "RMSL",
     "PDPR",
     "TURA"
+  ],
+  "ihub-containsMerger": [
+    "XHUA",
+    "VSYM",
+    "ISBG",
+    "DIRV",
+    "ZMRK",
+    "ONCI",
+    "FNMA",
+    "VYST",
+    "SSOF",
+    "TFVR",
+    "SSFT"
+  ],
+  "ihub-containsCustodianship": [
+    "XHUA",
+    "CERPQ",
+    "GMNI"
+  ],
+  "ihub-containsMerger-containsCustodianship": [
+    "XHUA"
+  ],
+  "ihub-containsReinstatement": [
+    "DLCR"
   ]
 }
