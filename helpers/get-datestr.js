@@ -1,4 +1,4 @@
-module.exports = () => {
-  const [year, month, day] = (new Date).toLocaleDateString().split('-');
+module.exports = (date = new Date()) => {
+  const [year, month, day] = date.toLocaleDateString().split('-');
   return [month, day, year].join('-');
 };

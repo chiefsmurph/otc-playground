@@ -46,15 +46,6 @@ module.exports = async dateStr => {
       console.log('unable to get historicals for ', symbol);
     }
   });
-  // await browserMapLimit(uniqTicks, 1, async ticker => {
-  //   const hists = await getHistoricals(ticker);
-  //   if (hists && hists.length) {
-  //     historicalCache[ticker] = hists;
-  //   } else {
-  //     console.log('unable to get historicals for ', ticker);
-  //   }
-  // });
-
 
   let numDays;
   // calc ticker performance

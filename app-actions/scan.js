@@ -91,7 +91,11 @@ module.exports = async (
     }. null, 2));
   
     // send email
-    await sendEmail(`${scanName.toUpperCase()} SCAN for ${todayDate}`, cTable.getTable(emailRecords));
+    await sendEmail(`${scanName.toUpperCase()} SCAN for ${todayDate}`, [
+      cTable.getTable(emailRecords),
+      '<br><br><hr>',
+      JSON.stringify(groupedByHit, null, 2)
+    ].join(''));
   
   }
   

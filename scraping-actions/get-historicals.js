@@ -6,7 +6,7 @@ const request = require('request-promise');
 const { mapObject } = require('underscore');
 const { tiingo: { token }} = require('../config');
 
-module.exports = cacheThis(async (ticker) => {
+const getHistoricals = async (ticker) => {
 
   const requestOptions = {
     url: `https://api.tiingo.com/tiingo/daily/${ticker}/prices?startDate=2018-1-1&token=${token}`,
@@ -55,4 +55,9 @@ module.exports = cacheThis(async (ticker) => {
   console.log(`got historicals for ${ticker}`);
   return withVolumePerc;
 
-}, 200);
+};
+
+module.exports = {
+  getHistoricals,
+  cachedHistoricals: cacheThis(getHistoricals, 200)
+};

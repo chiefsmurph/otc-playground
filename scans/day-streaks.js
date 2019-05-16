@@ -3,6 +3,7 @@ const cTable = require('console.table');
 const { pick } = require('underscore');
 const addHistoricals = require('../helpers/add-historicals');
 const withCollection = require('../helpers/with-collection');
+const { omit } = require('underscore');
 
 module.exports = withCollection(async records => {
     console.log('total of interest:', records.length);
@@ -13,15 +14,6 @@ module.exports = withCollection(async records => {
       dayStreak: record.historicals.findIndex(hist => hist.tsc <= 0)
     }));
 
-    console.log(withHistoricals)
-
-
-    console.table(
-      withDayStreak
-          // .filter(record => record.bodyTrend > 0)
-          .sort((a, b) => b.dayStreak - a.dayStreak)
-    );
-
     const uniqDayStreaks = [...new Set(withDayStreak.map(record => record.dayStreak))]
     const dayStreaksOfInterest = uniqDayStreaks
       .filter(dayStreak => dayStreak > 0)
@@ -30,11 +22,20 @@ module.exports = withCollection(async records => {
         return count <= 3;
       });
 
-    return withDayStreak
+    const response = withDayStreak
       .filter(record => dayStreaksOfInterest.includes(record.dayStreak))
       .map(record => ({
         symbol: record.symbol,
         [`${record.dayStreak}days`]: true
       }));
+
+    console.table(
+      response
+        // .filter(record => record.bodyTrend > 0)
+        .sort((a, b) => b.dayStreak - a.dayStreak)
+        .map(record => omit(record, 'historicals'))
+    );
+
+    return response;
 
 });

@@ -3,6 +3,7 @@ const cTable = require('console.table');
 const addHistoricals = require('../helpers/add-historicals');
 const getTrend = require('../helpers/get-trend');
 const withCollection = require('../helpers/with-collection');
+const { omit } = require('underscore');
 
 module.exports = withCollection(async records => {
 
@@ -19,7 +20,7 @@ module.exports = withCollection(async records => {
     .filter(record => record.recentHistorical && record.recentHistorical.open);
 
   console.log({
-    withRecentHist,
+    // withRecentHist,
     numWithMetrics: withMetrics.length
   });
 
@@ -59,6 +60,7 @@ module.exports = withCollection(async records => {
   console.table(
     withAccumulationScore
         .sort((a, b) => b.accumulationScore - a.accumulationScore)
+        .map(record => omit(record, 'historicals'))
   )
 
   console.log('-----------');
@@ -70,6 +72,7 @@ module.exports = withCollection(async records => {
   console.table(
     goodVol
         .sort((a, b) => b.accumulationScore - a.accumulationScore)
+        .map(record => omit(record, 'historicals'))
   );
 
   const accBreakdowns = {
