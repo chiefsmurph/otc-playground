@@ -1,6 +1,6 @@
 
 const getMostRecentHistoricalDate = require('../cli/get-most-recent-historical-date');
-const regCronAfter630 = require('../helpers/reg-cron-after-630');
+// const regCronAfter630 = require('../helpers/reg-cron-after-630');
 
 const fns = [];
 const onHistoricalChange = fnToRun => {

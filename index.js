@@ -9,6 +9,7 @@ const onHistoricalChange = require('./helpers/on-historical-change');
   await require('./helpers/init-browser')();
 
   onHistoricalChange(async () => {
+    console.log('new historicals posted!');
     await daily();
     await new Promise(resolve => setTimeout(resolve, 1000 * 60));
     await runAllScans();
