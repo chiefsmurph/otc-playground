@@ -53,7 +53,7 @@ const getBoardUrl = async ticker => {
 
 const scrapeIhub = async (ticker, boardUrl) => {
 
-  let page, allText;
+  let page, allText, errored;
   try {
     boardUrl = boardUrl || await getBoardUrl(ticker);
     page = await browser.newPage();
@@ -61,10 +61,8 @@ const scrapeIhub = async (ticker, boardUrl) => {
     await page.waitFor(1000);
   } catch (e) {
     console.log(e);
-    let bodyHTML = await page.evaluate(() => document.body.innerText);
+    errored = true;
     console.log(ticker, 'nope');
-    // console.log(bodyHTML);
-    throw 'unable to find iHub board';
   } finally {
     if (page) {
 
@@ -84,13 +82,22 @@ const scrapeIhub = async (ticker, boardUrl) => {
         return onlyWithin90Days.reduce((acc, tr) => acc + tr.textContent, '');
       }, DAYS_BACK);
 
-      await page.waitFor(1000 * 2);
-      await page.close();
-
-      return lookups.reduce((acc, { key, query }) => ({
+      const response = lookups.reduce((acc, { key, query }) => ({
         ...acc,
         [key]: allText.toLowerCase().includes(query.toLowerCase()),
       }), {});
+
+      if (errored && allText && allText.length > 4) {
+        console.log('interesting save', {
+          ticker, 
+          allText,
+          response
+        });
+      }
+      await page.waitFor(1000 * 2);
+      await page.close();
+
+      return response;
     
     }
   }
