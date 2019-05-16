@@ -5,6 +5,7 @@ module.exports = async (count) => {
     'twitter',
     'day-streaks',
     'accumulation',
+    'green-volume',
     'ihub'
   ];
   console.log({ scansToRun });
