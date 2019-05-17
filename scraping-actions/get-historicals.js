@@ -52,7 +52,7 @@ const getHistoricals = async (ticker) => {
     };
   });
 
-  console.log(`got historicals for ${ticker}`, withVolumePerc);
+  console.log(`got historicals for ${ticker}`);
   return withVolumePerc;
 
 };
