@@ -9,6 +9,7 @@
     "start": "pm2 start index.js --name otc-playground --node-args='--max-old-space-size=8000 --trace-warnings'",
     "analyze-watchlists": "node run analyze-watchlists",
     "scan": "node run scan",
+    "daily": "node run daily",
     "watch-list-perf": "node run watch-list-perf"
   },
   "dependencies": {
