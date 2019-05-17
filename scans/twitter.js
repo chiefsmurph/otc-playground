@@ -4,7 +4,9 @@ const usersOfInterest = [
   'i_like_bb_stock',
   'buddyball16',
   'stockguru2020',
-  'KickoStocks'
+  'KickoStocks',
+  'DomBuckz',
+  'aaaamhim',
 ];
 const twitterUser = require('../scraping-actions/twitter-user');
 const browserMapLimit = require('../helpers/browser-map-limit');
