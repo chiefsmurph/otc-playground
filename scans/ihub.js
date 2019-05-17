@@ -28,14 +28,14 @@ module.exports = withCollection(async records => {
       } catch (e) {
         console.log([`${++i}/${records.length}`, symbol, e].filter(Boolean).join(' - '));
       }
-      await new Promise(res => setTimeout(res, 1000));
+      await new Promise(res => setTimeout(res, 3000));
       return {
         symbol,
         hit,
         ...iHubData
       };
     });
-    
+
     const onlyHits = withHits
       .filter(obj => obj.hit)
       .map(obj => 
