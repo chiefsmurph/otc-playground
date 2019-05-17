@@ -1,14 +1,16 @@
 const scan = require('./scan');
-
-module.exports = async (count) => {
-  const scansToRun = [
-    'twitter',
-    'stock-invest',
-    'day-streaks',
-    'accumulation',
-    'green-volume',
-    'ihub'
-  ];
+const allScans = [
+  'twitter',
+  'stock-invest',
+  'day-streaks',
+  'accumulation',
+  'green-volume',
+  'ihub'
+];
+module.exports = async (
+  scansToRun = allScans,
+  count
+) => {
   console.log({ scansToRun });
   for (let scanName of scansToRun) {
     console.log('starting scan...', scanName);

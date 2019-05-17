@@ -1,5 +1,5 @@
 const gmailSend = require('gmail-send');
-const { gmail: credentials } = require('../config');
+const { gmail: credentials, serverName } = require('../config');
 // console.log({ credentials })
 const send = gmailSend({
   user: credentials.username,
@@ -10,7 +10,7 @@ module.exports = (subject, body, to = credentials.username) => new Promise((reso
   subject = `otc-playground: ${subject}`;
   console.log(`sending email...to ${to}...`);
   console.log('subject', subject, 'body', body);
-  const monospace = str => `<div style="font-family: monospace"><pre>${str}</pre></div>`;
+  const monospace = str => `<div style="font-family: monospace"><pre>${str}</pre><pre>sent from ${serverName}</div>`;
   send({
       subject,
       html: monospace(body),
