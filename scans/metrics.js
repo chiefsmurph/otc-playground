@@ -3,11 +3,13 @@ const browserMapLimit = require('../helpers/browser-map-limit');
 const withCollection = require('../helpers/with-collection');
 
 module.exports = withCollection(async records => {
-  console.log({records});
-  const withMetrics = await browserMapLimit(records, 5, async record => ({
-    ...record,
-    ...await getMetrics(record.symbol)
-  }));
+
+  const withMetrics = (
+    await browserMapLimit(records, 5, async record => ({
+      ...record,
+      ...await getMetrics(record.symbol)
+    }))
+  ).filter(record => record.price < 0.4);
 
 
   const sortBy = {
