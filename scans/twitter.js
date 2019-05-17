@@ -7,6 +7,8 @@ const usersOfInterest = [
   'KickoStocks',
   'DomBuckz',
   'aaaamhim',
+  'stock_hacker',
+  'GoldMemberOTC'
 ];
 const twitterUser = require('../scraping-actions/twitter-user');
 const browserMapLimit = require('../helpers/browser-map-limit');
