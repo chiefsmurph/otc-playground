@@ -16,7 +16,7 @@ const onHistoricalChange = fnToRun => {
     prevVal = curDateStr;
   };
   checkForChange();
-  setInterval(checkForChange, 1000 * 60 * 10);
+  setInterval(checkForChange, 1000 * 60 * 4);
 };
 
 module.exports = onHistoricalChange;
