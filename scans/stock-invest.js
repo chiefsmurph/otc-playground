@@ -11,12 +11,12 @@ module.exports = async () => {
       const results = JSON.parse(await request(urls[name]));
       const filtered = results.filter(b => b.price < 10);
       const cheapest = [...filtered].sort((a, b) => a.price - b.price);
-      const getFirst3ticks = arr => arr.slice(0, 3).map(t => t.tick);
+      const getFirst2ticks = arr => arr.slice(0, 2).map(t => t.tick);
       const uniq = [
           ...new Set(
               [
-                  ...getFirst3ticks(filtered),
-                  ...getFirst3ticks(cheapest)
+                  ...getFirst2ticks(filtered),
+                  ...getFirst2ticks(cheapest)
               ]
           )
       ];
