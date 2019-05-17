@@ -7,7 +7,7 @@ function addDays(date, days) {
   return result;
 }
 
-module.exports = async (ticker = 'KRFG') => {
+module.exports = async (ticker = 'ISBG') => {
   const hists = await getHistoricals(ticker);
   const mostRecent = hists[0];
   const date = mostRecent.date;

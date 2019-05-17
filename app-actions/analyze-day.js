@@ -52,6 +52,7 @@ module.exports = async dateStr => {
   const dateAsDate = new Date(dateStr);
   let foundFutureHistoricals = false;
   
+  const missedHistError = false;
   tickerPerf = mapObject(historicalCache, (historicals, key) => {
 
     // construct array of only historicals following dateStr
@@ -60,6 +61,11 @@ module.exports = async dateStr => {
     followingDays = followingDays.slice(0, daysToAnalyze);
     console.log({ numDays, followingDays });
     numDays = numDays || followingDays.length;
+
+    if (followingDays.length !== numDays) {
+      console.log(`UH OH missing hist for ${key}`);
+      missedHistError = true;
+    }
 
     foundFutureHistoricals = foundFutureHistoricals || !!followingDays.length;
     if (!followingDays.length) {
@@ -101,7 +107,9 @@ module.exports = async dateStr => {
     return console.log('Unable to find future historicals for any of these tickers.');
   }
   
-
+  if (missedHistError) {
+    return console.log('missed historical not saving');
+  }
 
   // console.log(
   //   JSON.stringify(tickerPerf, null, 2)

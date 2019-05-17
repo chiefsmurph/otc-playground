@@ -1,11 +1,12 @@
-const daily = require('./app-actions/daily');
+// const daily = require('./app-actions/daily');
 const onHistoricalChange = require('./helpers/on-historical-change');
+const analyzeWatchlists = require('./app-actions/analyze-watchlists');
 
 (async () => {
 
   // init
   await require('./helpers/init-browser')();
-  onHistoricalChange(daily);
+  onHistoricalChange(analyzeWatchlists);
   console.log('otc-playground initialized!');
 
 })();
