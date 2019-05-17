@@ -16,8 +16,7 @@ module.exports = withCollection(async records => {
     console.log(tickers);
 
     let i = 0;
-    const withHits = [];
-    for (let record of records) {
+    const withHits = await browserMapLimit(records, 1, async record => {
       const { symbol, boardUrl } = record;
       let iHubData, hit;
       try {
@@ -30,13 +29,13 @@ module.exports = withCollection(async records => {
         console.log([`${++i}/${records.length}`, symbol, e].filter(Boolean).join(' - '));
       }
       await new Promise(res => setTimeout(res, 1000));
-      withHits.push({
+      return {
         symbol,
         hit,
         ...iHubData
-      });
-    }
-
+      };
+    });
+    
     const onlyHits = withHits
       .filter(obj => obj.hit)
       .map(obj => 
