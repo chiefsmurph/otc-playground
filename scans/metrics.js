@@ -9,9 +9,9 @@ module.exports = withCollection(async records => {
       ...record,
       ...await getMetrics(record.symbol)
     }))
-  ).filter(record => record.price < 0.4);
+  ).filter(record => record && record.price < 0.4);
 
-
+  console.log(withMetrics.length, 'metricscount');
   const sortBy = {
     'lowest-float': (a, b) => a.float - b.float,
     'lowest-turnover': (a, b) => b.turnover - a.turnover,

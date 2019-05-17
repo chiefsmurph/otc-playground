@@ -94,7 +94,7 @@ const scrapeIhub = async (ticker, boardUrl) => {
           response
         });
       }
-      await page.waitFor(1000 * 2);
+      await page.waitFor(2000 * 2);
       await page.close();
 
       return response;

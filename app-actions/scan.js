@@ -7,7 +7,9 @@ const updateWl = require('../helpers/update-wl');
 const analyzeScanResponse = (scanName, response, permuteKeys) => {
   console.log('analyzeing')
   let emailRecords = [...response];
-  if (typeof emailRecords[0] === 'string') {
+
+  const format = typeof emailRecords[0] === 'string' ? "strings" : "objects";
+  if (format === "strings") {
     // array of strings
     emailRecords = emailRecords.map(symbol => ({
       symbol,
@@ -38,13 +40,15 @@ const analyzeScanResponse = (scanName, response, permuteKeys) => {
       ? Combinatorics.power(hitKeys).filter(arr => arr.length) 
       : hitKeys;
     
-    hitSets.forEach(hitSet => {
-      const prefixed = `${scanName}-${hitSet.join('-')}`;
-      groupedByHit[prefixed] = [
-        ...(groupedByHit[prefixed] || []),
-        symbol
-      ];
-    });
+    hitSets
+      .map(hitSet => hitSet.join('-'))
+      .forEach(hitSet => {
+        const prefixed = format === "objects" ? `${scanName}-${hitSet}` : hitSet;
+        groupedByHit[prefixed] = [
+          ...(groupedByHit[prefixed] || []),
+          symbol
+        ];
+      });
   });
 
   return {
@@ -84,6 +88,7 @@ module.exports = async (
       emailRecords,
       groupedByHit
     } = analyzeScanResponse(scanName, response, permuteKeys);
+    console.log({ skipSave });
     !skipSave && await updateWl(todayDate, groupedByHit);
     console.log(JSON.stringify({
       emailRecords,
