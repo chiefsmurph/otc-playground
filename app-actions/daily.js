@@ -1,6 +1,6 @@
 const analyzeWatchlists = require('./analyze-watchlists');
 const sendWlReport = require('./send-wl-report');
-const runAllScans = require('./app-actions/run-all-scans');
+const runAllScans = require('./run-all-scans');
 
 module.exports = async () => {
   await analyzeWatchlists();
