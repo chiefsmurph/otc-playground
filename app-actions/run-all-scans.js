@@ -3,6 +3,7 @@ const scan = require('./scan');
 module.exports = async (count) => {
   const scansToRun = [
     'twitter',
+    'stock-invest',
     'day-streaks',
     'accumulation',
     'green-volume',
