@@ -2,10 +2,12 @@ const scan = require('./scan');
 const allScans = [
   'twitter',
   'stock-invest',
+  'finviz',
   'day-streaks',
   'accumulation',
   'green-volume',
-  'ihub'
+  'ihub',
+  'metrics'
 ];
 module.exports = async (
   scansToRun = allScans,

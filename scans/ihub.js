@@ -11,6 +11,7 @@ const withCollection = require('../helpers/with-collection');
 
 module.exports = withCollection(async records => {
     
+    records = records.slice(0, 200);
     console.log('total records', records.length);
     const tickers = records.map(t => t.symbol);
     console.log(tickers);
