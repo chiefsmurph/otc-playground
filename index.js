@@ -1,6 +1,4 @@
-const regCronIncAfterSixThirty = require('./helpers/reg-cron-after-630');
 const daily = require('./app-actions/daily');
-const runAllScans = require('./app-actions/run-all-scans');
 const onHistoricalChange = require('./helpers/on-historical-change');
 
 (async () => {
@@ -8,12 +6,7 @@ const onHistoricalChange = require('./helpers/on-historical-change');
   // init
   await require('./helpers/init-browser')();
 
-  onHistoricalChange(async () => {
-    console.log('new historicals posted!');
-    await daily();
-    await new Promise(resolve => setTimeout(resolve, 1000 * 60));
-    await runAllScans();
-  });
+  onHistoricalChange(daily);
 
   console.log('otc-playground initialized!');
   console.log(regCronIncAfterSixThirty.toString());
