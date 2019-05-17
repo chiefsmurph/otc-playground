@@ -1,5 +1,5 @@
 {
-  "numDays": 3,
+  "numDays": 4,
   "closedOut": false,
   "listPerf": {
     "ihub-containsMerger": {
@@ -14,25 +14,25 @@
         "DMHI",
         "ADNY"
       ],
-      "trendToHigh": 12.22,
-      "trendToLow": -23.71,
-      "avgTrendBetween": -5.75
+      "trendToHigh": 14.85,
+      "trendToLow": -24.08,
+      "avgTrendBetween": -4.62
     },
     "ihub-containsReinstatement": {
       "allTickers": [
         "XHUA"
       ],
       "trendToHigh": 26.67,
-      "trendToLow": -13.33,
-      "avgTrendBetween": 6.67
+      "trendToLow": -16.67,
+      "avgTrendBetween": 5
     },
     "ihub-containsMerger-containsReinstatement": {
       "allTickers": [
         "XHUA"
       ],
       "trendToHigh": 26.67,
-      "trendToLow": -13.33,
-      "avgTrendBetween": 6.67
+      "trendToLow": -16.67,
+      "avgTrendBetween": 5
     },
     "ihub-containsBigWeek": {
       "allTickers": [
