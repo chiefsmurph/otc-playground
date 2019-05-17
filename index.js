@@ -5,11 +5,8 @@ const onHistoricalChange = require('./helpers/on-historical-change');
 
   // init
   await require('./helpers/init-browser')();
-
   onHistoricalChange(daily);
-
   console.log('otc-playground initialized!');
-  console.log(regCronIncAfterSixThirty.toString());
 
 })();
 
