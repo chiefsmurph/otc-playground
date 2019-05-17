@@ -17,10 +17,15 @@ module.exports = async (collection = [], limit, asyncFn, browserRefresh = 15) =>
   for (let chunk of chunked) {
     response = [
       ...await mapLimit(chunk, limit, async (...args) => {
-        const response = await asyncFn(...args);
-        num++;
-        console.log(`${num} / ${collection.length}`);
-        return response;
+        try {
+          var response = await asyncFn(...args);
+        } catch (e) {
+          console.log('caught in browser map limit...', e);
+        } finally {
+          num++;
+          console.log(`${num} / ${collection.length}`);
+          return response;
+        }
       }),
       ...response
     ];
