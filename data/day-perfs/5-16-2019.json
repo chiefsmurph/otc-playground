@@ -1,0 +1,82 @@
+{
+  "numDays": 1,
+  "closedOut": false,
+  "listPerf": {
+    "twitter-magicmiketrader": {
+      "allTickers": [
+        "AMRC"
+      ],
+      "trendToHigh": 2.88,
+      "trendToLow": 0,
+      "avgTrendBetween": 1.44
+    },
+    "metrics-lowest-turnover": {
+      "allTickers": [
+        "ACB"
+      ],
+      "trendToHigh": 3.19,
+      "trendToLow": -1.37,
+      "avgTrendBetween": 0.91
+    },
+    "metrics-highest-dollarVolume": {
+      "allTickers": [
+        "ACB"
+      ],
+      "trendToHigh": 3.19,
+      "trendToLow": -1.37,
+      "avgTrendBetween": 0.91
+    },
+    "metrics-lowest-turnover-highest-dollarVolume": {
+      "allTickers": [
+        "ACB"
+      ],
+      "trendToHigh": 3.19,
+      "trendToLow": -1.37,
+      "avgTrendBetween": 0.91
+    },
+    "stock-invest-top100": {
+      "allTickers": [
+        "ICAD",
+        "DHT"
+      ],
+      "trendToHigh": 1.08,
+      "trendToLow": -3.71,
+      "avgTrendBetween": -1.32
+    },
+    "finviz-nanoEarlyRunners": {
+      "allTickers": [
+        "EYEG",
+        "HLTH"
+      ],
+      "trendToHigh": 4.39,
+      "trendToLow": -12.5,
+      "avgTrendBetween": -4.05
+    },
+    "finviz-under5Target10Change2Vol200": {
+      "allTickers": [
+        "IAG"
+      ],
+      "trendToHigh": 0.38,
+      "trendToLow": -6.11,
+      "avgTrendBetween": -2.86
+    },
+    "finviz-pennyStock1milVol": {
+      "allTickers": [
+        "AMRH",
+        "APRN"
+      ],
+      "trendToHigh": 4.94,
+      "trendToLow": -4.65,
+      "avgTrendBetween": 0.15
+    },
+    "finviz-newHighsUp3volOver500k": {
+      "allTickers": [
+        "ATHX",
+        "ELTK"
+      ],
+      "trendToHigh": 0.62,
+      "trendToLow": -13.08,
+      "avgTrendBetween": -6.23
+    }
+  }
+}
