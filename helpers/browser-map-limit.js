@@ -13,9 +13,15 @@ Object.defineProperty(Array.prototype, 'chunk', {
 module.exports = async (collection = [], limit, asyncFn, browserRefresh = 15) => {
   const chunked = collection.chunk(browserRefresh);
   let response = [];
+  let num = 0;
   for (let chunk of chunked) {
     response = [
-      ...await mapLimit(chunk, limit, asyncFn),
+      ...await mapLimit(chunk, limit, async (...args) => {
+        const response = await asyncFn(...args);
+        num++;
+        console.log(`${num} / ${collection.length}`);
+        return response;
+      }),
       ...response
     ];
     await initBrowser();
