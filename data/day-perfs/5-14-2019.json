@@ -4,35 +4,30 @@
   "listPerf": {
     "twitter-magicmiketrader": {
       "allTickers": [
-        "FNHI",
         "NDYN",
-        "SIML",
-        "KOSK",
-        "DGTW"
+        "KOSK"
       ],
-      "trendToHigh": 33.75,
-      "trendToLow": -16.45,
-      "avgTrendBetween": 8.65
+      "trendToHigh": 57.63,
+      "trendToLow": -23.36,
+      "avgTrendBetween": 17.13
     },
     "twitter-SniperTradesOTC": {
       "allTickers": [
-        "XALL",
         "DAVC"
       ],
-      "trendToHigh": 58.93,
-      "trendToLow": -18.32,
-      "avgTrendBetween": 20.3
+      "trendToHigh": 0,
+      "trendToLow": -34.86,
+      "avgTrendBetween": -17.43
     },
     "twitter-i_like_bb_stock": {
       "allTickers": [
         "GHHC",
         "PVDG",
-        "DRVD",
         "QPRC"
       ],
-      "trendToHigh": 7.83,
-      "trendToLow": -25.88,
-      "avgTrendBetween": -9.02
+      "trendToHigh": 10.44,
+      "trendToLow": -28.4,
+      "avgTrendBetween": -8.98
     },
     "twitter-buddyball16": {
       "allTickers": [
@@ -44,42 +39,27 @@
     },
     "twitter-stockguru2020": {
       "allTickers": [
-        "KRFG",
-        "DGTW",
         "DLCR"
       ],
-      "trendToHigh": 17.21,
-      "trendToLow": -24.25,
-      "avgTrendBetween": -3.52
-    },
-    "accumulation-infinity": {
-      "allTickers": [
-        "UDHI",
-        "TVIPF"
-      ],
-      "trendToHigh": 2.63,
-      "trendToLow": -18.42,
-      "avgTrendBetween": -7.89
+      "trendToHigh": 82.35,
+      "trendToLow": -11.76,
+      "avgTrendBetween": 35.29
     },
     "accumulation-lt25": {
       "allTickers": [
-        "PVCTW",
-        "EXLA",
-        "XALL",
-        "IMLE"
+        "PVCTW"
       ],
-      "trendToHigh": 48.51,
-      "trendToLow": -20.67,
-      "avgTrendBetween": 13.92
+      "trendToHigh": 26.67,
+      "trendToLow": -33.33,
+      "avgTrendBetween": -3.33
     },
     "accumulation-negative": {
       "allTickers": [
-        "NTRR",
         "QPAG"
       ],
-      "trendToHigh": 16.11,
-      "trendToLow": -18.32,
-      "avgTrendBetween": -1.11
+      "trendToHigh": 32.22,
+      "trendToLow": -11.11,
+      "avgTrendBetween": 10.56
     },
     "ihub-containsCustodianship": {
       "allTickers": [
@@ -87,21 +67,20 @@
         "XHUA"
       ],
       "trendToHigh": 3.61,
-      "trendToLow": -24.05,
-      "avgTrendBetween": -10.22
+      "trendToLow": -30.07,
+      "avgTrendBetween": -13.23
     },
     "ihub-containsMerger": {
       "allTickers": [
-        "SSOF",
         "RBII",
         "XHUA",
         "ISBG",
         "LEAS",
         "ADXS"
       ],
-      "trendToHigh": 6.52,
-      "trendToLow": -19.64,
-      "avgTrendBetween": -6.56
+      "trendToHigh": 7.82,
+      "trendToLow": -18.35,
+      "avgTrendBetween": -5.26
     },
     "ihub-containsMerger-ihub-containsCustodianship": {
       "allTickers": [
