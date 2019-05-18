@@ -1,0 +1,115 @@
+{
+  "numDays": 3,
+  "closedOut": false,
+  "listPerf": {
+    "twitter-magicmiketrader": {
+      "allTickers": [
+        "FNHI",
+        "NDYN",
+        "SIML",
+        "KOSK",
+        "DGTW"
+      ],
+      "trendToHigh": 33.77,
+      "trendToLow": -19.71,
+      "avgTrendBetween": 7.03
+    },
+    "twitter-SniperTradesOTC": {
+      "allTickers": [
+        "XALL",
+        "DAVC"
+      ],
+      "trendToHigh": 58.93,
+      "trendToLow": -18.32,
+      "avgTrendBetween": 20.3
+    },
+    "twitter-i_like_bb_stock": {
+      "allTickers": [
+        "GHHC",
+        "PVDG",
+        "DRVD",
+        "QPRC"
+      ],
+      "trendToHigh": 7.83,
+      "trendToLow": -30.01,
+      "avgTrendBetween": -11.09
+    },
+    "twitter-friends23134": {
+      "allTickers": [
+        "NDYN"
+      ],
+      "trendToHigh": 114.83,
+      "trendToLow": -9.09,
+      "avgTrendBetween": 52.87
+    },
+    "twitter-stockguru2020": {
+      "allTickers": [
+        "KRFG",
+        "DGTW",
+        "DLCR"
+      ],
+      "trendToHigh": 32.9,
+      "trendToLow": -27.03,
+      "avgTrendBetween": 2.93
+    },
+    "accumulation-infinity": {
+      "allTickers": [
+        "UDHI",
+        "TVIPF"
+      ],
+      "trendToHigh": 11.47,
+      "trendToLow": -18.42,
+      "avgTrendBetween": -3.47
+    },
+    "accumulation-lt25": {
+      "allTickers": [
+        "PVCTW",
+        "EXLA",
+        "XALL",
+        "IMLE"
+      ],
+      "trendToHigh": 61.01,
+      "trendToLow": -20.67,
+      "avgTrendBetween": 20.17
+    },
+    "accumulation-negative": {
+      "allTickers": [
+        "NTRR",
+        "QPAG"
+      ],
+      "trendToHigh": 35.82,
+      "trendToLow": -18.32,
+      "avgTrendBetween": 8.75
+    },
+    "ihub-containsCustodianship": {
+      "allTickers": [
+        "FHAI",
+        "XHUA"
+      ],
+      "trendToHigh": 3.61,
+      "trendToLow": -30.07,
+      "avgTrendBetween": -13.23
+    },
+    "ihub-containsMerger": {
+      "allTickers": [
+        "SSOF",
+        "RBII",
+        "XHUA",
+        "ISBG",
+        "LEAS",
+        "ADXS"
+      ],
+      "trendToHigh": 6.52,
+      "trendToLow": -21.55,
+      "avgTrendBetween": -7.51
+    },
+    "ihub-containsMerger-ihub-containsCustodianship": {
+      "allTickers": [
+        "XHUA"
+      ],
+      "trendToHigh": 0,
+      "trendToLow": -32.43,
+      "avgTrendBetween": -16.22
+    }
+  }
+}

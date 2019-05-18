@@ -1,0 +1,133 @@
+{
+  "numDays": 4,
+  "closedOut": false,
+  "listPerf": {
+    "ihub-containsMerger": {
+      "allTickers": [
+        "ZMRK",
+        "RBII",
+        "XHUA",
+        "ISBG",
+        "LEAS",
+        "ADXS",
+        "DIRV"
+      ],
+      "trendToHigh": 13.28,
+      "trendToLow": -19.89,
+      "avgTrendBetween": -3.3
+    },
+    "ihub-containsCustodianship": {
+      "allTickers": [
+        "TRDX",
+        "FHAI"
+      ],
+      "trendToHigh": 24.42,
+      "trendToLow": -14.67,
+      "avgTrendBetween": 4.87
+    },
+    "twitter-magicmiketrader": {
+      "allTickers": [
+        "NDYN",
+        "KOSK"
+      ],
+      "trendToHigh": 59.45,
+      "trendToLow": -32.8,
+      "avgTrendBetween": 13.33
+    },
+    "twitter-SniperTradesOTC": {
+      "allTickers": [
+        "DAVC"
+      ],
+      "trendToHigh": 32,
+      "trendToLow": -24,
+      "avgTrendBetween": 4
+    },
+    "twitter-i_like_bb_stock": {
+      "allTickers": [
+        "PVDG",
+        "QPRC",
+        "GHHC",
+        "CMGO",
+        "VNUE",
+        "ASKH",
+        "ARSN",
+        "MJTV"
+      ],
+      "trendToHigh": 25.07,
+      "trendToLow": -25.6,
+      "avgTrendBetween": -0.27
+    },
+    "accumulation-infinity": {
+      "allTickers": [
+        "GZIC",
+        "ARYMF",
+        "WHSI",
+        "VCSY"
+      ],
+      "trendToHigh": 51.96,
+      "trendToLow": -32.07,
+      "avgTrendBetween": 9.95
+    },
+    "accumulation-gt300": {
+      "allTickers": [
+        "GBTC",
+        "KOSK"
+      ],
+      "trendToHigh": 5.7,
+      "trendToLow": -30.26,
+      "avgTrendBetween": -12.28
+    },
+    "accumulation-lt25": {
+      "allTickers": [
+        "HMPQ",
+        "INTV",
+        "GMPW",
+        "QPAG",
+        "FHAI",
+        "DLCR",
+        "PVDG",
+        "CZNI"
+      ],
+      "trendToHigh": 20.94,
+      "trendToLow": -32.97,
+      "avgTrendBetween": -6.01
+    },
+    "accumulation-zero": {
+      "allTickers": [
+        "NDYN"
+      ],
+      "trendToHigh": 110.99,
+      "trendToLow": -22.77,
+      "avgTrendBetween": 44.11
+    },
+    "accumulation-negative": {
+      "allTickers": [
+        "ELTP",
+        "COOP",
+        "CELZ",
+        "SGMD",
+        "PVCTW",
+        "HHSE"
+      ],
+      "trendToHigh": 25.47,
+      "trendToLow": -5.04,
+      "avgTrendBetween": 10.21
+    },
+    "day-streaks-5days": {
+      "allTickers": [
+        "LRSV"
+      ],
+      "trendToHigh": 33.25,
+      "trendToLow": -34.01,
+      "avgTrendBetween": -0.38
+    },
+    "day-streaks-4days": {
+      "allTickers": [
+        "INTV"
+      ],
+      "trendToHigh": 42.5,
+      "trendToLow": -41.43,
+      "avgTrendBetween": 0.54
+    }
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "numDays": 10,
+  "closedOut": true,
+  "listPerf": {
+    "myPicks": {
+      "allTickers": [
+        "SGMD",
+        "SRDP",
+        "LEAS"
+      ],
+      "trendToHigh": 224.9,
+      "trendToLow": -11.47,
+      "avgTrendBetween": 106.72
+    },
+    "hotStocks": {
+      "allTickers": [
+        "LEAS"
+      ],
+      "trendToHigh": 94.44,
+      "trendToLow": -11.11,
+      "avgTrendBetween": 41.67
+    }
+  }
+}
