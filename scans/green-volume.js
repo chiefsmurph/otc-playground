@@ -31,19 +31,27 @@ module.exports = withCollection(async records => {
         volumeRatio: recentHistorical.volumeRatio
       };
     });
-    
-    const greenVol = withBodyAndWick
+
+    const withSingleMetric = withBodyAndWick.map(record => ({
+      ...record,
+      single: record.bodyTrend * record.volumeRatio
+    }))
+
+    const greenVol = withSingleMetric
+      .sort((a, b) => b.single - a.single);
+
+
+    const filtered = greenVol
       .filter(({ bodyTrend }) => bodyTrend > 15 && bodyTrend < 100)
-      .filter(({ volumeRatio }) => volumeRatio > 80)
-      .filter(({ wickSize }) => wickSize < 40)
-      .sort((a, b) => b.volumeRatio - a.volumeRatio);
+      .filter(({ volumeRatio }) => volumeRatio > 70)
+      .filter(({ wickSize }) => wickSize < 50);
 
-
+    
     console.table(
-      greenVol.map(record => omit(record, 'historicals'))
+      filtered.map(record => omit(record, 'historicals'))
     )
 
     // console.log('-----------');
 
-    return greenVol.map(record => record.symbol);
+    return filtered.slice(0, 2).map(record => record.symbol);
 });
