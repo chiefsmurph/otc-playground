@@ -2,8 +2,9 @@
 
 const request = require('request-promise');
 const { pick } = require('underscore');
+const cacheThis = require('../helpers/cache-this');
 
-module.exports = async (
+module.exports = cacheThis(async (
   priceMin = 0.001,    // dubs
   priceMax = 0.0099
 ) => {
@@ -21,4 +22,4 @@ module.exports = async (
   return stocks.map(stock => 
     pick(stock, ['symbol', 'securityName', 'market', 'securityType', 'volume', 'volumeChange', 'caveatEmptor'])
   )
-};
+});

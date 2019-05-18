@@ -1,5 +1,5 @@
 const { flatten, values, uniq } = require('underscore');
-
+const cacheThis = require('../helpers/cache-this');
 
 const iHubUrls = {
   breakouts: 'https://investorshub.advfn.com/boards/breakoutboards.aspx',
@@ -29,7 +29,7 @@ const scrapeStocks = async url => {
 };
 
 
-module.exports = async () => {
+module.exports = cacheThis(async () => {
   console.log('getting IHUB-HOT collection...');
 
   const scrapedStocks = {};
@@ -43,4 +43,4 @@ module.exports = async () => {
   console.log(flattened.length);
 
   return flattened;
-};
+});

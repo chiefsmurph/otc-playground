@@ -5,7 +5,11 @@ const lookupQueries = [
   'merger',
   'custodianship',
   'reinstatement',
-  'big week'
+  'big week',
+  '8k',
+  '10k',
+  'sucks',
+  'finra'
 ];
 
 const capitalized = str => str.charAt(0).toUpperCase() + str.slice(1);

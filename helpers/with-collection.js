@@ -34,7 +34,23 @@ module.exports = scanFn => {
       sliced: sliced.length 
     });
 
-    return scanFn(sliced, ...args);
+    const response = await scanFn(sliced, ...args)
+
+    const prefixed = (collectionStr === 'all') || !response || !response.length
+      ? response
+      : (() => {
+        const format = typeof response[0] === 'string' ? 'strings' : 'objects';
+        return format === 'strings' 
+          ? { [collectionStr]: response } 
+          : response.map(record => {
+            return Object.keys(record).reduce((acc, key) => ({
+              ...acc,
+              [key === 'symbol' ? key : `${collectionStr}-${key}`]: record[key]
+            }), {});
+          });
+      })();
+
+    return prefixed;
   };
 
 };

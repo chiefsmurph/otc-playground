@@ -1,12 +1,13 @@
 const request = require('request-promise');
 const { pick } = require('underscore');
+const cacheThis = require('../helpers/cache-this');
 
 const MIN_PRICE = 0.001;
 const MAX_PRICE = 0.0099;
 const MIN_DOLLAR_VOLUME = 2000;
 const MIN_TRADE_COUNT = 4;
 
-module.exports = async (
+module.exports = cacheThis(async (
   priceMin = MIN_PRICE,    // dubs
   priceMax = MAX_PRICE
 ) => {
@@ -26,4 +27,4 @@ module.exports = async (
     );
   console.log('filtered', filtered.length);
   return filtered;
-}
+});

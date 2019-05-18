@@ -2,8 +2,9 @@ const number = require('../helpers/number');
 const { mapObject } = require('underscore');
 const mapLimit = require('promise-map-limit');
 const request = require('request-promise');
+const cacheThis = require('../helpers/cache-this');
 
-module.exports = async (ticker) => {
+module.exports = cacheThis(async (ticker) => {
     const page = await browser.newPage();
     await page.goto(`https://www.otcmarkets.com/stock/${ticker}/security`, { waitUntil: 'networkidle2' });
 
@@ -69,4 +70,4 @@ module.exports = async (ticker) => {
         dollarVolume: Math.round(price * volume),
         turnover: Math.round(price * number(float))
     };;
-};
+}, 60 * 4);
