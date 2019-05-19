@@ -5,7 +5,7 @@ const analyzeWatchlists = require('./app-actions/analyze-watchlists');
 (async () => {
 
   // init
-  await require('./helpers/init-browser')();
+  await require('../helpers/browser').init();
   onHistoricalChange(analyzeWatchlists);
   console.log('otc-playground initialized!');
 
@@ -13,5 +13,5 @@ const analyzeWatchlists = require('./app-actions/analyze-watchlists');
 
 process.on('exit', async () => {
   // un-init
-  await browser.close();
+  await require('../helpers/browser').close();
 });

@@ -20,7 +20,7 @@ console.log({ tickers });
 
 (async () => {
 
-    await require('../helpers/init-browser')();
+    await require('../helpers/browser').init();
 
 
     let allMetrics = await mapLimit(tickers, 3, async ticker => ({
@@ -35,6 +35,6 @@ console.log({ tickers });
     console.table(allMetrics);
 
 
-    await browser.close();
+    await require('../helpers/browser').close();
 
 })();

@@ -16,7 +16,7 @@
   console.log({ args })
   const toRun = args.shift();
   // init
-  await require('./helpers/init-browser')();
+  await require('./helpers/browser').init();
   const folders = ['app-actions', 'cli', 'singles', 'scraping-actions'];
   const getFile = file => {
     for (let folder of folders) {
@@ -42,5 +42,6 @@
 
   console.log('done running');
   // un-init
-  await browser.close();
+  await require('./helpers/browser').close();
+  process.exit();
 })();

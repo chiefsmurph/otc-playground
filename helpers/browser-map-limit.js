@@ -1,5 +1,4 @@
 const mapLimit = require('promise-map-limit');
-const initBrowser = require('./init-browser');
 
 Object.defineProperty(Array.prototype, 'chunk', {
   value: function(chunkSize) {
@@ -29,7 +28,7 @@ module.exports = async (collection = [], limit, asyncFn, browserRefresh = 15) =>
       }),
       ...response
     ];
-    await initBrowser();
+    require('../helpers/browser').init();
   }
   return response;
 };
