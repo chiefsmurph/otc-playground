@@ -53,7 +53,7 @@ module.exports = async (numDays = Number.POSITIVE_INFINITY) => {
         ...acc,
         [perfKey]: {
           avg: avgArray(allPerfValues),
-          values: allPerfValues,
+          values: allPerfValues.map(val => Math.round(val)),
         }
       };
     }, { totalPicks });

@@ -1,0 +1,24 @@
+BUY at open
+SELL 30% up
+AVGDOWN 30% down
+SELL ALL 50% down
+
+
+
+
+symbol: 'AAPL',
+watchList: 'ihub-containsReinstatement',
+buyPrice: 
+buyDate: '10-2-2019',
+buy: {
+  price: 280.3,
+  date: '10-2-2019'
+}
+averageDown: {
+  price: 275.3,
+  date: '10-3-2019'
+},
+sell: {
+  price: 290.3,
+  date: '10-4-2019'
+}

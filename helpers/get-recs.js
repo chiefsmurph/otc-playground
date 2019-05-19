@@ -41,7 +41,7 @@ module.exports = async (numToConsider = 3) => {
   const withPicks = sorted.map(strat => ({
     strat,
     picks: mostRecentWL[strat]
-  }));
+  })).filter(pick => pick.picks && pick.picks.length);
   console.table(withPicks)
   return {
     withPicks,
