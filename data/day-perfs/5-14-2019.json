@@ -81,7 +81,7 @@
       "trendToLow": -18.32,
       "avgTrendBetween": 8.75
     },
-    "ihub-containsCustodianship": {
+    "ihub-custodianship": {
       "allTickers": [
         "FHAI",
         "XHUA"
@@ -90,7 +90,7 @@
       "trendToLow": -30.07,
       "avgTrendBetween": -13.23
     },
-    "ihub-containsMerger": {
+    "ihub-merger": {
       "allTickers": [
         "SSOF",
         "RBII",
@@ -103,7 +103,7 @@
       "trendToLow": -21.55,
       "avgTrendBetween": -7.51
     },
-    "ihub-containsMerger-ihub-containsCustodianship": {
+    "ihub-merger-ihub-custodianship": {
       "allTickers": [
         "XHUA"
       ],

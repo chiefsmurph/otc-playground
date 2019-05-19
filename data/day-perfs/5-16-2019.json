@@ -125,7 +125,7 @@
       "trendToLow": -1.48,
       "avgTrendBetween": -0.22
     },
-    "ihub-containsMerger": {
+    "ihub-merger": {
       "allTickers": [
         "XHUA",
         "AMFE",
@@ -141,7 +141,7 @@
       "trendToLow": -18.27,
       "avgTrendBetween": -6.19
     },
-    "ihub-containsCustodianship": {
+    "ihub-custodianship": {
       "allTickers": [
         "XHUA",
         "WSGF",
@@ -151,7 +151,7 @@
       "trendToLow": -4.17,
       "avgTrendBetween": 0.79
     },
-    "ihub-containsMerger-containsCustodianship": {
+    "ihub-merger-custodianship": {
       "allTickers": [
         "XHUA"
       ],
@@ -159,7 +159,7 @@
       "trendToLow": 0,
       "avgTrendBetween": 6
     },
-    "ihub-containsReinstatement": {
+    "ihub-reinstatement": {
       "allTickers": [
         "DLCR"
       ],

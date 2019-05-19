@@ -4,12 +4,10 @@ AVGDOWN 30% down
 SELL ALL 50% down
 
 
-
+PLAYS
 
 symbol: 'AAPL',
-watchList: 'ihub-containsReinstatement',
-buyPrice: 
-buyDate: '10-2-2019',
+watchList: 'ihub-reinstatement',
 buy: {
   price: 280.3,
   date: '10-2-2019'

@@ -42,7 +42,7 @@
   "twitter-OCDrises": [
     "LRSV"
   ],
-  "ihub-containsMerger": [
+  "ihub-merger": [
     "DAVC",
     "TFVR",
     "CSOC",
@@ -61,13 +61,13 @@
     "SOAN",
     "JBZY"
   ],
-  "ihub-containsReinstatement": [
+  "ihub-reinstatement": [
     "DLCR"
   ],
-  "ihub-containsMerger-containsReinstatement": [
+  "ihub-merger-reinstatement": [
     "DLCR"
   ],
-  "ihub-containsCustodianship": [
+  "ihub-custodianship": [
     "GMNI",
     "TRDX"
   ],
@@ -147,7 +147,7 @@
   "day-streaks-6days": [
     "SRDP"
   ],
-  "ihub-contains10k": [
+  "ihub-10k": [
     "GMNI",
     "LQMT",
     "INTK",
@@ -165,21 +165,21 @@
     "AXXA",
     "DLYT"
   ],
-  "ihub-containsCustodianship-contains10k": [
+  "ihub-custodianship-10k": [
     "GMNI"
   ],
-  "ihub-containsSucks": [
+  "ihub-sucks": [
     "DAVC",
     "DLCR",
     "SSOF"
   ],
-  "ihub-containsMerger-containsSucks": [
+  "ihub-merger-sucks": [
     "DAVC"
   ],
-  "ihub-containsReinstatement-containsSucks": [
+  "ihub-reinstatement-sucks": [
     "DLCR"
   ],
-  "ihub-contains8k": [
+  "ihub-8k": [
     "TFVR",
     "CSOC",
     "LEAS",
@@ -188,11 +188,11 @@
     "COOP",
     "SNGY"
   ],
-  "ihub-containsMerger-contains8k": [
+  "ihub-merger-8k": [
     "TFVR",
     "CSOC"
   ],
-  "ihub-containsFinra": [
+  "ihub-finra": [
     "KALY",
     "IPIX",
     "GNCP",

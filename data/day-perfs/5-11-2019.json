@@ -2,7 +2,7 @@
   "numDays": 5,
   "closedOut": false,
   "listPerf": {
-    "ihub-containsMerger": {
+    "ihub-merger": {
       "allTickers": [
         "XHUA",
         "LEAS",
@@ -18,7 +18,7 @@
       "trendToLow": -25.43,
       "avgTrendBetween": -3.9
     },
-    "ihub-containsReinstatement": {
+    "ihub-reinstatement": {
       "allTickers": [
         "XHUA"
       ],
@@ -26,7 +26,7 @@
       "trendToLow": -16.67,
       "avgTrendBetween": 5
     },
-    "ihub-containsMerger-containsReinstatement": {
+    "ihub-merger-reinstatement": {
       "allTickers": [
         "XHUA"
       ],
@@ -34,7 +34,7 @@
       "trendToLow": -16.67,
       "avgTrendBetween": 5
     },
-    "ihub-containsBigWeek": {
+    "ihub-bigWeek": {
       "allTickers": [
         "SOLI"
       ],

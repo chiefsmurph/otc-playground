@@ -65,7 +65,7 @@
     "PSL",
     "KDNC"
   ],
-  "ihub-containsMerger": [
+  "ihub-merger": [
     "XHUA",
     "AMFE",
     "CSOC",
@@ -78,15 +78,15 @@
     "SSOF",
     "SSFT"
   ],
-  "ihub-containsCustodianship": [
+  "ihub-custodianship": [
     "XHUA",
     "WSGF",
     "GMNI"
   ],
-  "ihub-containsMerger-containsCustodianship": [
+  "ihub-merger-custodianship": [
     "XHUA"
   ],
-  "ihub-containsReinstatement": [
+  "ihub-reinstatement": [
     "DLCR"
   ],
   "finviz-nanoEarlyRunners": [

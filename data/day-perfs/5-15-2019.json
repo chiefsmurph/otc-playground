@@ -58,7 +58,7 @@
       "trendToLow": -39.13,
       "avgTrendBetween": -5.35
     },
-    "ihub-containsMerger": {
+    "ihub-merger": {
       "allTickers": [
         "XHUA",
         "LEAS",
@@ -71,7 +71,7 @@
       "trendToLow": -14.48,
       "avgTrendBetween": -0.71
     },
-    "ihub-containsCustodianship": {
+    "ihub-custodianship": {
       "allTickers": [
         "XHUA",
         "EORZ",
@@ -81,7 +81,7 @@
       "trendToLow": -9.13,
       "avgTrendBetween": 5.71
     },
-    "ihub-containsMerger-containsCustodianship": {
+    "ihub-merger-custodianship": {
       "allTickers": [
         "XHUA"
       ],
@@ -89,7 +89,7 @@
       "trendToLow": -10.71,
       "avgTrendBetween": 3.57
     },
-    "ihub-containsReinstatement": {
+    "ihub-reinstatement": {
       "allTickers": [
         "DLCR"
       ],

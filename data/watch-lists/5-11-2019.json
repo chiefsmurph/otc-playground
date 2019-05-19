@@ -1,5 +1,5 @@
 {
-  "ihub-containsMerger": [
+  "ihub-merger": [
     "XHUA",
     "LEAS",
     "GRDO",
@@ -12,18 +12,18 @@
     "DMHI",
     "ADNY"
   ],
-  "ihub-containsReinstatement": [
+  "ihub-reinstatement": [
     "XHUA",
     "SHOM"
   ],
-  "ihub-containsMerger-containsReinstatement": [
+  "ihub-merger-reinstatement": [
     "XHUA"
   ],
-  "ihub-containsBigWeek": [
+  "ihub-bigWeek": [
     "GXXM",
     "SOLI"
   ],
-  "ihub-containsMerger-containsBigWeek": [
+  "ihub-merger-bigWeek": [
     "GXXM"
   ]
 }

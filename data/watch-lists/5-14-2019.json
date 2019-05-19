@@ -46,11 +46,11 @@
     "NTRR",
     "QPAG"
   ],
-  "ihub-containsCustodianship": [
+  "ihub-custodianship": [
     "FHAI",
     "XHUA"
   ],
-  "ihub-containsMerger": [
+  "ihub-merger": [
     "SSOF",
     "RBII",
     "XHUA",
@@ -60,7 +60,7 @@
     "GXXM",
     "IGEX"
   ],
-  "ihub-containsMerger-ihub-containsCustodianship": [
+  "ihub-merger-ihub-custodianship": [
     "XHUA"
   ]
 }

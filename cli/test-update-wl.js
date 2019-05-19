@@ -95,11 +95,11 @@ const data = {
   "day-streaks-6days": [
     "SRDP"
   ],
-  "ihub-containsCustodianship": [
+  "ihub-custodianship": [
     "GMNI",
     "TRDX"
   ],
-  "ihub-contains10k": [
+  "ihub-10k": [
     "GMNI",
     "LQMT",
     "INTK",
@@ -117,10 +117,10 @@ const data = {
     "AXXA",
     "DLYT"
   ],
-  "ihub-containsCustodianship-contains10k": [
+  "ihub-custodianship-10k": [
     "GMNI"
   ],
-  "ihub-containsMerger": [
+  "ihub-merger": [
     "DAVC",
     "TFVR",
     "CSOC",
@@ -139,21 +139,21 @@ const data = {
     "SOAN",
     "JBZY"
   ],
-  "ihub-containsSucks": [
+  "ihub-sucks": [
     "DAVC",
     "DLCR",
     "SSOF"
   ],
-  "ihub-containsMerger-containsSucks": [
+  "ihub-merger-sucks": [
     "DAVC"
   ],
-  "ihub-containsReinstatement": [
+  "ihub-reinstatement": [
     "DLCR"
   ],
-  "ihub-containsReinstatement-containsSucks": [
+  "ihub-reinstatement-sucks": [
     "DLCR"
   ],
-  "ihub-contains8k": [
+  "ihub-8k": [
     "TFVR",
     "CSOC",
     "LEAS",
@@ -162,11 +162,11 @@ const data = {
     "COOP",
     "SNGY"
   ],
-  "ihub-containsMerger-contains8k": [
+  "ihub-merger-8k": [
     "TFVR",
     "CSOC"
   ],
-  "ihub-containsFinra": [
+  "ihub-finra": [
     "KALY",
     "IPIX",
     "GNCP",

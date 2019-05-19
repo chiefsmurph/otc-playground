@@ -16,7 +16,7 @@ const capitalized = str => str.charAt(0).toUpperCase() + str.slice(1);
 
 const lookups = lookupQueries.map(query => ({
   query,
-  key: `contains${query.split(' ').map(capitalized).join('')}`
+  key: query.split(' ').map(capitalized).join('')
 }));
 
 const getBoardUrl = async ticker => {
