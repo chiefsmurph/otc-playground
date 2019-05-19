@@ -15,5 +15,5 @@ module.exports = async () => {
       formatted
     ].join(''))
     .join('\n\n<hr>');
-  return sendEmail('WATCHLIST REPORT', formatted);
+  return sendEmail('⭐ WATCHLIST REPORT ⭐', formatted);
 };
