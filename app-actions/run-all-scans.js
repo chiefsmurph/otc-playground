@@ -14,10 +14,11 @@ const allScans = [
 ];
 module.exports = async (
   scansToRun = allScans,
-  count
+  count,
+  startAt = 0
 ) => {
   console.log({ scansToRun });
-  for (let scanName of scansToRun) {
+  for (let scanName of scansToRun.slice(0, startAt)) {
     console.log('starting scan...', scanName);
     const args = Array.isArray(scanName) ? [
       scanName[0],

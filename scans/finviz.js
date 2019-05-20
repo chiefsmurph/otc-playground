@@ -8,20 +8,24 @@ const queries = {
 };
 
 const scrapeFinvizTickers = async url => {
-  const page = await browser.newPage();
-  await page.goto(url, { waitUntil: 'domcontentloaded' });
-  const results = await page.evaluate(() => {
-      const trs = Array.from(
-          document.querySelectorAll('#screener-content tr:nth-child(4) table tr')
-      ).slice(1);
-      const tickers = trs.map(tr => {
-          const getTD = num => tr.querySelector(`td:nth-child(${num})`).textContent;
-          return getTD(2);  // ticker
-      });
-      return tickers;
-  });
-  await page.close();
-  return results;
+  try {
+    const page = await browser.newPage();
+    await page.goto(url, { waitUntil: 'domcontentloaded' });
+    const results = await page.evaluate(() => {
+        const trs = Array.from(
+            document.querySelectorAll('#screener-content tr:nth-child(4) table tr')
+        ).slice(1);
+        const tickers = trs.map(tr => {
+            const getTD = num => tr.querySelector(`td:nth-child(${num})`).textContent;
+            return getTD(2);  // ticker
+        });
+        return tickers;
+    });
+    await page.close();
+    return results;
+  } catch (e) {
+    return [];
+  }
 }
 
 module.exports = async () => {
