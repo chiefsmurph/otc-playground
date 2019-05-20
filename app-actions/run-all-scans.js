@@ -17,7 +17,7 @@ module.exports = async (
   count,
   startAt = 0
 ) => {
-  console.log({ scansToRun });
+  console.log({ scansToRun: scansToRun.slice(startAt), startAt });
   for (let scanName of scansToRun.slice(0, startAt)) {
     console.log('starting scan...', scanName);
     const args = Array.isArray(scanName) ? [
