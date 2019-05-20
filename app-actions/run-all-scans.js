@@ -3,7 +3,7 @@ const allScans = [
   'twitter',
   'stock-invest',
   'finviz',
-  // 'barchart',
+  'barchart',
   'day-streaks',
   'accumulation',
   ['accumulation', 'advancers'],
