@@ -1,5 +1,5 @@
 {
-  "numDays": 5,
+  "numDays": 6,
   "closedOut": false,
   "listPerf": {
     "ihub-merger": {
@@ -13,8 +13,8 @@
         "DIRV"
       ],
       "trendToHigh": 14.46,
-      "trendToLow": -23.15,
-      "avgTrendBetween": -4.34
+      "trendToLow": -24.09,
+      "avgTrendBetween": -4.81
     },
     "ihub-custodianship": {
       "allTickers": [
@@ -53,9 +53,9 @@
         "ARSN",
         "MJTV"
       ],
-      "trendToHigh": 25.37,
-      "trendToLow": -28.01,
-      "avgTrendBetween": -1.32
+      "trendToHigh": 28.53,
+      "trendToLow": -29.15,
+      "avgTrendBetween": -0.31
     },
     "accumulation-infinity": {
       "allTickers": [
@@ -65,8 +65,8 @@
         "VCSY"
       ],
       "trendToHigh": 57.24,
-      "trendToLow": -32.07,
-      "avgTrendBetween": 12.59
+      "trendToLow": -34.12,
+      "avgTrendBetween": 11.56
     },
     "accumulation-gt300": {
       "allTickers": [
@@ -89,8 +89,8 @@
         "CZNI"
       ],
       "trendToHigh": 23.44,
-      "trendToLow": -33.66,
-      "avgTrendBetween": -5.11
+      "trendToLow": -35.43,
+      "avgTrendBetween": -5.99
     },
     "accumulation-zero": {
       "allTickers": [
@@ -110,8 +110,8 @@
         "HHSE"
       ],
       "trendToHigh": 27.75,
-      "trendToLow": -5.16,
-      "avgTrendBetween": 11.3
+      "trendToLow": -6.2,
+      "avgTrendBetween": 10.78
     },
     "day-streaks-5days": {
       "allTickers": [
@@ -126,8 +126,8 @@
         "INTV"
       ],
       "trendToHigh": 42.5,
-      "trendToLow": -41.43,
-      "avgTrendBetween": 0.54
+      "trendToLow": -50,
+      "avgTrendBetween": -3.75
     }
   }
 }
