@@ -1,8 +1,8 @@
 const cTable = require('console.table');
 const sendEmail = require('../helpers/send-email');
 const getRecs= require('../helpers/get-recs');
-module.exports = async (numToConsider, email) => {
-  const { mostRecentDate, withPicks } = await getRecs(numToConsider);
+module.exports = async onlyMe => {
+  const { mostRecentDate, withPicks } = await getRecs();
 
   const topPicks = withPicks.splice(0, 2);
   const medPicks = withPicks.splice(0, 2);
@@ -19,5 +19,5 @@ module.exports = async (numToConsider, email) => {
   medPicks.length && section('MEDIUM PICKS', medPicks);
   theRest.length && section('MILD PICKS', theRest);
 
-  await sendEmail(`TODAYS RECOMMENDATIONS (${mostRecentDate})`, str, true);
+  await sendEmail(`TODAYS RECOMMENDATIONS (${mostRecentDate})`, str, !onlyMe);
 };

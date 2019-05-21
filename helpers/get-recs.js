@@ -15,7 +15,7 @@ module.exports = async (numToConsider = 9) => {
   const stratsPerDay = output.map(report => 
     report.finalReport.find(r => r.perfKey === 'avgTrendBetween').data
       .slice(0, numToConsider)
-      .filter(result => result.values.length === report.day)
+      .filter(result => result.values.length >= report.day - 1)
       .map(result => result.watchList)
   );
     console.log({stratsPerDay});

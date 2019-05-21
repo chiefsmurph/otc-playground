@@ -261,17 +261,6 @@
       "trendToLow": -24.62,
       "avgTrendBetween": -9.23
     },
-    "ihub-Merger": {
-      "allTickers": [
-        "XHUA",
-        "DIRV",
-        "GRDO",
-        "SOAN"
-      ],
-      "trendToHigh": 3.81,
-      "trendToLow": -13.2,
-      "avgTrendBetween": -4.69
-    },
     "ihub-8k": {
       "allTickers": [
         "VERB",
@@ -280,14 +269,6 @@
       "trendToHigh": 13.07,
       "trendToLow": -14.92,
       "avgTrendBetween": -0.93
-    },
-    "ihub-Merger-8k": {
-      "allTickers": [
-        "XHUA"
-      ],
-      "trendToHigh": 0,
-      "trendToLow": -3.7,
-      "avgTrendBetween": -1.85
     },
     "ihub-10k": {
       "allTickers": [
@@ -298,26 +279,6 @@
       "trendToHigh": 11.05,
       "trendToLow": -14.3,
       "avgTrendBetween": -1.63
-    },
-    "ihub-Finra": {
-      "allTickers": [
-        "TXHD",
-        "KALY",
-        "IPIX",
-        "MCIG",
-        "PRED"
-      ],
-      "trendToHigh": 9.51,
-      "trendToLow": -6.65,
-      "avgTrendBetween": 1.43
-    },
-    "ihub-10k-Finra": {
-      "allTickers": [
-        "TXHD"
-      ],
-      "trendToHigh": 33.14,
-      "trendToLow": 0,
-      "avgTrendBetween": 16.57
     },
     "ihub-big-week": {
       "allTickers": [
@@ -335,7 +296,7 @@
       "trendToLow": -17.65,
       "avgTrendBetween": -8.82
     },
-    "ihub-Sucks": {
+    "ihub-sucks": {
       "allTickers": [
         "TMDI",
         "SURG"

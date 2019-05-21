@@ -1,5 +1,5 @@
 const cacheThis = require('../helpers/cache-this');
-const DAYS_BACK = 1.5;
+const DAYS_BACK = 1;
 
 const lookupQueries = [
   'merger',
