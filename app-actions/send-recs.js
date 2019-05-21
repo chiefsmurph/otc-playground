@@ -19,5 +19,5 @@ module.exports = async (numToConsider, email) => {
   medPicks.length && section('MEDIUM PICKS', medPicks);
   theRest.length && section('MILD PICKS', theRest);
 
-  await sendEmail(`TODAYS RECOMMENDATIONS (${mostRecentDate})`, str, email);
+  await sendEmail(`TODAYS RECOMMENDATIONS (${mostRecentDate})`, str, true);
 };

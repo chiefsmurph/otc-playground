@@ -2,7 +2,7 @@ const watchlistPerf = require('./watch-list-perf');
 const sendEmail = require('../helpers/send-email');
 const mapLimit = require('promise-map-limit');
 
-module.exports = async email => {
+module.exports = async () => {
   const days = [1, 3, 6, 14];
   const output = await mapLimit(days, 1, async day => ({
     day,
@@ -15,5 +15,5 @@ module.exports = async email => {
       formatted
     ].join(''))
     .join('\n\n<hr>');
-  return sendEmail('⭐ WATCHLIST REPORT ⭐', formatted, email);
+  return sendEmail('⭐ WATCHLIST REPORT ⭐', formatted, true);
 };
