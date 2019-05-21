@@ -8,7 +8,7 @@ const allScans = [
   'accumulation',
   ['accumulation', 'advancers'],
   'green-volume',
-  'ihub',
+  ['ihub', 'all', 100],
   'metrics',
   ['metrics', 'advancers']
 ];
@@ -22,7 +22,7 @@ module.exports = async (
     console.log('starting scan...', scanName);
     const args = Array.isArray(scanName) ? [
       scanName[0],
-      count,
+      scanName[2] || count,
       undefined,
       undefined,
       ...scanName.slice(1)

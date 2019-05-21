@@ -2,7 +2,7 @@ const usersOfInterest = [
   'magicmiketrader',
   'SniperTradesOTC',
   'i_like_bb_stock',
-  'buddyball16',
+  'friends23134',
   'stockguru2020',
   'KickoStocks',
   'DomBuckz',

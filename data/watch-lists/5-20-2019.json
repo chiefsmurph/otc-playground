@@ -12,7 +12,8 @@
   ],
   "twitter-magicmiketrader": [
     "DNRG",
-    "BBDA"
+    "BBDA",
+    "PSIQ"
   ],
   "twitter-OCDrises": [
     "DNRG",
@@ -40,14 +41,14 @@
     "WTII"
   ],
   "stock-invest-top100": [
-    "ELGX",
     "CCR",
-    "SOLO",
-    "BAGR"
+    "BAGR",
+    "PTN",
+    "SOLO"
   ],
   "stock-invest-undervalued": [
-    "MTFB",
-    "SOLY",
+    "LPG",
+    "GRPN",
     "KDNC",
     "ABAL"
   ],
@@ -108,8 +109,8 @@
   ],
   "accumulation-lt25": [
     "SOAN",
-    "DNRG",
-    "CRSM"
+    "CRSM",
+    "DNRG"
   ],
   "accumulation-advancers-infinity": [
     "VIBI",
@@ -130,24 +131,18 @@
     "SOAN"
   ],
   "ihub-8k": [
-    "XHUA",
-    "ETFM",
+    "GNCP",
     "VERB",
     "NDYN",
-    "ONCI",
-    "SVTE"
+    "ONCI"
   ],
   "ihub-Merger-8k": [
     "XHUA"
   ],
   "ihub-10k": [
     "TXHD",
-    "MJTV",
-    "BIOAQ",
-    "GAHC",
     "GTEH",
-    "SOLI",
-    "GMGI"
+    "SOLI"
   ],
   "ihub-Finra": [
     "TXHD",
@@ -160,8 +155,8 @@
   "ihub-10k-Finra": [
     "TXHD"
   ],
-  "ihub-BigWeek": [
-    "XALL"
+  "ihub-big-week": [
+    "CELZ"
   ],
   "ihub-Custodianship": [
     "TRDX"
@@ -169,5 +164,88 @@
   "ihub-Sucks": [
     "TMDI",
     "SURG"
+  ],
+  "twitter-DomBuckz": [
+    "XALL",
+    "TOMI"
+  ],
+  "barchart-upgrades": [
+    "LMT",
+    "RTN"
+  ],
+  "barchart-signalDirection-upgrades": [
+    "LMT"
+  ],
+  "twitter-friends23134": [
+    "NDYN"
+  ],
+  "ihub-finra": [
+    "TXHD",
+    "GNCP",
+    "KRFG",
+    "IPIX",
+    "MCIG",
+    "GETH"
+  ],
+  "ihub-10k-finra": [
+    "TXHD"
+  ],
+  "ihub-8k-finra": [
+    "GNCP"
+  ],
+  "ihub-merger": [
+    "KRFG",
+    "GRDO",
+    "SOAN"
+  ],
+  "ihub-merger-finra": [
+    "KRFG"
+  ],
+  "ihub-custodianship": [
+    "TRDX"
+  ],
+  "ihub-sucks": [
+    "UCPA",
+    "SURG",
+    "TMDI"
+  ],
+  "metrics-lowest-float": [
+    "CRSM",
+    "TXHD"
+  ],
+  "metrics-lowest-turnover": [
+    "CRSM",
+    "BYOC"
+  ],
+  "metrics-lowest-float-lowest-turnover": [
+    "CRSM"
+  ],
+  "metrics-highest-dollarVolume": [
+    "CRSM",
+    "SOAN"
+  ],
+  "metrics-lowest-float-highest-dollarVolume": [
+    "CRSM"
+  ],
+  "metrics-lowest-turnover-highest-dollarVolume": [
+    "CRSM"
+  ],
+  "metrics-lowest-float-lowest-turnover-highest-dollarVolume": [
+    "CRSM"
+  ],
+  "metrics-advancers-lowest-float": [
+    "SOAN",
+    "RLTR"
+  ],
+  "metrics-advancers-highest-dollarVolume": [
+    "SOAN",
+    "DNRG"
+  ],
+  "metrics-advancers-lowest-float-advancers-highest-dollarVolume": [
+    "SOAN"
+  ],
+  "metrics-advancers-lowest-turnover": [
+    "VSPC",
+    "BYOC"
   ]
 }

@@ -1,5 +1,5 @@
 const cacheThis = require('../helpers/cache-this');
-const DAYS_BACK = 3;
+const DAYS_BACK = 1.5;
 
 const lookupQueries = [
   'merger',
@@ -12,11 +12,9 @@ const lookupQueries = [
   'finra'
 ];
 
-const capitalized = str => str.charAt(0).toUpperCase() + str.slice(1);
-
 const lookups = lookupQueries.map(query => ({
   query,
-  key: query.split(' ').map(capitalized).join('')
+  key: query.split(' ').join('-')
 }));
 
 const getBoardUrl = async ticker => {
