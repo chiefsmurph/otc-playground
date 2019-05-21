@@ -11,7 +11,7 @@ const onHistoricalChange = fnToRun => {
     const curDateStr = await getMostRecentHistoricalDate();
     console.log(`most recent hist dateStr: ${curDateStr}`)
     if (prevVal && prevVal != curDateStr) {
-      fns.forEach(fn => fn());
+      fns.forEach(fn => fn(curDateStr));
     }
     prevVal = curDateStr;
   };

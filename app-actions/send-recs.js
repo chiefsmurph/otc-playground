@@ -13,7 +13,7 @@ module.exports = async (numToConsider, email) => {
     str += title + '\n';
     str += '-------------------------------\n'
     str += cTable.getTable(withPicks);
-    str += '\n\n';
+    str += '\n';
   };
   section('TOP PICKS', topPicks);
   medPicks.length && section('MEDIUM PICKS', medPicks);

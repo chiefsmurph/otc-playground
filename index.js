@@ -1,12 +1,16 @@
 // const daily = require('./app-actions/daily');
 const onHistoricalChange = require('./helpers/on-historical-change');
-const analyzeWatchlists = require('./app-actions/analyze-watchlists');
+const daily = require('./app-actions/daily');
+const sendEmail = require('./helpers/send-email');
 
 (async () => {
 
   // init
   await require('./helpers/browser').init();
-  onHistoricalChange(analyzeWatchlists);
+  onHistoricalChange(async curDateStr => {
+    await sendEmail(`new historicals for ${curDateStr}!`, 'new historicals posted!');
+    await daily();
+  });
   console.log('otc-playground initialized!');
 
 })();
