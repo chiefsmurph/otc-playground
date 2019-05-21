@@ -1,5 +1,5 @@
 {
-  "numDays": 2,
+  "numDays": 3,
   "closedOut": false,
   "listPerf": {
     "twitter-magicmiketrader": {
@@ -7,9 +7,9 @@
         "LRSV",
         "RMSL"
       ],
-      "trendToHigh": 81.52,
-      "trendToLow": -22.76,
-      "avgTrendBetween": 29.38
+      "trendToHigh": 85.36,
+      "trendToLow": -32.4,
+      "avgTrendBetween": 26.48
     },
     "twitter-stockguru2020": {
       "allTickers": [
@@ -17,16 +17,16 @@
         "KRFG"
       ],
       "trendToHigh": 24.02,
-      "trendToLow": -16.1,
-      "avgTrendBetween": 3.96
+      "trendToLow": -40.73,
+      "avgTrendBetween": -8.35
     },
     "twitter-magicmiketrader-stockguru2020": {
       "allTickers": [
         "LRSV"
       ],
       "trendToHigh": 28.05,
-      "trendToLow": -12.2,
-      "avgTrendBetween": 7.93
+      "trendToLow": -31.46,
+      "avgTrendBetween": -1.71
     },
     "twitter-SniperTradesOTC": {
       "allTickers": [
@@ -46,17 +46,17 @@
         "GTEH",
         "QPRC"
       ],
-      "trendToHigh": 7.75,
-      "trendToLow": -25.54,
-      "avgTrendBetween": -8.89
+      "trendToHigh": 7.93,
+      "trendToLow": -31.57,
+      "avgTrendBetween": -11.82
     },
     "twitter-friends23134": {
       "allTickers": [
         "NDYN"
       ],
-      "trendToHigh": 28.43,
+      "trendToHigh": 48.91,
       "trendToLow": -39.13,
-      "avgTrendBetween": -5.35
+      "avgTrendBetween": 4.89
     },
     "ihub-merger": {
       "allTickers": [
@@ -67,9 +67,9 @@
         "TRDX",
         "KRFG"
       ],
-      "trendToHigh": 13.06,
-      "trendToLow": -14.48,
-      "avgTrendBetween": -0.71
+      "trendToHigh": 14.17,
+      "trendToLow": -23.34,
+      "avgTrendBetween": -4.58
     },
     "ihub-custodianship": {
       "allTickers": [
@@ -78,24 +78,24 @@
         "FHAI"
       ],
       "trendToHigh": 20.54,
-      "trendToLow": -9.13,
-      "avgTrendBetween": 5.71
+      "trendToLow": -11.51,
+      "avgTrendBetween": 4.52
     },
     "ihub-merger-custodianship": {
       "allTickers": [
         "XHUA"
       ],
       "trendToHigh": 17.86,
-      "trendToLow": -10.71,
-      "avgTrendBetween": 3.57
+      "trendToLow": -17.86,
+      "avgTrendBetween": 0
     },
     "ihub-reinstatement": {
       "allTickers": [
         "DLCR"
       ],
-      "trendToHigh": 55,
+      "trendToHigh": 75,
       "trendToLow": -25,
-      "avgTrendBetween": 15
+      "avgTrendBetween": 25
     },
     "accumulation-infinity": {
       "allTickers": [
@@ -103,8 +103,8 @@
         "CLSI"
       ],
       "trendToHigh": 0,
-      "trendToLow": -12.5,
-      "avgTrendBetween": -6.25
+      "trendToLow": -20.39,
+      "avgTrendBetween": -10.2
     },
     "accumulation-lt25": {
       "allTickers": [
@@ -112,17 +112,17 @@
         "NDYN",
         "TURA"
       ],
-      "trendToHigh": 12.81,
+      "trendToHigh": 19.64,
       "trendToLow": -50.78,
-      "avgTrendBetween": -18.99
+      "avgTrendBetween": -15.57
     },
     "accumulation-negative": {
       "allTickers": [
         "CYDY"
       ],
-      "trendToHigh": 18.15,
+      "trendToHigh": 20.41,
       "trendToLow": -4.8,
-      "avgTrendBetween": 6.68
+      "avgTrendBetween": 7.8
     },
     "day-streaks-6days": {
       "allTickers": [

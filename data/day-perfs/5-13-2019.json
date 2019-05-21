@@ -1,5 +1,5 @@
 {
-  "numDays": 4,
+  "numDays": 5,
   "closedOut": false,
   "listPerf": {
     "ihub-merger": {
@@ -12,35 +12,35 @@
         "ADXS",
         "DIRV"
       ],
-      "trendToHigh": 13.28,
-      "trendToLow": -19.89,
-      "avgTrendBetween": -3.3
+      "trendToHigh": 14.46,
+      "trendToLow": -23.15,
+      "avgTrendBetween": -4.34
     },
     "ihub-custodianship": {
       "allTickers": [
         "TRDX",
         "FHAI"
       ],
-      "trendToHigh": 24.42,
+      "trendToHigh": 28.27,
       "trendToLow": -14.67,
-      "avgTrendBetween": 4.87
+      "avgTrendBetween": 6.8
     },
     "twitter-magicmiketrader": {
       "allTickers": [
         "NDYN",
         "KOSK"
       ],
-      "trendToHigh": 59.45,
+      "trendToHigh": 76.28,
       "trendToLow": -32.8,
-      "avgTrendBetween": 13.33
+      "avgTrendBetween": 21.74
     },
     "twitter-SniperTradesOTC": {
       "allTickers": [
         "DAVC"
       ],
       "trendToHigh": 32,
-      "trendToLow": -24,
-      "avgTrendBetween": 4
+      "trendToLow": -30.67,
+      "avgTrendBetween": 0.67
     },
     "twitter-i_like_bb_stock": {
       "allTickers": [
@@ -53,9 +53,9 @@
         "ARSN",
         "MJTV"
       ],
-      "trendToHigh": 25.07,
-      "trendToLow": -25.6,
-      "avgTrendBetween": -0.27
+      "trendToHigh": 25.37,
+      "trendToLow": -28.01,
+      "avgTrendBetween": -1.32
     },
     "accumulation-infinity": {
       "allTickers": [
@@ -88,17 +88,17 @@
         "PVDG",
         "CZNI"
       ],
-      "trendToHigh": 20.94,
-      "trendToLow": -32.97,
-      "avgTrendBetween": -6.01
+      "trendToHigh": 23.44,
+      "trendToLow": -33.66,
+      "avgTrendBetween": -5.11
     },
     "accumulation-zero": {
       "allTickers": [
         "NDYN"
       ],
-      "trendToHigh": 110.99,
+      "trendToHigh": 144.64,
       "trendToLow": -22.77,
-      "avgTrendBetween": 44.11
+      "avgTrendBetween": 60.94
     },
     "accumulation-negative": {
       "allTickers": [
@@ -109,9 +109,9 @@
         "PVCTW",
         "HHSE"
       ],
-      "trendToHigh": 25.47,
-      "trendToLow": -5.04,
-      "avgTrendBetween": 10.21
+      "trendToHigh": 27.75,
+      "trendToLow": -5.16,
+      "avgTrendBetween": 11.3
     },
     "day-streaks-5days": {
       "allTickers": [
