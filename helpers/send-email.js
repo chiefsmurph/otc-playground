@@ -25,7 +25,7 @@ module.exports = async (subject, body, sendToEveryone) => {
   const emailsToSend = sendToEveryone ? [
     ...emails,
     credentials.username
-  ] : credentials.username;
+  ] : [credentials.username];
   console.log({ emailsToSend })
   for (let email of emailsToSend) {
     await sendSingle(subject, body, email);
