@@ -15,14 +15,14 @@ module.exports = async (numToConsider = 9) => {
   const stratsPerDay = output.map(report => 
     report.finalReport.find(r => r.perfKey === 'avgTrendBetween').data
       .slice(0, numToConsider)
-      .filter(result => result.values.length >= report.day - 1)
+      .filter(result => result.values.length >= report.day - 2)
       .map(result => result.watchList)
   );
     console.log({stratsPerDay});
   const pointTally = {};
   stratsPerDay.forEach((strats) => {
     strats.forEach((strat, ind, arr) => {
-      const points = arr.length - ind;
+      const points = numToConsider - ind;
       pointTally[strat] = [
         ...(pointTally[strat] || []),
         points
@@ -30,7 +30,7 @@ module.exports = async (numToConsider = 9) => {
     });
   });
 
-
+  console.log({ pointTally })
   const totals = mapObject(pointTally, arr => arr.reduce((acc, val) => acc + val, 0));
   const sorted = Object.keys(totals).sort((a, b) => {
     return totals[b] - totals[a];
@@ -47,7 +47,7 @@ module.exports = async (numToConsider = 9) => {
     strat,
     picks: (mostRecentWL[strat] || []).join(' ')
   }))
-  .filter(pick => pick.picks && pick.picks.length);
+  // .filter(pick => pick.picks && pick.picks.length);
   console.table(withPicks)
   return {
     withPicks,

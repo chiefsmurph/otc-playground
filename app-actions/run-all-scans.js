@@ -9,8 +9,11 @@ const allScans = [
   ['accumulation', 'advancers'],
   'green-volume',
   ['ihub', 'all', 100],
+  ['ihub', 'decliners', 30],
   'metrics',
-  ['metrics', 'advancers']
+  ['metrics', 'advancers'],
+  ['metrics', 'decliners'],
+  ['metrics', 'ihub-hot'],
 ];
 module.exports = async (
   scansToRun = allScans,
