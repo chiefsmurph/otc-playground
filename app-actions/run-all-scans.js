@@ -21,16 +21,23 @@ module.exports = async (
   startAt = 0
 ) => {
   console.log({ scansToRun: scansToRun.slice(startAt), startAt });
-  for (let scanName of scansToRun.slice(startAt)) {
-    console.log('starting scan...', scanName);
-    const args = Array.isArray(scanName) ? [
-      scanName[0],
-      scanName[2] || count,
-      undefined,
-      undefined,
-      ...scanName.slice(1)
-    ] : [scanName, count];
+  for (let scanToRun of scansToRun.slice(startAt)) {
+    console.log('starting scan...', scanToRun);
+    const args = (() => {
+      if (Array.isArray(scanToRun)) {
+        const [scanName, collection, countOverwrite] = scanToRun;
+        return [
+          scanName,
+          countOverwrite || count,
+          undefined,
+          undefined,
+          collection
+        ];
+      } else {
+        return [scanToRun, count];
+      }
+    })();
     await scan(...args);
-    console.log('finished scan...', scanName);
+    console.log('finished scan...', scanToRun);
   }
 };

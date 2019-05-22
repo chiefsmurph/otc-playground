@@ -1,3 +1,5 @@
+require('./helpers/my-js');
+
 // const test= require('./singles/test-update-wl.js');
 // console.log(test);
 (async () => {

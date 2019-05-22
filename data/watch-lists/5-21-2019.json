@@ -79,9 +79,6 @@
     "NOC",
     "INXN"
   ],
-  "barchart-topStocks-signalStrength": [
-    "NOC"
-  ],
   "barchart-upgrades": [
     "BA",
     "MSG"
@@ -149,10 +146,6 @@
     "PCLI",
     "DNRG"
   ],
-  "ihub-8k-10k": [
-    "VYST",
-    "HSSHF"
-  ],
   "ihub-merger": [
     "NDYN",
     "GRDO",
@@ -183,5 +176,84 @@
   ],
   "barchart-topStocks-signalDirection": [
     "CHE"
+  ],
+  "ihub-decliners-custodianship": [
+    "CCLX"
+  ],
+  "ihub-decliners-reinstatement": [
+    "CCLX"
+  ],
+  "ihub-decliners-sucks": [
+    "ADHC"
+  ],
+  "ihub-decliners-merger": [
+    "SOAN"
+  ],
+  "ihub-decliners-finra": [
+    "KRFG"
+  ],
+  "ihub-decliners-8k": [
+    "GZIC"
+  ],
+  "metrics-lowest-float": [
+    "CRSM",
+    "GIGL"
+  ],
+  "metrics-highest-dollarVolume": [
+    "CRSM",
+    "PCLI"
+  ],
+  "metrics-lowest-turnover": [
+    "HEMP",
+    "LVVV"
+  ],
+  "metrics-advancers-lowest-turnover": [
+    "PCLI",
+    "MXSG"
+  ],
+  "metrics-advancers-highest-dollarVolume": [
+    "PCLI",
+    "DGTW"
+  ],
+  "metrics-advancers-lowest-float": [
+    "NUVI",
+    "GOGY"
+  ],
+  "metrics-decliners-lowest-turnover": [
+    "PCLI",
+    "DUTV"
+  ],
+  "metrics-decliners-highest-dollarVolume": [
+    "PCLI",
+    "DGTW"
+  ],
+  "metrics-decliners-lowest-float": [
+    "NUVI",
+    "GOGY"
+  ],
+  "metrics-ihub-hot-lowest-float": [
+    "CRSM",
+    "PVDG"
+  ],
+  "metrics-ihub-hot-lowest-turnover": [
+    "HEMP",
+    "LVVV"
+  ],
+  "recs-number1": [
+    "NBY"
+  ],
+  "recs-top": [
+    "NBY",
+    "PRFC"
+  ],
+  "recs-medium": [
+    "DGTW",
+    "XALL",
+    "KRFG",
+    "IPIX",
+    "GNCP",
+    "SRDP",
+    "TXHD",
+    "BIOAQ"
   ]
 }

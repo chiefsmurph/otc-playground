@@ -1,6 +1,8 @@
 const cTable = require('console.table');
 const sendEmail = require('../helpers/send-email');
-const getRecs= require('../helpers/get-recs');
+const getRecs = require('../helpers/get-recs');
+const updateWl = require('../helpers/update-wl');
+
 module.exports = async onlyMe => {
   const { mostRecentDate, withPicks } = await getRecs();
 
@@ -20,4 +22,12 @@ module.exports = async onlyMe => {
   theRest.length && section('MILD PICKS', theRest);
 
   await sendEmail(`TODAYS RECOMMENDATIONS (${mostRecentDate})`, str, !onlyMe);
+
+  const getTs = arr => arr.map(pick => pick.picks).flatten();
+
+  await updateWl(mostRecentDate, {
+    'recs-number1': getTs([topPicks[0]]),
+    'recs-top': getTs(topPicks),
+    'recs-medium': getTs(medPicks)
+  });
 };

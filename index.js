@@ -2,6 +2,7 @@
 const onHistoricalChange = require('./helpers/on-historical-change');
 const daily = require('./app-actions/daily');
 const sendEmail = require('./helpers/send-email');
+require('./helpers/my-js');
 
 (async () => {
 
