@@ -1,5 +1,5 @@
 {
-  "numDays": 5,
+  "numDays": 6,
   "closedOut": false,
   "listPerf": {
     "twitter-magicmiketrader": {
@@ -11,8 +11,8 @@
         "DGTW"
       ],
       "trendToHigh": 58.95,
-      "trendToLow": -32.81,
-      "avgTrendBetween": 13.07
+      "trendToLow": -33.89,
+      "avgTrendBetween": 12.53
     },
     "twitter-SniperTradesOTC": {
       "allTickers": [
@@ -20,8 +20,8 @@
         "DAVC"
       ],
       "trendToHigh": 97.32,
-      "trendToLow": -21.18,
-      "avgTrendBetween": 38.07
+      "trendToLow": -29.18,
+      "avgTrendBetween": 34.07
     },
     "twitter-i_like_bb_stock": {
       "allTickers": [
@@ -48,18 +48,19 @@
         "DGTW",
         "DLCR"
       ],
-      "trendToHigh": 71.29,
+      "trendToHigh": 83.29,
       "trendToLow": -37.81,
-      "avgTrendBetween": 16.74
+      "avgTrendBetween": 22.74
     },
     "accumulation-infinity": {
       "allTickers": [
         "UDHI",
-        "TVIPF"
+        "TVIPF",
+        "BRYYF"
       ],
-      "trendToHigh": 11.47,
-      "trendToLow": -18.42,
-      "avgTrendBetween": -3.47
+      "trendToHigh": 40.98,
+      "trendToLow": -12.28,
+      "avgTrendBetween": 14.35
     },
     "accumulation-lt25": {
       "allTickers": [
@@ -87,8 +88,8 @@
         "XHUA"
       ],
       "trendToHigh": 3.61,
-      "trendToLow": -32.77,
-      "avgTrendBetween": -14.58
+      "trendToLow": -34.26,
+      "avgTrendBetween": -15.32
     },
     "ihub-merger": {
       "allTickers": [
@@ -99,17 +100,17 @@
         "LEAS",
         "ADXS"
       ],
-      "trendToHigh": 9.19,
-      "trendToLow": -24.87,
-      "avgTrendBetween": -7.84
+      "trendToHigh": 9.85,
+      "trendToLow": -26.88,
+      "avgTrendBetween": -8.51
     },
     "ihub-merger-ihub-custodianship": {
       "allTickers": [
         "XHUA"
       ],
       "trendToHigh": 0,
-      "trendToLow": -37.84,
-      "avgTrendBetween": -18.92
+      "trendToLow": -40.81,
+      "avgTrendBetween": -20.41
     }
   }
 }

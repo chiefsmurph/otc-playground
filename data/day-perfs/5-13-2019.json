@@ -1,5 +1,5 @@
 {
-  "numDays": 6,
+  "numDays": 7,
   "closedOut": false,
   "listPerf": {
     "ihub-merger": {
@@ -12,9 +12,9 @@
         "ADXS",
         "DIRV"
       ],
-      "trendToHigh": 14.46,
-      "trendToLow": -24.09,
-      "avgTrendBetween": -4.81
+      "trendToHigh": 14.94,
+      "trendToLow": -25.83,
+      "avgTrendBetween": -5.44
     },
     "ihub-custodianship": {
       "allTickers": [
@@ -39,8 +39,8 @@
         "DAVC"
       ],
       "trendToHigh": 32,
-      "trendToLow": -30.67,
-      "avgTrendBetween": 0.67
+      "trendToLow": -49.33,
+      "avgTrendBetween": -8.67
     },
     "twitter-i_like_bb_stock": {
       "allTickers": [
@@ -54,8 +54,8 @@
         "MJTV"
       ],
       "trendToHigh": 28.53,
-      "trendToLow": -29.15,
-      "avgTrendBetween": -0.31
+      "trendToLow": -31.34,
+      "avgTrendBetween": -1.4
     },
     "accumulation-infinity": {
       "allTickers": [
@@ -64,9 +64,9 @@
         "WHSI",
         "VCSY"
       ],
-      "trendToHigh": 57.24,
-      "trendToLow": -34.12,
-      "avgTrendBetween": 11.56
+      "trendToHigh": 57.52,
+      "trendToLow": -36.52,
+      "avgTrendBetween": 10.5
     },
     "accumulation-gt300": {
       "allTickers": [
@@ -110,16 +110,16 @@
         "HHSE"
       ],
       "trendToHigh": 27.75,
-      "trendToLow": -6.2,
-      "avgTrendBetween": 10.78
+      "trendToLow": -6.48,
+      "avgTrendBetween": 10.64
     },
     "day-streaks-5days": {
       "allTickers": [
         "LRSV"
       ],
       "trendToHigh": 33.25,
-      "trendToLow": -34.01,
-      "avgTrendBetween": -0.38
+      "trendToLow": -35.28,
+      "avgTrendBetween": -1.02
     },
     "day-streaks-4days": {
       "allTickers": [
