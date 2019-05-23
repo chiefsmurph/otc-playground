@@ -28,7 +28,7 @@ module.exports = async (collection = [], limit, asyncFn, browserRefresh = 15) =>
       }),
       ...response
     ];
-    require('../helpers/browser').init();
+    await require('../helpers/browser').init();
   }
   return response;
 };

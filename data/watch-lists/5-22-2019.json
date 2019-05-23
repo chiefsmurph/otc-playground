@@ -105,5 +105,150 @@
   ],
   "ihub-10k-sucks": [
     "FLES"
+  ],
+  "ihub-decliners-10k": [
+    "XALL",
+    "GHHC"
+  ],
+  "ihub-decliners-8k": [
+    "TNRG"
+  ],
+  "ihub-decliners-merger": [
+    "XHUA"
+  ],
+  "metrics-lowest-turnover": [
+    "MJNA",
+    "NWBO"
+  ],
+  "metrics-highest-dollarVolume": [
+    "MJNA",
+    "KBLB"
+  ],
+  "metrics-lowest-turnover-highest-dollarVolume": [
+    "MJNA"
+  ],
+  "metrics-lowest-float": [
+    "PIONF",
+    "PAQWF"
+  ],
+  "metrics-advancers-lowest-turnover": [
+    "CNNA",
+    "HMPQ"
+  ],
+  "metrics-advancers-highest-dollarVolume": [
+    "DGTW",
+    "TTCM"
+  ],
+  "metrics-advancers-lowest-turnover-advancers-highest-dollarVolume": [
+    "KRFG"
+  ],
+  "metrics-advancers-lowest-float": [
+    "NSPX",
+    "STGZ"
+  ],
+  "metrics-decliners-lowest-float": [
+    "NSPX",
+    "STGZ"
+  ],
+  "metrics-decliners-lowest-turnover": [
+    "CNNA",
+    "HMPQ"
+  ],
+  "metrics-decliners-highest-dollarVolume": [
+    "DGTW",
+    "TTCM"
+  ],
+  "metrics-ihub-hot-lowest-turnover": [
+    "MJNA",
+    "NWBO"
+  ],
+  "metrics-ihub-hot-highest-dollarVolume": [
+    "MJNA",
+    "KBLB"
+  ],
+  "metrics-ihub-hot-lowest-turnover-ihub-hot-highest-dollarVolume": [
+    "MJNA"
+  ],
+  "metrics-ihub-hot-lowest-float": [
+    "TXHD",
+    "NDYN"
+  ],
+  "finviz-nanoEarlyRunners": [
+    "CAPR",
+    "HLTH"
+  ],
+  "finviz-under5Target10Change2Vol200Within10of52Low": [
+    "CSLT",
+    "RTIX"
+  ],
+  "finviz-under5Target10Change2Vol200": [
+    "LLNW",
+    "MDXG"
+  ],
+  "finviz-under5TopLosers": [
+    "GENE",
+    "ONCS"
+  ],
+  "finviz-pennyStock1milVol": [
+    "AMR",
+    "AMRH"
+  ],
+  "finviz-newHighsUp3volOver500k": [
+    "ASCMA",
+    "AVP"
+  ],
+  "barchart-topStocks": [
+    "NOC",
+    "FICO"
+  ],
+  "barchart-signalStrength": [
+    "NOC",
+    "NEE"
+  ],
+  "barchart-topStocks-signalStrength": [
+    "NOC"
+  ],
+  "barchart-signalDirection": [
+    "SHOP",
+    "JJSF"
+  ],
+  "barchart-upgrades": [
+    "FCNCA",
+    "ORLY"
+  ],
+  "day-streaks-4days": [
+    "OWCP",
+    "VATE",
+    "BOPFF"
+  ],
+  "day-streaks-7days": [
+    "MJNA"
+  ],
+  "day-streaks-5days": [
+    "CLOK",
+    "UNVC"
+  ],
+  "day-streaks-3days": [
+    "NXTTF",
+    "ASTI"
+  ],
+  "day-streaks-6days": [
+    "TTCM"
+  ],
+  "recs-number1": [
+    "DNRG"
+  ],
+  "recs-top": [
+    "DNRG",
+    "KRFG",
+    "RSAU"
+  ],
+  "recs-medium": [
+    "COOP",
+    "GNCP",
+    "SRDP",
+    "IPIX",
+    "NTEK",
+    "TXHD"
   ]
 }

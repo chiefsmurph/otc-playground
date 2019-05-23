@@ -6,9 +6,21 @@ const updateWl = require('../helpers/update-wl');
 module.exports = async onlyMe => {
   const { mostRecentDate, withPicks } = await getRecs();
 
-  const topPicks = withPicks.splice(0, 2);
-  const medPicks = withPicks.splice(0, 2);
-  const theRest = withPicks;
+  const twoPicks = () => {
+    let result = [];
+    while (result.reduce((acc, res) => {
+      console.log(res.picks);
+      return acc + res.picks.length
+    }, 0) < 2) {
+      result.push(
+        withPicks.shift()
+      );
+    }
+    return result;
+  };
+  const topPicks = twoPicks();
+  const medPicks = twoPicks();
+  const theRest = withPicks.slice(0, 10);
 
   let str = '';
   const section = (title, withPicks) => {
@@ -26,7 +38,7 @@ module.exports = async onlyMe => {
   const getTs = arr => arr.map(pick => pick.picks).flatten();
 
   await updateWl(mostRecentDate, {
-    'recs-number1': getTs([topPicks[0]]),
+    'recs-number1': getTs(topPicks).slice(0, 1),
     'recs-top': getTs(topPicks),
     'recs-medium': getTs(medPicks)
   });

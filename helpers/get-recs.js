@@ -14,7 +14,7 @@ module.exports = async (numToConsider = 9) => {
   console.log(JSON.stringify({output}, null, 2));
   const stratsPerDay = output.map(report => 
     report.finalReport.find(r => r.perfKey === 'avgTrendBetween').data
-      .slice(0, numToConsider)
+      // .slice(0, numToConsider)
       .filter(result => result.values.length >= report.day - 2)
       .map(result => result.watchList)
   );
@@ -47,6 +47,7 @@ module.exports = async (numToConsider = 9) => {
     strat,
     picks: (mostRecentWL[strat] || [])
   }))
+  .filter(pick => !pick.strat.includes('recs-'))
   .filter(pick => pick.picks && pick.picks.length);
   console.table(withPicks)
   return {
