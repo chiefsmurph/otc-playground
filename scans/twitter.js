@@ -11,7 +11,10 @@ const usersOfInterest = [
   'GoldMemberOTC',
   'OCDrises',
   'WishfulTH1NKin',
-  'OCMillionaire'
+  'OCMillionaire',
+  'i_am_andrew84',
+  'TradeNeverMarry',
+  ''
 ];
 const twitterUser = require('../scraping-actions/twitter-user');
 const browserMapLimit = require('../helpers/browser-map-limit');

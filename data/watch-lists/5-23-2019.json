@@ -141,5 +141,77 @@
   "ihub-decliners-finra": [
     "TNRG",
     "AHIX"
+  ],
+  "metrics-lowest-float": [
+    "LATNF",
+    "PIONF"
+  ],
+  "metrics-lowest-turnover": [
+    "LATNF",
+    "NWBO"
+  ],
+  "metrics-lowest-float-lowest-turnover": [
+    "LATNF"
+  ],
+  "metrics-highest-dollarVolume": [
+    "NWBO",
+    "KBLB"
+  ],
+  "metrics-lowest-turnover-highest-dollarVolume": [
+    "NWBO"
+  ],
+  "metrics-advancers-lowest-float": [
+    "NSPX",
+    "VNRRQ"
+  ],
+  "metrics-advancers-lowest-turnover": [
+    "CNNA",
+    "HMPQ"
+  ],
+  "metrics-advancers-highest-dollarVolume": [
+    "TTCM",
+    "DGTW"
+  ],
+  "metrics-decliners-lowest-float": [
+    "NSPX",
+    "VNRRQ"
+  ],
+  "metrics-decliners-lowest-turnover": [
+    "CNNA",
+    "HMPQ"
+  ],
+  "metrics-decliners-highest-dollarVolume": [
+    "TTCM",
+    "DGTW"
+  ],
+  "metrics-ihub-hot-lowest-turnover": [
+    "NWBO",
+    "KBLB"
+  ],
+  "metrics-ihub-hot-highest-dollarVolume": [
+    "NWBO",
+    "KBLB"
+  ],
+  "metrics-ihub-hot-lowest-turnover-ihub-hot-highest-dollarVolume": [
+    "NWBO",
+    "KBLB"
+  ],
+  "metrics-ihub-hot-lowest-float": [
+    "RCRT",
+    "TPTW"
+  ],
+  "recs-number1": [
+    "FNQQF"
+  ],
+  "recs-top": [
+    "FNQQF",
+    "BXXRF",
+    "APVS",
+    "MLOOF",
+    "ERGTF"
+  ],
+  "recs-medium": [
+    "TNRG",
+    "AHIX"
   ]
 }

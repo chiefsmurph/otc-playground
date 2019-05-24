@@ -9,7 +9,13 @@ const lookupQueries = [
   '8k',
   '10k',
   'sucks',
-  'finra'
+  'finra',
+  'FBI',
+  'SEC',
+  'fuck',
+  'investigate',
+  'dump',
+  'shit'
 ];
 
 const lookups = lookupQueries.map(query => ({
