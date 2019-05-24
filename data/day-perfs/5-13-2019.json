@@ -1,5 +1,5 @@
 {
-  "numDays": 7,
+  "numDays": 8,
   "closedOut": false,
   "listPerf": {
     "ihub-merger": {
@@ -12,9 +12,9 @@
         "ADXS",
         "DIRV"
       ],
-      "trendToHigh": 14.94,
-      "trendToLow": -25.83,
-      "avgTrendBetween": -5.44
+      "trendToHigh": 15.05,
+      "trendToLow": -26.19,
+      "avgTrendBetween": -5.57
     },
     "ihub-custodianship": {
       "allTickers": [
@@ -22,8 +22,8 @@
         "FHAI"
       ],
       "trendToHigh": 28.27,
-      "trendToLow": -14.67,
-      "avgTrendBetween": 6.8
+      "trendToLow": -15.63,
+      "avgTrendBetween": 6.32
     },
     "twitter-magicmiketrader": {
       "allTickers": [
@@ -39,8 +39,8 @@
         "DAVC"
       ],
       "trendToHigh": 32,
-      "trendToLow": -49.33,
-      "avgTrendBetween": -8.67
+      "trendToLow": -54.67,
+      "avgTrendBetween": -11.33
     },
     "twitter-i_like_bb_stock": {
       "allTickers": [
@@ -54,8 +54,8 @@
         "MJTV"
       ],
       "trendToHigh": 28.53,
-      "trendToLow": -31.34,
-      "avgTrendBetween": -1.4
+      "trendToLow": -32.74,
+      "avgTrendBetween": -2.11
     },
     "accumulation-infinity": {
       "allTickers": [
@@ -65,8 +65,8 @@
         "VCSY"
       ],
       "trendToHigh": 57.52,
-      "trendToLow": -36.52,
-      "avgTrendBetween": 10.5
+      "trendToLow": -37.2,
+      "avgTrendBetween": 10.16
     },
     "accumulation-gt300": {
       "allTickers": [
@@ -89,8 +89,8 @@
         "CZNI"
       ],
       "trendToHigh": 23.44,
-      "trendToLow": -35.43,
-      "avgTrendBetween": -5.99
+      "trendToLow": -35.88,
+      "avgTrendBetween": -6.22
     },
     "accumulation-zero": {
       "allTickers": [
@@ -109,25 +109,25 @@
         "PVCTW",
         "HHSE"
       ],
-      "trendToHigh": 27.75,
-      "trendToLow": -6.48,
-      "avgTrendBetween": 10.64
+      "trendToHigh": 28.23,
+      "trendToLow": -12.44,
+      "avgTrendBetween": 7.9
     },
     "day-streaks-5days": {
       "allTickers": [
         "LRSV"
       ],
       "trendToHigh": 33.25,
-      "trendToLow": -35.28,
-      "avgTrendBetween": -1.02
+      "trendToLow": -47.97,
+      "avgTrendBetween": -7.36
     },
     "day-streaks-4days": {
       "allTickers": [
         "INTV"
       ],
       "trendToHigh": 42.5,
-      "trendToLow": -50,
-      "avgTrendBetween": -3.75
+      "trendToLow": -53.57,
+      "avgTrendBetween": -5.54
     }
   }
 }
