@@ -1,5 +1,5 @@
 {
-  "numDays": 2,
+  "numDays": 3,
   "closedOut": false,
   "listPerf": {
     "twitter-magicmiketrader": {
@@ -8,8 +8,8 @@
         "ECRD"
       ],
       "trendToHigh": 41.2,
-      "trendToLow": -2,
-      "avgTrendBetween": 19.6
+      "trendToLow": -3.6,
+      "avgTrendBetween": 18.8
     },
     "twitter-OCDrises": {
       "allTickers": [
@@ -24,9 +24,9 @@
         "DGTW",
         "XALL"
       ],
-      "trendToHigh": 4.68,
-      "trendToLow": -47.75,
-      "avgTrendBetween": -21.53
+      "trendToHigh": 25.06,
+      "trendToLow": -53.15,
+      "avgTrendBetween": -14.05
     },
     "twitter-i_like_bb_stock": {
       "allTickers": [
@@ -58,8 +58,8 @@
         "NOVN"
       ],
       "trendToHigh": 7.88,
-      "trendToLow": -8.27,
-      "avgTrendBetween": -0.2
+      "trendToLow": -10.48,
+      "avgTrendBetween": -1.3
     },
     "finviz-nanoEarlyRunners": {
       "allTickers": [
@@ -75,9 +75,9 @@
         "SPN",
         "RIGL"
       ],
-      "trendToHigh": 1.59,
+      "trendToHigh": 3.46,
       "trendToLow": -12.73,
-      "avgTrendBetween": -5.57
+      "avgTrendBetween": -4.63
     },
     "finviz-under5Target10Change2Vol200": {
       "allTickers": [
@@ -85,8 +85,8 @@
         "INFN"
       ],
       "trendToHigh": 2.91,
-      "trendToLow": -6.58,
-      "avgTrendBetween": -1.83
+      "trendToLow": -7,
+      "avgTrendBetween": -2.04
     },
     "finviz-under5TopLosers": {
       "allTickers": [
@@ -103,17 +103,17 @@
         "AMRH"
       ],
       "trendToHigh": 0.7,
-      "trendToLow": -15.94,
-      "avgTrendBetween": -7.62
+      "trendToLow": -16.32,
+      "avgTrendBetween": -7.81
     },
     "finviz-newHighsUp3volOver500k": {
       "allTickers": [
         "SESN",
         "SMRT"
       ],
-      "trendToHigh": 15.35,
-      "trendToLow": -9.95,
-      "avgTrendBetween": 2.7
+      "trendToHigh": 15.62,
+      "trendToLow": -13.89,
+      "avgTrendBetween": 0.87
     },
     "barchart-topStocks": {
       "allTickers": [
@@ -129,34 +129,34 @@
         "NOC",
         "INXN"
       ],
-      "trendToHigh": 0.66,
+      "trendToHigh": 0.99,
       "trendToLow": -1.67,
-      "avgTrendBetween": -0.51
+      "avgTrendBetween": -0.34
     },
     "barchart-upgrades": {
       "allTickers": [
         "MSG"
       ],
       "trendToHigh": 0.74,
-      "trendToLow": -2.37,
-      "avgTrendBetween": -0.81
+      "trendToLow": -2.99,
+      "avgTrendBetween": -1.12
     },
     "day-streaks-6days": {
       "allTickers": [
         "FNMA",
         "FFTTF"
       ],
-      "trendToHigh": 0.54,
+      "trendToHigh": 2.16,
       "trendToLow": -5.06,
-      "avgTrendBetween": -2.26
+      "avgTrendBetween": -1.45
     },
     "day-streaks-4days": {
       "allTickers": [
         "UNVC"
       ],
-      "trendToHigh": 26.18,
+      "trendToHigh": 29.97,
       "trendToLow": -21.77,
-      "avgTrendBetween": 2.21
+      "avgTrendBetween": 4.1
     },
     "accumulation-infinity": {
       "allTickers": [
@@ -166,8 +166,8 @@
         "QPAG"
       ],
       "trendToHigh": 28.44,
-      "trendToLow": -10.8,
-      "avgTrendBetween": 8.82
+      "trendToLow": -14.41,
+      "avgTrendBetween": 7.01
     },
     "accumulation-gt300": {
       "allTickers": [
@@ -184,9 +184,9 @@
         "GCLT",
         "XALL"
       ],
-      "trendToHigh": 20.15,
-      "trendToLow": -21.59,
-      "avgTrendBetween": -0.72
+      "trendToHigh": 32.33,
+      "trendToLow": -25.55,
+      "avgTrendBetween": 3.39
     },
     "accumulation-advancers-infinity": {
       "allTickers": [
@@ -195,8 +195,8 @@
         "QPAG"
       ],
       "trendToHigh": 4.58,
-      "trendToLow": -11.4,
-      "avgTrendBetween": -3.41
+      "trendToLow": -16.22,
+      "avgTrendBetween": -5.82
     },
     "accumulation-advancers-lt25": {
       "allTickers": [
@@ -204,18 +204,18 @@
         "XSNX",
         "GCLT"
       ],
-      "trendToHigh": 24.64,
-      "trendToLow": -17.68,
-      "avgTrendBetween": 3.48
+      "trendToHigh": 27.31,
+      "trendToLow": -22.95,
+      "avgTrendBetween": 2.18
     },
     "green-volume": {
       "allTickers": [
         "PCLI",
         "GCLT"
       ],
-      "trendToHigh": 26,
+      "trendToHigh": 30,
       "trendToLow": -16.22,
-      "avgTrendBetween": 4.89
+      "avgTrendBetween": 6.89
     },
     "ihub-8k": {
       "allTickers": [
@@ -225,9 +225,9 @@
         "DAVC",
         "UCPA"
       ],
-      "trendToHigh": 5.84,
-      "trendToLow": -19.97,
-      "avgTrendBetween": -7.06
+      "trendToHigh": 6.67,
+      "trendToLow": -27.81,
+      "avgTrendBetween": -10.57
     },
     "ihub-10k": {
       "allTickers": [
@@ -243,9 +243,9 @@
         "GAHC",
         "PCLI"
       ],
-      "trendToHigh": 17.58,
-      "trendToLow": -16.83,
-      "avgTrendBetween": 0.37
+      "trendToHigh": 19.48,
+      "trendToLow": -23.65,
+      "avgTrendBetween": -2.09
     },
     "ihub-merger": {
       "allTickers": [
@@ -274,25 +274,25 @@
         "BIOAQ"
       ],
       "trendToHigh": 81.69,
-      "trendToLow": -8.19,
-      "avgTrendBetween": 36.75
+      "trendToLow": -8.36,
+      "avgTrendBetween": 36.66
     },
     "ihub-sucks": {
       "allTickers": [
         "PRED",
         "LVVV"
       ],
-      "trendToHigh": 4.98,
+      "trendToHigh": 24.46,
       "trendToLow": -7.42,
-      "avgTrendBetween": -1.22
+      "avgTrendBetween": 8.52
     },
     "ihub-big-week": {
       "allTickers": [
         "KPAY"
       ],
-      "trendToHigh": 0,
+      "trendToHigh": 4.02,
       "trendToLow": -19.98,
-      "avgTrendBetween": -9.99
+      "avgTrendBetween": -7.98
     },
     "barchart-signalDirection": {
       "allTickers": [
@@ -300,8 +300,8 @@
         "CTAS"
       ],
       "trendToHigh": 0.44,
-      "trendToLow": -2.12,
-      "avgTrendBetween": -0.84
+      "trendToLow": -2.31,
+      "avgTrendBetween": -0.93
     },
     "barchart-topStocks-signalDirection": {
       "allTickers": [
@@ -365,8 +365,8 @@
         "GIGL"
       ],
       "trendToHigh": 2,
-      "trendToLow": -41.43,
-      "avgTrendBetween": -19.72
+      "trendToLow": -45.91,
+      "avgTrendBetween": -21.96
     },
     "metrics-highest-dollarVolume": {
       "allTickers": [
@@ -382,9 +382,9 @@
         "HEMP",
         "LVVV"
       ],
-      "trendToHigh": 5.33,
-      "trendToLow": -3.29,
-      "avgTrendBetween": 1.02
+      "trendToHigh": 22.1,
+      "trendToLow": -4.57,
+      "avgTrendBetween": 8.77
     },
     "metrics-advancers-lowest-turnover": {
       "allTickers": [
@@ -392,8 +392,8 @@
         "MXSG"
       ],
       "trendToHigh": 0,
-      "trendToLow": -16.22,
-      "avgTrendBetween": -8.11
+      "trendToLow": -28.59,
+      "avgTrendBetween": -14.29
     },
     "metrics-advancers-highest-dollarVolume": {
       "allTickers": [
@@ -401,8 +401,8 @@
         "DGTW"
       ],
       "trendToHigh": 1.35,
-      "trendToLow": -47.3,
-      "avgTrendBetween": -22.97
+      "trendToLow": -52.7,
+      "avgTrendBetween": -25.68
     },
     "metrics-advancers-lowest-float": {
       "allTickers": [
@@ -410,8 +410,8 @@
         "GOGY"
       ],
       "trendToHigh": 1.32,
-      "trendToLow": -37.11,
-      "avgTrendBetween": -17.89
+      "trendToLow": -42.56,
+      "avgTrendBetween": -20.62
     },
     "metrics-decliners-lowest-turnover": {
       "allTickers": [
@@ -428,8 +428,8 @@
         "DGTW"
       ],
       "trendToHigh": 1.35,
-      "trendToLow": -47.3,
-      "avgTrendBetween": -22.97
+      "trendToLow": -52.7,
+      "avgTrendBetween": -25.68
     },
     "metrics-decliners-lowest-float": {
       "allTickers": [
@@ -437,8 +437,8 @@
         "GOGY"
       ],
       "trendToHigh": 1.32,
-      "trendToLow": -37.11,
-      "avgTrendBetween": -17.89
+      "trendToLow": -42.56,
+      "avgTrendBetween": -20.62
     },
     "metrics-ihub-hot-lowest-float": {
       "allTickers": [
@@ -454,9 +454,9 @@
         "HEMP",
         "LVVV"
       ],
-      "trendToHigh": 5.33,
-      "trendToLow": -3.29,
-      "avgTrendBetween": 1.02
+      "trendToHigh": 22.1,
+      "trendToLow": -4.57,
+      "avgTrendBetween": 8.77
     },
     "recs-number1": {
       "allTickers": [
@@ -485,9 +485,9 @@
         "TXHD",
         "BIOAQ"
       ],
-      "trendToHigh": 59.69,
-      "trendToLow": -19.49,
-      "avgTrendBetween": 20.1
+      "trendToHigh": 65.51,
+      "trendToLow": -21.16,
+      "avgTrendBetween": 22.17
     }
   }
 }

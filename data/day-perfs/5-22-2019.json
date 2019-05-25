@@ -1,5 +1,5 @@
 {
-  "numDays": 1,
+  "numDays": 2,
   "closedOut": false,
   "listPerf": {
     "twitter-stockguru2020": {
@@ -8,40 +8,40 @@
         "RSAU"
       ],
       "trendToHigh": 12.5,
-      "trendToLow": -25.81,
-      "avgTrendBetween": -6.66
+      "trendToLow": -32.51,
+      "avgTrendBetween": -10
     },
     "twitter-OCDrises": {
       "allTickers": [
         "OTTV"
       ],
       "trendToHigh": 0,
-      "trendToLow": -12.5,
-      "avgTrendBetween": -6.25
+      "trendToLow": -18.5,
+      "avgTrendBetween": -9.25
     },
     "twitter-GoldMemberOTC": {
       "allTickers": [
         "DLCR"
       ],
       "trendToHigh": 0,
-      "trendToLow": -16.67,
-      "avgTrendBetween": -8.33
+      "trendToLow": -23.33,
+      "avgTrendBetween": -11.67
     },
     "twitter-OCMillionaire": {
       "allTickers": [
         "DLCR"
       ],
       "trendToHigh": 0,
-      "trendToLow": -16.67,
-      "avgTrendBetween": -8.33
+      "trendToLow": -23.33,
+      "avgTrendBetween": -11.67
     },
     "twitter-GoldMemberOTC-OCMillionaire": {
       "allTickers": [
         "DLCR"
       ],
       "trendToHigh": 0,
-      "trendToLow": -16.67,
-      "avgTrendBetween": -8.33
+      "trendToLow": -23.33,
+      "avgTrendBetween": -11.67
     },
     "twitter-DomBuckz": {
       "allTickers": [
@@ -49,8 +49,8 @@
         "HUML"
       ],
       "trendToHigh": 0,
-      "trendToLow": -31.94,
-      "avgTrendBetween": -15.97
+      "trendToLow": -38.33,
+      "avgTrendBetween": -19.17
     },
     "twitter-i_like_bb_stock": {
       "allTickers": [
@@ -58,16 +58,17 @@
         "NSPX"
       ],
       "trendToHigh": 20.42,
-      "trendToLow": -23.21,
-      "avgTrendBetween": -1.39
+      "trendToLow": -34.79,
+      "avgTrendBetween": -7.18
     },
     "twitter-magicmiketrader": {
       "allTickers": [
+        "TPTW",
         "HTTI"
       ],
-      "trendToHigh": 0,
-      "trendToLow": -38.24,
-      "avgTrendBetween": -19.12
+      "trendToHigh": 15,
+      "trendToLow": -51.71,
+      "avgTrendBetween": -18.35
     },
     "twitter-aaaamhim": {
       "allTickers": [
@@ -83,9 +84,9 @@
         "BFCH",
         "WTII"
       ],
-      "trendToHigh": 2.82,
-      "trendToLow": -16.14,
-      "avgTrendBetween": -6.66
+      "trendToHigh": 4.02,
+      "trendToLow": -16.65,
+      "avgTrendBetween": -6.32
     },
     "stock-invest-top100": {
       "allTickers": [
@@ -94,24 +95,24 @@
         "HOKCY"
       ],
       "trendToHigh": 2.39,
-      "trendToLow": -0.86,
-      "avgTrendBetween": 0.77
+      "trendToLow": -2.8,
+      "avgTrendBetween": -0.21
     },
     "stock-invest-undervalued": {
       "allTickers": [
         "ZIOP"
       ],
-      "trendToHigh": 4.12,
+      "trendToHigh": 6.3,
       "trendToLow": -0.36,
-      "avgTrendBetween": 1.88
+      "avgTrendBetween": 2.97
     },
     "accumulation-advancers-infinity": {
       "allTickers": [
         "CZNI"
       ],
       "trendToHigh": 8.33,
-      "trendToLow": 0,
-      "avgTrendBetween": 4.17
+      "trendToLow": -8.33,
+      "avgTrendBetween": 0
     },
     "accumulation-advancers-lt25": {
       "allTickers": [
@@ -137,8 +138,8 @@
         "SIML"
       ],
       "trendToHigh": 14.2,
-      "trendToLow": -10.02,
-      "avgTrendBetween": 2.09
+      "trendToLow": -15.81,
+      "avgTrendBetween": -0.8
     },
     "ihub-finra": {
       "allTickers": [
@@ -148,9 +149,9 @@
         "NTEK",
         "TXHD"
       ],
-      "trendToHigh": 4.94,
-      "trendToLow": -8.88,
-      "avgTrendBetween": -1.97
+      "trendToHigh": 7.16,
+      "trendToLow": -11.12,
+      "avgTrendBetween": -1.98
     },
     "ihub-8k-finra": {
       "allTickers": [
@@ -169,9 +170,9 @@
         "ISBG",
         "KRFG"
       ],
-      "trendToHigh": 5.77,
-      "trendToLow": -15.52,
-      "avgTrendBetween": -4.88
+      "trendToHigh": 6.82,
+      "trendToLow": -18.48,
+      "avgTrendBetween": -5.83
     },
     "ihub-merger-8k": {
       "allTickers": [
@@ -187,35 +188,44 @@
         "FLES",
         "GHHC"
       ],
-      "trendToHigh": 11.54,
-      "trendToLow": -12.07,
-      "avgTrendBetween": -0.26
+      "trendToHigh": 14.09,
+      "trendToLow": -30.09,
+      "avgTrendBetween": -8
     },
     "ihub-sucks": {
       "allTickers": [
         "FLES",
+        "TRON",
         "DKGR"
       ],
-      "trendToHigh": 21.54,
-      "trendToLow": -6.28,
-      "avgTrendBetween": 7.63
+      "trendToHigh": 22.57,
+      "trendToLow": -13.23,
+      "avgTrendBetween": 4.67
     },
     "ihub-10k-sucks": {
       "allTickers": [
         "FLES"
       ],
-      "trendToHigh": 23.08,
-      "trendToLow": -2.56,
-      "avgTrendBetween": 10.26
+      "trendToHigh": 28.18,
+      "trendToLow": -22.92,
+      "avgTrendBetween": 2.63
     },
     "ihub-decliners-10k": {
       "allTickers": [
         "XALL",
         "GHHC"
       ],
-      "trendToHigh": 19.57,
-      "trendToLow": -17.31,
-      "avgTrendBetween": 1.13
+      "trendToHigh": 46.14,
+      "trendToLow": -25.15,
+      "avgTrendBetween": 10.49
+    },
+    "ihub-decliners-8k": {
+      "allTickers": [
+        "TNRG"
+      ],
+      "trendToHigh": 21.21,
+      "trendToLow": -24.24,
+      "avgTrendBetween": -1.52
     },
     "ihub-decliners-merger": {
       "allTickers": [
@@ -227,28 +237,29 @@
     },
     "metrics-lowest-turnover": {
       "allTickers": [
-        "MJNA"
+        "MJNA",
+        "NWBO"
       ],
       "trendToHigh": 1.37,
-      "trendToLow": -10.96,
-      "avgTrendBetween": -4.79
+      "trendToLow": -8.27,
+      "avgTrendBetween": -3.45
     },
     "metrics-highest-dollarVolume": {
       "allTickers": [
         "MJNA",
         "KBLB"
       ],
-      "trendToHigh": 4.16,
+      "trendToHigh": 9.34,
       "trendToLow": -8.58,
-      "avgTrendBetween": -2.21
+      "avgTrendBetween": 0.38
     },
     "metrics-lowest-turnover-highest-dollarVolume": {
       "allTickers": [
         "MJNA"
       ],
-      "trendToHigh": 1.37,
+      "trendToHigh": 2.74,
       "trendToLow": -10.96,
-      "avgTrendBetween": -4.79
+      "avgTrendBetween": -4.11
     },
     "metrics-advancers-lowest-turnover": {
       "allTickers": [
@@ -256,16 +267,16 @@
         "HMPQ"
       ],
       "trendToHigh": 0,
-      "trendToLow": -30.34,
-      "avgTrendBetween": -15.17
+      "trendToLow": -36.16,
+      "avgTrendBetween": -18.08
     },
     "metrics-advancers-highest-dollarVolume": {
       "allTickers": [
         "DGTW",
         "TTCM"
       ],
-      "trendToHigh": 10.77,
-      "trendToLow": -33.08,
+      "trendToHigh": 18.46,
+      "trendToLow": -40.77,
       "avgTrendBetween": -11.15
     },
     "metrics-advancers-lowest-turnover-advancers-highest-dollarVolume": {
@@ -300,51 +311,52 @@
         "HMPQ"
       ],
       "trendToHigh": 0,
-      "trendToLow": -30.34,
-      "avgTrendBetween": -15.17
+      "trendToLow": -36.16,
+      "avgTrendBetween": -18.08
     },
     "metrics-decliners-highest-dollarVolume": {
       "allTickers": [
         "DGTW",
         "TTCM"
       ],
-      "trendToHigh": 10.77,
-      "trendToLow": -33.08,
+      "trendToHigh": 18.46,
+      "trendToLow": -40.77,
       "avgTrendBetween": -11.15
     },
     "metrics-ihub-hot-lowest-turnover": {
       "allTickers": [
-        "MJNA"
+        "MJNA",
+        "NWBO"
       ],
       "trendToHigh": 1.37,
-      "trendToLow": -10.96,
-      "avgTrendBetween": -4.79
+      "trendToLow": -8.27,
+      "avgTrendBetween": -3.45
     },
     "metrics-ihub-hot-highest-dollarVolume": {
       "allTickers": [
         "MJNA",
         "KBLB"
       ],
-      "trendToHigh": 4.16,
+      "trendToHigh": 9.34,
       "trendToLow": -8.58,
-      "avgTrendBetween": -2.21
+      "avgTrendBetween": 0.38
     },
     "metrics-ihub-hot-lowest-turnover-ihub-hot-highest-dollarVolume": {
       "allTickers": [
         "MJNA"
       ],
-      "trendToHigh": 1.37,
+      "trendToHigh": 2.74,
       "trendToLow": -10.96,
-      "avgTrendBetween": -4.79
+      "avgTrendBetween": -4.11
     },
     "metrics-ihub-hot-lowest-float": {
       "allTickers": [
         "TXHD",
         "NDYN"
       ],
-      "trendToHigh": 4.25,
-      "trendToLow": -19.33,
-      "avgTrendBetween": -7.54
+      "trendToHigh": 7.68,
+      "trendToLow": -19.76,
+      "avgTrendBetween": -6.04
     },
     "finviz-nanoEarlyRunners": {
       "allTickers": [
@@ -361,17 +373,17 @@
         "RTIX"
       ],
       "trendToHigh": 2,
-      "trendToLow": -2.17,
-      "avgTrendBetween": -0.08
+      "trendToLow": -3.94,
+      "avgTrendBetween": -0.97
     },
     "finviz-under5Target10Change2Vol200": {
       "allTickers": [
         "LLNW",
         "MDXG"
       ],
-      "trendToHigh": 3.95,
-      "trendToLow": -2.19,
-      "avgTrendBetween": 0.88
+      "trendToHigh": 4.12,
+      "trendToLow": -4.99,
+      "avgTrendBetween": -0.44
     },
     "finviz-under5TopLosers": {
       "allTickers": [
@@ -379,8 +391,8 @@
         "ONCS"
       ],
       "trendToHigh": 2.94,
-      "trendToLow": -6.7,
-      "avgTrendBetween": -1.88
+      "trendToLow": -11.01,
+      "avgTrendBetween": -4.03
     },
     "finviz-pennyStock1milVol": {
       "allTickers": [
@@ -388,8 +400,8 @@
         "AMRH"
       ],
       "trendToHigh": 2.28,
-      "trendToLow": -9.77,
-      "avgTrendBetween": -3.75
+      "trendToLow": -10.16,
+      "avgTrendBetween": -3.94
     },
     "finviz-newHighsUp3volOver500k": {
       "allTickers": [
@@ -405,77 +417,87 @@
         "NOC",
         "FICO"
       ],
-      "trendToHigh": 0.41,
+      "trendToHigh": 0.84,
       "trendToLow": -1.47,
-      "avgTrendBetween": -0.53
+      "avgTrendBetween": -0.31
     },
     "barchart-signalStrength": {
       "allTickers": [
         "NOC",
         "NEE"
       ],
-      "trendToHigh": 0.46,
+      "trendToHigh": 0.79,
       "trendToLow": -0.89,
-      "avgTrendBetween": -0.22
+      "avgTrendBetween": -0.05
     },
     "barchart-topStocks-signalStrength": {
       "allTickers": [
         "NOC"
       ],
-      "trendToHigh": 0.16,
+      "trendToHigh": 0.35,
       "trendToLow": -1.78,
-      "avgTrendBetween": -0.81
+      "avgTrendBetween": -0.72
     },
     "barchart-signalDirection": {
       "allTickers": [
         "SHOP",
         "JJSF"
       ],
-      "trendToHigh": 1.18,
-      "trendToLow": -2.6,
-      "avgTrendBetween": -0.71
+      "trendToHigh": 1.34,
+      "trendToLow": -2.61,
+      "avgTrendBetween": -0.63
     },
     "barchart-upgrades": {
       "allTickers": [
         "FCNCA",
         "ORLY"
       ],
-      "trendToHigh": 0.37,
+      "trendToHigh": 0.98,
       "trendToLow": -1.62,
-      "avgTrendBetween": -0.62
+      "avgTrendBetween": -0.32
+    },
+    "day-streaks-4days": {
+      "allTickers": [
+        "OWCP",
+        "VATE"
+      ],
+      "trendToHigh": 6.03,
+      "trendToLow": -15.59,
+      "avgTrendBetween": -4.78
     },
     "day-streaks-7days": {
       "allTickers": [
         "MJNA"
       ],
-      "trendToHigh": 1.37,
+      "trendToHigh": 2.74,
       "trendToLow": -10.96,
-      "avgTrendBetween": -4.79
+      "avgTrendBetween": -4.11
     },
     "day-streaks-5days": {
       "allTickers": [
         "CLOK",
         "UNVC"
       ],
-      "trendToHigh": 6.44,
-      "trendToLow": -14.25,
-      "avgTrendBetween": -3.91
+      "trendToHigh": 14.87,
+      "trendToLow": -16.25,
+      "avgTrendBetween": -0.69
     },
     "day-streaks-3days": {
       "allTickers": [
+        "NXTTF",
         "ASTI"
       ],
-      "trendToHigh": 0,
-      "trendToLow": -6.67,
-      "avgTrendBetween": -3.33
+      "trendToHigh": 22.98,
+      "trendToLow": -5.94,
+      "avgTrendBetween": 8.52
     },
     "day-streaks-6days": {
       "allTickers": [
         "TTCM"
       ],
-      "trendToHigh": 21.54,
+      "trendToHigh": 36.92,
       "trendToLow": -20,
-      "avgTrendBetween": 0.77
+      "avgTrendBetween": 8.46
     },
     "recs-top": {
       "allTickers": [
@@ -483,8 +505,8 @@
         "RSAU"
       ],
       "trendToHigh": 12.5,
-      "trendToLow": -25.81,
-      "avgTrendBetween": -6.66
+      "trendToLow": -32.51,
+      "avgTrendBetween": -10
     },
     "recs-medium": {
       "allTickers": [
@@ -494,9 +516,9 @@
         "NTEK",
         "TXHD"
       ],
-      "trendToHigh": 4.94,
-      "trendToLow": -8.88,
-      "avgTrendBetween": -1.97
+      "trendToHigh": 7.16,
+      "trendToLow": -11.12,
+      "avgTrendBetween": -1.98
     }
   }
 }

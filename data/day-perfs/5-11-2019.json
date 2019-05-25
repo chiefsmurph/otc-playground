@@ -1,6 +1,6 @@
 {
-  "numDays": 9,
-  "closedOut": false,
+  "numDays": 10,
+  "closedOut": true,
   "listPerf": {
     "ihub-merger": {
       "allTickers": [
@@ -15,8 +15,8 @@
         "ADNY"
       ],
       "trendToHigh": 21.3,
-      "trendToLow": -34.9,
-      "avgTrendBetween": -6.8
+      "trendToLow": -35.16,
+      "avgTrendBetween": -6.93
     },
     "ihub-reinstatement": {
       "allTickers": [
