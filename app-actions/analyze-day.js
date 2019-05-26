@@ -125,7 +125,7 @@ module.exports = async dateStr => {
     JSON.stringify(tickerPerf, null, 2)
   );
   
-  const generateListPerf = (wlObj) => {
+  const generateListPerf = wlObj => {
     // aggregate list performance
     listPerf = mapObject(wlObj, tickers => {
 

@@ -1,10 +1,12 @@
 const Combinatorics = require('js-combinatorics');
 const getDatestr = require('../helpers/get-datestr');
 const jsonMgr = require('../helpers/json-mgr');
+const getTickers = require('../helpers/get-tickers');
+const { mapObject } = require('underscore');
 
 module.exports = async (dateStr = getDatestr()) => {
   let derived = {};
-  const todayWl = require(`../data/watch-lists/${dateStr}`);
+  const todayWl = mapObject(require(`../data/watch-lists/${dateStr}`), getTickers);
   if (!todayWl) return console.log(`no wl for ${dateStr}`);
 
 
@@ -75,7 +77,7 @@ module.exports = async (dateStr = getDatestr()) => {
     
   });
 
-  await jsonMgr.save(`./data/derived-wls/${dateStr}.json`, derived);
+  Object.keys(derived).length && await jsonMgr.save(`./data/derived-wls/${dateStr}.json`, derived);
 
   return derived;
 };

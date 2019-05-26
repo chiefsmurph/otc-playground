@@ -20,9 +20,10 @@ module.exports = async () => {
     return json.numDays === daysToAnalyze;
   }).map(noExt);
   
-  const wlNeedAnalyzing = watchLists.filter(wl => {
-    return !closedOutDayPerfs.includes(wl);
-  });
+  const wlNeedAnalyzing = watchLists
+  // .filter(wl => {
+  //   return !closedOutDayPerfs.includes(wl);
+  // });
 
   console.log('wlNeedAnalyzing', wlNeedAnalyzing);
   for (let date of wlNeedAnalyzing) {
