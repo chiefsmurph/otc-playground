@@ -6,7 +6,7 @@ const fs = require('mz/fs');
 
 const noExt = file => file.split('.')[0];
 module.exports = async (numToConsider = 9) => {
-  const days = [1, 2, 4, 6];
+  const days = [3, 7, 14];
   const output = await mapLimit(days, 1, async day => ({
     day,
     ...await watchlistPerf(day)

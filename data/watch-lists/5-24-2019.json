@@ -119,12 +119,7 @@
     "BOPFF"
   ],
   "accumulation-infinity": [
-    "AXMM",
-    "MGIDF",
-    "BXXRF",
-    "ERGTF",
-    "MLOOF",
-    "FNQQF"
+    "AXMM"
   ],
   "accumulation-lt25": [
     "STHC",
@@ -451,14 +446,17 @@
   ],
   "recs-top": [
     "AXMM",
-    "MGIDF",
-    "BXXRF",
-    "ERGTF",
-    "MLOOF",
-    "FNQQF"
+    "GNCP",
+    "HMNY",
+    "VRUS",
+    "SRDP",
+    "IPIX"
   ],
   "recs-medium": [
-    "XALL",
+    "IBGR",
     "AXMM"
+  ],
+  "accumulation-gt300": [
+    "GBTC"
   ]
 }

@@ -14,7 +14,6 @@ const usersOfInterest = [
   'OCMillionaire',
   'i_am_andrew84',
   'TradeNeverMarry',
-  ''
 ];
 const twitterUser = require('../scraping-actions/twitter-user');
 const browserMapLimit = require('../helpers/browser-map-limit');

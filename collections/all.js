@@ -10,7 +10,7 @@ module.exports = async (
 
   // console.log(await iHubHot());
   const collections = {
-    iHubHot: require('./ihub-hot'),
+    // iHubHot: require('./ihub-hot'),
     active: require('./active'),
     advancers: require('./advancers'),
     decliners: require('./decliners'),
