@@ -1,7 +1,7 @@
 const fs = require('mz/fs');
 const { mapObject } = require('underscore');
 
-const { avgArray } = require('../helpers/array-math');
+const { avg } = require('../helpers/array-math');
 const jsonMgr = require('../helpers/json-mgr');
 
 const cTable = require('console.table');
@@ -52,7 +52,7 @@ module.exports = async (numDays = Number.POSITIVE_INFINITY) => {
       return {
         ...acc,
         [perfKey]: {
-          avg: avgArray(allPerfValues),
+          avg: avg(allPerfValues),
           values: allPerfValues.map(val => Math.round(val)),
         }
       };

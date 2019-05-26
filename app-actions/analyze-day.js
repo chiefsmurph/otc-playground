@@ -1,12 +1,13 @@
 const puppeteer = require('puppeteer');
 const { mapObject, chain } = require('underscore');
 
+const generateDerived = require('./generate-derived');
 const addHistoricals = require('../helpers/add-historicals');
 
 const jsonMgr = require('../helpers/json-mgr');
 const getTickers = require('../helpers/get-tickers');
 const getTrend = require('../helpers/get-trend');
-const { avgArray } = require('../helpers/array-math');
+const { avg, sum } = require('../helpers/array-math');
 const browserMapLimit = require('../helpers/browser-map-limit');
 
 let historicalCache = {};
@@ -20,6 +21,8 @@ const { daysToAnalyze } = require('../config');
 
 module.exports = async dateStr => {
 
+  // generate derived
+  const derived = await generateDerived(dateStr);
 
   // load watch list data and get uniq ticks
   const data = require(`../data/watch-lists/${dateStr}`);
@@ -84,21 +87,25 @@ module.exports = async dateStr => {
     const buyPrice = followingDays[0].open;
     const max = Math.max(...followingDays.map(hist => hist.high));
     const low = Math.min(...followingDays.map(hist => hist.low));
+    const allCloses = followingDays.map(day => getTrend(buyPrice, day.close));
 
     // important trends
     const trendToHigh = getTrend(buyPrice, max);
     const trendToLow = getTrend(buyPrice, low);
-    const avgTrendBetween = (trendToHigh + trendToLow) / 2;
+    const highMinusLow = trendToHigh - Math.abs(trendToLow);
+    const trendToCloses = sum(allCloses);
     return {
       prices: {
         buyPrice,
         max,
         low,
+        allCloses
       },
       perfs: {
         trendToHigh,
         trendToLow,
-        avgTrendBetween
+        highMinusLow,
+        trendToCloses
       }
     };
 
@@ -112,72 +119,82 @@ module.exports = async dateStr => {
     console.log('missed historicals...', missedHists);
   }
 
-  // console.log(
-  //   JSON.stringify(tickerPerf, null, 2)
-  // );
-
-  // aggregate list performance
-  listPerf = mapObject(dataTicks, tickers => {
-
-    return tickers
-      .filter(ticker => Object.keys(historicalCache).includes(ticker))
-      .filter(ticker => tickerPerf[ticker] && tickerPerf[ticker].prices)
-      .filter(ticker => !IGNORE_TRIPS || tickerPerf[ticker].prices.buyPrice >= .001)
-      .map(ticker => ({
-        ticker,
-        ...tickerPerf[ticker].perfs
-      }));
-
-  });
-
+  await jsonMgr.save(`./data/ticker-perfs/${dateStr}.json`, tickerPerf);
 
   console.log(
-    `--------`
+    JSON.stringify(tickerPerf, null, 2)
   );
-
-
-  console.log(
-    JSON.stringify(listPerf, null, 2)
-  );
-
-  Object.keys(listPerf).forEach(key => {
-    const val = listPerf[key];
-    if (!val || !val.length) {
-      console.log('deleting ', key);
-      delete listPerf[key];
-    }
-  });
   
-  listPerf = mapObject(listPerf, tickerPerfs => {
+  const generateListPerf = (wlObj) => {
+    // aggregate list performance
+    listPerf = mapObject(wlObj, tickers => {
 
-    const allPerfs = Object.keys(tickerPerfs[0]).slice(1);
-    // console.log({ allPerfs, tickerPerfs });
-    const allTickers = tickerPerfs.map(t => t.ticker);
-    const avgs = allPerfs.reduce((acc, perfKey) => {
+      return tickers
+        .filter(ticker => Object.keys(historicalCache).includes(ticker))
+        .filter(ticker => tickerPerf[ticker] && tickerPerf[ticker].prices)
+        .filter(ticker => !IGNORE_TRIPS || tickerPerf[ticker].prices.buyPrice >= .001)
+        .map(ticker => ({
+          ticker,
+          ...tickerPerf[ticker].perfs
+        }));
 
-      const allVals = tickerPerfs.map(t => t[perfKey]);
-      const avg = avgArray(allVals);
-      return {
-        ...acc,
-        [perfKey]: avg
-      };
+    });
 
-    }, { allTickers });
 
-    return avgs;
+    console.log(
+      `--------`
+    );
 
-  });
 
-  // console.log(
-  //   JSON.stringify(listPerf, null, 2)
-  // );
+    console.log(
+      JSON.stringify(listPerf, null, 2)
+    );
 
+
+    Object.keys(listPerf).forEach(key => {
+      const val = listPerf[key];
+      if (!val || !val.length) {
+        console.log('deleting ', key);
+        delete listPerf[key];
+      }
+    });
+
+    listPerf = mapObject(listPerf, tickerPerfs => {
+
+      const allPerfs = Object.keys(tickerPerfs[0]).slice(1);
+      // console.log({ allPerfs, tickerPerfs });
+      const allTickers = tickerPerfs.map(t => t.ticker);
+      const avgs = allPerfs.reduce((acc, perfKey) => {
+
+        const allVals = tickerPerfs.map(t => t[perfKey]);
+        return {
+          ...acc,
+          [perfKey]: avg(allVals)
+        };
+
+      }, { allTickers });
+
+      return avgs;
+
+    });
+
+    // console.log(
+    //   JSON.stringify(listPerf, null, 2)
+    // );
+
+    return listPerf;
+
+  };
+  
 
 
   await jsonMgr.save(`./data/day-perfs/${dateStr}.json`, {
     numDays,
     closedOut: numDays === daysToAnalyze,
-    listPerf
+    listPerf: generateListPerf({
+      ...dataTicks,
+      ...derived
+    })
   });
 
 

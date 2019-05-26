@@ -1,12 +1,11 @@
 const Combinatorics = require('js-combinatorics');
 const getDatestr = require('../helpers/get-datestr');
+const jsonMgr = require('../helpers/json-mgr');
 
-module.exports = async () => {
+module.exports = async (dateStr = getDatestr()) => {
   let derived = {};
-  const todayDate = getDatestr();
-  const todayWl = require(`../data/watch-lists/${todayDate}`);
-  if (!todayWl) return console.log('no wl for today');
-
+  const todayWl = require(`../data/watch-lists/${dateStr}`);
+  if (!todayWl) return console.log(`no wl for ${dateStr}`);
 
 
   // start by 
@@ -31,35 +30,52 @@ module.exports = async () => {
   
   Object.keys(bySymbol).forEach(symbol => {
     const strats = bySymbol[symbol];
-    const allPerms = Combinatorics.power(strats).filter(arr => arr.length);
-    console.log({ allPerms })
-    if (allPerms.length > 1) {
-      derived = {
-        ...derived,
-        ...allPerms.reduce((acc, perm) => {
+    if (strats.length === 1) return;
+    const cmb = Combinatorics.combination(strats, 2);
+    const allPerms = [];
+    while (a = cmb.next()) allPerms.push(a);
+    
+    const filtered = allPerms.filter(perms => {
+      const bases = perms.map(wl => wl.split('-')[0]);
+      const isTwitter = bases.some(base => base === 'twitter');
 
-          if (perm.length === 1) return acc; 
-          const keyName = perm
-            .sort((a, b) => a.localeCompare(b))
-            .join('~');
-          return {
-            ...acc,
-            [keyName]: [
-              ...(derived[keyName] || []),
-              symbol
-            ]
-          };
-          
-        }, {})
-      };
-    }
+      const noRecs = bases.every(base => !base.includes('recs'));
+      const noLongs = perms.every(wl => {
+        const count = wl.split('-').length;
+        return count <= (wl.includes('twitter') ? 2 : 3);
+      });
+      const onlyAcross = isTwitter || bases[0] != bases[1];
+      // console.log({
+      //   perms,
+      //   isTwitter,
+      //   noRecs,
+      //   noLongs,
+      //   onlyAcross
+      // })
+      return noRecs && noLongs && onlyAcross;
+    });
+    
+    derived = {
+      ...derived,
+      ...filtered.reduce((acc, perm) => {
+
+        const keyName = perm
+          .sort((a, b) => a.localeCompare(b))
+          .join('~');
+        return {
+          ...acc,
+          [keyName]: [
+            ...(derived[keyName] || []),
+            symbol
+          ]
+        };
+        
+      }, {})
+    };
     
   });
 
+  await jsonMgr.save(`./data/derived-wls/${dateStr}.json`, derived);
 
-  // then get my-recs
-
-  
-
-  console.log({derived});
+  return derived;
 };
