@@ -35,11 +35,7 @@ const analyzeScanResponse = (scanName, response, permuteKeys) => {
   const groupedByHit = {};
   emailRecords.forEach(hit => {
     const { symbol } = hit;
-    const hitKeys = Object.keys(hit).filter(key => key !== 'symbol');
-    const hitSets = permuteKeys 
-      ? Combinatorics.power(hitKeys).filter(arr => arr.length) 
-      : hitKeys;
-    
+    const hitSets = Object.keys(hit).filter(key => key !== 'symbol');
     hitSets
       .map(hitSet => hitSet.join('-'))
       .forEach(hitSet => {

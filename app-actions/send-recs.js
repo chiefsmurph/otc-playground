@@ -3,8 +3,8 @@ const sendEmail = require('../helpers/send-email');
 const getRecs = require('../helpers/get-recs');
 const updateWl = require('../helpers/update-wl');
 
-module.exports = async onlyMe => {
-  const { mostRecentDate, withPicks } = await getRecs();
+module.exports = async (onlyMe, perfKey) => {
+  const { mostRecentDate, withPicks } = await getRecs(perfKey);
 
   const twoPicks = () => {
     let result = [];

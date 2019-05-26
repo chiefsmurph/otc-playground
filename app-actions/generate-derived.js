@@ -6,9 +6,12 @@ const { mapObject } = require('underscore');
 
 module.exports = async (dateStr = getDatestr()) => {
   let derived = {};
-  const todayWl = mapObject(require(`../data/watch-lists/${dateStr}`), getTickers);
+  const todayWl = mapObject(
+    require(`../data/watch-lists/${dateStr}`), 
+    val => getTickers(val)
+  );
   if (!todayWl) return console.log(`no wl for ${dateStr}`);
-
+  // console.log(todayWl)
 
   // start by 
 
@@ -47,13 +50,13 @@ module.exports = async (dateStr = getDatestr()) => {
         return count <= (wl.includes('twitter') ? 2 : 3);
       });
       const onlyAcross = isTwitter || bases[0] != bases[1];
-      // console.log({
-      //   perms,
-      //   isTwitter,
-      //   noRecs,
-      //   noLongs,
-      //   onlyAcross
-      // })
+      console.log({
+        perms,
+        isTwitter,
+        noRecs,
+        noLongs,
+        onlyAcross
+      })
       return noRecs && noLongs && onlyAcross;
     });
     

@@ -8,7 +8,6 @@ const jsonMgr = require('../helpers/json-mgr');
 const getTickers = require('../helpers/get-tickers');
 const getTrend = require('../helpers/get-trend');
 const { avg, sum } = require('../helpers/array-math');
-const browserMapLimit = require('../helpers/browser-map-limit');
 
 let historicalCache = {};
 let tickerPerf = {};
@@ -87,7 +86,7 @@ module.exports = async dateStr => {
     const buyPrice = followingDays[0].open;
     const max = Math.max(...followingDays.map(hist => hist.high));
     const low = Math.min(...followingDays.map(hist => hist.low));
-    const allCloses = followingDays.map(day => getTrend(buyPrice, day.close));
+    const allCloses = followingDays.map(day => getTrend(buyPrice, day.close)).map(n => +n.toFixed(2));
 
     // important trends
     const trendToHigh = getTrend(buyPrice, max);
