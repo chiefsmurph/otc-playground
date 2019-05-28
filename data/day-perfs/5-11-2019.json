@@ -16,7 +16,8 @@
       ],
       "trendToHigh": 21.3,
       "trendToLow": -35.16,
-      "avgTrendBetween": -6.93
+      "highMinusLow": -13.86,
+      "trendToCloses": -14.9
     },
     "ihub-reinstatement": {
       "allTickers": [
@@ -24,7 +25,8 @@
       ],
       "trendToHigh": 26.67,
       "trendToLow": -30,
-      "avgTrendBetween": -1.67
+      "highMinusLow": -3.33,
+      "trendToCloses": -9.03
     },
     "ihub-merger-reinstatement": {
       "allTickers": [
@@ -32,7 +34,8 @@
       ],
       "trendToHigh": 26.67,
       "trendToLow": -30,
-      "avgTrendBetween": -1.67
+      "highMinusLow": -3.33,
+      "trendToCloses": -9.03
     },
     "ihub-big-week": {
       "allTickers": [
@@ -40,7 +43,8 @@
       ],
       "trendToHigh": 16,
       "trendToLow": -16,
-      "avgTrendBetween": 0
+      "highMinusLow": 0,
+      "trendToCloses": 3.6
     }
   }
 }

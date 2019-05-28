@@ -7,7 +7,7 @@ const addHistoricals = require('../helpers/add-historicals');
 const jsonMgr = require('../helpers/json-mgr');
 const getTickers = require('../helpers/get-tickers');
 const getTrend = require('../helpers/get-trend');
-const { avg, sum } = require('../helpers/array-math');
+const { avg } = require('../helpers/array-math');
 
 let historicalCache = {};
 let tickerPerf = {};
@@ -92,7 +92,7 @@ module.exports = async dateStr => {
     const trendToHigh = getTrend(buyPrice, max);
     const trendToLow = getTrend(buyPrice, low);
     const highMinusLow = trendToHigh - Math.abs(trendToLow);
-    const trendToCloses = sum(allCloses);
+    const trendToCloses = avg(allCloses);
     return {
       prices: {
         buyPrice,

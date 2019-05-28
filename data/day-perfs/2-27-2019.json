@@ -10,9 +10,10 @@
         "KNOS",
         "VIBI"
       ],
-      "trendToHigh": 45.69,
-      "trendToLow": -32.14,
-      "avgTrendBetween": 6.78
+      "trendToHigh": 45.33,
+      "trendToLow": -32.33,
+      "highMinusLow": 13,
+      "trendToCloses": 3.4
     },
     "myDecliners": {
       "allTickers": [
@@ -21,7 +22,8 @@
       ],
       "trendToHigh": 42.53,
       "trendToLow": -33.16,
-      "avgTrendBetween": 4.68
+      "highMinusLow": 9.37,
+      "trendToCloses": -18.43
     }
   }
 }

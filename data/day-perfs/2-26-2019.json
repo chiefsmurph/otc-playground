@@ -8,9 +8,10 @@
         "STHC",
         "PGUS"
       ],
-      "trendToHigh": 71.93,
-      "trendToLow": -70.57,
-      "avgTrendBetween": 0.68
+      "trendToHigh": 72.56,
+      "trendToLow": -70.33,
+      "highMinusLow": 2.23,
+      "trendToCloses": -44.5
     },
     "kickoYellow": {
       "allTickers": [
@@ -19,7 +20,8 @@
       ],
       "trendToHigh": 200.75,
       "trendToLow": -29.43,
-      "avgTrendBetween": 85.66
+      "highMinusLow": 171.32,
+      "trendToCloses": 40.17
     }
   }
 }

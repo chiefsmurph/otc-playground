@@ -12,7 +12,8 @@
       ],
       "trendToHigh": 58.99,
       "trendToLow": -37.23,
-      "avgTrendBetween": 10.88
+      "highMinusLow": 21.76,
+      "trendToCloses": -1.18
     },
     "twitter-SniperTradesOTC": {
       "allTickers": [
@@ -21,7 +22,8 @@
       ],
       "trendToHigh": 127.68,
       "trendToLow": -33.18,
-      "avgTrendBetween": 47.25
+      "highMinusLow": 94.5,
+      "trendToCloses": 29.65
     },
     "twitter-i_like_bb_stock": {
       "allTickers": [
@@ -32,7 +34,8 @@
       ],
       "trendToHigh": 17.74,
       "trendToLow": -31.93,
-      "avgTrendBetween": -7.1
+      "highMinusLow": -14.19,
+      "trendToCloses": -8.42
     },
     "twitter-friends23134": {
       "allTickers": [
@@ -40,7 +43,8 @@
       ],
       "trendToHigh": 149.09,
       "trendToLow": -9.09,
-      "avgTrendBetween": 70
+      "highMinusLow": 140,
+      "trendToCloses": 56.22
     },
     "twitter-stockguru2020": {
       "allTickers": [
@@ -50,7 +54,8 @@
       ],
       "trendToHigh": 83.29,
       "trendToLow": -43.37,
-      "avgTrendBetween": 19.96
+      "highMinusLow": 39.93,
+      "trendToCloses": -0.6
     },
     "accumulation-infinity": {
       "allTickers": [
@@ -60,7 +65,8 @@
       ],
       "trendToHigh": 49.12,
       "trendToLow": -15.28,
-      "avgTrendBetween": 16.92
+      "highMinusLow": 33.84,
+      "trendToCloses": 13.93
     },
     "accumulation-lt25": {
       "allTickers": [
@@ -71,7 +77,8 @@
       ],
       "trendToHigh": 95.38,
       "trendToLow": -20.67,
-      "avgTrendBetween": 37.36
+      "highMinusLow": 74.72,
+      "trendToCloses": 32.67
     },
     "accumulation-negative": {
       "allTickers": [
@@ -79,8 +86,9 @@
         "QPAG"
       ],
       "trendToHigh": 35.82,
-      "trendToLow": -22.65,
-      "avgTrendBetween": 6.58
+      "trendToLow": -23.71,
+      "highMinusLow": 12.1,
+      "trendToCloses": -1.04
     },
     "ihub-custodianship": {
       "allTickers": [
@@ -89,7 +97,8 @@
       ],
       "trendToHigh": 3.61,
       "trendToLow": -35.48,
-      "avgTrendBetween": -15.93
+      "highMinusLow": -31.86,
+      "trendToCloses": -21.49
     },
     "ihub-merger": {
       "allTickers": [
@@ -102,7 +111,8 @@
       ],
       "trendToHigh": 9.85,
       "trendToLow": -28.66,
-      "avgTrendBetween": -9.41
+      "highMinusLow": -18.81,
+      "trendToCloses": -14.46
     },
     "ihub-merger-ihub-custodianship": {
       "allTickers": [
@@ -110,7 +120,35 @@
       ],
       "trendToHigh": 0,
       "trendToLow": -43.24,
-      "avgTrendBetween": -21.62
+      "highMinusLow": -43.24,
+      "trendToCloses": -30.78
+    },
+    "twitter-friends23134~twitter-magicmiketrader": {
+      "allTickers": [
+        "NDYN"
+      ],
+      "trendToHigh": 149.09,
+      "trendToLow": -9.09,
+      "highMinusLow": 140,
+      "trendToCloses": 56.22
+    },
+    "twitter-magicmiketrader~twitter-stockguru2020": {
+      "allTickers": [
+        "DGTW"
+      ],
+      "trendToHigh": 100,
+      "trendToLow": -58.33,
+      "highMinusLow": 41.67,
+      "trendToCloses": -11.46
+    },
+    "accumulation-lt25~twitter-SniperTradesOTC": {
+      "allTickers": [
+        "XALL"
+      ],
+      "trendToHigh": 255.36,
+      "trendToLow": -1.79,
+      "highMinusLow": 253.57,
+      "trendToCloses": 95.29
     }
   }
 }

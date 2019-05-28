@@ -7,9 +7,10 @@
         "KRFG",
         "HDVY"
       ],
-      "trendToHigh": 194.69,
-      "trendToLow": -25.63,
-      "avgTrendBetween": 84.53
+      "trendToHigh": 193.79,
+      "trendToLow": -25.89,
+      "highMinusLow": 167.9,
+      "trendToCloses": 27.52
     },
     "kickoYellow": {
       "allTickers": [
@@ -17,8 +18,9 @@
         "ASKH"
       ],
       "trendToHigh": 18.58,
-      "trendToLow": -38.12,
-      "avgTrendBetween": -9.77
+      "trendToLow": -38.75,
+      "highMinusLow": -20.17,
+      "trendToCloses": -16.13
     },
     "kickoBad": {
       "allTickers": [
@@ -27,9 +29,10 @@
         "SIRC",
         "OTTV"
       ],
-      "trendToHigh": 38.86,
+      "trendToHigh": 51.36,
       "trendToLow": -17.41,
-      "avgTrendBetween": 10.72
+      "highMinusLow": 33.95,
+      "trendToCloses": 7.29
     }
   }
 }

@@ -1,0 +1,41 @@
+{
+  "twitter-magicmiketrader~twitter-stockguru2020": [
+    "DNRG"
+  ],
+  "twitter-magicmiketrader~twitter-OCDrises": [
+    "DNRG"
+  ],
+  "twitter-OCDrises~twitter-stockguru2020": [
+    "DNRG"
+  ],
+  "ihub-10k~twitter-magicmiketrader": [
+    "DNRG"
+  ],
+  "ihub-10k~twitter-stockguru2020": [
+    "DNRG"
+  ],
+  "ihub-10k~twitter-OCDrises": [
+    "DNRG"
+  ],
+  "accumulation-lt25~twitter-SniperTradesOTC": [
+    "XALL"
+  ],
+  "accumulation-lt25~green-volume": [
+    "GCLT"
+  ],
+  "accumulation-advancers-lt25~green-volume": [
+    "GCLT"
+  ],
+  "green-volume~ihub-10k": [
+    "PCLI"
+  ],
+  "green-volume~metrics-highest-dollarVolume": [
+    "PCLI"
+  ],
+  "ihub-10k~metrics-highest-dollarVolume": [
+    "PCLI"
+  ],
+  "ihub-sucks~metrics-lowest-turnover": [
+    "LVVV"
+  ]
+}

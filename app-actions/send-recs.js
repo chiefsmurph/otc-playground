@@ -2,25 +2,28 @@ const cTable = require('console.table');
 const sendEmail = require('../helpers/send-email');
 const getRecs = require('../helpers/get-recs');
 const updateWl = require('../helpers/update-wl');
+const { partition } = require('underscore');
 
 module.exports = async (onlyMe, perfKey) => {
   const { mostRecentDate, withPicks } = await getRecs(perfKey);
+  const [ noCombos, yesCombos ] = partition(withPicks, pick => !pick.strat.includes('~'));
 
-  const twoPicks = () => {
+  const twoPicks = arr => {
     let result = [];
-    while (result.reduce((acc, res) => {
+    while (arr.length && result.reduce((acc, res) => {
       console.log(res.picks);
       return acc + res.picks.length
     }, 0) < 2) {
       result.push(
-        withPicks.shift()
+        arr.shift()
       );
     }
     return result;
   };
-  const topPicks = twoPicks();
-  const medPicks = twoPicks();
-  const theRest = withPicks.slice(0, 10);
+  const topPicks = twoPicks(noCombos);
+  const medPicks = twoPicks(noCombos);
+  const theRest = noCombos.slice(0, 10);
+  const firstCombos = yesCombos.slice(0, 2);
 
   let str = '';
   const section = (title, withPicks) => {
@@ -31,7 +34,8 @@ module.exports = async (onlyMe, perfKey) => {
   };
   section('TOP PICKS', topPicks);
   medPicks.length && section('MEDIUM PICKS', medPicks);
-  theRest.length && section('MILD PICKS', theRest);
+  firstCombos.length && section('COMBOS', firstCombos);
+  theRest.length && section('WORTH CONSIDERING', theRest);
 
   await sendEmail(`TODAYS RECOMMENDATIONS (${mostRecentDate})`, str, !onlyMe);
 
@@ -40,6 +44,7 @@ module.exports = async (onlyMe, perfKey) => {
   await updateWl(mostRecentDate, {
     'recs-number1': getTs(topPicks).slice(0, 1),
     'recs-top': getTs(topPicks),
+    'combos': getTs(firstCombos),
     'recs-medium': getTs(medPicks)
   });
 };

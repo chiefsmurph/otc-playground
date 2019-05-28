@@ -9,8 +9,9 @@
         "CXCQ"
       ],
       "trendToHigh": 18.1,
-      "trendToLow": -65.75,
-      "avgTrendBetween": -23.83
+      "trendToLow": -65.72,
+      "highMinusLow": -47.62,
+      "trendToCloses": -51.89
     },
     "kickoYellow": {
       "allTickers": [
@@ -21,9 +22,10 @@
         "SNMN",
         "SWRM"
       ],
-      "trendToHigh": 26.72,
-      "trendToLow": -42.25,
-      "avgTrendBetween": -7.76
+      "trendToHigh": 25.74,
+      "trendToLow": -42.55,
+      "highMinusLow": -16.81,
+      "trendToCloses": -18.34
     },
     "kickoBad": {
       "allTickers": [
@@ -46,7 +48,8 @@
       ],
       "trendToHigh": 40.1,
       "trendToLow": -37.9,
-      "avgTrendBetween": 1.1
+      "highMinusLow": 2.2,
+      "trendToCloses": -7.35
     }
   }
 }
