@@ -25,7 +25,7 @@ module.exports = async (numDays = Number.POSITIVE_INFINITY) => {
         ...perfsByWL[watchList] || [],
         {
           date: date.split('.')[0],
-          numPicks: watchListPerf[watchList].allTickers.length,
+          picks: watchListPerf[watchList].allTickers,
           ...watchListPerf[watchList]
         }
       ];
@@ -42,11 +42,11 @@ module.exports = async (numDays = Number.POSITIVE_INFINITY) => {
   const firstList = perfsByWL[Object.keys(perfsByWL)[0]];
   const firstPerf = firstList[0];
   const perfKeys = Object.keys(firstPerf).filter(key => 
-    !['date', 'allTickers', 'numPicks'].includes(key)
+    !['date', 'allTickers', 'picks'].includes(key)
   );
   console.log('\n', { perfKeys })
   const wlStats = mapObject(perfsByWL, dayPerfs => {
-    const totalPicks = dayPerfs.reduce((acc, perf) => acc + perf.numPicks, 0);
+    const allPicks = dayPerfs.reduce((acc, perf) => [ ...acc, ...perf.picks], []);
     return perfKeys.reduce((acc, perfKey) => {
       const allPerfValues = dayPerfs.map(perf => perf[perfKey]);
       return {
@@ -56,7 +56,7 @@ module.exports = async (numDays = Number.POSITIVE_INFINITY) => {
           values: allPerfValues.map(val => Math.round(val)),
         }
       };
-    }, { totalPicks });
+    }, { allPicks });
   });
 
 
@@ -77,7 +77,7 @@ module.exports = async (numDays = Number.POSITIVE_INFINITY) => {
         return {
           watchList,
           ...wlStats[watchList][perfKey],
-          totalPicks: wlStats[watchList].totalPicks
+          allPicks: wlStats[watchList].allPicks
         };
       })
       .sort((a, b) => b.avg - a.avg);
@@ -91,11 +91,13 @@ module.exports = async (numDays = Number.POSITIVE_INFINITY) => {
 
 
   const lines = [];
-  finalReport.forEach(({ perfKey, data }) => {
-    lines.push(`sorted by ${perfKey}`);
-    lines.push('-----------------------');
-    lines.push(cTable.getTable(data));
-  });
+  finalReport
+    .filter(({ perfKey }) => ['trendToCloses', 'trendToHigh'].includes(perfKey))
+    .forEach(({ perfKey, data }) => {
+      lines.push(`sorted by ${perfKey}`);
+      lines.push('-----------------------');
+      lines.push(cTable.getTable(data));
+    });
 
   return {
     dates: watchLists,
