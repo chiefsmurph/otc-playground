@@ -22,6 +22,7 @@ module.exports = cacheThis(async (
     .filter(r => r.price >= priceMin && r.price <= priceMax)
     .filter(r => r.dollarVolume >= MIN_DOLLAR_VOLUME)
     .filter(r => r.tradeCount >= MIN_TRADE_COUNT)
+    .filter(r => r.pctChange < 0)
     .map(record =>
         pick(record, ['symbol', 'pctChange', 'price'])
     );

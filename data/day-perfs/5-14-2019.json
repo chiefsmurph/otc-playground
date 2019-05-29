@@ -1,5 +1,5 @@
 {
-  "numDays": 8,
+  "numDays": 9,
   "closedOut": false,
   "listPerf": {
     "twitter-magicmiketrader": {
@@ -11,19 +11,19 @@
         "DGTW"
       ],
       "trendToHigh": 58.99,
-      "trendToLow": -37.23,
-      "highMinusLow": 21.76,
-      "trendToCloses": -1.18
+      "trendToLow": -38.89,
+      "highMinusLow": 20.1,
+      "trendToCloses": -2.69
     },
     "twitter-SniperTradesOTC": {
       "allTickers": [
         "XALL",
         "DAVC"
       ],
-      "trendToHigh": 127.68,
-      "trendToLow": -33.18,
-      "highMinusLow": 94.5,
-      "trendToCloses": 29.65
+      "trendToHigh": 137.77,
+      "trendToLow": -33.46,
+      "highMinusLow": 104.3,
+      "trendToCloses": 35.59
     },
     "twitter-i_like_bb_stock": {
       "allTickers": [
@@ -33,9 +33,9 @@
         "QPRC"
       ],
       "trendToHigh": 17.74,
-      "trendToLow": -31.93,
-      "highMinusLow": -14.19,
-      "trendToCloses": -8.42
+      "trendToLow": -34.49,
+      "highMinusLow": -16.76,
+      "trendToCloses": -10.24
     },
     "twitter-friends23134": {
       "allTickers": [
@@ -44,7 +44,7 @@
       "trendToHigh": 149.09,
       "trendToLow": -9.09,
       "highMinusLow": 140,
-      "trendToCloses": 56.22
+      "trendToCloses": 57.05
     },
     "twitter-stockguru2020": {
       "allTickers": [
@@ -53,20 +53,21 @@
         "DLCR"
       ],
       "trendToHigh": 83.29,
-      "trendToLow": -43.37,
-      "highMinusLow": 39.93,
-      "trendToCloses": -0.6
+      "trendToLow": -46.14,
+      "highMinusLow": 37.15,
+      "trendToCloses": -3.38
     },
     "accumulation-infinity": {
       "allTickers": [
         "UDHI",
         "TVIPF",
-        "BRYYF"
+        "BRYYF",
+        "ERGTF"
       ],
-      "trendToHigh": 49.12,
-      "trendToLow": -15.28,
-      "highMinusLow": 33.84,
-      "trendToCloses": 13.93
+      "trendToHigh": 36.84,
+      "trendToLow": -11.46,
+      "highMinusLow": 25.38,
+      "trendToCloses": 10.26
     },
     "accumulation-lt25": {
       "allTickers": [
@@ -75,10 +76,10 @@
         "XALL",
         "IMLE"
       ],
-      "trendToHigh": 95.38,
-      "trendToLow": -20.67,
-      "highMinusLow": 74.72,
-      "trendToCloses": 32.67
+      "trendToHigh": 100.43,
+      "trendToLow": -22.14,
+      "highMinusLow": 78.29,
+      "trendToCloses": 36.18
     },
     "accumulation-negative": {
       "allTickers": [
@@ -88,7 +89,7 @@
       "trendToHigh": 35.82,
       "trendToLow": -23.71,
       "highMinusLow": 12.1,
-      "trendToCloses": -1.04
+      "trendToCloses": -1.9
     },
     "ihub-custodianship": {
       "allTickers": [
@@ -96,9 +97,9 @@
         "XHUA"
       ],
       "trendToHigh": 3.61,
-      "trendToLow": -35.48,
-      "highMinusLow": -31.86,
-      "trendToCloses": -21.49
+      "trendToLow": -36.83,
+      "highMinusLow": -33.21,
+      "trendToCloses": -21.99
     },
     "ihub-merger": {
       "allTickers": [
@@ -109,19 +110,19 @@
         "LEAS",
         "ADXS"
       ],
-      "trendToHigh": 9.85,
-      "trendToLow": -28.66,
-      "highMinusLow": -18.81,
-      "trendToCloses": -14.46
+      "trendToHigh": 20.52,
+      "trendToLow": -29.91,
+      "highMinusLow": -9.39,
+      "trendToCloses": -14.38
     },
     "ihub-merger-ihub-custodianship": {
       "allTickers": [
         "XHUA"
       ],
       "trendToHigh": 0,
-      "trendToLow": -43.24,
-      "highMinusLow": -43.24,
-      "trendToCloses": -30.78
+      "trendToLow": -45.95,
+      "highMinusLow": -45.95,
+      "trendToCloses": -31.26
     },
     "twitter-friends23134~twitter-magicmiketrader": {
       "allTickers": [
@@ -130,25 +131,25 @@
       "trendToHigh": 149.09,
       "trendToLow": -9.09,
       "highMinusLow": 140,
-      "trendToCloses": 56.22
+      "trendToCloses": 57.05
     },
     "twitter-magicmiketrader~twitter-stockguru2020": {
       "allTickers": [
         "DGTW"
       ],
       "trendToHigh": 100,
-      "trendToLow": -58.33,
-      "highMinusLow": 41.67,
-      "trendToCloses": -11.46
+      "trendToLow": -66.67,
+      "highMinusLow": 33.33,
+      "trendToCloses": -17.59
     },
     "accumulation-lt25~twitter-SniperTradesOTC": {
       "allTickers": [
         "XALL"
       ],
-      "trendToHigh": 255.36,
+      "trendToHigh": 275.54,
       "trendToLow": -1.79,
-      "highMinusLow": 253.57,
-      "trendToCloses": 95.29
+      "highMinusLow": 273.75,
+      "trendToCloses": 109.9
     }
   }
 }

@@ -36,6 +36,8 @@ module.exports = scanFn => {
       sliced: sliced.length 
     });
 
+    console.log(JSON.stringify(sliced, null, 2));
+
     const response = await scanFn(sliced, ...args)
 
     const prefixed = (collectionStr === 'all') || !response || !response.length

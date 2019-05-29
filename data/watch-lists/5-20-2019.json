@@ -112,14 +112,6 @@
     "CRSM",
     "DNRG"
   ],
-  "accumulation-advancers-infinity": [
-    "VIBI",
-    "ISBG"
-  ],
-  "accumulation-advancers-lt25": [
-    "SOAN",
-    "DNRG"
-  ],
   "green-volume": [
     "SOAN"
   ],
@@ -207,20 +199,5 @@
   ],
   "metrics-lowest-float-lowest-turnover-highest-dollarVolume": [
     "CRSM"
-  ],
-  "metrics-advancers-lowest-float": [
-    "SOAN",
-    "RLTR"
-  ],
-  "metrics-advancers-highest-dollarVolume": [
-    "SOAN",
-    "DNRG"
-  ],
-  "metrics-advancers-lowest-float-advancers-highest-dollarVolume": [
-    "SOAN"
-  ],
-  "metrics-advancers-lowest-turnover": [
-    "VSPC",
-    "BYOC"
   ]
 }

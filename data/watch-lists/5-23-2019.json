@@ -89,9 +89,6 @@
   "accumulation-lt25": [
     "RCRT"
   ],
-  "accumulation-advancers-infinity": [
-    "APVS"
-  ],
   "green-volume": [
     "ZHDM",
     "LAHO"
@@ -138,10 +135,6 @@
     "FLES",
     "WSRC"
   ],
-  "ihub-decliners-finra": [
-    "TNRG",
-    "AHIX"
-  ],
   "metrics-lowest-float": [
     "LATNF",
     "PIONF"
@@ -159,30 +152,6 @@
   ],
   "metrics-lowest-turnover-highest-dollarVolume": [
     "NWBO"
-  ],
-  "metrics-advancers-lowest-float": [
-    "NSPX",
-    "VNRRQ"
-  ],
-  "metrics-advancers-lowest-turnover": [
-    "CNNA",
-    "HMPQ"
-  ],
-  "metrics-advancers-highest-dollarVolume": [
-    "TTCM",
-    "DGTW"
-  ],
-  "metrics-decliners-lowest-float": [
-    "NSPX",
-    "VNRRQ"
-  ],
-  "metrics-decliners-lowest-turnover": [
-    "CNNA",
-    "HMPQ"
-  ],
-  "metrics-decliners-highest-dollarVolume": [
-    "TTCM",
-    "DGTW"
   ],
   "metrics-ihub-hot-lowest-turnover": [
     "NWBO",

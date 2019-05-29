@@ -12,7 +12,7 @@ const allScans = [
   ['ihub', 'all', 100],
   ['ihub', 'decliners', 30],
   ['ihub', 'ihub-hot', 100],
-  'metrics',
+  ['metrics', 'active'],
   ['metrics', 'advancers'],
   ['metrics', 'decliners'],
   ['metrics', 'ihub-hot'],

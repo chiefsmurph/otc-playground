@@ -31,14 +31,8 @@ const getBoardUrl = async ticker => {
     page = await browser.newPage();
     // await page.setUserAgent('Mozilla/5.0 (Linux; Android 8.0.0; Nexus 5 Build/LMY48B; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/43.0.2357.65 Mobile Safari/537.36');
     await page.goto(`https://investorshub.advfn.com/boards/getboards.aspx?searchstr=${ticker}`, { waitUntil: 'domcontentloaded' });
-    await page.waitFor(3000);
-    const rateLimited = await page.evaluate(() => {
-      const tweets = Array.from(document.querySelectorAll('.tweet:not(.user-pinned)'));
-      return tweets.map(node => ({
-        timestamp: node.querySelector('.js-short-timestamp').textContent,
-        text: node.querySelector('.tweet-text').textContent
-      }));
-    });
+    await page.waitFor(1000);
+    const rateLimited = await page.evaluate(() => document.body.textContent.includes('rate limit'));
   
     if (rateLimited) {
       console.log('rate limited');

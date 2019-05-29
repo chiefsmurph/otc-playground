@@ -130,17 +130,6 @@
   "accumulation-negative": [
     "ARSN"
   ],
-  "accumulation-advancers-infinity": [
-    "AXMM"
-  ],
-  "accumulation-advancers-lt25": [
-    "STHC",
-    "GOSY",
-    "HDII"
-  ],
-  "accumulation-advancers-negative": [
-    "ARSN"
-  ],
   "green-volume": [
     "GOSY"
   ],
@@ -320,24 +309,6 @@
   "ihub-sucks": [
     "JBZY"
   ],
-  "ihub-decliners-SEC": [
-    "SIML"
-  ],
-  "ihub-decliners-dump": [
-    "SIML"
-  ],
-  "ihub-decliners-SEC-decliners-dump": [
-    "SIML"
-  ],
-  "ihub-decliners-shit": [
-    "VSTR"
-  ],
-  "ihub-decliners-merger": [
-    "DAVC"
-  ],
-  "ihub-decliners-10k": [
-    "IBGR"
-  ],
   "metrics-lowest-float": [
     "VSTR",
     "GIGL"
@@ -361,56 +332,6 @@
     "SFOR"
   ],
   "metrics-lowest-float-lowest-turnover-highest-dollarVolume": [
-    "VSTR"
-  ],
-  "metrics-advancers-lowest-float": [
-    "VSTR",
-    "VNUE"
-  ],
-  "metrics-advancers-lowest-turnover": [
-    "VSTR",
-    "SFOR"
-  ],
-  "metrics-advancers-lowest-float-advancers-lowest-turnover": [
-    "VSTR"
-  ],
-  "metrics-advancers-highest-dollarVolume": [
-    "VSTR",
-    "SFOR"
-  ],
-  "metrics-advancers-lowest-float-advancers-highest-dollarVolume": [
-    "VSTR"
-  ],
-  "metrics-advancers-lowest-turnover-advancers-highest-dollarVolume": [
-    "VSTR",
-    "SFOR"
-  ],
-  "metrics-advancers-lowest-float-advancers-lowest-turnover-advancers-highest-dollarVolume": [
-    "VSTR"
-  ],
-  "metrics-decliners-lowest-float": [
-    "VSTR",
-    "VNUE"
-  ],
-  "metrics-decliners-lowest-turnover": [
-    "VSTR",
-    "SFOR"
-  ],
-  "metrics-decliners-lowest-float-decliners-lowest-turnover": [
-    "VSTR"
-  ],
-  "metrics-decliners-highest-dollarVolume": [
-    "VSTR",
-    "SFOR"
-  ],
-  "metrics-decliners-lowest-float-decliners-highest-dollarVolume": [
-    "VSTR"
-  ],
-  "metrics-decliners-lowest-turnover-decliners-highest-dollarVolume": [
-    "VSTR",
-    "SFOR"
-  ],
-  "metrics-decliners-lowest-float-decliners-lowest-turnover-decliners-highest-dollarVolume": [
     "VSTR"
   ],
   "metrics-ihub-hot-lowest-float": [
@@ -458,9 +379,5 @@
   ],
   "accumulation-gt300": [
     "GBTC"
-  ],
-  "combos": [
-    "GOSY",
-    "BBDA"
   ]
 }

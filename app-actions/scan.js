@@ -14,7 +14,7 @@ const analyzeScanResponse = (scanName, response, permuteKeys) => {
     emailRecords = emailRecords.map(symbol => ({
       symbol,
       [scanName]: true
-    }))
+    }));
   } else {
     // array of objects { symbol: 'string', accumulation-blah: true }
     emailRecords = [
@@ -36,15 +36,14 @@ const analyzeScanResponse = (scanName, response, permuteKeys) => {
   emailRecords.forEach(hit => {
     const { symbol } = hit;
     const hitSets = Object.keys(hit).filter(key => key !== 'symbol');
-    hitSets
-      .map(hitSet => hitSet.join('-'))
-      .forEach(hitSet => {
-        const prefixed = format === "objects" ? `${scanName}-${hitSet}` : hitSet;
-        groupedByHit[prefixed] = [
-          ...(groupedByHit[prefixed] || []),
-          symbol
-        ];
-      });
+    // console.log({ hitSets });
+    hitSets.forEach(hitSet => {
+      const prefixed = format === "objects" ? `${scanName}-${hitSet}` : hitSet;
+      groupedByHit[prefixed] = [
+        ...(groupedByHit[prefixed] || []),
+        symbol
+      ];
+    });
   });
 
   return {

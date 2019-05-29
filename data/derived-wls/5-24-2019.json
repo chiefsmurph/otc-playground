@@ -1,54 +1,5 @@
 {
-  "": [
-    "BBDA",
-    "CMGO",
-    "RHCO",
-    "RCRT",
-    "XALL",
-    "IDXX",
-    "AXMM",
-    "STHC",
-    "GOSY",
-    "HDII",
-    "ARSN",
-    "LAHO",
-    "MYDX",
-    "ONCI",
-    "FLES",
-    "AMFE",
-    "CRSM",
-    "LQMT",
-    "CYDY",
-    "LDSR",
-    "AVXL",
-    "CELZ",
-    "INKW",
-    "VATE",
-    "ISBG",
-    "HMNY",
-    "VRUS",
-    "SHMP",
-    "GNCP",
-    "RETC",
-    "VSHC",
-    "SRDP",
-    "IPIX",
-    "SIML",
-    "VSTR",
-    "SFOR",
-    "VNUE"
-  ],
-  "twitter-magicmiketrader": [
-    "BBDA"
-  ],
-  "twitter-stockguru2020": [
-    "BBDA",
-    "CMGO"
-  ],
   "twitter-magicmiketrader~twitter-stockguru2020": [
-    "BBDA"
-  ],
-  "twitter-OCMillionaire": [
     "BBDA"
   ],
   "twitter-magicmiketrader~twitter-OCMillionaire": [
@@ -57,47 +8,15 @@
   "twitter-OCMillionaire~twitter-stockguru2020": [
     "BBDA"
   ],
-  "twitter-magicmiketrader~twitter-OCMillionaire~twitter-stockguru2020": [
-    "BBDA"
-  ],
-  "ihub-shit": [
-    "CMGO",
-    "AMFE",
-    "LDSR",
-    "INKW",
-    "SHMP"
-  ],
   "ihub-shit~twitter-stockguru2020": [
     "CMGO"
-  ],
-  "twitter-i_am_andrew84": [
-    "RHCO",
-    "RCRT"
-  ],
-  "twitter-TradeNeverMarry": [
-    "RHCO",
-    "RCRT"
   ],
   "twitter-i_am_andrew84~twitter-TradeNeverMarry": [
     "RHCO",
     "RCRT"
   ],
-  "twitter-SniperTradesOTC": [
-    "XALL"
-  ],
-  "accumulation-lt25": [
-    "XALL",
-    "STHC",
-    "GOSY",
-    "HDII"
-  ],
   "accumulation-lt25~twitter-SniperTradesOTC": [
     "XALL"
-  ],
-  "ihub-10k": [
-    "XALL",
-    "FLES",
-    "SHMP"
   ],
   "ihub-10k~twitter-SniperTradesOTC": [
     "XALL"
@@ -105,208 +24,19 @@
   "accumulation-lt25~ihub-10k": [
     "XALL"
   ],
-  "accumulation-lt25~ihub-10k~twitter-SniperTradesOTC": [
-    "XALL"
-  ],
-  "barchart-topStocks": [
-    "IDXX"
-  ],
-  "barchart-signalDirection": [
-    "IDXX"
-  ],
-  "barchart-topStocks-signalDirection": [
-    "IDXX"
-  ],
-  "accumulation-infinity": [
-    "AXMM"
-  ],
-  "accumulation-advancers-infinity": [
-    "AXMM"
-  ],
-  "accumulation-advancers-lt25": [
-    "STHC",
-    "GOSY",
-    "HDII"
-  ],
-  "green-volume": [
-    "GOSY"
-  ],
   "accumulation-lt25~green-volume": [
     "GOSY"
   ],
-  "accumulation-advancers-lt25~green-volume": [
+  "accumulation-lt25~combos": [
     "GOSY"
-  ],
-  "ihub-SEC": [
-    "HDII",
-    "LAHO",
-    "MYDX",
-    "ONCI",
-    "FLES",
-    "AMFE",
-    "CRSM",
-    "LQMT",
-    "CYDY",
-    "LDSR",
-    "AVXL",
-    "CELZ",
-    "INKW",
-    "VATE",
-    "ISBG",
-    "HMNY",
-    "VRUS"
   ],
   "accumulation-lt25~ihub-SEC": [
     "HDII"
   ],
-  "accumulation-advancers-lt25~ihub-SEC": [
-    "HDII"
-  ],
-  "ihub-merger": [
-    "HDII",
-    "MYDX",
-    "RETC",
-    "VSHC"
-  ],
   "accumulation-lt25~ihub-merger": [
     "HDII"
   ],
-  "accumulation-advancers-lt25~ihub-merger": [
-    "HDII"
-  ],
-  "ihub-merger-SEC": [
-    "HDII",
-    "MYDX"
-  ],
   "accumulation-lt25~ihub-merger-SEC": [
     "HDII"
-  ],
-  "accumulation-advancers-lt25~ihub-merger-SEC": [
-    "HDII"
-  ],
-  "accumulation-negative": [
-    "ARSN"
-  ],
-  "accumulation-advancers-negative": [
-    "ARSN"
-  ],
-  "ihub-8k": [
-    "LAHO",
-    "MYDX",
-    "ONCI"
-  ],
-  "ihub-8k-SEC": [
-    "LAHO",
-    "MYDX",
-    "ONCI"
-  ],
-  "ihub-dump": [
-    "LAHO",
-    "ONCI",
-    "CRSM",
-    "LQMT",
-    "CYDY",
-    "CELZ",
-    "ISBG",
-    "SHMP",
-    "GNCP",
-    "RETC"
-  ],
-  "ihub-8k-dump": [
-    "LAHO",
-    "ONCI"
-  ],
-  "ihub-SEC-dump": [
-    "LAHO",
-    "ONCI",
-    "CRSM",
-    "LQMT",
-    "CYDY",
-    "CELZ",
-    "ISBG"
-  ],
-  "ihub-merger-8k": [
-    "MYDX"
-  ],
-  "ihub-10k-SEC": [
-    "FLES"
-  ],
-  "ihub-fuck": [
-    "FLES"
-  ],
-  "ihub-10k-fuck": [
-    "FLES"
-  ],
-  "ihub-SEC-fuck": [
-    "FLES"
-  ],
-  "ihub-SEC-shit": [
-    "AMFE",
-    "LDSR",
-    "INKW"
-  ],
-  "ihub-investigate": [
-    "AVXL"
-  ],
-  "ihub-SEC-investigate": [
-    "AVXL"
-  ],
-  "ihub-big-week": [
-    "VATE"
-  ],
-  "ihub-finra": [
-    "HMNY",
-    "VRUS",
-    "GNCP",
-    "SRDP",
-    "IPIX"
-  ],
-  "ihub-finra-SEC": [
-    "HMNY",
-    "VRUS"
-  ],
-  "ihub-10k-dump": [
-    "SHMP"
-  ],
-  "ihub-10k-shit": [
-    "SHMP"
-  ],
-  "ihub-dump-shit": [
-    "SHMP"
-  ],
-  "ihub-finra-dump": [
-    "GNCP"
-  ],
-  "ihub-merger-dump": [
-    "RETC"
-  ],
-  "ihub-decliners-SEC": [
-    "SIML"
-  ],
-  "ihub-decliners-dump": [
-    "SIML"
-  ],
-  "ihub-decliners-shit": [
-    "VSTR"
-  ],
-  "metrics-lowest-float": [
-    "VSTR"
-  ],
-  "ihub-decliners-shit~metrics-lowest-float": [
-    "VSTR"
-  ],
-  "metrics-lowest-turnover": [
-    "VSTR",
-    "SFOR"
-  ],
-  "ihub-decliners-shit~metrics-lowest-turnover": [
-    "VSTR"
-  ],
-  "metrics-highest-dollarVolume": [
-    "VSTR",
-    "SFOR"
-  ],
-  "ihub-decliners-shit~metrics-highest-dollarVolume": [
-    "VSTR"
   ]
 }
