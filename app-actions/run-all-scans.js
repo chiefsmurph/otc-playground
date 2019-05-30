@@ -1,7 +1,7 @@
 const scan = require('./scan');
 const allScans = [
   'twitter',
-  'stock-invest',
+  // 'stock-invest',
   'finviz',
   'barchart',
   'day-streaks',

@@ -4,7 +4,7 @@ const runAllScans = require('./run-all-scans');
 const sendRecs = require('./send-recs');
 
 module.exports = async () => {
-  await analyzeWatchlists();
+  // await analyzeWatchlists();
   // await sendWlReport();
   
   await new Promise(resolve => setTimeout(resolve, 1000 * 10));
