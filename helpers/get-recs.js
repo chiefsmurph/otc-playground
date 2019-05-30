@@ -18,12 +18,12 @@ module.exports = async (perfKey = 'trendToHigh') => {
     day: report.day,
     report: report.finalReport.find(r => r.perfKey === perfKey).data
       // .slice(0, numToConsider)
-      .filter(result => {
-        return result.values.length >= (
-          result.watchList.includes('~') ? Math.min(report.day, 3) : report.day - 2
-        );
-      })
-      .filter(result => result.avg > 10)
+      // .filter(result => {
+      //   return result.values.length >= (
+      //     result.watchList.includes('~') ? Math.min(report.day, 3) : report.day - 2
+      //   );
+      // })
+      // .filter(result => result.avg > 10)
   }));
     
     console.log(JSON.stringify({stratsPerDay}, null, 2));
@@ -40,9 +40,12 @@ module.exports = async (perfKey = 'trendToHigh') => {
   });
 
   console.log({ pointTally })
-  const totals = mapObject(pointTally, sum);
+  const totals = mapObject(pointTally, tally => ({
+    tally: [...new Set(tally)].map(Math.round),
+    sum: sum([...new Set(tally)])
+  }));
   const sorted = Object.keys(totals).sort((a, b) => {
-    return totals[b] - totals[a];
+    return totals[b].sum - totals[a].sum;
   });
 
   console.log({ sorted })
@@ -56,9 +59,10 @@ module.exports = async (perfKey = 'trendToHigh') => {
 
   const withPicks = sorted.map(strat => ({
     strat,
-    picks: (mostRecentWL[strat] || derived[strat] || [])
+    picks: mostRecentWL[strat] || derived[strat] || [],
+    tallys: totals[strat].tally
   }))
-    .filter(pick => !pick.strat.includes('recs-'))
+    .filter(pick => ['recs', 'combos'].every(compare => !pick.strat.includes(compare)))
     .filter(pick => pick.picks && pick.picks.length);
 
   console.table(withPicks)

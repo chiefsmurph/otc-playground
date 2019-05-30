@@ -37,7 +37,7 @@ module.exports = async (onlyMe, perfKey) => {
   firstCombos.length && section('COMBOS', firstCombos);
   theRest.length && section('WORTH CONSIDERING', theRest);
 
-  await sendEmail(`TODAYS RECOMMENDATIONS (${mostRecentDate})`, str, !onlyMe);
+  await sendEmail(`TODAYS RECOMMENDATIONS [amended] (${mostRecentDate})`, `<h2>Hey y'all sorry for the multiple emails - I'll try to avoid this in the future - but there was a glitch in the matrix and I wanted to send you the correct picks of the day.  You can be sure I will be working hard on making this as effective as possible.  Both in the aspect of choosing which strategy to recommend as well as creating more consistent strategies.\n\nNow it includes "tallys" which represent the unique trendToHigh values for each of the periods of time being considered (3, 7 and 14 days back)...Confusing I know.  But I'm determined... to take over the worlddddd.  Just kidding... go $LEAS.  P.S. SMC is a n0000000b </h2>${str}`, !onlyMe);
 
   const getTs = arr => arr.map(pick => pick.picks).flatten();
 

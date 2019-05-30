@@ -12,14 +12,15 @@
         28.47,
         -37.5,
         14.58,
-        -6.25
+        -6.25,
+        -13.19
       ]
     },
     "perfs": {
       "trendToHigh": 28.472222222222232,
       "trendToLow": -57.638888888888886,
       "highMinusLow": -29.166666666666654,
-      "trendToCloses": 1.48
+      "trendToCloses": -0.15
     }
   },
   "STHC": {
@@ -36,6 +37,7 @@
         50,
         25,
         75,
+        75,
         75
       ]
     },
@@ -43,7 +45,7 @@
       "trendToHigh": 74.99999999999999,
       "trendToLow": -4.000000000000002,
       "highMinusLow": 70.99999999999999,
-      "trendToCloses": 36.11
+      "trendToCloses": 40
     }
   },
   "PGUS": {
@@ -331,14 +333,15 @@
         7.54,
         -7.69,
         -7.01,
-        -6.15
+        -6.15,
+        7.69
       ]
     },
     "perfs": {
       "trendToHigh": 15.384615384615378,
       "trendToLow": -18.461538461538467,
       "highMinusLow": -3.076923076923089,
-      "trendToCloses": -4.53
+      "trendToCloses": -3.31
     }
   },
   "DRNG": {
@@ -379,14 +382,15 @@
         -9.09,
         0,
         -11.19,
-        -9.09
+        -9.09,
+        -24.18
       ]
     },
     "perfs": {
       "trendToHigh": 9.090909090909086,
       "trendToLow": -35.45454545454546,
       "highMinusLow": -26.363636363636374,
-      "trendToCloses": -7.74
+      "trendToCloses": -9.57
     }
   },
   "GNCP": {
@@ -418,7 +422,7 @@
     "prices": {
       "buyPrice": 0.29505,
       "max": 0.33,
-      "low": 0.155,
+      "low": 0.14,
       "allCloses": [
         1.68,
         -5.1,
@@ -426,14 +430,15 @@
         8.46,
         8.46,
         -32.21,
-        -47.47
+        -47.47,
+        -32.21
       ]
     },
     "perfs": {
       "trendToHigh": 11.845449923741752,
-      "trendToLow": -47.46653109642433,
-      "highMinusLow": -35.62108117268258,
-      "trendToCloses": -11.13
+      "trendToLow": -52.55041518386714,
+      "highMinusLow": -40.704965260125384,
+      "trendToCloses": -13.76
     }
   },
   "SPSO": {
@@ -622,14 +627,15 @@
         -7.5,
         -12.5,
         -10,
-        -10
+        -10,
+        -7.5
       ]
     },
     "perfs": {
       "trendToHigh": 37.25,
       "trendToLow": -12.5,
       "highMinusLow": 24.75,
-      "trendToCloses": -10.83
+      "trendToCloses": -10.36
     }
   },
   "SAGD": {
@@ -644,6 +650,7 @@
         16.67,
         -8.33,
         8.33,
+        8.33,
         8.33
       ]
     },
@@ -651,7 +658,7 @@
       "trendToHigh": 16.66666666666668,
       "trendToLow": -8.33333333333332,
       "highMinusLow": 8.333333333333359,
-      "trendToCloses": 3.57
+      "trendToCloses": 4.17
     }
   },
   "ASTI": {
@@ -693,14 +700,15 @@
         0,
         25,
         25,
-        25
+        25,
+        0
       ]
     },
     "perfs": {
       "trendToHigh": 49.99999999999998,
       "trendToLow": 0,
       "highMinusLow": 49.99999999999998,
-      "trendToCloses": 19.44
+      "trendToCloses": 17.5
     }
   },
   "SWRM": {
@@ -792,6 +800,7 @@
         -19.19,
         -19.19,
         -19.19,
+        -19.19,
         -19.19
       ]
     },
@@ -799,7 +808,7 @@
       "trendToHigh": 13.63636363636362,
       "trendToLow": -19.191919191919197,
       "highMinusLow": -5.555555555555577,
-      "trendToCloses": -17.06
+      "trendToCloses": -17.27
     }
   },
   "GHHC": {
@@ -866,14 +875,15 @@
         0,
         6.25,
         22.92,
-        16.67
+        16.67,
+        12.5
       ]
     },
     "perfs": {
       "trendToHigh": 22.916666666666675,
       "trendToLow": -27.083333333333325,
       "highMinusLow": -4.16666666666665,
-      "trendToCloses": 2.78
+      "trendToCloses": 3.75
     }
   },
   "GMGI": {
@@ -990,14 +1000,15 @@
         -19.71,
         -19.71,
         -19.71,
-        -19.93
+        -19.93,
+        -41.61
       ]
     },
     "perfs": {
       "trendToHigh": 5.8394160583941455,
       "trendToLow": -47.445255474452566,
       "highMinusLow": -41.60583941605842,
-      "trendToCloses": -15.5
+      "trendToCloses": -18.11
     }
   },
   "TRLFF": {
@@ -1161,14 +1172,15 @@
         0,
         -14.29,
         0,
-        -14.29
+        -14.29,
+        14.29
       ]
     },
     "perfs": {
       "trendToHigh": 42.85714285714286,
       "trendToLow": -14.285714285714294,
       "highMinusLow": 28.57142857142857,
-      "trendToCloses": 0
+      "trendToCloses": 2.04
     }
   },
   "TRTC": {
@@ -1283,14 +1295,15 @@
         0,
         50,
         0,
-        50
+        50,
+        100
       ]
     },
     "perfs": {
       "trendToHigh": 100,
       "trendToLow": 0,
       "highMinusLow": 100,
-      "trendToCloses": 27.78
+      "trendToCloses": 35
     }
   },
   "UBID": {
@@ -1306,14 +1319,15 @@
         -2.44,
         21.95,
         21.37,
-        14.63
+        14.63,
+        12.8
       ]
     },
     "perfs": {
       "trendToHigh": 41.463414634146346,
       "trendToLow": -26.829268292682933,
       "highMinusLow": 14.634146341463413,
-      "trendToCloses": 13.95
+      "trendToCloses": 13.82
     }
   },
   "DVLP": {
@@ -1927,14 +1941,15 @@
         -1.35,
         -1.35,
         -1.35,
-        16.59
+        16.59,
+        -1.35
       ]
     },
     "perfs": {
       "trendToHigh": 25.560538116591914,
       "trendToLow": -10.313901345291486,
       "highMinusLow": 15.246636771300428,
-      "trendToCloses": 6.35
+      "trendToCloses": 5.25
     }
   },
   "SHOM": {
@@ -2437,14 +2452,15 @@
         8.7,
         -23.91,
         8.37,
-        30.43
+        30.43,
+        8.7
       ]
     },
     "perfs": {
       "trendToHigh": 30.43478260869566,
       "trendToLow": -23.913043478260867,
       "highMinusLow": 6.521739130434792,
-      "trendToCloses": 6.85
+      "trendToCloses": 7.03
     }
   },
   "VCSY": {
@@ -2779,14 +2795,15 @@
         7.44,
         3.31,
         6.61,
-        5.79
+        5.79,
+        5.32
       ]
     },
     "perfs": {
       "trendToHigh": 10.74380165289257,
       "trendToLow": -4.958677685950412,
       "highMinusLow": 5.785123966942158,
-      "trendToCloses": 6.98
+      "trendToCloses": 6.81
     }
   },
   "LRSV": {

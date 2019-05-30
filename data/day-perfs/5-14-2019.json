@@ -1,6 +1,6 @@
 {
-  "numDays": 9,
-  "closedOut": false,
+  "numDays": 10,
+  "closedOut": true,
   "listPerf": {
     "twitter-magicmiketrader": {
       "allTickers": [
@@ -11,9 +11,9 @@
         "DGTW"
       ],
       "trendToHigh": 58.99,
-      "trendToLow": -38.89,
-      "highMinusLow": 20.1,
-      "trendToCloses": -2.69
+      "trendToLow": -39.52,
+      "highMinusLow": 19.47,
+      "trendToCloses": -3.54
     },
     "twitter-SniperTradesOTC": {
       "allTickers": [
@@ -21,9 +21,9 @@
         "DAVC"
       ],
       "trendToHigh": 137.77,
-      "trendToLow": -33.46,
-      "highMinusLow": 104.3,
-      "trendToCloses": 35.59
+      "trendToLow": -36.32,
+      "highMinusLow": 101.45,
+      "trendToCloses": 38.59
     },
     "twitter-i_like_bb_stock": {
       "allTickers": [
@@ -33,9 +33,9 @@
         "QPRC"
       ],
       "trendToHigh": 17.74,
-      "trendToLow": -34.49,
-      "highMinusLow": -16.76,
-      "trendToCloses": -10.24
+      "trendToLow": -35.77,
+      "highMinusLow": -18.04,
+      "trendToCloses": -11.73
     },
     "twitter-friends23134": {
       "allTickers": [
@@ -44,7 +44,7 @@
       "trendToHigh": 149.09,
       "trendToLow": -9.09,
       "highMinusLow": 140,
-      "trendToCloses": 57.05
+      "trendToCloses": 54.98
     },
     "twitter-stockguru2020": {
       "allTickers": [
@@ -55,7 +55,7 @@
       "trendToHigh": 83.29,
       "trendToLow": -46.14,
       "highMinusLow": 37.15,
-      "trendToCloses": -3.38
+      "trendToCloses": -5.8
     },
     "accumulation-infinity": {
       "allTickers": [
@@ -67,7 +67,7 @@
       "trendToHigh": 36.84,
       "trendToLow": -11.46,
       "highMinusLow": 25.38,
-      "trendToCloses": 10.26
+      "trendToCloses": 9.84
     },
     "accumulation-lt25": {
       "allTickers": [
@@ -79,7 +79,7 @@
       "trendToHigh": 100.43,
       "trendToLow": -22.14,
       "highMinusLow": 78.29,
-      "trendToCloses": 36.18
+      "trendToCloses": 38.48
     },
     "accumulation-negative": {
       "allTickers": [
@@ -89,7 +89,7 @@
       "trendToHigh": 35.82,
       "trendToLow": -23.71,
       "highMinusLow": 12.1,
-      "trendToCloses": -1.9
+      "trendToCloses": -0.96
     },
     "ihub-custodianship": {
       "allTickers": [
@@ -97,9 +97,9 @@
         "XHUA"
       ],
       "trendToHigh": 3.61,
-      "trendToLow": -36.83,
-      "highMinusLow": -33.21,
-      "trendToCloses": -21.99
+      "trendToLow": -38.64,
+      "highMinusLow": -35.02,
+      "trendToCloses": -22.83
     },
     "ihub-merger": {
       "allTickers": [
@@ -111,9 +111,9 @@
         "ADXS"
       ],
       "trendToHigh": 20.52,
-      "trendToLow": -29.91,
-      "highMinusLow": -9.39,
-      "trendToCloses": -14.38
+      "trendToLow": -31.58,
+      "highMinusLow": -11.06,
+      "trendToCloses": -15.14
     },
     "ihub-merger-ihub-custodianship": {
       "allTickers": [
@@ -122,7 +122,7 @@
       "trendToHigh": 0,
       "trendToLow": -45.95,
       "highMinusLow": -45.95,
-      "trendToCloses": -31.26
+      "trendToCloses": -31.92
     },
     "twitter-friends23134~twitter-magicmiketrader": {
       "allTickers": [
@@ -131,7 +131,7 @@
       "trendToHigh": 149.09,
       "trendToLow": -9.09,
       "highMinusLow": 140,
-      "trendToCloses": 57.05
+      "trendToCloses": 54.98
     },
     "twitter-magicmiketrader~twitter-stockguru2020": {
       "allTickers": [
@@ -140,7 +140,7 @@
       "trendToHigh": 100,
       "trendToLow": -66.67,
       "highMinusLow": 33.33,
-      "trendToCloses": -17.59
+      "trendToCloses": -20.84
     },
     "accumulation-lt25~twitter-SniperTradesOTC": {
       "allTickers": [
@@ -149,7 +149,7 @@
       "trendToHigh": 275.54,
       "trendToLow": -1.79,
       "highMinusLow": 273.75,
-      "trendToCloses": 109.9
+      "trendToCloses": 118.38
     }
   }
 }

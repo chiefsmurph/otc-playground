@@ -1,5 +1,5 @@
 {
-  "numDays": 8,
+  "numDays": 9,
   "closedOut": false,
   "listPerf": {
     "twitter-magicmiketrader": {
@@ -10,7 +10,7 @@
       "trendToHigh": 85.36,
       "trendToLow": -41.67,
       "highMinusLow": 43.69,
-      "trendToCloses": 9.54
+      "trendToCloses": 6.96
     },
     "twitter-stockguru2020": {
       "allTickers": [
@@ -20,7 +20,7 @@
       "trendToHigh": 54.02,
       "trendToLow": -50,
       "highMinusLow": 4.02,
-      "trendToCloses": -22.58
+      "trendToCloses": -24.55
     },
     "twitter-magicmiketrader-stockguru2020": {
       "allTickers": [
@@ -29,7 +29,7 @@
       "trendToHigh": 28.05,
       "trendToLow": -50,
       "highMinusLow": -21.95,
-      "trendToCloses": -23.91
+      "trendToCloses": -25.21
     },
     "twitter-SniperTradesOTC": {
       "allTickers": [
@@ -38,7 +38,7 @@
       "trendToHigh": 178.54,
       "trendToLow": -13.91,
       "highMinusLow": 164.64,
-      "trendToCloses": 63.39
+      "trendToCloses": 69.52
     },
     "twitter-i_like_bb_stock": {
       "allTickers": [
@@ -51,9 +51,9 @@
         "QPRC"
       ],
       "trendToHigh": 8.59,
-      "trendToLow": -47.07,
-      "highMinusLow": -38.48,
-      "trendToCloses": -22.31
+      "trendToLow": -47.26,
+      "highMinusLow": -38.67,
+      "trendToCloses": -23.74
     },
     "twitter-friends23134": {
       "allTickers": [
@@ -62,7 +62,7 @@
       "trendToHigh": 48.91,
       "trendToLow": -40.22,
       "highMinusLow": 8.7,
-      "trendToCloses": -6.74
+      "trendToCloses": -8.04
     },
     "ihub-merger": {
       "allTickers": [
@@ -74,9 +74,9 @@
         "KRFG"
       ],
       "trendToHigh": 24.17,
-      "trendToLow": -31.21,
-      "highMinusLow": -7.03,
-      "trendToCloses": -12.82
+      "trendToLow": -32.59,
+      "highMinusLow": -8.42,
+      "trendToCloses": -14.22
     },
     "ihub-custodianship": {
       "allTickers": [
@@ -85,9 +85,9 @@
         "FHAI"
       ],
       "trendToHigh": 20.54,
-      "trendToLow": -21.75,
-      "highMinusLow": -1.21,
-      "trendToCloses": -0.92
+      "trendToLow": -23.13,
+      "highMinusLow": -2.6,
+      "trendToCloses": -1.36
     },
     "ihub-merger-custodianship": {
       "allTickers": [
@@ -96,7 +96,7 @@
       "trendToHigh": 17.86,
       "trendToLow": -28.57,
       "highMinusLow": -10.71,
-      "trendToCloses": -11.21
+      "trendToCloses": -11.95
     },
     "ihub-reinstatement": {
       "allTickers": [
@@ -105,7 +105,7 @@
       "trendToHigh": 75,
       "trendToLow": -25,
       "highMinusLow": 50,
-      "trendToCloses": 23.81
+      "trendToCloses": 21.72
     },
     "accumulation-infinity": {
       "allTickers": [
@@ -114,10 +114,10 @@
         "CLSI",
         "BRYYF"
       ],
-      "trendToHigh": 25,
+      "trendToHigh": 33.75,
       "trendToLow": -16.2,
-      "highMinusLow": 8.8,
-      "trendToCloses": 6.42
+      "highMinusLow": 17.55,
+      "trendToCloses": 7.25
     },
     "accumulation-lt25": {
       "allTickers": [
@@ -128,7 +128,7 @@
       "trendToHigh": 113.34,
       "trendToLow": -54.48,
       "highMinusLow": 58.87,
-      "trendToCloses": -3.5
+      "trendToCloses": -2.39
     },
     "accumulation-negative": {
       "allTickers": [
@@ -137,7 +137,7 @@
       "trendToHigh": 23.86,
       "trendToLow": -4.8,
       "highMinusLow": 19.06,
-      "trendToCloses": 7.78
+      "trendToCloses": 6.58
     },
     "day-streaks-6days": {
       "allTickers": [
@@ -145,18 +145,18 @@
         "INTV"
       ],
       "trendToHigh": 16.06,
-      "trendToLow": -29.7,
-      "highMinusLow": -13.64,
-      "trendToCloses": -13.82
+      "trendToLow": -36.36,
+      "highMinusLow": -20.3,
+      "trendToCloses": -15.17
     },
     "day-streaks-5days": {
       "allTickers": [
         "HIPH"
       ],
       "trendToHigh": 23.17,
-      "trendToLow": -15.24,
-      "highMinusLow": 7.94,
-      "trendToCloses": -2.06
+      "trendToLow": -20,
+      "highMinusLow": 3.17,
+      "trendToCloses": -3.78
     },
     "twitter-magicmiketrader~twitter-stockguru2020": {
       "allTickers": [
@@ -165,7 +165,7 @@
       "trendToHigh": 28.05,
       "trendToLow": -50,
       "highMinusLow": -21.95,
-      "trendToCloses": -23.91
+      "trendToCloses": -25.21
     },
     "ihub-merger~twitter-stockguru2020": {
       "allTickers": [
@@ -174,7 +174,7 @@
       "trendToHigh": 80,
       "trendToLow": -50,
       "highMinusLow": 30,
-      "trendToCloses": -21.25
+      "trendToCloses": -23.89
     },
     "accumulation-lt25~twitter-friends23134": {
       "allTickers": [
@@ -183,7 +183,7 @@
       "trendToHigh": 48.91,
       "trendToLow": -40.22,
       "highMinusLow": 8.7,
-      "trendToCloses": -6.74
+      "trendToCloses": -8.04
     }
   }
 }
