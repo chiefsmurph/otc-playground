@@ -8,6 +8,10 @@ const { sum } = require('../helpers/array-math');
 
 const noExt = file => file.split('.')[0];
 module.exports = async (perfKey = 'trendToHigh') => {
+
+  
+
+
   const days = [3, 7, 14];
   const output = await mapLimit(days, 1, async day => ({
     day,
@@ -47,6 +51,11 @@ module.exports = async (perfKey = 'trendToHigh') => {
   const sorted = Object.keys(totals).sort((a, b) => {
     return totals[b].sum - totals[a].sum;
   });
+
+
+
+
+
 
   console.log({ sorted })
   const watchLists = (await fs.readdir('./data/watch-lists'))

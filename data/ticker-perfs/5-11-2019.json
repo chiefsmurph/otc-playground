@@ -86,6 +86,9 @@
         0,
         0,
         0,
+        0,
+        7.5,
+        0,
         0
       ]
     },
@@ -93,7 +96,7 @@
       "trendToHigh": 24.999999999999996,
       "trendToLow": 0,
       "highMinusLow": 24.999999999999996,
-      "trendToCloses": 0.36
+      "trendToCloses": 1
     }
   },
   "LFAP": {
@@ -435,6 +438,7 @@
         -3.03,
         -39.39,
         -53.03,
+        -39.39,
         -39.39
       ]
     },
@@ -442,7 +446,7 @@
       "trendToHigh": 3.030303030303033,
       "trendToLow": -57.57575757575757,
       "highMinusLow": -54.54545454545454,
-      "trendToCloses": -20.02
+      "trendToCloses": -21.95
     }
   },
   "SPSO": {
@@ -632,14 +636,17 @@
         -12.5,
         -10,
         -10,
-        -7.5
+        -7.5,
+        -7.5,
+        -7.5,
+        0
       ]
     },
     "perfs": {
       "trendToHigh": 37.25,
       "trendToLow": -12.5,
       "highMinusLow": 24.75,
-      "trendToCloses": -10.36
+      "trendToCloses": -8.75
     }
   },
   "SAGD": {
@@ -656,14 +663,15 @@
         -8.33,
         8.33,
         8.33,
-        8.33
+        8.33,
+        -8.33
       ]
     },
     "perfs": {
       "trendToHigh": 16.66666666666668,
       "trendToLow": -8.33333333333332,
       "highMinusLow": 8.333333333333359,
-      "trendToCloses": 3.7
+      "trendToCloses": 2.5
     }
   },
   "ASTI": {
@@ -1178,14 +1186,17 @@
         -14.29,
         0,
         -14.29,
-        14.29
+        14.29,
+        0,
+        0,
+        0
       ]
     },
     "perfs": {
       "trendToHigh": 42.85714285714286,
       "trendToLow": -14.285714285714294,
       "highMinusLow": 28.57142857142857,
-      "trendToCloses": 2.04
+      "trendToCloses": 1.43
     }
   },
   "TRTC": {
@@ -1252,6 +1263,7 @@
         -4.76,
         -4.76,
         -4.76,
+        26.98,
         26.98
       ]
     },
@@ -1259,7 +1271,7 @@
       "trendToHigh": 26.984126984126984,
       "trendToLow": -4.761904761904774,
       "highMinusLow": 22.22222222222221,
-      "trendToCloses": 2.29
+      "trendToCloses": 4.76
     }
   },
   "TRDX": {
@@ -1950,14 +1962,16 @@
         -21.43,
         -21.43,
         -7.14,
-        -21.43
+        -21.43,
+        -28.57,
+        -28.57
       ]
     },
     "perfs": {
       "trendToHigh": 0,
       "trendToLow": -28.57142857142857,
       "highMinusLow": -28.57142857142857,
-      "trendToCloses": -16.83
+      "trendToCloses": -19.18
     }
   },
   "SHOM": {

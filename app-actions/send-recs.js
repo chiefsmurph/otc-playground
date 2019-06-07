@@ -37,7 +37,7 @@ module.exports = async (onlyMe, perfKey) => {
   firstCombos.length && section('COMBOS', firstCombos);
   theRest.length && section('WORTH CONSIDERING', theRest);
 
-  await sendEmail(`TODAYS RECOMMENDATIONS [amended] (${mostRecentDate})`, str, !onlyMe);
+  await sendEmail(`TODAYS RECOMMENDATIONS (${mostRecentDate})`, str, !onlyMe);
 
   const getTs = arr => arr.map(pick => pick.picks).flatten();
 
