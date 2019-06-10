@@ -1,0 +1,803 @@
+{
+  "numDays": 1,
+  "closedOut": false,
+  "listPerf": {
+    "twitter-DomBuckz": {
+      "allTickers": [
+        "HUML",
+        "TCNT",
+        "LQWC"
+      ],
+      "trendToHigh": 0,
+      "trendToLow": -19.18,
+      "highMinusLow": -19.18,
+      "trendToCloses": -7.13
+    },
+    "twitter-i_am_andrew84": {
+      "allTickers": [
+        "HUML",
+        "RHCO",
+        "LFAP"
+      ],
+      "trendToHigh": 1.05,
+      "trendToLow": -24.44,
+      "highMinusLow": -23.39,
+      "trendToCloses": -11.31
+    },
+    "twitter-i_like_bb_stock": {
+      "allTickers": [
+        "ISBG"
+      ],
+      "trendToHigh": 6.12,
+      "trendToLow": -10.2,
+      "highMinusLow": -4.08,
+      "trendToCloses": 2.04
+    },
+    "twitter-GoldMemberOTC": {
+      "allTickers": [
+        "ISBG"
+      ],
+      "trendToHigh": 6.12,
+      "trendToLow": -10.2,
+      "highMinusLow": -4.08,
+      "trendToCloses": 2.04
+    },
+    "twitter-Jcazz17": {
+      "allTickers": [
+        "CNNA",
+        "VMCS"
+      ],
+      "trendToHigh": 3.25,
+      "trendToLow": -21.08,
+      "highMinusLow": -17.83,
+      "trendToCloses": -2.99
+    },
+    "twitter-magicmiketrader": {
+      "allTickers": [
+        "CNNA",
+        "HIPH",
+        "BFCH",
+        "EXBX"
+      ],
+      "trendToHigh": 43.39,
+      "trendToLow": -14.82,
+      "highMinusLow": 28.57,
+      "trendToCloses": -2.81
+    },
+    "twitter-aaaamhim": {
+      "allTickers": [
+        "EROS"
+      ],
+      "trendToHigh": 8.66,
+      "trendToLow": -19.8,
+      "highMinusLow": -11.14,
+      "trendToCloses": -18.32
+    },
+    "twitter-stock_hacker": {
+      "allTickers": [
+        "DPLS"
+      ],
+      "trendToHigh": 8.33,
+      "trendToLow": 0,
+      "highMinusLow": 8.33,
+      "trendToCloses": 0
+    },
+    "twitter-OCDrises": {
+      "allTickers": [
+        "LRSV"
+      ],
+      "trendToHigh": 0,
+      "trendToLow": -24.29,
+      "highMinusLow": -24.29,
+      "trendToCloses": -14.29
+    },
+    "twitter-WishfulTH1NKin": {
+      "allTickers": [
+        "VSHC"
+      ],
+      "trendToHigh": 0,
+      "trendToLow": -17.41,
+      "highMinusLow": -17.41,
+      "trendToCloses": -8.09
+    },
+    "finviz-nanoEarlyRunners": {
+      "allTickers": [
+        "PES",
+        "EARS"
+      ],
+      "trendToHigh": 12.28,
+      "trendToLow": -5.42,
+      "highMinusLow": 6.86,
+      "trendToCloses": 7.25
+    },
+    "finviz-under5Target10Change2Vol200Within10of52Low": {
+      "allTickers": [
+        "FLNT",
+        "SRCI"
+      ],
+      "trendToHigh": 1.35,
+      "trendToLow": -3.44,
+      "highMinusLow": -2.1,
+      "trendToCloses": -2.49
+    },
+    "finviz-under5Target10Change2Vol200": {
+      "allTickers": [
+        "XOG"
+      ],
+      "trendToHigh": 1.63,
+      "trendToLow": -4.09,
+      "highMinusLow": -2.45,
+      "trendToCloses": -0.54
+    },
+    "finviz-under5TopLosers": {
+      "allTickers": [
+        "KIRK",
+        "EROS"
+      ],
+      "trendToHigh": 5.51,
+      "trendToLow": -12.26,
+      "highMinusLow": -6.75,
+      "trendToCloses": -10.34
+    },
+    "finviz-pennyStock1milVol": {
+      "allTickers": [
+        "AMR",
+        "AMRH"
+      ],
+      "trendToHigh": 4.58,
+      "trendToLow": -7.4,
+      "highMinusLow": -2.82,
+      "trendToCloses": -2
+    },
+    "finviz-newHighsUp3volOver500k": {
+      "allTickers": [
+        "CFMS",
+        "CIG"
+      ],
+      "trendToHigh": 5.55,
+      "trendToLow": -1.39,
+      "highMinusLow": 4.16,
+      "trendToCloses": 1.44
+    },
+    "barchart-topStocks": {
+      "allTickers": [
+        "MKTX",
+        "MTD"
+      ],
+      "trendToHigh": 3.05,
+      "trendToLow": -0.07,
+      "highMinusLow": 2.99,
+      "trendToCloses": 1.81
+    },
+    "barchart-signalStrength": {
+      "allTickers": [
+        "MKTX",
+        "COO"
+      ],
+      "trendToHigh": 2.74,
+      "trendToLow": -0.07,
+      "highMinusLow": 2.66,
+      "trendToCloses": 1.33
+    },
+    "barchart-signalDirection": {
+      "allTickers": [
+        "MKTX",
+        "CSGP"
+      ],
+      "trendToHigh": 2.62,
+      "trendToLow": -0.3,
+      "highMinusLow": 2.32,
+      "trendToCloses": 0.93
+    },
+    "barchart-upgrades": {
+      "allTickers": [
+        "NOW",
+        "ANSS"
+      ],
+      "trendToHigh": 1.05,
+      "trendToLow": -2.62,
+      "highMinusLow": -1.57,
+      "trendToCloses": -1.12
+    },
+    "day-streaks-4days": {
+      "allTickers": [
+        "ISBG",
+        "LDSR",
+        "EXBX"
+      ],
+      "trendToHigh": 63.15,
+      "trendToLow": -16.36,
+      "highMinusLow": 46.79,
+      "trendToCloses": -1.63
+    },
+    "day-streaks-5days": {
+      "allTickers": [
+        "APRU"
+      ],
+      "trendToHigh": 0,
+      "trendToLow": -19,
+      "highMinusLow": -19,
+      "trendToCloses": -2
+    },
+    "accumulation-infinity": {
+      "allTickers": [
+        "IFBC"
+      ],
+      "trendToHigh": 0,
+      "trendToLow": 0,
+      "highMinusLow": 0,
+      "trendToCloses": 0
+    },
+    "accumulation-lt25": {
+      "allTickers": [
+        "GHST"
+      ],
+      "trendToHigh": 18.75,
+      "trendToLow": 0,
+      "highMinusLow": 18.75,
+      "trendToCloses": 18.75
+    },
+    "accumulation-negative": {
+      "allTickers": [
+        "DLOC",
+        "NTRR"
+      ],
+      "trendToHigh": 0,
+      "trendToLow": -22.33,
+      "highMinusLow": -22.33,
+      "trendToCloses": -12.68
+    },
+    "accumulation-advancers-negative": {
+      "allTickers": [
+        "NTRR"
+      ],
+      "trendToHigh": 0,
+      "trendToLow": -18.18,
+      "highMinusLow": -18.18,
+      "trendToCloses": -1.82
+    },
+    "accumulation-ihub-hot-gt300": {
+      "allTickers": [
+        "TSLA"
+      ],
+      "trendToHigh": 2.85,
+      "trendToLow": -0.73,
+      "highMinusLow": 2.12,
+      "trendToCloses": -0.24
+    },
+    "accumulation-ihub-hot-negative": {
+      "allTickers": [
+        "COOP"
+      ],
+      "trendToHigh": 0.43,
+      "trendToLow": -3.31,
+      "highMinusLow": -2.88,
+      "trendToCloses": -1.87
+    },
+    "ihub-merger": {
+      "allTickers": [
+        "DAVC",
+        "DLOC",
+        "HDII",
+        "DIRV",
+        "XREG"
+      ],
+      "trendToHigh": 4.84,
+      "trendToLow": -11.36,
+      "highMinusLow": -6.52,
+      "trendToCloses": -4
+    },
+    "ihub-dump": {
+      "allTickers": [
+        "KALY",
+        "NCAP",
+        "CNNA",
+        "HMPQ",
+        "CELZ",
+        "MSMY"
+      ],
+      "trendToHigh": 7.13,
+      "trendToLow": -11.57,
+      "highMinusLow": -4.44,
+      "trendToCloses": -1.58
+    },
+    "ihub-10k": {
+      "allTickers": [
+        "MYDX"
+      ],
+      "trendToHigh": 23.08,
+      "trendToLow": 0,
+      "highMinusLow": 23.08,
+      "trendToCloses": 15.38
+    },
+    "ihub-SEC": {
+      "allTickers": [
+        "MYDX",
+        "DAVC",
+        "GRDO",
+        "CBBT"
+      ],
+      "trendToHigh": 7.69,
+      "trendToLow": -10.5,
+      "highMinusLow": -2.81,
+      "trendToCloses": -0.57
+    },
+    "ihub-finra": {
+      "allTickers": [
+        "KALY"
+      ],
+      "trendToHigh": 13.06,
+      "trendToLow": -9.91,
+      "highMinusLow": 3.15,
+      "trendToCloses": 3.6
+    },
+    "ihub-sucks": {
+      "allTickers": [
+        "IDNG",
+        "TRDX"
+      ],
+      "trendToHigh": 5,
+      "trendToLow": -15.61,
+      "highMinusLow": -10.61,
+      "trendToCloses": -15.61
+    },
+    "ihub-shit": {
+      "allTickers": [
+        "IRNC",
+        "GRCV",
+        "ALYI"
+      ],
+      "trendToHigh": 7.73,
+      "trendToLow": -13.59,
+      "highMinusLow": -5.86,
+      "trendToCloses": 4.39
+    },
+    "ihub-decliners-merger": {
+      "allTickers": [
+        "DAVC"
+      ],
+      "trendToHigh": 0,
+      "trendToLow": -10.77,
+      "highMinusLow": -10.77,
+      "trendToCloses": 0
+    },
+    "ihub-decliners-dump": {
+      "allTickers": [
+        "VMSI",
+        "CNNA",
+        "MMEX"
+      ],
+      "trendToHigh": 0,
+      "trendToLow": -19.67,
+      "highMinusLow": -19.67,
+      "trendToCloses": -13.57
+    },
+    "ihub-decliners-shit": {
+      "allTickers": [
+        "GRCV",
+        "ALYI"
+      ],
+      "trendToHigh": 9.45,
+      "trendToLow": -13.95,
+      "highMinusLow": -4.5,
+      "trendToCloses": 5.16
+    },
+    "ihub-decliners-SEC": {
+      "allTickers": [
+        "DAVC"
+      ],
+      "trendToHigh": 0,
+      "trendToLow": -10.77,
+      "highMinusLow": -10.77,
+      "trendToCloses": 0
+    },
+    "ihub-decliners-sucks": {
+      "allTickers": [
+        "VMSI",
+        "IDNG",
+        "TRDX"
+      ],
+      "trendToHigh": 3.33,
+      "trendToLow": -15.07,
+      "highMinusLow": -11.74,
+      "trendToCloses": -13.74
+    },
+    "ihub-ihub-hot-merger": {
+      "allTickers": [
+        "GIFX",
+        "SGMD",
+        "VSHC"
+      ],
+      "trendToHigh": 2.92,
+      "trendToLow": -16.58,
+      "highMinusLow": -13.66,
+      "trendToCloses": -1.51
+    },
+    "ihub-ihub-hot-SEC": {
+      "allTickers": [
+        "GIFX",
+        "DSGT",
+        "MYDX",
+        "VYST",
+        "SGMD",
+        "DVLP",
+        "CLCI",
+        "GRDO",
+        "AMRN",
+        "LQMT",
+        "NWBO",
+        "RELI",
+        "PRED",
+        "UOIP"
+      ],
+      "trendToHigh": 17.48,
+      "trendToLow": -12.22,
+      "highMinusLow": 5.26,
+      "trendToCloses": 5.83
+    },
+    "ihub-ihub-hot-dump": {
+      "allTickers": [
+        "GIFX",
+        "DSGT",
+        "KALY",
+        "DVLP",
+        "KGKG",
+        "CELZ",
+        "CVSI",
+        "TXHD"
+      ],
+      "trendToHigh": 4.7,
+      "trendToLow": -8.46,
+      "highMinusLow": -3.76,
+      "trendToCloses": 1.99
+    },
+    "ihub-ihub-hot-shit": {
+      "allTickers": [
+        "GIFX",
+        "FLES",
+        "TRON",
+        "AXXA"
+      ],
+      "trendToHigh": 9.51,
+      "trendToLow": -12.19,
+      "highMinusLow": -2.68,
+      "trendToCloses": 3.59
+    },
+    "ihub-ihub-hot-10k": {
+      "allTickers": [
+        "DSGT",
+        "FLES",
+        "MYDX",
+        "VYST",
+        "SOLI",
+        "DEVM"
+      ],
+      "trendToHigh": 10.55,
+      "trendToLow": -6.28,
+      "highMinusLow": 4.27,
+      "trendToCloses": 5.47
+    },
+    "ihub-ihub-hot-finra": {
+      "allTickers": [
+        "KALY",
+        "IPIX"
+      ],
+      "trendToHigh": 7.02,
+      "trendToLow": -9.32,
+      "highMinusLow": -2.31,
+      "trendToCloses": -0.62
+    },
+    "ihub-ihub-hot-8k": {
+      "allTickers": [
+        "ARYC",
+        "VRUS"
+      ],
+      "trendToHigh": 12.86,
+      "trendToLow": -7.32,
+      "highMinusLow": 5.54,
+      "trendToCloses": 9.05
+    },
+    "ihub-ihub-hot-sucks": {
+      "allTickers": [
+        "ACB",
+        "TRDX",
+        "RAFA"
+      ],
+      "trendToHigh": 4.41,
+      "trendToLow": -20.76,
+      "highMinusLow": -16.35,
+      "trendToCloses": -17.46
+    },
+    "metrics-active-lowest-float": {
+      "allTickers": [
+        "BIEI",
+        "ULGX"
+      ],
+      "trendToHigh": 54.01,
+      "trendToLow": -0.73,
+      "highMinusLow": 53.28,
+      "trendToCloses": 17.05
+    },
+    "metrics-active-lowest-turnover": {
+      "allTickers": [
+        "TRUU",
+        "MCOA"
+      ],
+      "trendToHigh": 4.54,
+      "trendToLow": -7.18,
+      "highMinusLow": -2.65,
+      "trendToCloses": -6.4
+    },
+    "metrics-active-highest-dollarVolume": {
+      "allTickers": [
+        "ISBG"
+      ],
+      "trendToHigh": 6.12,
+      "trendToLow": -10.2,
+      "highMinusLow": -4.08,
+      "trendToCloses": 2.04
+    },
+    "metrics-advancers-lowest-float": {
+      "allTickers": [
+        "ULGX"
+      ],
+      "trendToHigh": 71.43,
+      "trendToLow": 0,
+      "highMinusLow": 71.43,
+      "trendToCloses": 32.65
+    },
+    "metrics-advancers-lowest-turnover": {
+      "allTickers": [
+        "TRUU",
+        "MCOA"
+      ],
+      "trendToHigh": 4.54,
+      "trendToLow": -7.18,
+      "highMinusLow": -2.65,
+      "trendToCloses": -6.4
+    },
+    "metrics-advancers-highest-dollarVolume": {
+      "allTickers": [
+        "ISBG",
+        "TTCM"
+      ],
+      "trendToHigh": 4.46,
+      "trendToLow": -9.31,
+      "highMinusLow": -4.84,
+      "trendToCloses": -2.25
+    },
+    "metrics-decliners-lowest-float": {
+      "allTickers": [
+        "BIEI",
+        "ZMRK"
+      ],
+      "trendToHigh": 20.22,
+      "trendToLow": -4.58,
+      "highMinusLow": 15.64,
+      "trendToCloses": 0.73
+    },
+    "metrics-decliners-lowest-turnover": {
+      "allTickers": [
+        "PHOT",
+        "GRCV"
+      ],
+      "trendToHigh": 12.53,
+      "trendToLow": -12.34,
+      "highMinusLow": 0.19,
+      "trendToCloses": 6.27
+    },
+    "metrics-ihub-hot-lowest-turnover": {
+      "allTickers": [
+        "KBLB",
+        "BFCH"
+      ],
+      "trendToHigh": 5.73,
+      "trendToLow": -8.25,
+      "highMinusLow": -2.52,
+      "trendToCloses": 3.29
+    },
+    "metrics-ihub-hot-highest-dollarVolume": {
+      "allTickers": [
+        "KBLB",
+        "KGKG"
+      ],
+      "trendToHigh": 10.59,
+      "trendToLow": -2.25,
+      "highMinusLow": 8.33,
+      "trendToCloses": 8.78
+    },
+    "metrics-ihub-hot-lowest-float": {
+      "allTickers": [
+        "FLES",
+        "GTHP"
+      ],
+      "trendToHigh": 5.48,
+      "trendToLow": -9.61,
+      "highMinusLow": -4.13,
+      "trendToCloses": -2.88
+    },
+    "recs-number1": {
+      "allTickers": [
+        "AMR"
+      ],
+      "trendToHigh": 3.89,
+      "trendToLow": -11.11,
+      "highMinusLow": -7.22,
+      "trendToCloses": -5.56
+    },
+    "recs-top": {
+      "allTickers": [
+        "AMR",
+        "AMRH"
+      ],
+      "trendToHigh": 4.58,
+      "trendToLow": -7.4,
+      "highMinusLow": -2.82,
+      "trendToCloses": -2
+    },
+    "combos": {
+      "allTickers": [
+        "CNNA",
+        "CNNA"
+      ],
+      "trendToHigh": 0,
+      "trendToLow": -25,
+      "highMinusLow": -25,
+      "trendToCloses": -10.71
+    },
+    "recs-medium": {
+      "allTickers": [
+        "PES",
+        "EARS"
+      ],
+      "trendToHigh": 12.28,
+      "trendToLow": -5.42,
+      "highMinusLow": 6.86,
+      "trendToCloses": 7.25
+    },
+    "twitter-DomBuckz~twitter-i_am_andrew84": {
+      "allTickers": [
+        "HUML"
+      ],
+      "trendToHigh": 0,
+      "trendToLow": -30,
+      "highMinusLow": -30,
+      "trendToCloses": -5.44
+    },
+    "twitter-GoldMemberOTC~twitter-i_like_bb_stock": {
+      "allTickers": [
+        "ISBG"
+      ],
+      "trendToHigh": 6.12,
+      "trendToLow": -10.2,
+      "highMinusLow": -4.08,
+      "trendToCloses": 2.04
+    },
+    "day-streaks-4days~twitter-i_like_bb_stock": {
+      "allTickers": [
+        "ISBG"
+      ],
+      "trendToHigh": 6.12,
+      "trendToLow": -10.2,
+      "highMinusLow": -4.08,
+      "trendToCloses": 2.04
+    },
+    "day-streaks-4days~twitter-GoldMemberOTC": {
+      "allTickers": [
+        "ISBG"
+      ],
+      "trendToHigh": 6.12,
+      "trendToLow": -10.2,
+      "highMinusLow": -4.08,
+      "trendToCloses": 2.04
+    },
+    "twitter-Jcazz17~twitter-magicmiketrader": {
+      "allTickers": [
+        "CNNA"
+      ],
+      "trendToHigh": 0,
+      "trendToLow": -25,
+      "highMinusLow": -25,
+      "trendToCloses": -10.71
+    },
+    "ihub-dump~twitter-Jcazz17": {
+      "allTickers": [
+        "CNNA"
+      ],
+      "trendToHigh": 0,
+      "trendToLow": -25,
+      "highMinusLow": -25,
+      "trendToCloses": -10.71
+    },
+    "ihub-dump~twitter-magicmiketrader": {
+      "allTickers": [
+        "CNNA"
+      ],
+      "trendToHigh": 0,
+      "trendToLow": -25,
+      "highMinusLow": -25,
+      "trendToCloses": -10.71
+    },
+    "ihub-decliners-dump~twitter-Jcazz17": {
+      "allTickers": [
+        "CNNA"
+      ],
+      "trendToHigh": 0,
+      "trendToLow": -25,
+      "highMinusLow": -25,
+      "trendToCloses": -10.71
+    },
+    "ihub-decliners-dump~twitter-magicmiketrader": {
+      "allTickers": [
+        "CNNA"
+      ],
+      "trendToHigh": 0,
+      "trendToLow": -25,
+      "highMinusLow": -25,
+      "trendToCloses": -10.71
+    },
+    "combos~twitter-Jcazz17": {
+      "allTickers": [
+        "CNNA"
+      ],
+      "trendToHigh": 0,
+      "trendToLow": -25,
+      "highMinusLow": -25,
+      "trendToCloses": -10.71
+    },
+    "combos~twitter-magicmiketrader": {
+      "allTickers": [
+        "CNNA"
+      ],
+      "trendToHigh": 0,
+      "trendToLow": -25,
+      "highMinusLow": -25,
+      "trendToCloses": -10.71
+    },
+    "combos~ihub-dump": {
+      "allTickers": [
+        "CNNA"
+      ],
+      "trendToHigh": 0,
+      "trendToLow": -25,
+      "highMinusLow": -25,
+      "trendToCloses": -10.71
+    },
+    "combos~ihub-decliners-dump": {
+      "allTickers": [
+        "CNNA"
+      ],
+      "trendToHigh": 0,
+      "trendToLow": -25,
+      "highMinusLow": -25,
+      "trendToCloses": -10.71
+    },
+    "day-streaks-4days~twitter-magicmiketrader": {
+      "allTickers": [
+        "EXBX"
+      ],
+      "trendToHigh": 172.22,
+      "trendToLow": -16.67,
+      "highMinusLow": 155.56,
+      "trendToCloses": 5.56
+    },
+    "finviz-under5TopLosers~twitter-aaaamhim": {
+      "allTickers": [
+        "EROS"
+      ],
+      "trendToHigh": 8.66,
+      "trendToLow": -19.8,
+      "highMinusLow": -11.14,
+      "trendToCloses": -18.32
+    },
+    "accumulation-negative~ihub-merger": {
+      "allTickers": [
+        "DLOC"
+      ],
+      "trendToHigh": 0,
+      "trendToLow": -26.47,
+      "highMinusLow": -26.47,
+      "trendToCloses": -23.53
+    }
+  }
+}

@@ -428,7 +428,7 @@
     "prices": {
       "buyPrice": 0.32,
       "max": 0.32,
-      "low": 0.1297,
+      "low": 0.1291,
       "allCloses": [
         0,
         0,
@@ -438,14 +438,15 @@
         -37.5,
         -59.38,
         -15.62,
-        -25
+        -25,
+        -59.66
       ]
     },
     "perfs": {
       "trendToHigh": 0,
-      "trendToLow": -59.46874999999999,
-      "highMinusLow": -59.46874999999999,
-      "trendToCloses": -29.34
+      "trendToLow": -59.65625,
+      "highMinusLow": -59.65625,
+      "trendToCloses": -32.37
     }
   },
   "SPSO": {
@@ -627,7 +628,7 @@
     "prices": {
       "buyPrice": 0.0036,
       "max": 0.00549,
-      "low": 0.0035,
+      "low": 0.0028,
       "allCloses": [
         -2.78,
         0,
@@ -637,14 +638,15 @@
         2.78,
         11.11,
         -2.78,
-        -2.78
+        -2.78,
+        -22.22
       ]
     },
     "perfs": {
       "trendToHigh": 52.5,
-      "trendToLow": -2.7777777777777732,
-      "highMinusLow": 49.72222222222223,
-      "trendToCloses": 1.23
+      "trendToLow": -22.22222222222222,
+      "highMinusLow": 30.27777777777778,
+      "trendToCloses": -1.11
     }
   },
   "SAGD": {
@@ -2590,14 +2592,15 @@
         25,
         25,
         25,
-        21.87
+        21.87,
+        20.13
       ]
     },
     "perfs": {
       "trendToHigh": 49.99999999999998,
       "trendToLow": 0,
       "highMinusLow": 49.99999999999998,
-      "trendToCloses": 29.37
+      "trendToCloses": 27.83
     }
   },
   "QPAG": {
@@ -2779,21 +2782,22 @@
     "prices": {
       "buyPrice": 0.0075,
       "max": 0.0089,
-      "low": 0.0075,
+      "low": 0.0051,
       "allCloses": [
         4.67,
         0,
         18.67,
         16.67,
         16,
-        17.33
+        17.33,
+        16
       ]
     },
     "perfs": {
       "trendToHigh": 18.66666666666667,
-      "trendToLow": 0,
-      "highMinusLow": 18.66666666666667,
-      "trendToCloses": 12.22
+      "trendToLow": -31.999999999999996,
+      "highMinusLow": -13.333333333333325,
+      "trendToCloses": 12.76
     }
   },
   "HHSE": {
