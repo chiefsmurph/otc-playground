@@ -3,6 +3,7 @@ const sendEmail = require('../helpers/send-email');
 const getDatestr = require('../helpers/get-datestr');
 const Combinatorics = require('js-combinatorics');
 const updateWl = require('../helpers/update-wl');
+const getMostRecentHistoricalDate = require('../cli/get-most-recent-historical-date');
 
 const analyzeScanResponse = (scanName, response, permuteKeys) => {
   console.log('analyzeing')
@@ -71,7 +72,8 @@ module.exports = async (
   
   // scan ihub
   console.log('running scan...', rest);
-  const todayDate = getDatestr();
+  const todayDate = await getMostRecentHistoricalDate();
+  console.log({ todayDate})
 
   const scanFn = require(`../scans/${scanName}`);
   const response = await scanFn(count, ...rest);

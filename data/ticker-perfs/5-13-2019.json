@@ -2449,18 +2449,19 @@
   "ARYMF": {
     "prices": {
       "buyPrice": 0.02,
-      "max": 0.04,
+      "max": 0.06,
       "low": 0.0005,
       "allCloses": [
         -97.5,
-        -97.5
+        -97.5,
+        200
       ]
     },
     "perfs": {
-      "trendToHigh": 100,
+      "trendToHigh": 199.99999999999994,
       "trendToLow": -97.5,
-      "highMinusLow": 2.5,
-      "trendToCloses": -97.5
+      "highMinusLow": 102.49999999999994,
+      "trendToCloses": 1.67
     }
   },
   "WHSI": {
@@ -2602,14 +2603,15 @@
         -24.53,
         -24.53,
         -26.42,
-        -27.47
+        -27.47,
+        -26.42
       ]
     },
     "perfs": {
       "trendToHigh": 7.547169811320758,
       "trendToLow": -39.62264150943396,
       "highMinusLow": -32.075471698113205,
-      "trendToCloses": -16.81
+      "trendToCloses": -17.77
     }
   },
   "QPAG": {

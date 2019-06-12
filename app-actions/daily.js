@@ -9,5 +9,5 @@ module.exports = async () => {
   
   await new Promise(resolve => setTimeout(resolve, 1000 * 10));
   await runAllScans();
-  await sendRecs();
+  await sendRecs(true);
 };

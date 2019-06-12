@@ -50,6 +50,28 @@
   "accumulation-advancers-lt25~ihub-dump": [
     "IFLM"
   ],
+  "combos~twitter-SniperTradesOTC": [
+    "IFLM"
+  ],
+  "combos~twitter-KickoStocks": [
+    "IFLM"
+  ],
+  "accumulation-lt25~combos": [
+    "IFLM",
+    "DLYT",
+    "MSTO"
+  ],
+  "accumulation-advancers-lt25~combos": [
+    "IFLM",
+    "DLYT",
+    "MSTO"
+  ],
+  "combos~ihub-SEC": [
+    "IFLM"
+  ],
+  "combos~ihub-dump": [
+    "IFLM"
+  ],
   "twitter-Jcazz17~twitter-magicmiketrader": [
     "BFCH",
     "BTC",
@@ -95,6 +117,13 @@
     "DLYT"
   ],
   "green-volume~ihub-8k": [
+    "DLYT"
+  ],
+  "combos~green-volume": [
+    "DLYT",
+    "MSTO"
+  ],
+  "combos~ihub-8k": [
     "DLYT"
   ]
 }
