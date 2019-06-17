@@ -15,7 +15,10 @@ const lookupQueries = [
   'fuck',
   'investigate',
   'dump',
-  'shit'
+  'shit',
+  'update coming',
+  'tomorrow expecting',
+  'expecting'
 ];
 
 const lookups = lookupQueries.map(query => ({

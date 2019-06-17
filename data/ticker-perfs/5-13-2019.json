@@ -2211,6 +2211,8 @@
         0,
         0,
         0,
+        0,
+        0,
         0
       ]
     },
@@ -2454,14 +2456,15 @@
       "allCloses": [
         -97.5,
         -97.5,
-        200
+        200,
+        -78.5
       ]
     },
     "perfs": {
       "trendToHigh": 199.99999999999994,
       "trendToLow": -97.5,
       "highMinusLow": 102.49999999999994,
-      "trendToCloses": 1.67
+      "trendToCloses": -18.38
     }
   },
   "WHSI": {

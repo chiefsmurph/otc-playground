@@ -11,7 +11,7 @@
       "trendToHigh": 8.02,
       "trendToLow": -38.16,
       "highMinusLow": -30.14,
-      "trendToCloses": -18.89
+      "trendToCloses": -19.37
     },
     "twitter-stockguru2020": {
       "allTickers": [
@@ -205,7 +205,7 @@
       "trendToHigh": 30.16,
       "trendToLow": -24.68,
       "highMinusLow": 5.47,
-      "trendToCloses": 2.21
+      "trendToCloses": 2.93
     },
     "accumulation-lt25": {
       "allTickers": [
@@ -223,7 +223,7 @@
       "trendToHigh": 0,
       "trendToLow": -51.62,
       "highMinusLow": -51.62,
-      "trendToCloses": -32.79
+      "trendToCloses": -34.23
     },
     "ihub-8k": {
       "allTickers": [
@@ -292,14 +292,34 @@
       "highMinusLow": -13.57,
       "trendToCloses": -17.81
     },
+    "metrics-lowest-float": {
+      "allTickers": [
+        "LATNF",
+        "PIONF"
+      ],
+      "trendToHigh": 0,
+      "trendToLow": -10,
+      "highMinusLow": -10,
+      "trendToCloses": -5
+    },
     "metrics-lowest-turnover": {
       "allTickers": [
+        "LATNF",
         "NWBO"
       ],
-      "trendToHigh": 2.26,
-      "trendToLow": -27.19,
-      "highMinusLow": -24.93,
-      "trendToCloses": -8.73
+      "trendToHigh": 1.13,
+      "trendToLow": -13.59,
+      "highMinusLow": -12.47,
+      "trendToCloses": -4.37
+    },
+    "metrics-lowest-float-lowest-turnover": {
+      "allTickers": [
+        "LATNF"
+      ],
+      "trendToHigh": 0,
+      "trendToLow": 0,
+      "highMinusLow": 0,
+      "trendToCloses": 0
     },
     "metrics-highest-dollarVolume": {
       "allTickers": [
@@ -367,7 +387,7 @@
       "trendToHigh": 43.64,
       "trendToLow": 0,
       "highMinusLow": 43.64,
-      "trendToCloses": 14.55
+      "trendToCloses": 21.82
     },
     "recs-top": {
       "allTickers": [
@@ -378,7 +398,7 @@
       "trendToHigh": 30.16,
       "trendToLow": -24.68,
       "highMinusLow": 5.47,
-      "trendToCloses": 2.21
+      "trendToCloses": 2.93
     },
     "recs-medium": {
       "allTickers": [
@@ -405,7 +425,7 @@
       "trendToHigh": 0,
       "trendToLow": -51.62,
       "highMinusLow": -51.62,
-      "trendToCloses": -32.79
+      "trendToCloses": -34.23
     },
     "ihub-8k~twitter-GoldMemberOTC": {
       "allTickers": [
