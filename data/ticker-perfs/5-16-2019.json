@@ -2211,6 +2211,7 @@
         0,
         0,
         0,
+        0,
         0
       ]
     },
@@ -3786,6 +3787,7 @@
       "low": 0.008,
       "allCloses": [
         0,
+        -20,
         -20
       ]
     },
@@ -3793,7 +3795,7 @@
       "trendToHigh": 0,
       "trendToLow": -20,
       "highMinusLow": -20,
-      "trendToCloses": -10
+      "trendToCloses": -13.33
     }
   },
   "FLES": {

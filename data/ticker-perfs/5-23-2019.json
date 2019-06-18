@@ -2208,6 +2208,7 @@
         0,
         0,
         0,
+        0,
         0
       ]
     },
@@ -2599,6 +2600,7 @@
         -25,
         22.5,
         55.5,
+        72.5,
         72.5
       ]
     },
@@ -2606,7 +2608,7 @@
       "trendToHigh": 72.5,
       "trendToLow": -25,
       "highMinusLow": 47.5,
-      "trendToCloses": 12.96
+      "trendToCloses": 18.91
     }
   },
   "QPAG": {
@@ -3763,6 +3765,7 @@
       "low": 0.008,
       "allCloses": [
         0,
+        -20,
         -20
       ]
     },
@@ -3770,7 +3773,7 @@
       "trendToHigh": 0,
       "trendToLow": -20,
       "highMinusLow": -20,
-      "trendToCloses": -10
+      "trendToCloses": -13.33
     }
   },
   "FLES": {
@@ -4445,19 +4448,20 @@
     "prices": {
       "buyPrice": 0.008,
       "max": 0.015,
-      "low": 0.008,
+      "low": 0.0075,
       "allCloses": [
         0,
         25,
         50,
-        12.5
+        12.5,
+        -6.25
       ]
     },
     "perfs": {
       "trendToHigh": 87.49999999999999,
-      "trendToLow": 0,
-      "highMinusLow": 87.49999999999999,
-      "trendToCloses": 21.88
+      "trendToLow": -6.250000000000005,
+      "highMinusLow": 81.24999999999999,
+      "trendToCloses": 16.25
     }
   },
   "BFCH": {
@@ -6279,7 +6283,7 @@
   "PRFC": {
     "prices": {
       "buyPrice": 0.0024,
-      "max": 0.005,
+      "max": 0.0069,
       "low": 0.0024,
       "allCloses": [
         62.08,
@@ -6289,14 +6293,15 @@
         45.83,
         45.83,
         100,
-        87.5
+        87.5,
+        93.75
       ]
     },
     "perfs": {
-      "trendToHigh": 108.33333333333334,
+      "trendToHigh": 187.50000000000006,
       "trendToLow": 0,
-      "highMinusLow": 108.33333333333334,
-      "trendToCloses": 50.47
+      "highMinusLow": 187.50000000000006,
+      "trendToCloses": 55.28
     }
   },
   "NBY": {
@@ -6674,7 +6679,7 @@
     "prices": {
       "buyPrice": 0.0039,
       "max": 0.0039,
-      "low": 0.0018,
+      "low": 0.0015,
       "allCloses": [
         0,
         0,
@@ -6682,14 +6687,15 @@
         -4.1,
         -10.26,
         -7.69,
-        -7.69
+        -7.69,
+        -4.1
       ]
     },
     "perfs": {
       "trendToHigh": 0,
-      "trendToLow": -53.84615384615385,
-      "highMinusLow": -53.84615384615385,
-      "trendToCloses": -4.86
+      "trendToLow": -61.53846153846153,
+      "highMinusLow": -61.53846153846153,
+      "trendToCloses": -4.77
     }
   },
   "GCLT": {

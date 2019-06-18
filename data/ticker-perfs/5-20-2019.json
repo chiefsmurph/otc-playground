@@ -2210,6 +2210,7 @@
         0,
         0,
         0,
+        0,
         0
       ]
     },
@@ -3779,6 +3780,7 @@
       "low": 0.008,
       "allCloses": [
         0,
+        -20,
         -20
       ]
     },
@@ -3786,7 +3788,7 @@
       "trendToHigh": 0,
       "trendToLow": -20,
       "highMinusLow": -20,
-      "trendToCloses": -10
+      "trendToCloses": -13.33
     }
   },
   "FLES": {
@@ -4463,21 +4465,22 @@
     "prices": {
       "buyPrice": 0.0085,
       "max": 0.017,
-      "low": 0.008,
+      "low": 0.0075,
       "allCloses": [
         100,
         -5.88,
         -5.88,
         17.65,
         41.18,
-        5.88
+        5.88,
+        -11.76
       ]
     },
     "perfs": {
       "trendToHigh": 100,
-      "trendToLow": -5.8823529411764754,
-      "highMinusLow": 94.11764705882352,
-      "trendToCloses": 25.49
+      "trendToLow": -11.764705882352951,
+      "highMinusLow": 88.23529411764704,
+      "trendToCloses": 20.17
     }
   },
   "BFCH": {

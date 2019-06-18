@@ -426,7 +426,7 @@
       "trendToHigh": 27.24,
       "trendToLow": -26.28,
       "highMinusLow": 0.96,
-      "trendToCloses": 0.37
+      "trendToCloses": 0.36
     },
     "ihub-ihub-hot-custodianship": {
       "allTickers": [
@@ -437,7 +437,7 @@
       "trendToHigh": 56.21,
       "trendToLow": -20.09,
       "highMinusLow": 36.12,
-      "trendToCloses": 25.26
+      "trendToCloses": 25.23
     },
     "ihub-ihub-hot-10k": {
       "allTickers": [
@@ -447,7 +447,7 @@
       "trendToHigh": 5.95,
       "trendToLow": -48.09,
       "highMinusLow": -42.14,
-      "trendToCloses": -14.41
+      "trendToCloses": -14.46
     },
     "ihub-ihub-hot-SEC": {
       "allTickers": [
@@ -576,7 +576,7 @@
       "trendToHigh": 16.23,
       "trendToLow": -37.75,
       "highMinusLow": -21.52,
-      "trendToCloses": -16.17
+      "trendToCloses": -15.54
     },
     "metrics-advancers-lowest-turnover": {
       "allTickers": [
@@ -603,10 +603,10 @@
         "AEPT",
         "NEXS"
       ],
-      "trendToHigh": 35.97,
+      "trendToHigh": 54.97,
       "trendToLow": -37.75,
-      "highMinusLow": -1.78,
-      "trendToCloses": -3.23
+      "highMinusLow": 17.22,
+      "trendToCloses": 0.95
     },
     "metrics-decliners-lowest-turnover": {
       "allTickers": [
@@ -636,7 +636,7 @@
       "trendToHigh": 25.26,
       "trendToLow": -10,
       "highMinusLow": 15.26,
-      "trendToCloses": 2.83
+      "trendToCloses": 1.38
     },
     "metrics-ihub-hot-lowest-float": {
       "allTickers": [

@@ -611,14 +611,15 @@
         -0.94,
         -0.94,
         -36.32,
-        -33.14
+        -33.14,
+        -15.09
       ]
     },
     "perfs": {
       "trendToHigh": 8.018867924528303,
       "trendToLow": -36.320754716981135,
       "highMinusLow": -28.301886792452834,
-      "trendToCloses": -13.8
+      "trendToCloses": -13.93
     }
   },
   "RBNW": {
@@ -807,6 +808,8 @@
         0,
         0,
         0,
+        0,
+        0,
         0
       ]
     },
@@ -845,7 +848,7 @@
   "INBI": {
     "prices": {
       "buyPrice": 0.003,
-      "max": 0.003,
+      "max": 0.0044,
       "low": 0.003,
       "allCloses": [
         0,
@@ -855,14 +858,16 @@
         0,
         0,
         0,
-        0
+        0,
+        0,
+        46.67
       ]
     },
     "perfs": {
-      "trendToHigh": 0,
+      "trendToHigh": 46.66666666666667,
       "trendToLow": 0,
-      "highMinusLow": 0,
-      "trendToCloses": 0
+      "highMinusLow": 46.66666666666667,
+      "trendToCloses": 4.67
     }
   },
   "CAVR": {
@@ -1178,6 +1183,7 @@
         16.67,
         0,
         16.67,
+        -16.67,
         -16.67
       ]
     },
@@ -1185,7 +1191,7 @@
       "trendToHigh": 16.66666666666668,
       "trendToLow": -16.666666666666657,
       "highMinusLow": 2.1316282072803006e-14,
-      "trendToCloses": 8.34
+      "trendToCloses": 5.56
     }
   },
   "TRTC": {
@@ -1252,6 +1258,7 @@
         33.33,
         33.33,
         0,
+        0,
         0
       ]
     },
@@ -1259,7 +1266,7 @@
       "trendToHigh": 33.33333333333336,
       "trendToLow": 0,
       "highMinusLow": 33.33333333333336,
-      "trendToCloses": 25.92
+      "trendToCloses": 23.33
     }
   },
   "TRDX": {
@@ -1325,14 +1332,15 @@
         -2.17,
         -2.17,
         -17.39,
-        -2.17
+        -2.17,
+        -16.17
       ]
     },
     "perfs": {
       "trendToHigh": 0,
       "trendToLow": -23.695652173913043,
       "highMinusLow": -23.695652173913043,
-      "trendToCloses": -9.09
+      "trendToCloses": -9.88
     }
   },
   "DVLP": {
@@ -2119,14 +2127,15 @@
         22.11,
         26.56,
         25.17,
-        18.22
+        18.22,
+        22.39
       ]
     },
     "perfs": {
       "trendToHigh": 26.564673157162726,
       "trendToLow": -23.504867872044514,
       "highMinusLow": 3.0598052851182125,
-      "trendToCloses": 12.95
+      "trendToCloses": 14
     }
   },
   "NDYN": {
@@ -2185,6 +2194,7 @@
       "max": 0.0001,
       "low": 0.0001,
       "allCloses": [
+        0,
         0,
         0,
         0
@@ -2385,14 +2395,15 @@
         0,
         11.11,
         0,
-        -11.11
+        -11.11,
+        11.11
       ]
     },
     "perfs": {
       "trendToHigh": 33.33333333333333,
       "trendToLow": -11.111111111111105,
       "highMinusLow": 22.22222222222222,
-      "trendToCloses": 0
+      "trendToCloses": 1.23
     }
   },
   "DEWM": {
@@ -2572,6 +2583,7 @@
         -23.78,
         24.49,
         58.03,
+        75.3,
         75.3
       ]
     },
@@ -2579,7 +2591,7 @@
       "trendToHigh": 75.30487804878048,
       "trendToLow": -23.780487804878053,
       "highMinusLow": 51.52439024390243,
-      "trendToCloses": 16.44
+      "trendToCloses": 22.98
     }
   },
   "QPAG": {
@@ -2646,6 +2658,7 @@
         0,
         0,
         -9.09,
+        -18.18,
         -18.18
       ]
     },
@@ -2653,7 +2666,7 @@
       "trendToHigh": 27.272727272727266,
       "trendToLow": -18.181818181818187,
       "highMinusLow": 9.09090909090908,
-      "trendToCloses": -4.04
+      "trendToCloses": -5.45
     }
   },
   "BMIX": {
@@ -2939,14 +2952,15 @@
         -43.48,
         -47.83,
         -47.83,
-        -30.43
+        -30.43,
+        -47.83
       ]
     },
     "perfs": {
       "trendToHigh": 8.695652173913047,
       "trendToLow": -47.82608695652174,
       "highMinusLow": -39.130434782608695,
-      "trendToCloses": -36.72
+      "trendToCloses": -37.83
     }
   },
   "FNQQF": {
@@ -3033,6 +3047,7 @@
         -4.55,
         -4.55,
         -4.55,
+        -4.55,
         -4.55
       ]
     },
@@ -3040,7 +3055,7 @@
       "trendToHigh": 0,
       "trendToLow": -31.818181818181824,
       "highMinusLow": -31.818181818181824,
-      "trendToCloses": -2.02
+      "trendToCloses": -2.27
     }
   },
   "IGEX": {
@@ -3247,14 +3262,15 @@
         -12.16,
         -12.16,
         -14.32,
-        -41.89
+        -41.89,
+        -12.16
       ]
     },
     "perfs": {
       "trendToHigh": 0,
       "trendToLow": -43.24324324324325,
       "highMinusLow": -43.24324324324325,
-      "trendToCloses": -15.72
+      "trendToCloses": -15.28
     }
   },
   "GEGI": {
@@ -3554,6 +3570,7 @@
         -37.5,
         -37.71,
         -37.5,
+        -52.08,
         -52.08
       ]
     },
@@ -3561,7 +3578,7 @@
       "trendToHigh": 4.1666666666666785,
       "trendToLow": -58.33333333333333,
       "highMinusLow": -54.16666666666665,
-      "trendToCloses": -20.62
+      "trendToCloses": -23.77
     }
   },
   "FERN": {
@@ -3578,6 +3595,7 @@
         25,
         27.5,
         25,
+        50,
         50
       ]
     },
@@ -3585,7 +3603,7 @@
       "trendToHigh": 100,
       "trendToLow": 0,
       "highMinusLow": 100,
-      "trendToCloses": 25.28
+      "trendToCloses": 27.75
     }
   },
   "KBSFW": null,
@@ -3721,6 +3739,7 @@
       "low": 0.008,
       "allCloses": [
         0,
+        -20,
         -20
       ]
     },
@@ -3728,7 +3747,7 @@
       "trendToHigh": 0,
       "trendToLow": -20,
       "highMinusLow": -20,
-      "trendToCloses": -10
+      "trendToCloses": -13.33
     }
   },
   "FLES": {
@@ -4346,14 +4365,15 @@
         -14.29,
         -19.05,
         -28.57,
-        -4.76
+        -4.76,
+        -19.05
       ]
     },
     "perfs": {
       "trendToHigh": 19.047619047619058,
       "trendToLow": -28.571428571428566,
       "highMinusLow": -9.523809523809508,
-      "trendToCloses": -1.59
+      "trendToCloses": -3.33
     }
   },
   "CNGT": {
@@ -4384,18 +4404,19 @@
   "ESRG": {
     "prices": {
       "buyPrice": 0.008,
-      "max": 0.012,
-      "low": 0.008,
+      "max": 0.015,
+      "low": 0.0075,
       "allCloses": [
         50,
-        12.5
+        12.5,
+        -6.25
       ]
     },
     "perfs": {
-      "trendToHigh": 50,
-      "trendToLow": 0,
-      "highMinusLow": 50,
-      "trendToCloses": 31.25
+      "trendToHigh": 87.49999999999999,
+      "trendToLow": -6.250000000000005,
+      "highMinusLow": 81.24999999999999,
+      "trendToCloses": 18.75
     }
   },
   "BFCH": {
@@ -4487,14 +4508,15 @@
         -2.5,
         0,
         2.5,
-        2.5
+        2.5,
+        0
       ]
     },
     "perfs": {
       "trendToHigh": 4.999999999999991,
       "trendToLow": -50,
       "highMinusLow": -45.00000000000001,
-      "trendToCloses": 0.91
+      "trendToCloses": 0.82
     }
   },
   "NNRX": {
@@ -5201,14 +5223,15 @@
         4.29,
         40.82,
         2.04,
-        36.73
+        36.73,
+        33.14
       ]
     },
     "perfs": {
       "trendToHigh": 42.85714285714287,
       "trendToLow": -16.326530612244888,
       "highMinusLow": 26.53061224489798,
-      "trendToCloses": 7.19
+      "trendToCloses": 10.08
     }
   },
   "AVXL": {
@@ -6025,14 +6048,15 @@
         100,
         93.55,
         70.97,
-        58.06
+        58.06,
+        63.85
       ]
     },
     "perfs": {
       "trendToHigh": 103.5483870967742,
       "trendToLow": -70.96774193548386,
       "highMinusLow": 32.58064516129035,
-      "trendToCloses": 34.46
+      "trendToCloses": 37.4
     }
   },
   "RTN": {
@@ -6211,7 +6235,7 @@
   "PRFC": {
     "prices": {
       "buyPrice": 0.003,
-      "max": 0.005,
+      "max": 0.0069,
       "low": 0.0026,
       "allCloses": [
         0,
@@ -6219,14 +6243,15 @@
         16.67,
         16.67,
         60,
-        50
+        50,
+        55
       ]
     },
     "perfs": {
-      "trendToHigh": 66.66666666666666,
+      "trendToHigh": 129.99999999999997,
       "trendToLow": -13.33333333333334,
-      "highMinusLow": 53.333333333333314,
-      "trendToCloses": 22.22
+      "highMinusLow": 116.66666666666663,
+      "trendToCloses": 26.91
     }
   },
   "NBY": {
@@ -6604,21 +6629,22 @@
     "prices": {
       "buyPrice": 0.0039,
       "max": 0.0039,
-      "low": 0.0018,
+      "low": 0.0015,
       "allCloses": [
         0,
         -4.31,
         -4.1,
         -10.26,
         -7.69,
-        -7.69
+        -7.69,
+        -4.1
       ]
     },
     "perfs": {
       "trendToHigh": 0,
-      "trendToLow": -53.84615384615385,
-      "highMinusLow": -53.84615384615385,
-      "trendToCloses": -5.68
+      "trendToLow": -61.53846153846153,
+      "highMinusLow": -61.53846153846153,
+      "trendToCloses": -5.45
     }
   },
   "GCLT": {
@@ -6781,6 +6807,7 @@
         0,
         0,
         0,
+        50,
         50
       ]
     },
@@ -6788,7 +6815,7 @@
       "trendToHigh": 49.99999999999998,
       "trendToLow": 0,
       "highMinusLow": 49.99999999999998,
-      "trendToCloses": 16.67
+      "trendToCloses": 20
     }
   },
   "BIOAQ": {
@@ -8071,14 +8098,15 @@
         -20.69,
         -37.93,
         -37.93,
-        -37.38
+        -37.38,
+        -37.93
       ]
     },
     "perfs": {
       "trendToHigh": 0,
       "trendToLow": -37.93103448275862,
       "highMinusLow": -37.93103448275862,
-      "trendToCloses": -23.07
+      "trendToCloses": -24.93
     }
   },
   "RCRT": {
@@ -10283,6 +10311,7 @@
         0,
         0,
         -36,
+        -36,
         -36
       ]
     },
@@ -10290,7 +10319,7 @@
       "trendToHigh": 0,
       "trendToLow": -36,
       "highMinusLow": -36,
-      "trendToCloses": -18
+      "trendToCloses": -21.6
     }
   },
   "CNNA": {
@@ -11029,14 +11058,15 @@
         0,
         -99,
         0,
-        0
+        0,
+        -99
       ]
     },
     "perfs": {
       "trendToHigh": 0,
       "trendToLow": -99,
       "highMinusLow": -99,
-      "trendToCloses": -16.5
+      "trendToCloses": -28.29
     }
   },
   "MLHC": {
@@ -11103,6 +11133,7 @@
         -43.75,
         -43.75,
         -60,
+        -25,
         -25
       ]
     },
@@ -11110,7 +11141,7 @@
       "trendToHigh": 21.937499999999996,
       "trendToLow": -75.5,
       "highMinusLow": -53.5625,
-      "trendToCloses": -37.6
+      "trendToCloses": -36.34
     }
   },
   "TXHG": {
@@ -11133,7 +11164,7 @@
   "NEXS": {
     "prices": {
       "buyPrice": 0.01,
-      "max": 0.015,
+      "max": 0.0188,
       "low": 0.01,
       "allCloses": [
         29,
@@ -11142,14 +11173,15 @@
         50,
         50,
         10,
-        49
+        49,
+        88
       ]
     },
     "perfs": {
-      "trendToHigh": 49.999999999999986,
+      "trendToHigh": 88,
       "trendToLow": 0,
-      "highMinusLow": 49.999999999999986,
-      "trendToCloses": 31.14
+      "highMinusLow": 88,
+      "trendToCloses": 38.25
     }
   },
   "HTSC": {
@@ -11162,14 +11194,15 @@
         30,
         -20,
         -20,
-        -20
+        -20,
+        -17
       ]
     },
     "perfs": {
       "trendToHigh": 40,
       "trendToLow": -20,
       "highMinusLow": 20,
-      "trendToCloses": 0.4
+      "trendToCloses": -2.5
     }
   },
   "SANT": {
