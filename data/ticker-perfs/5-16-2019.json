@@ -2212,6 +2212,7 @@
         0,
         0,
         0,
+        0,
         0
       ]
     },
@@ -2455,14 +2456,15 @@
       "allCloses": [
         -98.75,
         50,
-        -89.25
+        -89.25,
+        10
       ]
     },
     "perfs": {
       "trendToHigh": 49.999999999999986,
       "trendToLow": -98.75,
       "highMinusLow": -48.750000000000014,
-      "trendToCloses": -46
+      "trendToCloses": -32
     }
   },
   "WHSI": {
@@ -3015,6 +3017,7 @@
       "low": 0.0025,
       "allCloses": [
         0,
+        212,
         212
       ]
     },
@@ -3022,7 +3025,7 @@
       "trendToHigh": 211.99999999999997,
       "trendToLow": 0,
       "highMinusLow": 211.99999999999997,
-      "trendToCloses": 106
+      "trendToCloses": 141.33
     }
   },
   "BRYYF": {
@@ -3120,14 +3123,15 @@
         82.34,
         -21.31,
         -11.71,
-        -6.49
+        -6.49,
+        -11.71
       ]
     },
     "perfs": {
       "trendToHigh": 82.34165067178502,
       "trendToLow": -21.30518234165067,
       "highMinusLow": 61.03646833013435,
-      "trendToCloses": 10.71
+      "trendToCloses": 6.22
     }
   },
   "NTRR": {
@@ -3393,6 +3397,7 @@
         6.25,
         6.25,
         6.25,
+        6.25,
         6.25
       ]
     },
@@ -3400,7 +3405,7 @@
       "trendToHigh": 17.25,
       "trendToLow": 0,
       "highMinusLow": 17.25,
-      "trendToCloses": 5.28
+      "trendToCloses": 5.39
     }
   },
   "XSNX": {
@@ -3788,6 +3793,7 @@
       "allCloses": [
         0,
         -20,
+        -20,
         -20
       ]
     },
@@ -3795,7 +3801,7 @@
       "trendToHigh": 0,
       "trendToLow": -20,
       "highMinusLow": -20,
-      "trendToCloses": -13.33
+      "trendToCloses": -15
     }
   },
   "FLES": {
@@ -4076,7 +4082,7 @@
   "WSGF": {
     "prices": {
       "buyPrice": 0.0015,
-      "max": 0.0018,
+      "max": 0.0019,
       "low": 0.0013,
       "allCloses": [
         0,
@@ -4084,14 +4090,15 @@
         0,
         0,
         0,
-        20
+        20,
+        26.67
       ]
     },
     "perfs": {
-      "trendToHigh": 19.999999999999996,
+      "trendToHigh": 26.666666666666668,
       "trendToLow": -13.33333333333334,
-      "highMinusLow": 6.666666666666657,
-      "trendToCloses": 3.33
+      "highMinusLow": 13.333333333333329,
+      "trendToCloses": 6.67
     }
   },
   "EYEG": {
