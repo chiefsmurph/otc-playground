@@ -141,13 +141,12 @@
     },
     "finviz-pennyStock1milVol": {
       "allTickers": [
-        "AFH",
-        "AMR"
+        "AFH"
       ],
-      "trendToHigh": 121.59,
-      "trendToLow": -17.07,
-      "highMinusLow": 104.52,
-      "trendToCloses": -1.13
+      "trendToHigh": 4.72,
+      "trendToLow": -19.99,
+      "highMinusLow": -15.27,
+      "trendToCloses": -10.94
     },
     "finviz-nanoEarlyRunners-pennyStock1milVol": {
       "allTickers": [
@@ -237,15 +236,19 @@
     },
     "accumulation-infinity": {
       "allTickers": [
+        "BXXRF",
+        "KBSFW",
+        "MGIDF",
         "ISBG",
         "FNQQF",
+        "MLOOF",
         "BRYYF",
         "ERGTF"
       ],
-      "trendToHigh": 35.91,
-      "trendToLow": -34.54,
-      "highMinusLow": 1.37,
-      "trendToCloses": -2.71
+      "trendToHigh": 920.8,
+      "trendToLow": -51.49,
+      "highMinusLow": 869.31,
+      "trendToCloses": 105.2
     },
     "accumulation-gt300": {
       "allTickers": [

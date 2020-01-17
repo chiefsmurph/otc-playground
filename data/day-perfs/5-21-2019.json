@@ -110,13 +110,12 @@
     },
     "finviz-pennyStock1milVol": {
       "allTickers": [
-        "AMR",
         "AMRH"
       ],
-      "trendToHigh": 134.6,
-      "trendToLow": -16.32,
-      "highMinusLow": 118.29,
-      "trendToCloses": 1.65
+      "trendToHigh": 37.88,
+      "trendToLow": -16.67,
+      "highMinusLow": 21.21,
+      "trendToCloses": -6.57
     },
     "finviz-newHighsUp3volOver500k": {
       "allTickers": [
@@ -178,17 +177,19 @@
     },
     "accumulation-infinity": {
       "allTickers": [
+        "BXXRF",
         "FNQQF",
         "BRYYF",
         "ERGTF",
+        "MLOOF",
         "DMDD",
         "GOGY",
         "QPAG"
       ],
-      "trendToHigh": 35.49,
-      "trendToLow": -32.2,
-      "highMinusLow": 3.29,
-      "trendToCloses": 1.7
+      "trendToHigh": 929.46,
+      "trendToLow": -46.77,
+      "highMinusLow": 882.68,
+      "trendToCloses": 118.41
     },
     "accumulation-gt300": {
       "allTickers": [

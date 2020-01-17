@@ -11,7 +11,7 @@
       "trendToHigh": 215.98,
       "trendToLow": -28.19,
       "highMinusLow": 187.79,
-      "trendToCloses": 78.49
+      "trendToCloses": 78.95
     },
     "twitter-i_am_andrew84": {
       "allTickers": [
@@ -141,13 +141,12 @@
     },
     "finviz-pennyStock1milVol": {
       "allTickers": [
-        "AMR",
         "AMRH"
       ],
-      "trendToHigh": 21.51,
-      "trendToLow": -14.66,
-      "highMinusLow": 6.85,
-      "trendToCloses": -3.09
+      "trendToHigh": 20.81,
+      "trendToLow": -9.94,
+      "highMinusLow": 10.87,
+      "trendToCloses": 3.06
     },
     "finviz-newHighsUp3volOver500k": {
       "allTickers": [
@@ -226,7 +225,7 @@
       "trendToHigh": 45.77,
       "trendToLow": -18.37,
       "highMinusLow": 27.41,
-      "trendToCloses": 6.35
+      "trendToCloses": 5.04
     },
     "accumulation-lt25": {
       "allTickers": [
@@ -236,7 +235,7 @@
       "trendToHigh": 106.25,
       "trendToLow": -38.76,
       "highMinusLow": 67.49,
-      "trendToCloses": 25.42
+      "trendToCloses": 30.67
     },
     "accumulation-negative": {
       "allTickers": [
@@ -255,7 +254,7 @@
       "trendToHigh": 0,
       "trendToLow": -71.26,
       "highMinusLow": -71.26,
-      "trendToCloses": -35.98
+      "trendToCloses": -32.41
     },
     "accumulation-advancers-negative": {
       "allTickers": [
@@ -459,7 +458,7 @@
       "trendToHigh": 26.66,
       "trendToLow": -12.23,
       "highMinusLow": 14.43,
-      "trendToCloses": 4.73
+      "trendToCloses": 4.94
     },
     "ihub-ihub-hot-shit": {
       "allTickers": [
@@ -524,9 +523,9 @@
         "ULGX"
       ],
       "trendToHigh": 66.2,
-      "trendToLow": -14.99,
-      "highMinusLow": 51.21,
-      "trendToCloses": 14.77
+      "trendToLow": -19.07,
+      "highMinusLow": 47.13,
+      "trendToCloses": 14.39
     },
     "metrics-active-lowest-turnover": {
       "allTickers": [
@@ -553,9 +552,9 @@
         "MRJT"
       ],
       "trendToHigh": 35.71,
-      "trendToLow": -44.82,
-      "highMinusLow": -9.1,
-      "trendToCloses": -4.04
+      "trendToLow": -48.9,
+      "highMinusLow": -13.18,
+      "trendToCloses": -2.63
     },
     "metrics-advancers-lowest-turnover": {
       "allTickers": [
@@ -627,24 +626,14 @@
       "highMinusLow": -38.5,
       "trendToCloses": -18.91
     },
-    "recs-number1": {
-      "allTickers": [
-        "AMR"
-      ],
-      "trendToHigh": 22.22,
-      "trendToLow": -19.39,
-      "highMinusLow": 2.83,
-      "trendToCloses": -9.24
-    },
     "recs-top": {
       "allTickers": [
-        "AMR",
         "AMRH"
       ],
-      "trendToHigh": 21.51,
-      "trendToLow": -14.66,
-      "highMinusLow": 6.85,
-      "trendToCloses": -3.09
+      "trendToHigh": 20.81,
+      "trendToLow": -9.94,
+      "highMinusLow": 10.87,
+      "trendToCloses": 3.06
     },
     "combos": {
       "allTickers": [

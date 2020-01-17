@@ -88,29 +88,27 @@
         "WSFT"
       ],
       "trendToHigh": 0,
-      "trendToLow": -37.5,
-      "highMinusLow": -37.5,
-      "trendToCloses": -6.72
+      "trendToLow": -43.75,
+      "highMinusLow": -43.75,
+      "trendToCloses": -13.38
     },
     "finviz-pennyStock1milVol": {
       "allTickers": [
-        "AMR",
         "ADOM"
       ],
-      "trendToHigh": 22.46,
-      "trendToLow": -26.35,
-      "highMinusLow": -3.89,
-      "trendToCloses": -13.91
+      "trendToHigh": 22.73,
+      "trendToLow": -21.21,
+      "highMinusLow": 1.52,
+      "trendToCloses": -5.15
     },
     "finviz-newHighsUp3volOver500k": {
       "allTickers": [
-        "AMR",
         "APPS"
       ],
-      "trendToHigh": 17.46,
-      "trendToLow": -17,
-      "highMinusLow": 0.46,
-      "trendToCloses": -9.17
+      "trendToHigh": 12.73,
+      "trendToLow": -2.5,
+      "highMinusLow": 10.23,
+      "trendToCloses": 4.32
     },
     "finviz-under5TopLosers": {
       "allTickers": [
@@ -200,7 +198,7 @@
       "trendToHigh": 53.84,
       "trendToLow": -23.47,
       "highMinusLow": 30.37,
-      "trendToCloses": 0.96
+      "trendToCloses": 0.31
     },
     "accumulation-lt25": {
       "allTickers": [
@@ -463,10 +461,10 @@
         "LQMT",
         "GMGI"
       ],
-      "trendToHigh": 506.81,
+      "trendToHigh": 507.99,
       "trendToLow": -26.6,
-      "highMinusLow": 480.21,
-      "trendToCloses": 247.49
+      "highMinusLow": 481.39,
+      "trendToCloses": 248.66
     },
     "ihub-ihub-hot-dump": {
       "allTickers": [
@@ -570,9 +568,9 @@
         "HSTC"
       ],
       "trendToHigh": 34.01,
-      "trendToLow": -34.79,
-      "highMinusLow": -0.77,
-      "trendToCloses": 7.09
+      "trendToLow": -38.31,
+      "highMinusLow": -4.3,
+      "trendToCloses": 6.09
     },
     "metrics-advancers-lowest-turnover": {
       "allTickers": [
@@ -652,24 +650,14 @@
       "highMinusLow": -39.24,
       "trendToCloses": -29.02
     },
-    "recs-number1": {
-      "allTickers": [
-        "AMR"
-      ],
-      "trendToHigh": 22.19,
-      "trendToLow": -31.49,
-      "highMinusLow": -9.3,
-      "trendToCloses": -22.66
-    },
     "recs-top": {
       "allTickers": [
-        "AMR",
         "ADOM"
       ],
-      "trendToHigh": 22.46,
-      "trendToLow": -26.35,
-      "highMinusLow": -3.89,
-      "trendToCloses": -13.91
+      "trendToHigh": 22.73,
+      "trendToLow": -21.21,
+      "highMinusLow": 1.52,
+      "trendToCloses": -5.15
     },
     "recs-medium": {
       "allTickers": [

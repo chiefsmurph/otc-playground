@@ -61,14 +61,16 @@
       "allTickers": [
         "UDHI",
         "FNQQF",
+        "BXXRF",
         "TVIPF",
         "BRYYF",
-        "ERGTF"
+        "ERGTF",
+        "MGIDF"
       ],
-      "trendToHigh": 38.2,
-      "trendToLow": -39.04,
-      "highMinusLow": -0.84,
-      "trendToCloses": -2.01
+      "trendToHigh": 38.23,
+      "trendToLow": -53.74,
+      "highMinusLow": -15.52,
+      "trendToCloses": -14.75
     },
     "accumulation-lt25": {
       "allTickers": [
@@ -80,7 +82,7 @@
       "trendToHigh": 132.09,
       "trendToLow": -22.14,
       "highMinusLow": 109.96,
-      "trendToCloses": 39.94
+      "trendToCloses": 38.65
     },
     "accumulation-negative": {
       "allTickers": [

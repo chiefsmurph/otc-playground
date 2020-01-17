@@ -173,13 +173,12 @@
     },
     "finviz-pennyStock1milVol": {
       "allTickers": [
-        "AMR",
         "APRN"
       ],
-      "trendToHigh": 135.2,
-      "trendToLow": -10.04,
-      "highMinusLow": 125.16,
-      "trendToCloses": 12.55
+      "trendToHigh": 3.73,
+      "trendToLow": -20,
+      "highMinusLow": -16.27,
+      "trendToCloses": -9.23
     },
     "finviz-newHighsUp3volOver500k": {
       "allTickers": [
@@ -267,7 +266,7 @@
       "trendToHigh": 53.31,
       "trendToLow": -43.1,
       "highMinusLow": 10.21,
-      "trendToCloses": 5.71
+      "trendToCloses": 4.7
     },
     "accumulation-negative": {
       "allTickers": [
@@ -285,7 +284,7 @@
       "trendToHigh": 21.43,
       "trendToLow": -39.29,
       "highMinusLow": -17.86,
-      "trendToCloses": 4.55
+      "trendToCloses": 1.5
     },
     "ihub-8k": {
       "allTickers": [
@@ -827,7 +826,7 @@
       "trendToHigh": 21.43,
       "trendToLow": -39.29,
       "highMinusLow": -17.86,
-      "trendToCloses": 4.55
+      "trendToCloses": 1.5
     },
     "accumulation-lt25~ihub-SEC": {
       "allTickers": [

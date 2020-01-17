@@ -266,13 +266,12 @@
     },
     "finviz-pennyStock1milVol": {
       "allTickers": [
-        "AMR",
         "AMRH"
       ],
-      "trendToHigh": 51.84,
-      "trendToLow": -21.46,
-      "highMinusLow": 30.38,
-      "trendToCloses": -6.87
+      "trendToHigh": 62.5,
+      "trendToLow": -8.57,
+      "highMinusLow": 53.93,
+      "trendToCloses": 7.63
     },
     "finviz-newHighsUp3volOver500k": {
       "allTickers": [
@@ -289,29 +288,29 @@
         "CRRDF",
         "PIONF"
       ],
-      "trendToHigh": 0,
-      "trendToLow": -10,
-      "highMinusLow": -10,
-      "trendToCloses": -7.5
+      "trendToHigh": 19.09,
+      "trendToLow": -20,
+      "highMinusLow": -0.91,
+      "trendToCloses": 0.82
     },
     "metrics-lowest-turnover": {
       "allTickers": [
         "CRRDF",
         "LQMT"
       ],
-      "trendToHigh": 9.48,
+      "trendToHigh": 18.57,
       "trendToLow": -9.48,
-      "highMinusLow": 0,
-      "trendToCloses": 1.23
+      "highMinusLow": 9.09,
+      "trendToCloses": 8.05
     },
     "metrics-lowest-float-lowest-turnover": {
       "allTickers": [
         "CRRDF"
       ],
-      "trendToHigh": 0,
+      "trendToHigh": 18.18,
       "trendToLow": 0,
-      "highMinusLow": 0,
-      "trendToCloses": 0
+      "highMinusLow": 18.18,
+      "trendToCloses": 13.64
     },
     "metrics-highest-dollarVolume": {
       "allTickers": [

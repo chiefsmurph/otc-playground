@@ -153,13 +153,12 @@
     },
     "finviz-pennyStock1milVol": {
       "allTickers": [
-        "AMR",
         "APRN"
       ],
-      "trendToHigh": 108.97,
-      "trendToLow": -11.67,
-      "highMinusLow": 97.3,
-      "trendToCloses": 6.05
+      "trendToHigh": 5.65,
+      "trendToLow": -13.04,
+      "highMinusLow": -7.39,
+      "trendToCloses": -4.02
     },
     "barchart-signalStrength": {
       "allTickers": [
@@ -574,9 +573,9 @@
         "TXHG"
       ],
       "trendToHigh": 16.23,
-      "trendToLow": -37.75,
-      "highMinusLow": -21.52,
-      "trendToCloses": -15.54
+      "trendToLow": -53.54,
+      "highMinusLow": -37.31,
+      "trendToCloses": -24.4
     },
     "metrics-advancers-lowest-turnover": {
       "allTickers": [
@@ -606,7 +605,7 @@
       "trendToHigh": 55.97,
       "trendToLow": -37.75,
       "highMinusLow": 18.22,
-      "trendToCloses": 3.83
+      "trendToCloses": 2.88
     },
     "metrics-decliners-lowest-turnover": {
       "allTickers": [
@@ -634,9 +633,9 @@
         "HTSC"
       ],
       "trendToHigh": 25.26,
-      "trendToLow": -15,
-      "highMinusLow": 10.26,
-      "trendToCloses": 2.08
+      "trendToLow": -30.79,
+      "highMinusLow": -5.53,
+      "trendToCloses": -6.77
     },
     "metrics-ihub-hot-lowest-float": {
       "allTickers": [

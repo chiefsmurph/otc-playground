@@ -66,13 +66,17 @@
       "allTickers": [
         "FNQQF",
         "ERGTF",
+        "MLOOF",
+        "MGIDF",
         "BRYYF",
-        "SKPO"
+        "BXXRF",
+        "SKPO",
+        "KBSFW"
       ],
-      "trendToHigh": 38.69,
-      "trendToLow": -25.28,
-      "highMinusLow": 13.41,
-      "trendToCloses": 5.29
+      "trendToHigh": 922.18,
+      "trendToLow": -46.86,
+      "highMinusLow": 875.33,
+      "trendToCloses": 109.19
     },
     "accumulation-lt25": {
       "allTickers": [
@@ -118,10 +122,10 @@
         "PIONF",
         "FLES"
       ],
-      "trendToHigh": 4.16,
-      "trendToLow": -44.34,
+      "trendToHigh": 14.16,
+      "trendToLow": -54.34,
       "highMinusLow": -40.18,
-      "trendToCloses": -25.75
+      "trendToCloses": -24.25
     },
     "stock-invest-top100": {
       "allTickers": [
@@ -166,10 +170,10 @@
         "WSGF",
         "GMNI"
       ],
-      "trendToHigh": 26.22,
+      "trendToHigh": 112.89,
       "trendToLow": -21.78,
-      "highMinusLow": 4.44,
-      "trendToCloses": 0.01
+      "highMinusLow": 91.11,
+      "trendToCloses": 12.89
     },
     "ihub-merger-custodianship": {
       "allTickers": [
@@ -277,10 +281,10 @@
         "WSGF",
         "XALL"
       ],
-      "trendToHigh": 36.07,
+      "trendToHigh": 88.07,
       "trendToLow": -34.27,
-      "highMinusLow": 1.8,
-      "trendToCloses": -7.16
+      "highMinusLow": 53.8,
+      "trendToCloses": 0.57
     },
     "twitter-i_like_bb_stock~twitter-stockguru2020": {
       "allTickers": [
@@ -331,10 +335,10 @@
       "allTickers": [
         "WSGF"
       ],
-      "trendToHigh": 26.67,
+      "trendToHigh": 286.67,
       "trendToLow": -13.33,
-      "highMinusLow": 13.33,
-      "trendToCloses": 6.67
+      "highMinusLow": 273.33,
+      "trendToCloses": 45.33
     }
   }
 }

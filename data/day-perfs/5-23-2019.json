@@ -179,13 +179,12 @@
     },
     "finviz-pennyStock1milVol": {
       "allTickers": [
-        "AEMD",
-        "AMR"
+        "AEMD"
       ],
-      "trendToHigh": 143.99,
-      "trendToLow": -11.13,
-      "highMinusLow": 132.86,
-      "trendToCloses": 17.11
+      "trendToHigh": 28.5,
+      "trendToLow": -13.76,
+      "highMinusLow": 14.73,
+      "trendToCloses": 5.97
     },
     "day-streaks-7days": {
       "allTickers": [
@@ -199,13 +198,15 @@
     "accumulation-infinity": {
       "allTickers": [
         "FNQQF",
+        "BXXRF",
         "APVS",
+        "MLOOF",
         "ERGTF"
       ],
-      "trendToHigh": 30.16,
-      "trendToLow": -24.68,
-      "highMinusLow": 5.47,
-      "trendToCloses": 2.93
+      "trendToHigh": 1462.64,
+      "trendToLow": -49.01,
+      "highMinusLow": 1413.63,
+      "trendToCloses": 196.93
     },
     "accumulation-lt25": {
       "allTickers": [
@@ -297,29 +298,29 @@
         "LATNF",
         "PIONF"
       ],
-      "trendToHigh": 0.14,
-      "trendToLow": -10,
-      "highMinusLow": -9.86,
-      "trendToCloses": -7.43
+      "trendToHigh": 77.69,
+      "trendToLow": -51.89,
+      "highMinusLow": 25.79,
+      "trendToCloses": -10.41
     },
     "metrics-lowest-turnover": {
       "allTickers": [
         "LATNF",
         "NWBO"
       ],
-      "trendToHigh": 1.27,
-      "trendToLow": -13.59,
-      "highMinusLow": -12.33,
-      "trendToCloses": -4.29
+      "trendToHigh": 68.82,
+      "trendToLow": -45.49,
+      "highMinusLow": 23.33,
+      "trendToCloses": -8.78
     },
     "metrics-lowest-float-lowest-turnover": {
       "allTickers": [
         "LATNF"
       ],
-      "trendToHigh": 0.28,
-      "trendToLow": 0,
-      "highMinusLow": 0.28,
-      "trendToCloses": 0.14
+      "trendToHigh": 135.38,
+      "trendToLow": -63.79,
+      "highMinusLow": 71.59,
+      "trendToCloses": -8.83
     },
     "metrics-highest-dollarVolume": {
       "allTickers": [
@@ -385,20 +386,22 @@
         "FNQQF"
       ],
       "trendToHigh": 43.64,
-      "trendToLow": 0,
-      "highMinusLow": 43.64,
-      "trendToCloses": 21.82
+      "trendToLow": -60,
+      "highMinusLow": -16.36,
+      "trendToCloses": 0
     },
     "recs-top": {
       "allTickers": [
         "FNQQF",
+        "BXXRF",
         "APVS",
+        "MLOOF",
         "ERGTF"
       ],
-      "trendToHigh": 30.16,
-      "trendToLow": -24.68,
-      "highMinusLow": 5.47,
-      "trendToCloses": 2.93
+      "trendToHigh": 1462.64,
+      "trendToLow": -49.01,
+      "highMinusLow": 1413.63,
+      "trendToCloses": 196.93
     },
     "recs-medium": {
       "allTickers": [
