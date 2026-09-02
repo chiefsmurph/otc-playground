@@ -25,8 +25,17 @@ const OTC_HEADERS = [
   'Referer: https://www.otcmarkets.com/',
 ];
 
+// Optional proxy rotation via env (PROXY_USER/PROXY_PASS/PROXY_HOSTS) — fixes OTCMarkets
+// 429/412 throttling. Reuses the same proxy pool as the rest of the fleet. Never hardcoded.
+const PU = process.env.PROXY_USER, PP = process.env.PROXY_PASS;
+const PHOSTS = (process.env.PROXY_HOSTS || '').split(',').map((s) => s.trim()).filter(Boolean);
+
 function curlJson(url) {
   const args = ['-s', '--compressed', '--max-time', '30'];
+  if (PU && PP && PHOSTS.length) {
+    const host = PHOSTS[Math.floor(Math.random() * PHOSTS.length)];
+    args.push('-x', `http://${PU}:${PP}@${host}`);
+  }
   for (const h of OTC_HEADERS) args.push('-H', h);
   args.push(url);
   return new Promise((resolve, reject) => {
