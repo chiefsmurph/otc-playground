@@ -27,7 +27,7 @@ module.exports = scanFn => {
 
     const collectionFn = require(`../collections/${collectionStr}`);
     const records = await collectionFn(minPrice, maxPrice);
-    const filtered = records.filter(record => record.symbol.length >= 3 && record.symbol.length <= 4);
+    const filtered = records.filter(record => record.symbol.length >= 3 && record.symbol.length <= 5);
     const sliced = filtered.slice(0, count);
 
     console.log({ 

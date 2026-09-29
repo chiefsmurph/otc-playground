@@ -1,10 +1,10 @@
-const { cachedHistoricals } = require('../scraping-actions/get-historicals');
+const { cachedHistoricals } = require('../scraping-actions/polygon-historicals');
 const mapLimit = require('promise-map-limit');
 
 module.exports = async records => {
 
   let i = 0;
-  const results = await mapLimit(records, 3, async record => {
+  const results = await mapLimit(records, 8, async record => {
 
       let historicals;
       try {
